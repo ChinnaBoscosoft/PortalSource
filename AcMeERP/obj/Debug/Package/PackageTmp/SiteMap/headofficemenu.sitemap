@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+
+  <siteMapNode url="~/homelogin.aspx?p=t" title="Home">
+    <siteMapNode  title="Users" ModuleCode="User" ActivityCode="UserView">
+      <siteMapNode url="~/module/user/userview.aspx" title="User" ModuleCode="User" ActivityCode="UserView"/>
+      <siteMapNode url="~/module/user/roleview.aspx" title="User Role" ModuleCode="User" ActivityCode="UserRoleView"/>
+      <siteMapNode url="~/module/user/userrights.aspx" title="User Rights" ModuleCode="User" ActivityCode="UserRights"/>
+      <siteMapNode url="~/module/user/changepassword.aspx" title="Change Password" ModuleCode="" ActivityCode=""/>
+    </siteMapNode>
+
+    <siteMapNode  title="Office" ModuleCode="Office" ActivityCode="BranchOfficeView">
+      <siteMapNode url="~/module/office/branchofficeview.aspx" title="Branch Office" ModuleCode="Office" ActivityCode="BranchOfficeView" />
+      <siteMapNode url="~/module/office/BranchLocationView.aspx" title ="Branch Location" ModuleCode="Office" ActivityCode="BranchLocationView"/>
+      <siteMapNode url="~/module/office/RefreshBalance.aspx" title ="Refresh Ledger Balance" ModuleCode="Office" ActivityCode="RefreshBalance"/>
+    </siteMapNode>
+
+    <siteMapNode  title="Data" ModuleCode="Data" ActivityCode="LegalEntityView">
+      <!--<siteMapNode  url="~/module/master/legalentityview.aspx?p=t" title="Finance Masters" ModuleCode="Data" ActivityCode="LegalEntityView">
+        <siteMapNode url="~/module/master/AccountingPeriodView.aspx" title="Accounting Period" ModuleCode="Data" ActivityCode="AccountingPeriod" />
+        <siteMapNode url="~/module/master/legalentityview.aspx" title="Legal Entity" ModuleCode="Data" ActivityCode="LegalEntityView" />
+        <siteMapNode url="~/module/master/ledgergroup.aspx" title="Ledger Group" ModuleCode="Data" ActivityCode="LedgerGroupView" />
+        <siteMapNode url="~/module/master/ledgerview.aspx" title="Ledger" ModuleCode="Data" ActivityCode="LedgerView" />
+        <siteMapNode url="~/module/master/projectcategoryview.aspx" title="Project Category" ModuleCode="Data" ActivityCode="ProjectCategoryView" />
+        <siteMapNode url="~/module/master/projectview.aspx" title="Project" ModuleCode="Data" ActivityCode="ProjectView" />
+        <siteMapNode url="~/module/master/fcpurposeview.aspx" title="FC Purpose" ModuleCode="Data" ActivityCode="FCPurposeView" />
+        <siteMapNode url="~/module/office/ProjectMapping.aspx" title="Map Projects" ModuleCode="Data" ActivityCode="MapProjectToBranch" />
+        <siteMapNode url="~/module/office/ProjectLocationMapping.aspx" title="Map Locations" ModuleCode="Data" ActivityCode="MapProjectToLocation" />
+        
+        <siteMapNode url="~/module/master/LedgerMapping.aspx" title="Map Ledgers" ModuleCode="Data" ActivityCode="MapLedgerstoBranch" />
+        <siteMapNode url="~/module/office/ProjectUserMapping.aspx" title="Map Projects to User" ModuleCode="Data" ActivityCode="MapProjectToUser" />
+        <siteMapNode url="~/module/master/MapSubsidyLedgers.aspx" title="Map Subsidy Ledgers" ModuleCode="Data" ActivityCode="MapSubsidyLedgers" />
+        <siteMapNode url="~/module/master/GeneralateLedger.aspx" title="Generalate Ledgers" ModuleCode="Data" ActivityCode="GeneralateLedgers" />
+        <siteMapNode url="~/module/master/GeneralateLedgerMapping.aspx" title="Map Generalate Ledgers" ModuleCode="Data" ActivityCode="MapGeneralateLedgers" />
+      </siteMapNode>-->
+      <!--<siteMapNode url="~/module/master/TDSSectionView.aspx?p=t" title="TDS" ModuleCode="Data" ActivityCode="GoverningMemberView">
+          <siteMapNode url="~/module/master/GoverningMemberView.aspx" title="Governing Bodies" ModuleCode="Data" ActivityCode="GoverningMemberView" />
+          <siteMapNode url="~/module/master/GoverningMemberMapping.aspx" title="Map Governing Bodies" ModuleCode="Data" ActivityCode="MapGoverningBody" />
+          <siteMapNode url="~/module/master/TDSSectionView.aspx" title="TDS Section" ModuleCode="Data" ActivityCode="TDSSectionView" />
+          <siteMapNode url="~/module/master/TDSPaymentNature.aspx" title="Nature of Payments" ModuleCode="Data" ActivityCode="TDSPaymentNatureView" />
+          <siteMapNode url="~/module/master/TDSDeducteeType.aspx" title="Deductee Type" ModuleCode="Data" ActivityCode="TDSDeducteeTypeView" />
+          <siteMapNode url="~/module/master/TDSPolicyView.aspx" title="TDS Policy" ModuleCode="Data" ActivityCode="TDSPolicyView" />
+          <siteMapNode url="~/module/master/TDSDutyTax.aspx" title="Duty Tax" ModuleCode="Data" ActivityCode="TDSDutyTaxView" />
+        </siteMapNode>-->
+      <siteMapNode title="Finance Masters" ModuleCode="Data" ActivityCode="LegalEntityView">
+        <siteMapNode url="~/module/master/AccountingPeriodView.aspx" title="Accounting Period" ModuleCode="Data" ActivityCode="AccountingPeriod" />
+        <siteMapNode url="~/module/master/ledgergroup.aspx" title="Ledger Group" ModuleCode="Data" ActivityCode="LedgerGroupView" />
+        <siteMapNode url="~/module/master/ledgerview.aspx" title="Ledger" ModuleCode="Data" ActivityCode="LedgerView" />
+        <siteMapNode url="~/module/master/projectcategoryview.aspx" title="Project Category" ModuleCode="Data" ActivityCode="ProjectCategoryView" />
+        <siteMapNode url="~/module/master/projectview.aspx" title="Project" ModuleCode="Data" ActivityCode="ProjectView" />
+        <siteMapNode url="~/module/master/fcpurposeview.aspx" title="FC Purpose" ModuleCode="Data" ActivityCode="FCPurposeView" />
+        <siteMapNode url="~/module/master/GeneralateLedger.aspx" title="Generalate Ledger Group" ModuleCode="Data" ActivityCode="GeneralateLedgerGroup" />
+        <siteMapNode url="~/module/master/LockVoucherView.aspx" title="Lock Vouchers" ModuleCode="Data" ActivityCode="LockVoucherView" />
+
+      </siteMapNode>
+
+      <siteMapNode title="Statutary Masters" ModuleCode="Data" ActivityCode="GoverningMemberView">
+        <siteMapNode url="~/module/master/legalentityview.aspx" title="Legal Entity" ModuleCode="Data" ActivityCode="LegalEntityView" />
+        <siteMapNode url="~/module/master/GoverningMemberView.aspx" title="Governing Bodies" ModuleCode="Data" ActivityCode="GoverningMemberView" />
+        <siteMapNode url="~/module/master/GoverningMemberMapping.aspx" title="Map Governing Bodies" ModuleCode="Data" ActivityCode="MapGoverningBody" />
+        <siteMapNode url="~/module/master/TDSSectionView.aspx" title="TDS Section" ModuleCode="Data" ActivityCode="TDSSectionView" />
+        <siteMapNode url="~/module/master/TDSPaymentNature.aspx" title="Nature of Payments" ModuleCode="Data" ActivityCode="TDSPaymentNatureView" />
+        <siteMapNode url="~/module/master/TDSDeducteeType.aspx" title="Deductee Type" ModuleCode="Data" ActivityCode="TDSDeducteeTypeView" />
+        <siteMapNode url="~/module/master/TDSPolicyView.aspx" title="TDS Policy" ModuleCode="Data" ActivityCode="TDSPolicyView" />
+        <siteMapNode url="~/module/master/TDSDutyTax.aspx" title="Duty Tax" ModuleCode="Data" ActivityCode="TDSDutyTaxView" />
+      </siteMapNode>
+
+      <siteMapNode title="Mapping" ModuleCode="Data" ActivityCode="GoverningMemberView">
+        <siteMapNode url="~/module/office/ProjectMapping.aspx" title="Map Projects" ModuleCode="Data" ActivityCode="MapProjectToBranch" />
+        <siteMapNode url="~/module/office/ProjectLocationMapping.aspx" title="Map Locations" ModuleCode="Data" ActivityCode="MapProjectToLocation" />
+        <siteMapNode url="~/module/master/LedgerMapping.aspx" title="Map Ledgers" ModuleCode="Data" ActivityCode="MapLedgerstoBranch" />
+        <siteMapNode url="~/module/office/ProjectUserMapping.aspx" title="Map Projects to User" ModuleCode="Data" ActivityCode="MapProjectToUser" />
+        <siteMapNode url="~/module/office/BranchUserMapping.aspx" title="Map Branch to User" ModuleCode="Data" ActivityCode="MapBranchToUser" />
+        <siteMapNode url="~/module/master/MapSubsidyLedgers.aspx" title="Map Subsidy Ledgers" ModuleCode="Data" ActivityCode="MapSubsidyLedgers" />
+        <siteMapNode url="~/module/master/GeneralateLedgerMapping.aspx" title="Map Generalate Ledgers" ModuleCode="Data" ActivityCode="MAPGENERALATELEDGERS" />
+        <siteMapNode url="~/module/master/SDBGeneralateLedgerMapping.aspx" title="Map Generalate Ledgers by Project Category Group" ModuleCode="Data" ActivityCode="PCGGeneralateLedgerMapping" />
+        <siteMapNode url="~/module/master/GeneralateOPBalance.aspx" title="Generalate Opening Balance" ModuleCode="Data" ActivityCode="GENERALATEOPENING" />
+      </siteMapNode>
+
+      <!--<siteMapNode  url="~/module/inventory/asset/AssetClassView.aspx?p=t" title="Asset Masters" ModuleCode="Data" ActivityCode="AssetClassView">
+        <siteMapNode url="~/module/inventory/asset/AssetClassView.aspx" title="Asset Class" ModuleCode="Data" ActivityCode="AssetClassView" />
+        <siteMapNode url="~/module/inventory/asset/AssetItemView.aspx" title="Asset Item" ModuleCode="Data" ActivityCode="AssetItemView" />
+        <siteMapNode url="~/module/inventory/asset/AssetUnitofMeasureView.aspx" title="UoM" ModuleCode="Data" ActivityCode="AssetUOMView" />
+        <siteMapNode url="~/module/inventory/asset/ImportAssetMasters.aspx" title="Import Asset Masters" ModuleCode="Data" ActivityCode="ImportAssetMasters" />
+        </siteMapNode>-->
+
+      <siteMapNode title="Vouchers" ModuleCode="Data" ActivityCode="VoucherView">
+        <siteMapNode url="~/module/master/VoucherView.aspx" title="Vouchers" ModuleCode="Data" ActivityCode="VoucherView" />
+        <!--<siteMapNode url="~/module/master/FDRegistesrView.aspx" title="Fixed Deposit" ModuleCode="Data" ActivityCode="FDRegistersView" />-->
+        <siteMapNode url="~/module/master/FDRegisters.aspx" title="Fixed Deposit" ModuleCode="Data" ActivityCode="FDRegistersView" />
+        <!--<siteMapNode url="~/module/master/OpeningBalanceView.aspx" title="Ledger O/P Balance" ModuleCode="Data" ActivityCode="OpeningBalanceView" />-->
+        <siteMapNode url="~/module/master/AmendmentsView.aspx" title="Amendments" ModuleCode="Data" ActivityCode="AmendmentView" />
+      </siteMapNode>
+      <siteMapNode title="Budget" ModuleCode="Data" ActivityCode="Budget">
+        <!--<siteMapNode url="~/module/master/Budget.aspx" title="Approve Budget" ModuleCode="Data" ActivityCode="ApproveBudget" />
+        <siteMapNode url="~/module/master/BudgetMysore.aspx" title="Approve Budget" ModuleCode="Data" ActivityCode="MysoreApproveBudget" />-->
+        <!--<siteMapNode url="~/module/master/BudgetView.aspx" title="Budget Proposal and Approved" ModuleCode="Data" ActivityCode="BudgetINM" />-->
+        <siteMapNode url="~/module/master/Budget.aspx" title="Approve Budget" ModuleCode="Data" ActivityCode="ApproveBudget" />
+        <siteMapNode url="~/module/master/BudgetMysore.aspx" title="Approve Budget" ModuleCode="Data" ActivityCode="MysoreApproveBudget" />
+      </siteMapNode>
+      <siteMapNode title="Settings" ModuleCode="Data" ActivityCode="SETTINGS">
+        <siteMapNode url="~/module/office/HeadOfficeGlobalSettings.aspx" title ="Global Setting" ModuleCode="Data" ActivityCode="SETTINGS"/>
+        <siteMapNode url="~/module/office/LCBranchEnableTrackRequests.aspx" title ="Disable/Approve Branch Receipt Module" ModuleCode="Data" ActivityCode="RequestReceiptModule"/>
+      </siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode title="Budget" ModuleCode="BudgetINM" ActivityCode="BudgetINM">
+      <siteMapNode url="~/module/master/BudgetNewINM.aspx" title="Budget Approved" ModuleCode="BudgetINM" ActivityCode="BudgetINM" />
+    </siteMapNode>
+
+    <siteMapNode title="Reports" ModuleCode="ReportAbstract" ActivityCode="MonthlyAbstract">
+      <siteMapNode title="Masters" ModuleCode="ReportMasters" ActivityCode="HeadOfficeLedgers" >
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-052" title="Head Office Ledgers" ModuleCode="ReportMasters" ActivityCode="HeadOfficeLedgers" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-186" title="Head Office Project" ModuleCode="ReportMasters" ActivityCode="HeadOfficeProject" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-059" title="Branch Bank Accounts" ModuleCode="ReportMasters" ActivityCode="BranchBankList" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-060" title="Branch-wise Balance" ModuleCode="ReportMasters" ActivityCode="BranchwiseBalance" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-061" title="Branch Data Status" ModuleCode="ReportMasters" ActivityCode="BranchDataStatus" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-067" title="Branch Recent Export Details" ModuleCode="ReportMasters" ActivityCode="Branch Export Voucher" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-053" title="Details of all Institution (Subsidy/Contribution)" ModuleCode="ReportMasters" ActivityCode="HeadOfficeLedgers" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-054" title="Foreign Institution Details (Subsidy/Contribution)" ModuleCode="ReportMasters" ActivityCode="ForeignInstitutionDetails" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-055" title="Categorywise Institution Details (Subsidy/Contribution)" ModuleCode="ReportMasters" ActivityCode="CategoryWiseInstitutionDetails" />
+      </siteMapNode>
+
+      <siteMapNode title="Abstract" ModuleCode="ReportAbstract" ActivityCode="MonthlyAbstract" >
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-001" title="Monthly - Receipts" ModuleCode="ReportAbstract" ActivityCode="MonthlyReceipt" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-002" title="Monthly - Payments" ModuleCode="ReportAbstract" ActivityCode="MonthlyPayment" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-003" title="Monthly - Receipts and Payments" ModuleCode="ReportAbstract" ActivityCode="MonthlyReceiptPayment" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-004" title="Multi - Receipts" ModuleCode="ReportAbstract" ActivityCode="MultiabstractReceipt" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-005" title="Multi - Payments" ModuleCode="ReportAbstract" ActivityCode="MultiabstractPayment" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-006" title="Multi - Receipts and Payments" ModuleCode="ReportAbstract" ActivityCode="MultiabstractPaymentReceipt" />
+
+      </siteMapNode>
+
+      <siteMapNode title="Bank Activities" ModuleCode="ReportBankActivities" ActivityCode="BankBalanceStatement" >
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-014" title="Bank Balance Statement" ModuleCode="ReportBankActivities" ActivityCode="BankBalanceStatement" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-015" title="Fixed Deposit Statement" ModuleCode="ReportBankActivities" ActivityCode="FixedDepositStatement" />
+        <!--<siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-047" title="Fixed Deposit Register" ModuleCode="ReportBankActivities" ActivityCode="FixedDepositRegister" />-->
+      </siteMapNode>
+
+      <siteMapNode title="Books of Accounts" ModuleCode="ReportBookofAccounts" ActivityCode="CashandBankBook" >
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-016" title="Cash Journal" ModuleCode="ReportBookofAccounts" ActivityCode="CashJournal" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-017" title="Bank Journal" ModuleCode="ReportBookofAccounts" ActivityCode="BankJournal" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-011" title="Cash and Bank Book" ModuleCode="ReportBookofAccounts" ActivityCode="CashandBankBook" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-012" title="Ledger" ModuleCode="ReportBookofAccounts" ActivityCode="Ledger" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-018" title="Cash Daily Balance" ModuleCode="ReportBookofAccounts" ActivityCode="CashDailyBalance" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-019" title="Bank Daily Balance" ModuleCode="ReportBookofAccounts" ActivityCode="BankDailyBalance" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-066" title="Financial Position" ModuleCode="ReportBookofAccounts" ActivityCode="FinancialPosition" />
+      </siteMapNode>
+
+      <siteMapNode title="Final Accounts" ModuleCode="ReportFinalAccounts" ActivityCode="AccountsTrialBalance" >
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-030" title="Trial Balance" ModuleCode="ReportFinalAccounts" ActivityCode="AccountsTrialBalance" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-027" title="Receipts and Payments" ModuleCode="ReportFinalAccounts" ActivityCode="ACCOUNTSRECEIPTSANDPAYMENTS" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-183" title="Receipts and Payments" ModuleCode="ReportFinalAccounts" ActivityCode="SAPACCOUNTSRECEIPTSANDPAYMENTS" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-028" title="Income and Expenditure" ModuleCode="ReportFinalAccounts" ActivityCode="AccountsIncomeandExpenditure" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-031" title="Balance Sheet" ModuleCode="ReportFinalAccounts" ActivityCode="ACCOUNTSBALANCESHEET" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-184" title="Balance Sheet" ModuleCode="ReportFinalAccounts" ActivityCode="SAPACCOUNTSBALANCESHEET" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-182" title="Profit and Loss Branch-wise " ModuleCode="ReportFinalAccounts" ActivityCode="AccountsPL" />
+      </siteMapNode>
+
+      <siteMapNode title="Branch Analysis" ModuleCode="ReportFinalAccounts" ActivityCode="AccountsTrialBalance">
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-050" title="Branch-Wise Income and Expense (Month-Wise)" ModuleCode="ReportFinalAccounts" ActivityCode="CommunityIncomeExpenseMonthWise" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-188" title="Branch-Wise Income and Expense (Year-Wise)" ModuleCode="ReportFinalAccounts" ActivityCode="CommunityIncomeExpenseYearWise" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-189" title="Branch Location-Wise Income and Expense (Year-Wise)" ModuleCode="ReportFinalAccounts" ActivityCode="CommunityLocationIncomeExpenseYearWise" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-051" title="Branch and Category-Wise Ledger" ModuleCode="ReportFinalAccounts" ActivityCode="CollectiveLedgerReport" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-187" title="Branch-Wise Fixed Asset Investments (Year-Wise)" ModuleCode="ReportFinalAccounts" ActivityCode="BranchWiseInvestments" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-058" title="Branch-Wise Monthly Ledger Summary" ModuleCode="ReportFinalAccounts" ActivityCode="MonthWiseLedgerReport" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-185" title="Branch-Wise Cash Transactions" ModuleCode="ReportFinalAccounts" ActivityCode="BranchProjectLedgertransReport" />
+      </siteMapNode>
+
+      <siteMapNode title="Foreign Contribution" ModuleCode="ReportForeignContribution" ActivityCode="FCPurpose" >
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-020" title="FC Purpose" ModuleCode="ReportForeignContribution" ActivityCode="FCPurpose" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-021" title="FC Purpose Donor Institutional" ModuleCode="ReportForeignContribution" ActivityCode="FCPurposeDonorInstitutional" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-022" title="FC Purpose Donor Individual" ModuleCode="ReportForeignContribution" ActivityCode="FCPurposeDonorIndividual" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-042" title="FC Country" ModuleCode="ReportForeignContribution" ActivityCode="FCCountry" />
+        <!--<siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-023" title="Governing Members" ModuleCode="ReportForeignContribution" ActivityCode="GoverningMembers" />-->
+        <!--<siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-043" title="FC6" ModuleCode="ReportForeignContribution" ActivityCode="FC6" />-->
+      </siteMapNode>
+
+      <siteMapNode title="Budget" ModuleCode="FinalBudgetData" ActivityCode="BudgetDetails" >
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-048" title="Budget Details" ModuleCode="FinalBudgetData" ActivityCode="BudgetDetails" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-046" title="Budget Variance" ModuleCode="FinalBudgetData" ActivityCode="BudgetVariance" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-169" title="Budget Approved" ModuleCode="FinalBudgetData" ActivityCode="BudgetApprovedExpenditure" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-171" title="Mysore Budget" ModuleCode="FinalBudgetData" ActivityCode="BudgetApprovalByMonth" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-180" title="Budget Proposed and Approved Details" ModuleCode="FinalBudgetData" ActivityCode="BudgetView" />
+      </siteMapNode>
+
+      <!--<siteMapNode title="Cost Centre" ModuleCode="ReportCostCentre" ActivityCode="CostCenterMonthlyReceipt" >
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-032" title="Monthly - Receipts" ModuleCode="ReportCostCentre" ActivityCode="CostCenterMonthlyReceipt" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-033" title="Monthly - Payments" ModuleCode="ReportCostCentre" ActivityCode="CostCenterMonthlyPayment" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-034" title="Monthly - Receipts and Payments" ModuleCode="ReportCostCentre" ActivityCode="CostCenterMonthlyReceiptandPayment" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-035" title="Multi - Receipts" ModuleCode="ReportCostCentre" ActivityCode="CostCenterMultiReceipt" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-036" title="Multi - Payments" ModuleCode="ReportCostCentre" ActivityCode="CostCenterMultiPayment" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-037" title="Multi - Receipts and Payments" ModuleCode="ReportCostCentre" ActivityCode="CostCenterMultiReceiptPayment" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-038" title="Cash Journal" ModuleCode="ReportCostCentre" ActivityCode="CostCenterCashJournal" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-039" title="Bank Journal" ModuleCode="ReportCostCentre" ActivityCode="CostCenterBankJournal" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-040" title="Cash and Bank Book" ModuleCode="ReportCostCentre" ActivityCode="CostCenterCashandBankBook" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-041" title="Receipts and Payments" ModuleCode="ReportCostCentre" ActivityCode="CostCenterMultiReceiptsPayments" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-056" title="Cost Centre Summary" ModuleCode="ReportCostCentre" ActivityCode="CostCenterMultiReceiptsPayments" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-057" title="Ledger" ModuleCode="ReportCostCentre" ActivityCode="CostCenterLedger" />
+      </siteMapNode> -->
+
+      <!--<siteMapNode title="Generalate Reports" ModuleCode="REPORTGENERALATE" ActivityCode="REPORTGENERALATE">
+        <siteMapNode title="Rendiconto Report" ModuleCode="Rendiconto" ActivityCode="Rendiconto">
+          <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-062" title="Profit and Loss - Summary" ModuleCode="REPORTGENERALATE" ActivityCode="LegalEntitywiseConsolidatedIE" />
+          <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-063" title="Profit and Loss - Detailed" ModuleCode="REPORTGENERALATE" ActivityCode="LegalEntitywiseIE" />
+          <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-065" title="Balance Sheet" ModuleCode="REPORTGENERALATE" ActivityCode="BalanceSheetGeneralate" />
+        </siteMapNode>
+        <siteMapNode title="Rendiconto Report(Verification)" ModuleCode="ReportGeneralateVerification" ActivityCode="ReportGeneralateVerification">
+          <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-079" title="Receipts and Payments" ModuleCode="ReportGeneralate" ActivityCode="ReportGeneralateRP" />
+         
+ <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-068" title="Profit and Loss - Summary" ModuleCode="ReportGeneralateInterAccVerification" ActivityCode="ReportGeneralateInterAccVerification" />
+
+          <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-078" title="Profit and Loss - Detailed" ModuleCode="ReportGeneralatePLVerification" ActivityCode="ReportGeneralatePLVerification" />
+          <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-077" title="Balance Sheet" ModuleCode="ReportGeneralateBalanceSheetVerification" ActivityCode="ReportGeneralateBalanceSheetVerification" />
+        </siteMapNode>-->
+
+      <siteMapNode title="Generalate Reports" ModuleCode="REPORTGENERALATE" ActivityCode="REPORTGENERALATE">
+        <siteMapNode title="Rendiconto Report" ModuleCode="Rendiconto" ActivityCode="REPORTGENERALATE1">
+          <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-062" title="Profit and Loss - Summary" ModuleCode="REPORTGENERALATE" ActivityCode="LegalEntitywiseConsolidatedIE" />
+          <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-063" title="Profit and Loss - Detailed" ModuleCode="REPORTGENERALATE" ActivityCode="LegalEntitywiseIE" />
+          <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-065" title="Balance Sheet" ModuleCode="REPORTGENERALATE" ActivityCode="BalanceSheetGeneralate" />
+        </siteMapNode>
+        <siteMapNode title="Rendiconto Report(Verification)" ModuleCode="REPORTGENERALATE" ActivityCode="REPORTGENERALATE2">
+          <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-079" title="Receipts and Payments" ModuleCode="REPORTGENERALATE" ActivityCode="ReportGeneralateRP" />
+          <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-068" title="Profit and Loss - Summary" ModuleCode="REPORTGENERALATE" ActivityCode="ReportGeneralateInterAccVerification" />
+          <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-078" title="Profit and Loss - Detailed" ModuleCode="REPORTGENERALATE" ActivityCode="ReportGeneralatePLVerification" />
+          <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-190" title="Profit and Loss - Branch Summary" ModuleCode="REPORTGENERALATE" ActivityCode="ReportGeneralateInterAccVerificationByBranch" />
+          <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-077" title="Balance Sheet" ModuleCode="REPORTGENERALATE" ActivityCode="ReportGeneralateBalanceSheetVerification" />
+        </siteMapNode>
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-178" title="Generalate Ledger Balance" ModuleCode="GeneralateLedgerBalance" ActivityCode="GeneralateLedgerBalance">
+        </siteMapNode>
+        <siteMapNode url="~/module/Software/acmeerp_branch_reports.aspx?typeid=1" title="Community Reports" ModuleCode="CommunityGeneralateReport" ActivityCode="CommunityGeneralateReport" />
+
+        <!--<siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-170" title="Management - Activity" ModuleCode="ReportGeneralate" ActivityCode="ActivityBasedIncomeandExpenditure" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-171" title="Movement - Activity" ModuleCode="ReportGeneralate" ActivityCode="ActivityBasedIncomeandExpenditureFA" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-174" title="Patrimonial" ModuleCode="ReportGeneralate" ActivityCode="ActivityBasedPatrimonial" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-175" title="Reconciliazione" ModuleCode="ReportGeneralate" ActivityCode="ActivityBasedReconciliazione" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-176" title="Commercial" ModuleCode="ReportGeneralate" ActivityCode="ActivityBasedCommercial" />-->
+        <!-- <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-170" title="Annual Report" ModuleCode="ReportGeneralate" ActivityCode="ActivityBasedFDCCSIAnnualReport" />-->
+        <!-- <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-172" title="Generalate ledgers (Map\Unmap)" ModuleCode="ReportGeneralate" ActivityCode="MapUnmapLedgers" />-->
+        <!--<siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-064" title="Foundation'wise Profit and Loss" ModuleCode="ReportGeneralate" ActivityCode="FoundationwiseProfitandLoss" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-065" title="BalanceSheet" ModuleCode="ReportGeneralate" ActivityCode="BalanceSheet" />-->
+      </siteMapNode>
+      <siteMapNode title="Annual Reports" ModuleCode="GeneralateAnnualReports" ActivityCode="GeneralateAnnualReports">
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-170" title="Annual Report - Community" ModuleCode="GeneralateAnnualReports" ActivityCode="ActivityBasedFDCCSICommunityAnnualReport" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-179" title="Annual Report - Apostolic Activities" ModuleCode="GeneralateAnnualReports" ActivityCode="ActivityBasedFDCCSIApostolicAnnualReport" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-175" title="Budget - Community" ModuleCode="GeneralateAnnualReports" ActivityCode="GeneralateAnnualReportsApostolicBudget" />
+        <siteMapNode url="~/Report/ReportCriteriaPortal.aspx?rid=RPT-176" title="Budget - Apostolic Activities" ModuleCode="GeneralateAnnualReports" ActivityCode="GeneralateAnnualReportsCommunityBudget" />
+      </siteMapNode>
+    </siteMapNode>
+
+
+    <siteMapNode title="Tools" ModuleCode="Tools" ActivityCode="SoftwareDownload">
+      <siteMapNode url="~/module/Software/EnduserDownload.aspx" title="Download Product" ModuleCode="Tools" ActivityCode="SoftwareDownload" />
+      <siteMapNode url="~/module/Software/DownloadKey.aspx" title="Download Key" ModuleCode="Tools" ActivityCode="DownloadLicenseKey" />
+      <siteMapNode url="~/module/Software/DownloadMasters.aspx" title="Download Master" ModuleCode="Tools" ActivityCode="DownloadMasterData" />
+      <siteMapNode url="~/module/Software/DownloadTemplates.aspx" title="Download Template" ModuleCode="Tools" ActivityCode="DownloadTemplate" />
+      <siteMapNode url="~/module/office/UploadBranchVouchers.aspx" title="Upload Voucher (Off-line) and Status" ModuleCode="Tools" ActivityCode="UploadVoucherFile" />
+      <siteMapNode url="~/module/office/ViewMessage.aspx" title="Message" ModuleCode="Tools" ActivityCode="SendMessage" />
+      <siteMapNode url="~/module/Software/acmeerp_Backup.aspx" title="Acme.erp Backup" ModuleCode="Tools" ActivityCode="acmeerpBackup" />
+      <siteMapNode url="~/module/Software/acmeerp_Backup2015.aspx" title="Acme.erp Backup 2015-23" ModuleCode="Tools" ActivityCode="ACMEERPBACKUPOLD" />
+      <siteMapNode url="~/module/Software/acmeerp_Backup_MSACCESS.aspx" title="Acme.erp Backup-Ms Access" ModuleCode="Tools" ActivityCode="ACMEERPBACKUPMS" />
+      <siteMapNode url="~/module/Software/acmeerp_branch_reports.aspx" title="Acme.erp Branch Reports" ModuleCode="Tools" ActivityCode="acmeerpbranchreports" />
+      <siteMapNode url="~/module/Software/Voucher_Lock.aspx" title="Branch Grace Days (Locking)" ModuleCode="Tools" ActivityCode="VOUCHERLOCK" />
+      <siteMapNode url="~/module/office/Branch_Logged_History.aspx" title="Branch Logged History" ModuleCode="Tools" ActivityCode="BranchLoggedHistory" />
+      <siteMapNode url="~/module/office/Branch_Location_Logged_History.aspx" title="Branch Location Logged History" ModuleCode="Tools" ActivityCode="BranchLocationLoggedHistory" />
+      <siteMapNode url="~/module/office/ImportMasters.aspx" title="Import Masters" ModuleCode="Tools" ActivityCode="ImportMasterData" />
+      <siteMapNode url="~/module/office/ImportBranches.aspx" title="Import Branches" ModuleCode="Tools" ActivityCode="ImportBranches" />
+      <siteMapNode url="~/module/master/CountryView.aspx" title="Country" ModuleCode="Data" ActivityCode="CountryView" />
+      <siteMapNode url="~/module/master/StateView.aspx" title="State" ModuleCode="Data" ActivityCode="StateView" />
+    </siteMapNode>
+
+    <siteMapNode  title="Ticketing" ModuleCode="TroubleTicket" ActivityCode="TicketView">
+      <siteMapNode url="~/module/TroubleTicket/TroubleTicketingView.aspx" title="Post Ticket" ModuleCode="TroubleTicket" ActivityCode="TrackTicket" />
+    </siteMapNode>
+
+    <siteMapNode  title="Help" ModuleCode="Help" ActivityCode="Help">
+      <siteMapNode url="~/module/manual/head_office/index.htm" title="User Manual" ModuleCode="Help" ActivityCode="UserManual"  target="_blank"/>
+    </siteMapNode>
+
+  </siteMapNode>
+
+</siteMap>

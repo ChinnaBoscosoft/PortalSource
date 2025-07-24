@@ -1,0 +1,16 @@
+D:\APP\PortalSource\Bosco.SQL\bin\Debug\Bosco.SQL.dll
+D:\APP\PortalSource\Bosco.SQL\bin\Debug\Bosco.SQL.pdb
+D:\APP\PortalSource\Bosco.SQL\bin\Debug\Bosco.DAO.dll
+D:\APP\PortalSource\Bosco.SQL\bin\Debug\Bosco.DAO.Schema.dll
+D:\APP\PortalSource\Bosco.SQL\bin\Debug\Bosco.HOSQL.dll
+D:\APP\PortalSource\Bosco.SQL\bin\Debug\Bosco.Utility.dll
+D:\APP\PortalSource\Bosco.SQL\bin\Debug\MySql.Data.dll
+D:\APP\PortalSource\Bosco.SQL\bin\Debug\SimpleEncrypt.dll
+D:\APP\PortalSource\Bosco.SQL\bin\Debug\Bosco.DAO.Schema.pdb
+D:\APP\PortalSource\Bosco.SQL\bin\Debug\Bosco.DAO.pdb
+D:\APP\PortalSource\Bosco.SQL\bin\Debug\Bosco.Utility.pdb
+D:\APP\PortalSource\Bosco.SQL\obj\Debug\Bosco.SQL.SQLAssemblyTypeSetting.resources
+D:\APP\PortalSource\Bosco.SQL\obj\Debug\Bosco.SQL.csproj.GenerateResource.Cache
+D:\APP\PortalSource\Bosco.SQL\obj\Debug\Bosco.SQL.dll
+D:\APP\PortalSource\Bosco.SQL\obj\Debug\Bosco.SQL.pdb
+D:\APP\PortalSource\Bosco.SQL\obj\Debug\Bosco.SQL.csprojResolveAssemblyReference.cache

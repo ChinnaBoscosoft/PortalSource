@@ -1,0 +1,714 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnNewResource1.Text" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="btnNewResource1.ToolTip" xml:space="preserve">
+    <value>Click here for new Legal Entity</value>
+  </data>
+  <data name="btnSaveUserResource1.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="btnSaveUserResource1.ToolTip" xml:space="preserve">
+    <value>Click here to save </value>
+  </data>
+  <data name="chkFoundationResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkFoundationResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlCountryResource1.ToolTip" xml:space="preserve">
+    <value>Select Country</value>
+  </data>
+  <data name="dteFCRIRegDateResource1.ButtonEditEllipsisImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteFCRIRegDateResource1.ButtonEditEllipsisImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteFCRIRegDateResource1.ButtonEditEllipsisImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteFCRIRegDateResource1.ButtonEditEllipsisImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteFCRIRegDateResource1.CalendarProperties.ClearButtonText" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="dteFCRIRegDateResource1.CalendarProperties.TodayButtonText" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="dteFCRIRegDateResource1.DisplayFormatString" xml:space="preserve">
+    <value>dd/MM/yyyy</value>
+  </data>
+  <data name="dteFCRIRegDateResource1.DropDownButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteFCRIRegDateResource1.DropDownButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteFCRIRegDateResource1.EditFormatString" xml:space="preserve">
+    <value>dd/MM/yyyy</value>
+  </data>
+  <data name="dteFCRIRegDateResource1.HelpText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteFCRIRegDateResource1.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteFCRIRegDateResource1.TimeSectionProperties.CancelButtonText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="dteFCRIRegDateResource1.TimeSectionProperties.OkButtonText" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="dteFCRIRegDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteFCRIRegDateResource1.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="dtePermissionDateResource1.ButtonEditEllipsisImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dtePermissionDateResource1.ButtonEditEllipsisImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dtePermissionDateResource1.ButtonEditEllipsisImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dtePermissionDateResource1.ButtonEditEllipsisImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dtePermissionDateResource1.CalendarProperties.ClearButtonText" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="dtePermissionDateResource1.CalendarProperties.TodayButtonText" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="dtePermissionDateResource1.DisplayFormatString" xml:space="preserve">
+    <value>dd/MM/yyyy</value>
+  </data>
+  <data name="dtePermissionDateResource1.DropDownButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dtePermissionDateResource1.DropDownButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dtePermissionDateResource1.EditFormatString" xml:space="preserve">
+    <value>dd/MM/yyyy</value>
+  </data>
+  <data name="dtePermissionDateResource1.HelpText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dtePermissionDateResource1.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dtePermissionDateResource1.TimeSectionProperties.CancelButtonText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="dtePermissionDateResource1.TimeSectionProperties.OkButtonText" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="dtePermissionDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dtePermissionDateResource1.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="dteRegisterDateResource1.ButtonEditEllipsisImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteRegisterDateResource1.ButtonEditEllipsisImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteRegisterDateResource1.ButtonEditEllipsisImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteRegisterDateResource1.ButtonEditEllipsisImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteRegisterDateResource1.CalendarProperties.ClearButtonText" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="dteRegisterDateResource1.CalendarProperties.TodayButtonText" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="dteRegisterDateResource1.DisplayFormatString" xml:space="preserve">
+    <value>dd/MM/yyyy</value>
+  </data>
+  <data name="dteRegisterDateResource1.DropDownButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteRegisterDateResource1.DropDownButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteRegisterDateResource1.EditFormatString" xml:space="preserve">
+    <value>dd/MM/yyyy</value>
+  </data>
+  <data name="dteRegisterDateResource1.HelpText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteRegisterDateResource1.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteRegisterDateResource1.TimeSectionProperties.CancelButtonText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="dteRegisterDateResource1.TimeSectionProperties.OkButtonText" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="dteRegisterDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteRegisterDateResource1.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="hlkCloseResource1.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="hlkCloseResource1.ToolTip" xml:space="preserve">
+    <value>Click here to close this page</value>
+  </data>
+  <data name="LegalEntityVsResource1.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LegalEntityVsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>Cultural</value>
+  </data>
+  <data name="ListItemResource1.Value" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ListItemResource10.Text" xml:space="preserve">
+    <value>Buddhist</value>
+  </data>
+  <data name="ListItemResource10.Value" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ListItemResource11.Text" xml:space="preserve">
+    <value>Others</value>
+  </data>
+  <data name="ListItemResource11.Value" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ListItemResource12.Text" xml:space="preserve">
+    <value>Others</value>
+  </data>
+  <data name="ListItemResource12.Value" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>Economic</value>
+  </data>
+  <data name="ListItemResource2.Value" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>Educational</value>
+  </data>
+  <data name="ListItemResource3.Value" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ListItemResource4.Text" xml:space="preserve">
+    <value>Religious</value>
+  </data>
+  <data name="ListItemResource4.Value" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ListItemResource5.Text" xml:space="preserve">
+    <value>Social</value>
+  </data>
+  <data name="ListItemResource5.Value" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ListItemResource6.Text" xml:space="preserve">
+    <value>Hindu</value>
+  </data>
+  <data name="ListItemResource6.Value" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ListItemResource7.Text" xml:space="preserve">
+    <value>Sikh</value>
+  </data>
+  <data name="ListItemResource7.Value" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ListItemResource8.Text" xml:space="preserve">
+    <value>Muslim</value>
+  </data>
+  <data name="ListItemResource8.Value" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ListItemResource9.Text" xml:space="preserve">
+    <value>Christian</value>
+  </data>
+  <data name="ListItemResource9.Value" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Literal10Resource1.Text" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="Literal11Resource1.Text" xml:space="preserve">
+    <value>E-Mail</value>
+  </data>
+  <data name="Literal11Resource2.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Literal12Resource1.Text" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="Literal13Resource1.Text" xml:space="preserve">
+    <value>Society/Reg.No *</value>
+  </data>
+  <data name="Literal14Resource1.Text" xml:space="preserve">
+    <value>Reg.Date</value>
+  </data>
+  <data name="Literal15Resource1.Text" xml:space="preserve">
+    <value>Prior Permission No</value>
+  </data>
+  <data name="Literal16Resource1.Text" xml:space="preserve">
+    <value>Prior Permission Date</value>
+  </data>
+  <data name="Literal17Resource1.Text" xml:space="preserve">
+    <value>12A No</value>
+  </data>
+  <data name="Literal18Resource1.Text" xml:space="preserve">
+    <value>PAN No</value>
+  </data>
+  <data name="Literal19Resource1.Text" xml:space="preserve">
+    <value>GIR No</value>
+  </data>
+  <data name="Literal1Resource1.Text" xml:space="preserve">
+    <value>Society Name *</value>
+  </data>
+  <data name="Literal20Resource1.Text" xml:space="preserve">
+    <value>TAN No</value>
+  </data>
+  <data name="Literal21Resource1.Text" xml:space="preserve">
+    <value>Association Nature *</value>
+  </data>
+  <data name="Literal22Resource1.Text" xml:space="preserve">
+    <value>Denomination</value>
+  </data>
+  <data name="Literal22Resource2.Text" xml:space="preserve">
+    <value>Denomination *</value>
+  </data>
+  <data name="Literal22Resource3.Text" xml:space="preserve">
+    <value>Denomination *</value>
+  </data>
+  <data name="Literal22Resource4.Text" xml:space="preserve">
+    <value>Principal Activity</value>
+  </data>
+  <data name="Literal2Resource1.Text" xml:space="preserve">
+    <value>Contact Person</value>
+  </data>
+  <data name="Literal3Resource1.Text" xml:space="preserve">
+    <value>Address </value>
+  </data>
+  <data name="Literal4Resource1.Text" xml:space="preserve">
+    <value>Institute Name *</value>
+  </data>
+  <data name="Literal4Resource2.Text" xml:space="preserve">
+    <value>Is Foundation?</value>
+  </data>
+  <data name="Literal5Resource1.Text" xml:space="preserve">
+    <value>Place</value>
+  </data>
+  <data name="Literal6Resource1.Text" xml:space="preserve">
+    <value>State/Province *</value>
+  </data>
+  <data name="Literal7Resource1.Text" xml:space="preserve">
+    <value>Country *</value>
+  </data>
+  <data name="Literal8Resource1.Text" xml:space="preserve">
+    <value>Pincode</value>
+  </data>
+  <data name="Literal9Resource1.Text" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="ltr80GNoResource1.Text" xml:space="preserve">
+    <value>80G.No</value>
+  </data>
+  <data name="ltrDenominationResource1.Text" xml:space="preserve">
+    <value>Denomination *</value>
+  </data>
+  <data name="ltrFCRINoResource1.Text" xml:space="preserve">
+    <value>FCRI No</value>
+  </data>
+  <data name="ltrFCRINoResource2.Text" xml:space="preserve">
+    <value>FCRA No</value>
+  </data>
+  <data name="ltrFCRIRegDateResource1.Text" xml:space="preserve">
+    <value>FCRI Reg Date</value>
+  </data>
+  <data name="ltrFCRIRegDateResource2.Text" xml:space="preserve">
+    <value>FCRA Reg Date</value>
+  </data>
+  <data name="ltrFCRIRegDateResource3.Text" xml:space="preserve">
+    <value>FCRA Reg.Date</value>
+  </data>
+  <data name="mevPanNoResource1.ErrorMessage" xml:space="preserve">
+    <value>mevPanNo</value>
+  </data>
+  <data name="mevPanNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="mevPanNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="mevTanNoResource1.ErrorMessage" xml:space="preserve">
+    <value>mevTanNo</value>
+  </data>
+  <data name="mevTanNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="mevTanNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnAssociationDetailsResource1.GroupingText" xml:space="preserve">
+    <value>Association Details</value>
+  </data>
+  <data name="pnAssociationDetailsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnAssociationDetailsResource2.GroupingText" xml:space="preserve">
+    <value>Association Details</value>
+  </data>
+  <data name="pnAssociationDetailsResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnAssociationNatureResource1.GroupingText" xml:space="preserve">
+    <value>Denomination Details</value>
+  </data>
+  <data name="pnAssociationNatureResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnDenominationResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnDenominationResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnLegalEntityResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnLegalEntityResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlSocietyResource1.GroupingText" xml:space="preserve">
+    <value>Society Info</value>
+  </data>
+  <data name="pnlSocietyResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdAssociationNatureResource1.ToolTip" xml:space="preserve">
+    <value>Select Association No</value>
+  </data>
+  <data name="rdAssociationNatureResource2.ToolTip" xml:space="preserve">
+    <value>Select Association No</value>
+  </data>
+  <data name="rdDenominationResource1.ToolTip" xml:space="preserve">
+    <value>Select Denomination</value>
+  </data>
+  <data name="reMailResource1.ErrorMessage" xml:space="preserve">
+    <value>Invalid Email</value>
+  </data>
+  <data name="reMailResource1.Text" xml:space="preserve">
+    <value>Invalid Email</value>
+  </data>
+  <data name="reMailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator3Resource1.ErrorMessage" xml:space="preserve">
+    <value>Society Name is required</value>
+  </data>
+  <data name="RequiredFieldValidator3Resource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="RequiredFieldValidator3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfNmResource1.ErrorMessage" xml:space="preserve">
+    <value>Institute Name is required</value>
+  </data>
+  <data name="rfNmResource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="rfNmResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txt80GNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txt80GNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressResource1.ToolTip" xml:space="preserve">
+    <value>Enter Address</value>
+  </data>
+  <data name="txtAoneTwoNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAoneTwoNoResource1.ToolTip" xml:space="preserve">
+    <value>Enter A12 No</value>
+  </data>
+  <data name="txtAssociationNatureOthersResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAssociationNatureOthersResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAssociationNatureResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAssociationNatureResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtContactPersonResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtContactPersonResource1.ToolTip" xml:space="preserve">
+    <value>Enter Contact Person</value>
+  </data>
+  <data name="txtCountryResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCountryResource1.ToolTip" xml:space="preserve">
+    <value>Enter Country</value>
+  </data>
+  <data name="txtDenominationOthersResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDenominationOthersResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDenominationResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDenominationResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailResource1.ToolTip" xml:space="preserve">
+    <value>Enter E-Mail Address</value>
+  </data>
+  <data name="txtFaxResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFaxResource1.ToolTip" xml:space="preserve">
+    <value>Enter Fax</value>
+  </data>
+  <data name="txtFCRINoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFCRINoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtGIRNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtGIRNoResource1.ToolTip" xml:space="preserve">
+    <value>Enter GIR No</value>
+  </data>
+  <data name="txtInstituteNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtInstituteNameResource1.ToolTip" xml:space="preserve">
+    <value>Enter Institute Name</value>
+  </data>
+  <data name="txtPanNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPanNoResource1.ToolTip" xml:space="preserve">
+    <value>Enter PAN No</value>
+  </data>
+  <data name="txtPermissionNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPermissionNoResource1.ToolTip" xml:space="preserve">
+    <value>Enter Permission No</value>
+  </data>
+  <data name="txtPhoneResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPhoneResource1.ToolTip" xml:space="preserve">
+    <value>Enter Phone No</value>
+  </data>
+  <data name="txtPinCodeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPinCodeResource1.ToolTip" xml:space="preserve">
+    <value>Enter Pincode</value>
+  </data>
+  <data name="txtPlaceResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPlaceResource1.ToolTip" xml:space="preserve">
+    <value>Enter Place</value>
+  </data>
+  <data name="txtPrincipalActivityResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPrincipalActivityResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtRegNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtRegNoResource1.ToolTip" xml:space="preserve">
+    <value>Enter Register No</value>
+  </data>
+  <data name="txtSocietyNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSocietyNameResource1.ToolTip" xml:space="preserve">
+    <value>Enter Society Name</value>
+  </data>
+  <data name="txtStateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStateResource1.ToolTip" xml:space="preserve">
+    <value>Enter State</value>
+  </data>
+  <data name="txtTanNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTanNoResource1.ToolTip" xml:space="preserve">
+    <value>Enter TAN No</value>
+  </data>
+  <data name="txtUrlResource1.Text" xml:space="preserve">
+    <value>http://</value>
+  </data>
+  <data name="txtUrlResource1.ToolTip" xml:space="preserve">
+    <value>Enter URL</value>
+  </data>
+</root>

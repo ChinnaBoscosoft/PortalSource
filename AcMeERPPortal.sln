@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcMeERP", "AcMeERP\AcMeERP.csproj", "{FA95BEAD-2709-4F07-ADF1-AB77D07F7279}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bosco.Utility", "Bosco.Utility\Bosco.Utility.csproj", "{4E519AC2-6104-4A87-AFAE-B4DC586201EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bosco.DAO", "Bosco.DAO\Bosco.DAO.csproj", "{74C2B1A6-AFC1-46E0-B164-E89836C8027E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bosco.DAO.Schema", "Bosco.DAO.Schema\Bosco.DAO.Schema.csproj", "{259CF580-C69A-4146-A20F-04F138D94874}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bosco.Model", "Bosco.Model\Bosco.Model.csproj", "{19174D3E-0259-4212-9BD8-479D08665238}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bosco.SQL", "Bosco.SQL\Bosco.SQL.csproj", "{97ECDD93-AA2B-4798-AF52-7FD5CFF96238}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bosco.Report", "Bosco.Report\Bosco.Report.csproj", "{59D90D5D-2D28-444D-BD5D-60150D78F449}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 8
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SccProjectUniqueName1 = AcMeERP\\AcMeERP.csproj
+		SccProjectName1 = \u0022$/APP-POR/Source/AcMeERPPortal/AcMeERP\u0022,\u0020LIDAAAAA
+		SccLocalPath1 = AcMeERP
+		CanCheckoutShared = false
+		SccProjectUniqueName2 = Bosco.DAO.Schema\\Bosco.DAO.Schema.csproj
+		SccProjectName2 = \u0022$/APP-POR/Source/AcMeERPPortal/Bosco.DAO.Schema\u0022,\u0020BNDAAAAA
+		SccLocalPath2 = Bosco.DAO.Schema
+		CanCheckoutShared = false
+		SccProjectUniqueName3 = Bosco.DAO\\Bosco.DAO.csproj
+		SccProjectName3 = \u0022$/APP-POR/Source/AcMeERPPortal/Bosco.DAO\u0022,\u0020RLDAAAAA
+		SccLocalPath3 = Bosco.DAO
+		CanCheckoutShared = false
+		SccProjectUniqueName4 = Bosco.Model\\Bosco.Model.csproj
+		SccProjectName4 = \u0022$/APP-POR/Source/AcMeERPPortal/Bosco.Model\u0022,\u0020DODAAAAA
+		SccLocalPath4 = Bosco.Model
+		CanCheckoutShared = false
+		SccProjectUniqueName5 = Bosco.SQL\\Bosco.SQL.csproj
+		SccProjectName5 = \u0022$/APP-POR/Source/AcMeERPPortal/Bosco.SQL\u0022,\u0020AAEAAAAA
+		SccLocalPath5 = Bosco.SQL
+		CanCheckoutShared = false
+		SccProjectUniqueName6 = Bosco.Utility\\Bosco.Utility.csproj
+		SccProjectName6 = \u0022$/APP-POR/Source/AcMeERPPortal/Bosco.Utility\u0022,\u0020TBEAAAAA
+		SccLocalPath6 = Bosco.Utility
+		CanCheckoutShared = false
+		SccProjectUniqueName7 = Bosco.Report\\Bosco.Report.csproj
+		SccProjectName7 = \u0022$/APP-POR/Source/AcMeERPPortal/Bosco.Report\u0022,\u0020IOGAAAAA
+		SccLocalPath7 = Bosco.Report
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA95BEAD-2709-4F07-ADF1-AB77D07F7279}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA95BEAD-2709-4F07-ADF1-AB77D07F7279}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA95BEAD-2709-4F07-ADF1-AB77D07F7279}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA95BEAD-2709-4F07-ADF1-AB77D07F7279}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E519AC2-6104-4A87-AFAE-B4DC586201EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E519AC2-6104-4A87-AFAE-B4DC586201EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E519AC2-6104-4A87-AFAE-B4DC586201EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E519AC2-6104-4A87-AFAE-B4DC586201EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74C2B1A6-AFC1-46E0-B164-E89836C8027E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74C2B1A6-AFC1-46E0-B164-E89836C8027E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74C2B1A6-AFC1-46E0-B164-E89836C8027E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74C2B1A6-AFC1-46E0-B164-E89836C8027E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{259CF580-C69A-4146-A20F-04F138D94874}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{259CF580-C69A-4146-A20F-04F138D94874}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{259CF580-C69A-4146-A20F-04F138D94874}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{259CF580-C69A-4146-A20F-04F138D94874}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19174D3E-0259-4212-9BD8-479D08665238}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19174D3E-0259-4212-9BD8-479D08665238}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19174D3E-0259-4212-9BD8-479D08665238}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19174D3E-0259-4212-9BD8-479D08665238}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97ECDD93-AA2B-4798-AF52-7FD5CFF96238}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97ECDD93-AA2B-4798-AF52-7FD5CFF96238}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97ECDD93-AA2B-4798-AF52-7FD5CFF96238}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97ECDD93-AA2B-4798-AF52-7FD5CFF96238}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59D90D5D-2D28-444D-BD5D-60150D78F449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59D90D5D-2D28-444D-BD5D-60150D78F449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59D90D5D-2D28-444D-BD5D-60150D78F449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59D90D5D-2D28-444D-BD5D-60150D78F449}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

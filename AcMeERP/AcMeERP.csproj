@@ -1,0 +1,2468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FA95BEAD-2709-4F07-ADF1-AB77D07F7279}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AcMeERP</RootNamespace>
+    <AssemblyName>AcMeERP</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="AcMEDSync, Version=6.22.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\AcMEDSync.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.1213, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin, Version=4.97.4951.28478, Culture=neutral, PublicKeyToken=21ef50ce11b5d80f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="Bosco.HOSQL, Version=6.11.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\Bosco.HOSQL.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v13.2.Core, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v13.2.Web, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\webapi\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\..\..\..\New folder\zip-v1.9\Debug\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\webapi\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleEncrypt, Version=1.0.3048.24602, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\SimpleEncrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Services" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Extensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\webapi\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\webapi\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\webapi\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\webapi\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\webapi\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\webapi\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\webapi\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\webapi\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.aspx" />
+    <Content Include="acme.erp Portal Deployment Procedure.txt" />
+    <Content Include="AppFile\AcMEERP_Log\MobileServiceLog.txt" />
+    <Content Include="AppFile\AcMEERP_Log\PortalLog.txt" />
+    <Content Include="AppFile\licensekey.xml" />
+    <Content Include="AppFile\master.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Themes\MainTheme\images\Acmeservice.png" />
+    <Content Include="App_Themes\MainTheme\images\add16.png" />
+    <Content Include="App_Themes\MainTheme\images\Amendment .png" />
+    <Content Include="App_Themes\MainTheme\images\android-chrome-192x192.png" />
+    <Content Include="App_Themes\MainTheme\images\apple-touch-icon.png" />
+    <Content Include="App_Themes\MainTheme\images\Asset.png" />
+    <Content Include="App_Themes\MainTheme\images\back to top button.png" />
+    <Content Include="App_Themes\MainTheme\images\back to top button1.png" />
+    <Content Include="App_Themes\MainTheme\images\balance_bg.jpg" />
+    <Content Include="App_Themes\MainTheme\images\bank-icon.png" />
+    <Content Include="App_Themes\MainTheme\images\bg.jpg" />
+    <Content Include="App_Themes\MainTheme\images\Boscosoft.png" />
+    <Content Include="App_Themes\MainTheme\images\bulletarrow.gif" />
+    <Content Include="App_Themes\MainTheme\images\cancel.png" />
+    <Content Include="App_Themes\MainTheme\images\captcha-refresh.png" />
+    <Content Include="App_Themes\MainTheme\images\cash-icon.png" />
+    <Content Include="App_Themes\MainTheme\images\Chengelpet.png" />
+    <Content Include="App_Themes\MainTheme\images\Completed.png" />
+    <Content Include="App_Themes\MainTheme\images\contactus.jpg" />
+    <Content Include="App_Themes\MainTheme\images\data.png" />
+    <Content Include="App_Themes\MainTheme\images\Decrease.png" />
+    <Content Include="App_Themes\MainTheme\images\Delete1.png" />
+    <Content Include="App_Themes\MainTheme\images\download-icon.png" />
+    <Content Include="App_Themes\MainTheme\images\download.png" />
+    <Content Include="App_Themes\MainTheme\images\downloadbranchtemplate.png" />
+    <Content Include="App_Themes\MainTheme\images\downloadkey.png" />
+    <Content Include="App_Themes\MainTheme\images\downloadkeyGray.png" />
+    <Content Include="App_Themes\MainTheme\images\downloadpng.png" />
+    <Content Include="App_Themes\MainTheme\images\e-mail.png" />
+    <Content Include="App_Themes\MainTheme\images\edit-16.png" />
+    <Content Include="App_Themes\MainTheme\images\edit4.png" />
+    <Content Include="App_Themes\MainTheme\images\edit_add.png" />
+    <Content Include="App_Themes\MainTheme\images\error.png" />
+    <Content Include="App_Themes\MainTheme\images\excel.png" />
+    <Content Include="App_Themes\MainTheme\images\favicon-16x16.png" />
+    <Content Include="App_Themes\MainTheme\images\favicon-32x32.png" />
+    <Content Include="App_Themes\MainTheme\images\FD-icon.png" />
+    <Content Include="App_Themes\MainTheme\images\FIHM.png" />
+    <Content Include="App_Themes\MainTheme\images\file-refresh.png" />
+    <Content Include="App_Themes\MainTheme\images\FinacialAccounting.png" />
+    <Content Include="App_Themes\MainTheme\images\gmail1.png" />
+    <Content Include="App_Themes\MainTheme\images\go.png" />
+    <Content Include="App_Themes\MainTheme\images\header_bg.jpg" />
+    <Content Include="App_Themes\MainTheme\images\HolyCross.png" />
+    <Content Include="App_Themes\MainTheme\images\h_seperator.gif" />
+    <Content Include="App_Themes\MainTheme\images\gen_img_new.gif" />
+    <Content Include="App_Themes\MainTheme\images\icon.png" />
+    <Content Include="App_Themes\MainTheme\images\Icon_Available.png" />
+    <Content Include="App_Themes\MainTheme\images\JAC.png" />
+    <Content Include="App_Themes\MainTheme\images\legal.png" />
+    <Content Include="App_Themes\MainTheme\images\licenseGray.png" />
+    <Content Include="App_Themes\MainTheme\images\loading.gif" />
+    <Content Include="App_Themes\MainTheme\images\login_bottom.jpg" />
+    <Content Include="App_Themes\MainTheme\images\login_repeat.gif" />
+    <Content Include="App_Themes\MainTheme\images\login_top.jpg" />
+    <Content Include="App_Themes\MainTheme\images\logo.png" />
+    <Content Include="App_Themes\MainTheme\images\logo_1.png" />
+    <Content Include="App_Themes\MainTheme\images\logo_bosco.png" />
+    <Content Include="App_Themes\MainTheme\images\Mananthawadi.PNG" />
+    <Content Include="App_Themes\MainTheme\images\menubg.jpg" />
+    <Content Include="App_Themes\MainTheme\images\minus.png" />
+    <Content Include="App_Themes\MainTheme\images\Montfort.png" />
+    <Content Include="App_Themes\MainTheme\images\mstile-144x144.png" />
+    <Content Include="App_Themes\MainTheme\images\mstile-150x150.png" />
+    <Content Include="App_Themes\MainTheme\images\mstile-310x150.png" />
+    <Content Include="App_Themes\MainTheme\images\mstile-310x310.png" />
+    <Content Include="App_Themes\MainTheme\images\mstile-70x70.png" />
+    <Content Include="App_Themes\MainTheme\images\notice.png" />
+    <Content Include="App_Themes\MainTheme\images\Payroll.png" />
+    <Content Include="App_Themes\MainTheme\images\plus.png" />
+    <Content Include="App_Themes\MainTheme\images\progress.png" />
+    <Content Include="App_Themes\MainTheme\images\question.png" />
+    <Content Include="App_Themes\MainTheme\images\Refreshrpt.png" />
+    <Content Include="App_Themes\MainTheme\images\Reopen.jpg" />
+    <Content Include="App_Themes\MainTheme\images\reply2.png" />
+    <Content Include="App_Themes\MainTheme\images\Report.png" />
+    <Content Include="App_Themes\MainTheme\images\reports.png" />
+    <Content Include="App_Themes\MainTheme\images\resend.png" />
+    <Content Include="App_Themes\MainTheme\images\resetpwd.png" />
+    <Content Include="App_Themes\MainTheme\images\safari-pinned-tab.svg" />
+    <Content Include="App_Themes\MainTheme\images\Salesians_logo.png" />
+    <Content Include="App_Themes\MainTheme\images\sav.png" />
+    <Content Include="App_Themes\MainTheme\images\SCCG.png" />
+    <Content Include="App_Themes\MainTheme\images\separator-separator.png" />
+    <Content Include="App_Themes\MainTheme\images\SHJ.png" />
+    <Content Include="App_Themes\MainTheme\images\SSAM.png" />
+    <Content Include="App_Themes\MainTheme\images\stock.png" />
+    <Content Include="App_Themes\MainTheme\images\tab_active.gif" />
+    <Content Include="App_Themes\MainTheme\images\tab_hover.gif" />
+    <Content Include="App_Themes\MainTheme\images\tab_Inactive.gif" />
+    <Content Include="App_Themes\MainTheme\images\tab_left_active.gif" />
+    <Content Include="App_Themes\MainTheme\images\tab_left_hover.gif" />
+    <Content Include="App_Themes\MainTheme\images\tab_left_inactive.gif" />
+    <Content Include="App_Themes\MainTheme\images\tab_right_active.gif" />
+    <Content Include="App_Themes\MainTheme\images\tab_right_hover.gif" />
+    <Content Include="App_Themes\MainTheme\images\tab_right_inactive.gif" />
+    <Content Include="App_Themes\MainTheme\images\title_bg.gif" />
+    <Content Include="App_Themes\MainTheme\images\UMI.png" />
+    <Content Include="App_Themes\MainTheme\images\uploadfile.jpg" />
+    <Content Include="App_Themes\MainTheme\images\Used_Codes.png" />
+    <Content Include="App_Themes\MainTheme\images\view.gif" />
+    <Content Include="App_Themes\MainTheme\images\Activate.gif" />
+    <Content Include="App_Themes\MainTheme\images\approve.png" />
+    <Content Include="App_Themes\MainTheme\images\bg-body-footer.png" />
+    <Content Include="App_Themes\MainTheme\images\bg-header.png" />
+    <Content Include="App_Themes\MainTheme\images\bg-sidebar-nav-selected.png" />
+    <Content Include="App_Themes\MainTheme\images\bg-sidebar-nav.gif" />
+    <Content Include="App_Themes\MainTheme\images\bg-sidebar-top.png" />
+    <Content Include="App_Themes\MainTheme\images\border2.gif" />
+    <Content Include="App_Themes\MainTheme\images\Calendar.png" />
+    <Content Include="App_Themes\MainTheme\images\delete.gif" />
+    <Content Include="App_Themes\MainTheme\images\close.png" />
+    <Content Include="App_Themes\MainTheme\images\datepicker.jpg" />
+    <Content Include="App_Themes\MainTheme\images\Deactivate.gif" />
+    <Content Include="App_Themes\MainTheme\images\DeleteDisable.png" />
+    <Content Include="App_Themes\MainTheme\images\edit.jpg" />
+    <Content Include="App_Themes\MainTheme\images\Edit.png" />
+    <Content Include="App_Themes\MainTheme\images\favicon.ico" />
+    <Content Include="App_Themes\MainTheme\images\folder.png" />
+    <Content Include="App_Themes\MainTheme\images\GridEdit.png" />
+    <Content Include="App_Themes\MainTheme\images\license.png" />
+    <Content Include="App_Themes\MainTheme\images\logo1.png" />
+    <Content Include="App_Themes\MainTheme\images\ok.jpg" />
+    <Content Include="App_Themes\MainTheme\images\PopupClose.png" />
+    <Content Include="App_Themes\MainTheme\images\printview.jpg" />
+    <Content Include="App_Themes\MainTheme\images\refresh.jpg" />
+    <Content Include="App_Themes\MainTheme\images\shadow.png" />
+    <Content Include="App_Themes\MainTheme\images\updatedb.png" />
+    <Content Include="App_Themes\MainTheme\PrintStyle.css" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\AjaxMin.dll" />
+    <Content Include="contactus.aspx" />
+    <Content Include="DataSyncService\DataSynchronizer.svc" />
+    <Content Include="Default.aspx" />
+    <Content Include="dlls\AcMEDSync.dll" />
+    <Content Include="dlls\AjaxControlToolkit.dll" />
+    <Content Include="dlls\AjaxMin.dll" />
+    <Content Include="dlls\Bosco.HOSQL.dll" />
+    <Content Include="dlls\DevExpress.Data.v13.2.dll" />
+    <Content Include="dlls\DevExpress.Printing.v13.2.Core.dll" />
+    <Content Include="dlls\DevExpress.Web.ASPxScheduler.v13.2.dll" />
+    <Content Include="dlls\DevExpress.Web.ASPxThemes.v13.2.dll" />
+    <Content Include="dlls\DevExpress.Web.ASPxTreeList.v13.2.dll" />
+    <Content Include="dlls\DevExpress.Web.v13.2.dll" />
+    <Content Include="dlls\DevExpress.XtraReports.v13.2.dll" />
+    <Content Include="dlls\DevExpress.XtraReports.v13.2.Web.dll" />
+    <Content Include="dlls\Ionic.Zip.dll" />
+    <Content Include="dlls\SimpleEncrypt.dll" />
+    <Content Include="dlls\webapi\EntityFramework.dll" />
+    <Content Include="dlls\webapi\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="dlls\webapi\Newtonsoft.Json.dll" />
+    <Content Include="dlls\webapi\System.Net.Http.dll" />
+    <Content Include="dlls\webapi\System.Net.Http.Formatting.dll" />
+    <Content Include="dlls\webapi\System.Net.Http.WebRequest.dll" />
+    <Content Include="dlls\webapi\System.Web.Helpers.dll" />
+    <Content Include="dlls\webapi\System.Web.Http.dll" />
+    <Content Include="dlls\webapi\System.Web.Http.WebHost.dll" />
+    <Content Include="dlls\webapi\System.Web.Mvc.dll" />
+    <Content Include="dlls\webapi\System.Web.Optimization.dll" />
+    <Content Include="dlls\webapi\System.Web.Providers.dll" />
+    <Content Include="dlls\webapi\System.Web.Razor.dll" />
+    <Content Include="dlls\webapi\System.Web.WebPages.Deployment.dll" />
+    <Content Include="dlls\webapi\System.Web.WebPages.dll" />
+    <Content Include="dlls\webapi\System.Web.WebPages.Razor.dll" />
+    <Content Include="ErrorPage.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="HomeDashboard.aspx" />
+    <Content Include="HomeLogin.aspx" />
+    <Content Include="Module\Inventory\Asset\AssetClassView.aspx" />
+    <Content Include="Module\Inventory\Asset\AssetItemAdd.aspx" />
+    <Content Include="Module\Inventory\Asset\AssetItemView.aspx" />
+    <Content Include="Module\Inventory\Asset\AssetUnitofMeasureAdd.aspx" />
+    <Content Include="Module\Inventory\Asset\AssetUnitofMeasureView.aspx" />
+    <Content Include="Module\Inventory\Asset\ImportAssetMasters.aspx" />
+    <Content Include="Module\Manual\Branch_office\acme_erp_licensce_downlaod.jpg" />
+    <Content Include="Module\Manual\Branch_office\activate.png" />
+    <Content Include="Module\Manual\Branch_office\Amendments_view.jpg" />
+    <Content Include="Module\Manual\Branch_office\amendment_notes_dialog.jpg" />
+    <Content Include="Module\Manual\Branch_office\amendment_notes_icon.jpg" />
+    <Content Include="Module\Manual\Branch_office\ammendments_view_branch_office.jpg" />
+    <Content Include="Module\Manual\Branch_office\Balancesheet.jpg" />
+    <Content Include="Module\Manual\Branch_office\balance_sheet_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\bank_balance_statement.jpg" />
+    <Content Include="Module\Manual\Branch_office\bank_balance_statement_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\bank_daily_balance_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\bank_daily_balance_report.jpg" />
+    <Content Include="Module\Manual\Branch_office\bank_journal_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\bank_journal_report.jpg" />
+    <Content Include="Module\Manual\Branch_office\branch_office_admin_home.jpg" />
+    <Content Include="Module\Manual\Branch_office\branch_office_login.png" />
+    <Content Include="Module\Manual\Branch_office\branch_office_view.jpg" />
+    <Content Include="Module\Manual\Branch_office\cash_and_bank_book.jpg" />
+    <Content Include="Module\Manual\Branch_office\cash_and_bank_book_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\cash_daily_balance_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\cash_daily_balance_report.jpg" />
+    <Content Include="Module\Manual\Branch_office\cash_journal_customize.jpg" />
+    <Content Include="Module\Manual\Branch_office\Cash_Journal_report.jpg" />
+    <Content Include="Module\Manual\Branch_office\CCCashJournal.jpg" />
+    <Content Include="Module\Manual\Branch_office\ccMultipayment.jpg" />
+    <Content Include="Module\Manual\Branch_office\Change_password.jpg" />
+    <Content Include="Module\Manual\Branch_office\collective_ledger_report.jpg" />
+    <Content Include="Module\Manual\Branch_office\collective_ledger_report_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\communitywise_income_and_expenses_report.jpg" />
+    <Content Include="Module\Manual\Branch_office\communitywise__income_and_expense_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\cost_cente_multi_abstract_receipt_and_payment_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\cost_centre_absbract_payment_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\cost_centre_abstract_multi_absrtact_receipt.jpg" />
+    <Content Include="Module\Manual\Branch_office\cost_centre_abstract_payment.jpg" />
+    <Content Include="Module\Manual\Branch_office\cost_centre_abstract_receipts.jpg" />
+    <Content Include="Module\Manual\Branch_office\cost_centre_abstract_receipts_and_payments_report.jpg" />
+    <Content Include="Module\Manual\Branch_office\cost_centre_abstract_receipts_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\cost_centre_abstract_receipt_and_payments_cutomise.jpg" />
+    <Content Include="Module\Manual\Branch_office\cost_centre_bank_journal_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\cost_centre_bank_journal_report.jpg" />
+    <Content Include="Module\Manual\Branch_office\cost_centre_cash_and_bank_book_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\cost_centre_cash_and_bank_book_report.jpg" />
+    <Content Include="Module\Manual\Branch_office\cost_centre_cash_journal_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\cost_centre_multi_abstract_payment_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\cost_centre_multi_abstract_receipt_and_payment_report.jpg" />
+    <Content Include="Module\Manual\Branch_office\cost_centre_multi_abstract_receipt_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\cost_centre_receipts_and_payments_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\cost_centre_receipts_and_payments_report.jpg" />
+    <Content Include="Module\Manual\Branch_office\cshdat_robohelp.htm" />
+    <Content Include="Module\Manual\Branch_office\cshdat_webhelp.htm" />
+    <Content Include="Module\Manual\Branch_office\customize_reports.jpg" />
+    <Content Include="Module\Manual\Branch_office\data_status_branch_office.jpg" />
+    <Content Include="Module\Manual\Branch_office\data_status_head_office.jpg" />
+    <Content Include="Module\Manual\Branch_office\deactivate.png" />
+    <Content Include="Module\Manual\Branch_office\default.css" />
+    <Content Include="Module\Manual\Branch_office\delete_user.png" />
+    <Content Include="Module\Manual\Branch_office\Download_key_head_office_admin.jpg" />
+    <Content Include="Module\Manual\Branch_office\download_masters_branch_office_user.jpg" />
+    <Content Include="Module\Manual\Branch_office\download_masters_head_office_user.jpg" />
+    <Content Include="Module\Manual\Branch_office\download_masters_icon.jpg" />
+    <Content Include="Module\Manual\Branch_office\drill_down_main_page.jpg" />
+    <Content Include="Module\Manual\Branch_office\edit_ticket.jpg" />
+    <Content Include="Module\Manual\Branch_office\edit_user.png" />
+    <Content Include="Module\Manual\Branch_office\ehlpdhtm.js" />
+    <Content Include="Module\Manual\Branch_office\excel_export.jpg" />
+    <Content Include="Module\Manual\Branch_office\export_file_type.jpg" />
+    <Content Include="Module\Manual\Branch_office\favicon.ico" />
+    <Content Include="Module\Manual\Branch_office\fc_country_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\fc_country_report.jpg" />
+    <Content Include="Module\Manual\Branch_office\FC_Individual.jpg" />
+    <Content Include="Module\Manual\Branch_office\FC_Insistutional.jpg" />
+    <Content Include="Module\Manual\Branch_office\fc_purpose_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\fc_purpose_donor_individual_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\fc_purpose_donor_institutional_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\fc_purpose_report.jpg" />
+    <Content Include="Module\Manual\Branch_office\FC_purpose_view.jpg" />
+    <Content Include="Module\Manual\Branch_office\fixed_deposit_register.jpg" />
+    <Content Include="Module\Manual\Branch_office\fixed_deposit_register_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\fixed_deposit_statement.jpg" />
+    <Content Include="Module\Manual\Branch_office\fixed_deposit_statement_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\Getting_Started\Common_Operations.htm" />
+    <Content Include="Module\Manual\Branch_office\Getting_Started\Introduction.htm" />
+    <Content Include="Module\Manual\Branch_office\Getting_Started\Login.htm" />
+    <Content Include="Module\Manual\Branch_office\grey_edit.jpg" />
+    <Content Include="Module\Manual\Branch_office\head_office_ledgers.jpg" />
+    <Content Include="Module\Manual\Branch_office\head_office_ledgers_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\home_copy.jpg" />
+    <Content Include="Module\Manual\Branch_office\income_and_expenditure_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\income_and_expenditure_report.jpg" />
+    <Content Include="Module\Manual\Branch_office\index.htm" />
+    <Content Include="Module\Manual\Branch_office\index_csh.htm" />
+    <Content Include="Module\Manual\Branch_office\index_rhc.htm" />
+    <Content Include="Module\Manual\Branch_office\ledger_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\ledger_group_view.jpg" />
+    <Content Include="Module\Manual\Branch_office\ledger_report.jpg" />
+    <Content Include="Module\Manual\Branch_office\ledger_view.jpg" />
+    <Content Include="Module\Manual\Branch_office\legal_entity_view.jpg" />
+    <Content Include="Module\Manual\Branch_office\mail.jpg" />
+    <Content Include="Module\Manual\Branch_office\Manage_Branch_Office\Branch_Office.htm" />
+    <Content Include="Module\Manual\Branch_office\Manage_Data\Masters\Accounting_Period.htm" />
+    <Content Include="Module\Manual\Branch_office\Manage_Data\Masters\Download_Masters.htm" />
+    <Content Include="Module\Manual\Branch_office\Manage_Data\Masters\Introduction.htm" />
+    <Content Include="Module\Manual\Branch_office\Manage_Data\Masters\Ledger.htm" />
+    <Content Include="Module\Manual\Branch_office\Manage_Data\Masters\Ledger_Group.htm" />
+    <Content Include="Module\Manual\Branch_office\Manage_Data\Masters\Legal_Entity.htm" />
+    <Content Include="Module\Manual\Branch_office\Manage_Data\Masters\Project.htm" />
+    <Content Include="Module\Manual\Branch_office\Manage_Data\Masters\Project_Category.htm" />
+    <Content Include="Module\Manual\Branch_office\Manage_Data\Masters\View_FC_Purpose.htm" />
+    <Content Include="Module\Manual\Branch_office\Manage_Data\Vouchers\Add_Amendment.htm" />
+    <Content Include="Module\Manual\Branch_office\Manage_Data\Vouchers\Introduction.htm" />
+    <Content Include="Module\Manual\Branch_office\Manage_Data\Vouchers\Upload_Voucher.htm" />
+    <Content Include="Module\Manual\Branch_office\Manage_Data\Vouchers\View_Amendment_Notes.htm" />
+    <Content Include="Module\Manual\Branch_office\Manage_Data\Vouchers\View_Vouchers.htm" />
+    <Content Include="Module\Manual\Branch_office\Manage_Product\Download_Key.htm" />
+    <Content Include="Module\Manual\Branch_office\Manage_Product\Download_Product.htm" />
+    <Content Include="Module\Manual\Branch_office\Manage_Trouble_Tickets\Edit_Trouble_Ticket.htm" />
+    <Content Include="Module\Manual\Branch_office\Manage_Trouble_Tickets\Post_Trouble_Ticket.htm" />
+    <Content Include="Module\Manual\Branch_office\Manage_Trouble_Tickets\Reply_for_a_Trouble_Ticket.htm" />
+    <Content Include="Module\Manual\Branch_office\Manage_Users\Activate_and_Deactivate_Users.htm" />
+    <Content Include="Module\Manual\Branch_office\Manage_Users\Add_User.htm" />
+    <Content Include="Module\Manual\Branch_office\Manage_Users\Add_User_Role.htm" />
+    <Content Include="Module\Manual\Branch_office\Manage_Users\Change_Password.htm" />
+    <Content Include="Module\Manual\Branch_office\Manage_Users\User_Rights.htm" />
+    <Content Include="Module\Manual\Branch_office\modify_ticket.jpg" />
+    <Content Include="Module\Manual\Branch_office\Monthly_abstract_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\monthly_abstract_payment.jpg" />
+    <Content Include="Module\Manual\Branch_office\monthly_abstract_payment_customize.jpg" />
+    <Content Include="Module\Manual\Branch_office\monthly_abstract_receips_and_payment_customize.jpg" />
+    <Content Include="Module\Manual\Branch_office\monthly_abstract_receipts.jpg" />
+    <Content Include="Module\Manual\Branch_office\monthly_abstract_receipts_and_payments.jpg" />
+    <Content Include="Module\Manual\Branch_office\Movie Rio - Jade².png" />
+    <Content Include="Module\Manual\Branch_office\muli_abstract_payment_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\multi_abstract_payment.jpg" />
+    <Content Include="Module\Manual\Branch_office\multi_abstract_receipts.jpg" />
+    <Content Include="Module\Manual\Branch_office\multi_abstract_receipts_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\multi_abstract_receipt_and_payments.jpg" />
+    <Content Include="Module\Manual\Branch_office\multi_abstract_receipt_and_payments_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\next_copy.jpg" />
+    <Content Include="Module\Manual\Branch_office\note.jpg" />
+    <Content Include="Module\Manual\Branch_office\post_ticket.jpg" />
+    <Content Include="Module\Manual\Branch_office\previous_copy.jpg" />
+    <Content Include="Module\Manual\Branch_office\Projects_available_in_branch_office.jpg" />
+    <Content Include="Module\Manual\Branch_office\projects_available_in_head_office.jpg" />
+    <Content Include="Module\Manual\Branch_office\project_category_view.jpg" />
+    <Content Include="Module\Manual\Branch_office\project_view.jpg" />
+    <Content Include="Module\Manual\Branch_office\receipts_and_payments.jpg" />
+    <Content Include="Module\Manual\Branch_office\receipts_and_payments_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\refresh.png" />
+    <Content Include="Module\Manual\Branch_office\reply_ticket.jpg" />
+    <Content Include="Module\Manual\Branch_office\reply_ticket_dialog.jpg" />
+    <Content Include="Module\Manual\Branch_office\Reports\Abstract\Customise_Abstract_Reports.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Abstract\Monthly-Payment.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Abstract\Monthly-Receipt.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Abstract\Monthly-Recepts_and_Payment.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Abstract\Multi-Payment.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Abstract\Multi-Receipt.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Abstract\Multi-Receipt_and_Payment.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Bank_Activities\Bank_Balance_Statement.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Bank_Activities\Customise_Bank_Activities_Reports.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Bank_Activities\Fixed_Deposit_Register.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Bank_Activities\Fixed_Deposit_Statement.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Books_of_Accounts\Bank_Daily_Balance.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Books_of_Accounts\Bank_Journal.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Books_of_Accounts\Cash_and_Bank_Book.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Books_of_Accounts\Cash_Daily_Balance.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Books_of_Accounts\Cash_Journal.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Books_of_Accounts\Customise_Book_of_Accounts_Reports.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Books_of_Accounts\Ledger.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Cost_Centre\Bank_Journal_.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Cost_Centre\Cash_and_Bank_Book.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Cost_Centre\Cash_Journal.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Cost_Centre\Customise_Cost_Centre.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Cost_Centre\Monthly-Payment.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Cost_Centre\Monthly-Receipt.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Cost_Centre\Monthly-Receipt_and_Payment.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Cost_Centre\Multi-Payment.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Cost_Centre\Multi-Receipt.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Cost_Centre\Multi-Receipt_and_Payment.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Cost_Centre\Receipt_and_Payments.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Final_Accounts\Balance_Sheet_.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Final_Accounts\Collective_Ledger_Report.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Final_Accounts\Communitywise_Income_and_Expense.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Final_Accounts\Customise_Final_Accounts_.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Final_Accounts\Income_and_Expenditure.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Final_Accounts\Receipts_and_Payments.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Final_Accounts\Trial_Balance.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Foreign_Contribution\Customise_Foreign_Contribution.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Foreign_Contribution\FC_Country.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Foreign_Contribution\FC_Purpose.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Foreign_Contribution\FC_Purpose_Donor_Individual.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Foreign_Contribution\FC_Purpose_Donor_Institutional.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Masters\Customise_Masters.htm" />
+    <Content Include="Module\Manual\Branch_office\Reports\Masters\Head_Office_Ledgers.htm" />
+    <Content Include="Module\Manual\Branch_office\reset_password.png" />
+    <Content Include="Module\Manual\Branch_office\resource\resource.xml" />
+    <Content Include="Module\Manual\Branch_office\save_export.jpg" />
+    <Content Include="Module\Manual\Branch_office\save_file.jpg" />
+    <Content Include="Module\Manual\Branch_office\SearchOptions.xml" />
+    <Content Include="Module\Manual\Branch_office\ss_btn_see_also.gif" />
+    <Content Include="Module\Manual\Branch_office\tips.jpg" />
+    <Content Include="Module\Manual\Branch_office\trial_balance.jpg" />
+    <Content Include="Module\Manual\Branch_office\trial_balance_customise.jpg" />
+    <Content Include="Module\Manual\Branch_office\TT_View.jpg" />
+    <Content Include="Module\Manual\Branch_office\upload_voucher_page.jpg" />
+    <Content Include="Module\Manual\Branch_office\User_add_portal.jpg" />
+    <Content Include="Module\Manual\Branch_office\user_rights_Branch_admin.jpg" />
+    <Content Include="Module\Manual\Branch_office\User_rights_head_office_admin.jpg" />
+    <Content Include="Module\Manual\Branch_office\user_rights_portal_admin.jpg" />
+    <Content Include="Module\Manual\Branch_office\User_role_add.jpg" />
+    <Content Include="Module\Manual\Branch_office\User_role_view.jpg" />
+    <Content Include="Module\Manual\Branch_office\user_view_branch_office.jpg" />
+    <Content Include="Module\Manual\Branch_office\user_view_head_office.jpg" />
+    <Content Include="Module\Manual\Branch_office\User_view_portal.jpg" />
+    <Content Include="Module\Manual\Branch_office\view.jpg" />
+    <Content Include="Module\Manual\Branch_office\View_Dashboard\View_Data_Status.htm" />
+    <Content Include="Module\Manual\Branch_office\View_Dashboard\View_Projects.htm" />
+    <Content Include="Module\Manual\Branch_office\vouchers_view.jpg" />
+    <Content Include="Module\Manual\Branch_office\vouchers_view_branch_office.jpg" />
+    <Content Include="Module\Manual\Branch_office\vouchers_view_head_office.jpg" />
+    <Content Include="Module\Manual\Branch_office\whbrs.xml" />
+    <Content Include="Module\Manual\Branch_office\whcshdata.htm" />
+    <Content Include="Module\Manual\Branch_office\whcsh_home.htm" />
+    <Content Include="Module\Manual\Branch_office\whdata\whgdata.js" />
+    <Content Include="Module\Manual\Branch_office\whdata\whgdata0.htm" />
+    <Content Include="Module\Manual\Branch_office\whdata\whglo.htm" />
+    <Content Include="Module\Manual\Branch_office\whdata\whglo.js" />
+    <Content Include="Module\Manual\Branch_office\whdata\whidata.js" />
+    <Content Include="Module\Manual\Branch_office\whdata\whidx.htm" />
+    <Content Include="Module\Manual\Branch_office\whdata\whidx.js" />
+    <Content Include="Module\Manual\Branch_office\whdata\whtdata.js" />
+    <Content Include="Module\Manual\Branch_office\whdata\whtdata0.htm" />
+    <Content Include="Module\Manual\Branch_office\whdata\whtoc.htm" />
+    <Content Include="Module\Manual\Branch_office\whdata\whtoc.js" />
+    <Content Include="Module\Manual\Branch_office\whestart.ico" />
+    <Content Include="Module\Manual\Branch_office\whfbody.htm" />
+    <Content Include="Module\Manual\Branch_office\whfdhtml.htm" />
+    <Content Include="Module\Manual\Branch_office\whfform.htm" />
+    <Content Include="Module\Manual\Branch_office\whfhost.js" />
+    <Content Include="Module\Manual\Branch_office\whform.js" />
+    <Content Include="Module\Manual\Branch_office\whframes.js" />
+    <Content Include="Module\Manual\Branch_office\whgbody.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whexpbar.gif" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstf0.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstf1.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstf2.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstf3.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstf4.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstf5.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstf6.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstf7.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstf8.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstf9.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstfl0.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstfl1.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstfl10.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstfl11.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstfl12.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstfl13.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstfl14.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstfl15.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstfl16.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstfl17.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstfl18.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstfl19.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstfl2.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstfl20.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstfl21.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstfl3.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstfl4.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstfl5.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstfl6.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstfl7.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstfl8.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstfl9.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstg0.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlsti0.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstt0.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstt1.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstt10.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstt11.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstt12.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstt13.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstt14.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstt15.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstt16.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstt17.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstt2.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstt3.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstt4.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstt5.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstt6.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstt7.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstt8.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whlstt9.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whnvf30.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whnvf31.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whnvf32.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whnvf33.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whnvl31.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whnvl32.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whnvl33.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whnvp30.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whnvp31.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whnvp32.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whnvp33.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whnvt30.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whnvt31.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whnvt32.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdata\whnvt33.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdef.htm" />
+    <Content Include="Module\Manual\Branch_office\whgdhtml.htm" />
+    <Content Include="Module\Manual\Branch_office\whghost.js" />
+    <Content Include="Module\Manual\Branch_office\whhost.js" />
+    <Content Include="Module\Manual\Branch_office\whibody.htm" />
+    <Content Include="Module\Manual\Branch_office\whidhtml.htm" />
+    <Content Include="Module\Manual\Branch_office\whiform.htm" />
+    <Content Include="Module\Manual\Branch_office\whihost.js" />
+    <Content Include="Module\Manual\Branch_office\whlang.js" />
+    <Content Include="Module\Manual\Branch_office\whmozemu.js" />
+    <Content Include="Module\Manual\Branch_office\whmsg.js" />
+    <Content Include="Module\Manual\Branch_office\whnjs.htm" />
+    <Content Include="Module\Manual\Branch_office\whphost.js" />
+    <Content Include="Module\Manual\Branch_office\whproj.htm" />
+    <Content Include="Module\Manual\Branch_office\whproj.js" />
+    <Content Include="Module\Manual\Branch_office\whproj.xml" />
+    <Content Include="Module\Manual\Branch_office\whproxy.js" />
+    <Content Include="Module\Manual\Branch_office\whres.xml" />
+    <Content Include="Module\Manual\Branch_office\whrstart.ico" />
+    <Content Include="Module\Manual\Branch_office\whskin_banner.htm" />
+    <Content Include="Module\Manual\Branch_office\whskin_blank.htm" />
+    <Content Include="Module\Manual\Branch_office\whskin_frmset01.htm" />
+    <Content Include="Module\Manual\Branch_office\whskin_frmset010.htm" />
+    <Content Include="Module\Manual\Branch_office\whskin_homepage.htm" />
+    <Content Include="Module\Manual\Branch_office\whskin_info.htm" />
+    <Content Include="Module\Manual\Branch_office\whskin_mbars.htm" />
+    <Content Include="Module\Manual\Branch_office\whskin_pdhtml.htm" />
+    <Content Include="Module\Manual\Branch_office\whskin_pickup.htm" />
+    <Content Include="Module\Manual\Branch_office\whskin_plist.htm" />
+    <Content Include="Module\Manual\Branch_office\whskin_tbars.htm" />
+    <Content Include="Module\Manual\Branch_office\whskin_tw.htm" />
+    <Content Include="Module\Manual\Branch_office\whstart.ico" />
+    <Content Include="Module\Manual\Branch_office\whstart.js" />
+    <Content Include="Module\Manual\Branch_office\whstub.js" />
+    <Content Include="Module\Manual\Branch_office\whst_topics.xml" />
+    <Content Include="Module\Manual\Branch_office\whtbar.js" />
+    <Content Include="Module\Manual\Branch_office\whtdhtml.htm" />
+    <Content Include="Module\Manual\Branch_office\whthost.js" />
+    <Content Include="Module\Manual\Branch_office\whtopic.js" />
+    <Content Include="Module\Manual\Branch_office\wht_abge.jpg" />
+    <Content Include="Module\Manual\Branch_office\wht_abgi.jpg" />
+    <Content Include="Module\Manual\Branch_office\wht_abgw.jpg" />
+    <Content Include="Module\Manual\Branch_office\wht_abte.jpg" />
+    <Content Include="Module\Manual\Branch_office\wht_abti.jpg" />
+    <Content Include="Module\Manual\Branch_office\wht_abtw.jpg" />
+    <Content Include="Module\Manual\Branch_office\wht_fts_h.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_fts_n.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_glo_h.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_glo_n.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_go.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_hide.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_idx_h.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_idx_n.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_logo1.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_logo2.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_next.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_next_g.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_prev.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_prev_g.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_spac.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_sync.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_tab0.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_tab1.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_tab2.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_tab3.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_tab4.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_tab5.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_tab6.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_tab7.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_tab8.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_toc1.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_toc2.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_toc3.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_toc4.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_toc_h.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_toc_n.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_ws.gif" />
+    <Content Include="Module\Manual\Branch_office\wht_ws_g.gif" />
+    <Content Include="Module\Manual\Branch_office\whutils.js" />
+    <Content Include="Module\Manual\Branch_office\whver.js" />
+    <Content Include="Module\Manual\Branch_office\whxdata\packageindex.xml" />
+    <Content Include="Module\Manual\Branch_office\whxdata\package_0.xml" />
+    <Content Include="Module\Manual\Branch_office\whxdata\package_1.xml" />
+    <Content Include="Module\Manual\Branch_office\whxdata\package_2.xml" />
+    <Content Include="Module\Manual\Branch_office\whxdata\package_3.xml" />
+    <Content Include="Module\Manual\Branch_office\whxdata\package_4.xml" />
+    <Content Include="Module\Manual\Branch_office\whxdata\package_5.xml" />
+    <Content Include="Module\Manual\Branch_office\whxdata\package_6.xml" />
+    <Content Include="Module\Manual\Branch_office\whxdata\synonym.xml" />
+    <Content Include="Module\Manual\Branch_office\whxdata\topictableindex.xml" />
+    <Content Include="Module\Manual\Branch_office\whxdata\topictable_0.xml" />
+    <Content Include="Module\Manual\Branch_office\whxdata\topictable_1.xml" />
+    <Content Include="Module\Manual\Branch_office\whxdata\whfts.xml" />
+    <Content Include="Module\Manual\Branch_office\whxdata\whgdata0.xml" />
+    <Content Include="Module\Manual\Branch_office\whxdata\whglo.xml" />
+    <Content Include="Module\Manual\Branch_office\whxdata\whidx.xml" />
+    <Content Include="Module\Manual\Branch_office\whxdata\whtdata0.xml" />
+    <Content Include="Module\Manual\Branch_office\whxdata\whtoc.xml" />
+    <Content Include="Module\Manual\Branch_office\xmlreadhelper.js" />
+    <Content Include="Module\Manual\Head_office\accounting_period_add.jpg" />
+    <Content Include="Module\Manual\Head_office\accounting_period_view.jpg" />
+    <Content Include="Module\Manual\Head_office\acme_erp_licensce_downlaod.jpg" />
+    <Content Include="Module\Manual\Head_office\activate.png" />
+    <Content Include="Module\Manual\Head_office\Amendments_view.jpg" />
+    <Content Include="Module\Manual\Head_office\amendment_notes_dialog.jpg" />
+    <Content Include="Module\Manual\Head_office\amendment_notes_icon.jpg" />
+    <Content Include="Module\Manual\Head_office\ammendments_view_branch_office.jpg" />
+    <Content Include="Module\Manual\Head_office\Balancesheet.jpg" />
+    <Content Include="Module\Manual\Head_office\balance_sheet_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\bank_balance_statement.jpg" />
+    <Content Include="Module\Manual\Head_office\bank_balance_statement_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\bank_daily_balance_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\bank_daily_balance_report.jpg" />
+    <Content Include="Module\Manual\Head_office\bank_journal_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\bank_journal_report.jpg" />
+    <Content Include="Module\Manual\Head_office\branch_office_view.jpg" />
+    <Content Include="Module\Manual\Head_office\cash_and_bank_book.jpg" />
+    <Content Include="Module\Manual\Head_office\cash_and_bank_book_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\cash_daily_balance_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\cash_daily_balance_report.jpg" />
+    <Content Include="Module\Manual\Head_office\cash_journal_customize.jpg" />
+    <Content Include="Module\Manual\Head_office\Cash_Journal_report.jpg" />
+    <Content Include="Module\Manual\Head_office\CCCashJournal.jpg" />
+    <Content Include="Module\Manual\Head_office\ccMultipayment.jpg" />
+    <Content Include="Module\Manual\Head_office\Change_password.jpg" />
+    <Content Include="Module\Manual\Head_office\collective_ledger_report.jpg" />
+    <Content Include="Module\Manual\Head_office\collective_ledger_report_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\communitywise_income_and_expenses_report.jpg" />
+    <Content Include="Module\Manual\Head_office\communitywise__income_and_expense_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\cost_cente_multi_abstract_receipt_and_payment_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\cost_centre_absbract_payment_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\cost_centre_abstract_multi_absrtact_receipt.jpg" />
+    <Content Include="Module\Manual\Head_office\cost_centre_abstract_payment.jpg" />
+    <Content Include="Module\Manual\Head_office\cost_centre_abstract_receipts.jpg" />
+    <Content Include="Module\Manual\Head_office\cost_centre_abstract_receipts_and_payments_report.jpg" />
+    <Content Include="Module\Manual\Head_office\cost_centre_abstract_receipts_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\cost_centre_abstract_receipt_and_payments_cutomise.jpg" />
+    <Content Include="Module\Manual\Head_office\cost_centre_bank_journal_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\cost_centre_bank_journal_report.jpg" />
+    <Content Include="Module\Manual\Head_office\cost_centre_cash_and_bank_book_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\cost_centre_cash_and_bank_book_report.jpg" />
+    <Content Include="Module\Manual\Head_office\cost_centre_cash_journal_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\cost_centre_multi_abstract_payment_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\cost_centre_multi_abstract_receipt_and_payment_report.jpg" />
+    <Content Include="Module\Manual\Head_office\cost_centre_multi_abstract_receipt_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\cost_centre_receipts_and_payments_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\cost_centre_receipts_and_payments_report.jpg" />
+    <Content Include="Module\Manual\Head_office\Create_branch_office.jpg" />
+    <Content Include="Module\Manual\Head_office\cshdat_robohelp.htm" />
+    <Content Include="Module\Manual\Head_office\cshdat_webhelp.htm" />
+    <Content Include="Module\Manual\Head_office\customize_reports.jpg" />
+    <Content Include="Module\Manual\Head_office\data_status_branch_office.jpg" />
+    <Content Include="Module\Manual\Head_office\data_status_head_office.jpg" />
+    <Content Include="Module\Manual\Head_office\deactivate.png" />
+    <Content Include="Module\Manual\Head_office\default.css" />
+    <Content Include="Module\Manual\Head_office\delete_user.png" />
+    <Content Include="Module\Manual\Head_office\downlaod_icon.jpg" />
+    <Content Include="Module\Manual\Head_office\Download_key_head_office_admin.jpg" />
+    <Content Include="Module\Manual\Head_office\download_masters_branch_office_user.jpg" />
+    <Content Include="Module\Manual\Head_office\download_masters_head_office_user.jpg" />
+    <Content Include="Module\Manual\Head_office\download_masters_icon.jpg" />
+    <Content Include="Module\Manual\Head_office\drill_down_main_page.jpg" />
+    <Content Include="Module\Manual\Head_office\edit_ticket.jpg" />
+    <Content Include="Module\Manual\Head_office\edit_user.png" />
+    <Content Include="Module\Manual\Head_office\ehlpdhtm.js" />
+    <Content Include="Module\Manual\Head_office\excel_export.jpg" />
+    <Content Include="Module\Manual\Head_office\export_file_type.jpg" />
+    <Content Include="Module\Manual\Head_office\favicon.ico" />
+    <Content Include="Module\Manual\Head_office\fc_country_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\fc_country_report.jpg" />
+    <Content Include="Module\Manual\Head_office\FC_Individual.jpg" />
+    <Content Include="Module\Manual\Head_office\FC_Insistutional.jpg" />
+    <Content Include="Module\Manual\Head_office\fc_purpose_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\fc_purpose_donor_individual_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\fc_purpose_donor_institutional_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\fc_purpose_report.jpg" />
+    <Content Include="Module\Manual\Head_office\FC_purpose_view.jpg" />
+    <Content Include="Module\Manual\Head_office\file_upload.jpg" />
+    <Content Include="Module\Manual\Head_office\fixed_deposit_register.jpg" />
+    <Content Include="Module\Manual\Head_office\fixed_deposit_register_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\fixed_deposit_statement.jpg" />
+    <Content Include="Module\Manual\Head_office\fixed_deposit_statement_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\Getting_Started\Common_Operations.htm" />
+    <Content Include="Module\Manual\Head_office\Getting_Started\Introduction.htm" />
+    <Content Include="Module\Manual\Head_office\Getting_Started\Login.htm" />
+    <Content Include="Module\Manual\Head_office\grey_edit.jpg" />
+    <Content Include="Module\Manual\Head_office\Head_offce_admin_home_page.jpg" />
+    <Content Include="Module\Manual\Head_office\Head_office_admin_login.jpg" />
+    <Content Include="Module\Manual\Head_office\head_office_ledgers.jpg" />
+    <Content Include="Module\Manual\Head_office\head_office_ledgers_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\home_copy.jpg" />
+    <Content Include="Module\Manual\Head_office\import_branches.jpg" />
+    <Content Include="Module\Manual\Head_office\import_masters.jpg" />
+    <Content Include="Module\Manual\Head_office\income_and_expenditure_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\income_and_expenditure_report.jpg" />
+    <Content Include="Module\Manual\Head_office\index.htm" />
+    <Content Include="Module\Manual\Head_office\index_csh.htm" />
+    <Content Include="Module\Manual\Head_office\index_rhc.htm" />
+    <Content Include="Module\Manual\Head_office\leagal_entity_add.jpg" />
+    <Content Include="Module\Manual\Head_office\ledger_add.jpg" />
+    <Content Include="Module\Manual\Head_office\ledger_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\ledger_group_add.jpg" />
+    <Content Include="Module\Manual\Head_office\ledger_group_view.jpg" />
+    <Content Include="Module\Manual\Head_office\ledger_mapping.jpg" />
+    <Content Include="Module\Manual\Head_office\ledger_report.jpg" />
+    <Content Include="Module\Manual\Head_office\ledger_view.jpg" />
+    <Content Include="Module\Manual\Head_office\legal_entity_view.jpg" />
+    <Content Include="Module\Manual\Head_office\mail.jpg" />
+    <Content Include="Module\Manual\Head_office\Manage_Branch_Office\Branch_Office.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Branch_Office\Import_Branch_Office_Details_from_Excel.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Data\Masters\Accounting_Period.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Data\Masters\Download_Masters.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Data\Masters\Import_Masters_from_Excel.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Data\Masters\Introduction.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Data\Masters\Ledger.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Data\Masters\Ledger_Group.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Data\Masters\Legal_Entity.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Data\Masters\Mapping\Mapping_Ledgers_to_Project_Category.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Data\Masters\Mapping\Mapping_Project_to_Branch_Office.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Data\Masters\Project.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Data\Masters\Project_Category.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Data\Masters\View_FC_Purpose.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Data\Vouchers\Add_Amendment.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Data\Vouchers\Introduction.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Data\Vouchers\Upload_Voucher.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Data\Vouchers\View_Amendment_Notes.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Data\Vouchers\View_Vouchers.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Product\Download_Key.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Product\Download_Product.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Trouble_Tickets\Edit_Trouble_Ticket.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Trouble_Tickets\Post_Trouble_Ticket.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Trouble_Tickets\Reply_for_a_Trouble_Ticket.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Users\Activate_and_Deactivate_Users.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Users\Add_User.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Users\Add_User_Role.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Users\Change_Password.htm" />
+    <Content Include="Module\Manual\Head_office\Manage_Users\User_Rights.htm" />
+    <Content Include="Module\Manual\Head_office\modify_ticket.jpg" />
+    <Content Include="Module\Manual\Head_office\Monthly_abstract_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\monthly_abstract_payment.jpg" />
+    <Content Include="Module\Manual\Head_office\monthly_abstract_payment_customize.jpg" />
+    <Content Include="Module\Manual\Head_office\monthly_abstract_receips_and_payment_customize.jpg" />
+    <Content Include="Module\Manual\Head_office\monthly_abstract_receipts.jpg" />
+    <Content Include="Module\Manual\Head_office\monthly_abstract_receipts_and_payments.jpg" />
+    <Content Include="Module\Manual\Head_office\muli_abstract_payment_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\multi_abstract_payment.jpg" />
+    <Content Include="Module\Manual\Head_office\multi_abstract_receipts.jpg" />
+    <Content Include="Module\Manual\Head_office\multi_abstract_receipts_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\multi_abstract_receipt_and_payments.jpg" />
+    <Content Include="Module\Manual\Head_office\multi_abstract_receipt_and_payments_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\next_copy.jpg" />
+    <Content Include="Module\Manual\Head_office\note.jpg" />
+    <Content Include="Module\Manual\Head_office\post_ticket.jpg" />
+    <Content Include="Module\Manual\Head_office\previous_copy.jpg" />
+    <Content Include="Module\Manual\Head_office\Projects_available_in_branch_office.jpg" />
+    <Content Include="Module\Manual\Head_office\projects_available_in_head_office.jpg" />
+    <Content Include="Module\Manual\Head_office\Project_add.jpg" />
+    <Content Include="Module\Manual\Head_office\project_category_add.jpg" />
+    <Content Include="Module\Manual\Head_office\project_category_view.jpg" />
+    <Content Include="Module\Manual\Head_office\project_mapping.jpg" />
+    <Content Include="Module\Manual\Head_office\project_view.jpg" />
+    <Content Include="Module\Manual\Head_office\receipts_and_payments.jpg" />
+    <Content Include="Module\Manual\Head_office\receipts_and_payments_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\refresh.png" />
+    <Content Include="Module\Manual\Head_office\reply_ticket.jpg" />
+    <Content Include="Module\Manual\Head_office\reply_ticket_dialog.jpg" />
+    <Content Include="Module\Manual\Head_office\Reports\Abstract\Customise_Abstract_Reports.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Abstract\Monthly-Payment.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Abstract\Monthly-Receipt.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Abstract\Monthly-Recepts_and_Payment.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Abstract\Multi-Payment.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Abstract\Multi-Receipt.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Abstract\Multi-Receipt_and_Payment.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Bank_Activities\Bank_Balance_Statement.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Bank_Activities\Customise_Bank_Activities_Reports.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Bank_Activities\Fixed_Deposit_Register.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Bank_Activities\Fixed_Deposit_Statement.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Books_of_Accounts\Bank_Daily_Balance.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Books_of_Accounts\Bank_Journal.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Books_of_Accounts\Cash_and_Bank_Book.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Books_of_Accounts\Cash_Daily_Balance.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Books_of_Accounts\Cash_Journal.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Books_of_Accounts\Customise_Book_of_Accounts_Reports.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Books_of_Accounts\Ledger.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Cost_Centre\Bank_Journal_.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Cost_Centre\Cash_and_Bank_Book.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Cost_Centre\Cash_Journal.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Cost_Centre\Customise_Cost_Centre.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Cost_Centre\Monthly-Payment.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Cost_Centre\Monthly-Receipt.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Cost_Centre\Monthly-Receipt_and_Payment.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Cost_Centre\Multi-Payment.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Cost_Centre\Multi-Receipt.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Cost_Centre\Multi-Receipt_and_Payment.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Cost_Centre\Receipt_and_Payments.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Final_Accounts\Balance_Sheet_.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Final_Accounts\Collective_Ledger_Report.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Final_Accounts\Communitywise_Income_and_Expense.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Final_Accounts\Customise_Final_Accounts_.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Final_Accounts\Income_and_Expenditure.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Final_Accounts\Receipts_and_Payments.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Final_Accounts\Trial_Balance.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Foreign_Contribution\Customise_Foreign_Contribution.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Foreign_Contribution\FC_Country.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Foreign_Contribution\FC_Purpose.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Foreign_Contribution\FC_Purpose_Donor_Individual.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Foreign_Contribution\FC_Purpose_Donor_Institutional.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Masters\Customise_Masters.htm" />
+    <Content Include="Module\Manual\Head_office\Reports\Masters\Head_Office_Ledgers.htm" />
+    <Content Include="Module\Manual\Head_office\reset_password.png" />
+    <Content Include="Module\Manual\Head_office\resource\resource.xml" />
+    <Content Include="Module\Manual\Head_office\save_export.jpg" />
+    <Content Include="Module\Manual\Head_office\save_file.jpg" />
+    <Content Include="Module\Manual\Head_office\SearchOptions.xml" />
+    <Content Include="Module\Manual\Head_office\ss_btn_see_also.gif" />
+    <Content Include="Module\Manual\Head_office\tips.jpg" />
+    <Content Include="Module\Manual\Head_office\trial_balance.jpg" />
+    <Content Include="Module\Manual\Head_office\trial_balance_customise.jpg" />
+    <Content Include="Module\Manual\Head_office\TT_View.jpg" />
+    <Content Include="Module\Manual\Head_office\upload_voucher_page.jpg" />
+    <Content Include="Module\Manual\Head_office\User_add_portal.jpg" />
+    <Content Include="Module\Manual\Head_office\user_rights_Branch_admin.jpg" />
+    <Content Include="Module\Manual\Head_office\User_rights_head_office_admin.jpg" />
+    <Content Include="Module\Manual\Head_office\user_rights_portal_admin.jpg" />
+    <Content Include="Module\Manual\Head_office\User_role_add.jpg" />
+    <Content Include="Module\Manual\Head_office\User_role_view.jpg" />
+    <Content Include="Module\Manual\Head_office\user_view_branch_office.jpg" />
+    <Content Include="Module\Manual\Head_office\user_view_head_office.jpg" />
+    <Content Include="Module\Manual\Head_office\User_view_portal.jpg" />
+    <Content Include="Module\Manual\Head_office\view.jpg" />
+    <Content Include="Module\Manual\Head_office\view_branch_office.jpg" />
+    <Content Include="Module\Manual\Head_office\View_Dashboard\View_Data_Status.htm" />
+    <Content Include="Module\Manual\Head_office\View_Dashboard\View_Projects.htm" />
+    <Content Include="Module\Manual\Head_office\vouchers_view.jpg" />
+    <Content Include="Module\Manual\Head_office\vouchers_view_branch_office.jpg" />
+    <Content Include="Module\Manual\Head_office\vouchers_view_head_office.jpg" />
+    <Content Include="Module\Manual\Head_office\whbrs.xml" />
+    <Content Include="Module\Manual\Head_office\whcshdata.htm" />
+    <Content Include="Module\Manual\Head_office\whcsh_home.htm" />
+    <Content Include="Module\Manual\Head_office\whdata\whgdata.js" />
+    <Content Include="Module\Manual\Head_office\whdata\whglo.htm" />
+    <Content Include="Module\Manual\Head_office\whdata\whglo.js" />
+    <Content Include="Module\Manual\Head_office\whdata\whidata.js" />
+    <Content Include="Module\Manual\Head_office\whdata\whidata0.htm" />
+    <Content Include="Module\Manual\Head_office\whdata\whidx.htm" />
+    <Content Include="Module\Manual\Head_office\whdata\whidx.js" />
+    <Content Include="Module\Manual\Head_office\whdata\whtdata.js" />
+    <Content Include="Module\Manual\Head_office\whdata\whtdata0.htm" />
+    <Content Include="Module\Manual\Head_office\whdata\whtoc.htm" />
+    <Content Include="Module\Manual\Head_office\whdata\whtoc.js" />
+    <Content Include="Module\Manual\Head_office\whd_dpns.htm" />
+    <Content Include="Module\Manual\Head_office\whd_hide0.gif" />
+    <Content Include="Module\Manual\Head_office\whd_hide1.gif" />
+    <Content Include="Module\Manual\Head_office\whd_hide2.gif" />
+    <Content Include="Module\Manual\Head_office\whd_next0.gif" />
+    <Content Include="Module\Manual\Head_office\whd_next1.gif" />
+    <Content Include="Module\Manual\Head_office\whd_next2.gif" />
+    <Content Include="Module\Manual\Head_office\whd_nvp10.htm" />
+    <Content Include="Module\Manual\Head_office\whd_nvp20.htm" />
+    <Content Include="Module\Manual\Head_office\whd_prev0.gif" />
+    <Content Include="Module\Manual\Head_office\whd_prev1.gif" />
+    <Content Include="Module\Manual\Head_office\whd_prev2.gif" />
+    <Content Include="Module\Manual\Head_office\whd_show0.gif" />
+    <Content Include="Module\Manual\Head_office\whd_show1.gif" />
+    <Content Include="Module\Manual\Head_office\whd_show2.gif" />
+    <Content Include="Module\Manual\Head_office\whd_sync0.gif" />
+    <Content Include="Module\Manual\Head_office\whd_sync1.gif" />
+    <Content Include="Module\Manual\Head_office\whd_sync2.gif" />
+    <Content Include="Module\Manual\Head_office\whd_tab0.gif" />
+    <Content Include="Module\Manual\Head_office\whd_tab1.gif" />
+    <Content Include="Module\Manual\Head_office\whd_tab2.gif" />
+    <Content Include="Module\Manual\Head_office\whd_tab3.gif" />
+    <Content Include="Module\Manual\Head_office\whd_tab4.gif" />
+    <Content Include="Module\Manual\Head_office\whd_tab5.gif" />
+    <Content Include="Module\Manual\Head_office\whd_tab6.gif" />
+    <Content Include="Module\Manual\Head_office\whd_tab7.gif" />
+    <Content Include="Module\Manual\Head_office\whd_tab8.gif" />
+    <Content Include="Module\Manual\Head_office\whd_tabs.htm" />
+    <Content Include="Module\Manual\Head_office\whd_toc1.gif" />
+    <Content Include="Module\Manual\Head_office\whd_toc2.gif" />
+    <Content Include="Module\Manual\Head_office\whd_toc3.gif" />
+    <Content Include="Module\Manual\Head_office\whd_toc4.gif" />
+    <Content Include="Module\Manual\Head_office\whd_topic.xml" />
+    <Content Include="Module\Manual\Head_office\whd_wbsh0.gif" />
+    <Content Include="Module\Manual\Head_office\whd_wbsh1.gif" />
+    <Content Include="Module\Manual\Head_office\whd_wbsh2.gif" />
+    <Content Include="Module\Manual\Head_office\whfbody.htm" />
+    <Content Include="Module\Manual\Head_office\whfdhtml.htm" />
+    <Content Include="Module\Manual\Head_office\whfform.htm" />
+    <Content Include="Module\Manual\Head_office\whfhost.js" />
+    <Content Include="Module\Manual\Head_office\whform.js" />
+    <Content Include="Module\Manual\Head_office\whframes.js" />
+    <Content Include="Module\Manual\Head_office\whgbody.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whexpbar.gif" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstf0.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstf1.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstf10.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstf2.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstf3.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstf4.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstf5.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstf6.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstf7.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstf8.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstf9.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstfl0.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstfl1.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstfl10.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstfl11.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstfl12.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstfl13.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstfl14.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstfl15.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstfl16.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstfl17.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstfl18.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstfl19.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstfl2.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstfl20.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstfl21.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstfl22.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstfl23.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstfl3.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstfl4.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstfl5.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstfl6.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstfl7.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstfl8.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstfl9.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstg0.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlsti0.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstt0.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstt1.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstt10.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstt11.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstt12.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstt13.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstt14.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstt15.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstt16.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstt17.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstt18.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstt2.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstt3.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstt4.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstt5.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstt6.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstt7.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstt8.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whlstt9.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whnvf30.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whnvf31.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whnvf32.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whnvf33.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whnvl31.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whnvl32.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whnvl33.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whnvp30.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whnvp31.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whnvp32.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whnvp33.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whnvt30.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whnvt31.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whnvt32.htm" />
+    <Content Include="Module\Manual\Head_office\whgdata\whnvt33.htm" />
+    <Content Include="Module\Manual\Head_office\whgdef.htm" />
+    <Content Include="Module\Manual\Head_office\whgdhtml.htm" />
+    <Content Include="Module\Manual\Head_office\whghost.js" />
+    <Content Include="Module\Manual\Head_office\whhost.js" />
+    <Content Include="Module\Manual\Head_office\whibody.htm" />
+    <Content Include="Module\Manual\Head_office\whidhtml.htm" />
+    <Content Include="Module\Manual\Head_office\whiform.htm" />
+    <Content Include="Module\Manual\Head_office\whihost.js" />
+    <Content Include="Module\Manual\Head_office\whlang.js" />
+    <Content Include="Module\Manual\Head_office\whmozemu.js" />
+    <Content Include="Module\Manual\Head_office\whmsg.js" />
+    <Content Include="Module\Manual\Head_office\whnjs.htm" />
+    <Content Include="Module\Manual\Head_office\whphost.js" />
+    <Content Include="Module\Manual\Head_office\whproj.htm" />
+    <Content Include="Module\Manual\Head_office\whproj.js" />
+    <Content Include="Module\Manual\Head_office\whproj.xml" />
+    <Content Include="Module\Manual\Head_office\whproxy.js" />
+    <Content Include="Module\Manual\Head_office\whres.xml" />
+    <Content Include="Module\Manual\Head_office\whskin_blank.htm" />
+    <Content Include="Module\Manual\Head_office\whskin_homepage.htm" />
+    <Content Include="Module\Manual\Head_office\whskin_info.htm" />
+    <Content Include="Module\Manual\Head_office\whskin_pickup.htm" />
+    <Content Include="Module\Manual\Head_office\whskin_tw.htm" />
+    <Content Include="Module\Manual\Head_office\whstart.js" />
+    <Content Include="Module\Manual\Head_office\whstub.js" />
+    <Content Include="Module\Manual\Head_office\whtdhtml.htm" />
+    <Content Include="Module\Manual\Head_office\whthost.js" />
+    <Content Include="Module\Manual\Head_office\whtopic.js" />
+    <Content Include="Module\Manual\Head_office\whutils.js" />
+    <Content Include="Module\Manual\Head_office\whver.js" />
+    <Content Include="Module\Manual\Head_office\whxdata\packageindex.xml" />
+    <Content Include="Module\Manual\Head_office\whxdata\package_0.xml" />
+    <Content Include="Module\Manual\Head_office\whxdata\package_1.xml" />
+    <Content Include="Module\Manual\Head_office\whxdata\package_2.xml" />
+    <Content Include="Module\Manual\Head_office\whxdata\package_3.xml" />
+    <Content Include="Module\Manual\Head_office\whxdata\package_4.xml" />
+    <Content Include="Module\Manual\Head_office\whxdata\package_5.xml" />
+    <Content Include="Module\Manual\Head_office\whxdata\package_6.xml" />
+    <Content Include="Module\Manual\Head_office\whxdata\package_7.xml" />
+    <Content Include="Module\Manual\Head_office\whxdata\synonym.xml" />
+    <Content Include="Module\Manual\Head_office\whxdata\topictableindex.xml" />
+    <Content Include="Module\Manual\Head_office\whxdata\topictable_0.xml" />
+    <Content Include="Module\Manual\Head_office\whxdata\topictable_1.xml" />
+    <Content Include="Module\Manual\Head_office\whxdata\whfts.xml" />
+    <Content Include="Module\Manual\Head_office\whxdata\whglo.xml" />
+    <Content Include="Module\Manual\Head_office\whxdata\whidata0.xml" />
+    <Content Include="Module\Manual\Head_office\whxdata\whidx.xml" />
+    <Content Include="Module\Manual\Head_office\whxdata\whtdata0.xml" />
+    <Content Include="Module\Manual\Head_office\whxdata\whtoc.xml" />
+    <Content Include="Module\Manual\Head_office\xmlreadhelper.js" />
+    <Content Include="Module\Master\AccountingPeriodAdd.aspx" />
+    <Content Include="Module\Master\AccountingPeriodView.aspx" />
+    <Content Include="Module\Master\AmendmentsAdd.aspx" />
+    <Content Include="Module\Master\AmendmentsView.aspx" />
+    <Content Include="Module\Master\Budget.aspx" />
+    <Content Include="Module\Master\BudgetMysore.aspx" />
+    <Content Include="Module\Master\BudgetINM.aspx" />
+    <Content Include="Module\Master\BudgetView.aspx" />
+    <Content Include="Module\Master\BudgetNewINM.aspx" />
+    <Content Include="Module\Master\StateAdd.aspx" />
+    <Content Include="Module\Master\StateView.aspx" />
+    <Content Include="Module\Master\GeneralateOPBalance.aspx" />
+    <Content Include="Module\Master\SDBGeneralateLedgerMapping.aspx" />
+    <Content Include="Module\Master\FCPurposeAdd.aspx" />
+    <Content Include="Module\Master\CountryAdd.aspx" />
+    <Content Include="Module\Master\CountryView.aspx" />
+    <Content Include="Module\Master\DonarAdd.aspx" />
+    <Content Include="Module\Master\DonarView.aspx" />
+    <Content Include="Module\Master\FCPurposeView.aspx" />
+    <Content Include="Module\Master\FDRegisters.aspx" />
+    <Content Include="Module\Master\GeneralateLedger.aspx" />
+    <Content Include="Module\Master\GeneralateLedgerMapping.aspx" />
+    <Content Include="Module\Master\GoverningMemberAdd.aspx" />
+    <Content Include="Module\Master\GoverningMemberMapping.aspx" />
+    <Content Include="Module\Master\GoverningMemberView.aspx" />
+    <Content Include="Module\Master\LedgerAdd.aspx" />
+    <Content Include="Module\Master\LedgerGroup.aspx" />
+    <Content Include="Module\Master\LedgerMapping.aspx" />
+    <Content Include="Module\Master\LedgerView.aspx" />
+    <Content Include="Module\Master\LegalEntityAdd.aspx" />
+    <Content Include="Module\Master\LegalEntityView.aspx" />
+    <Content Include="Module\Master\LockVoucherAdd.aspx" />
+    <Content Include="Module\Master\LockVoucherView.aspx" />
+    <Content Include="Module\Master\MapSubsidyLedgers.aspx" />
+    <Content Include="Module\Master\OpeningBalanceView.aspx" />
+    <Content Include="Module\Master\ProjectAdd.aspx" />
+    <Content Include="Module\Master\ProjectCategoryAdd.aspx" />
+    <Content Include="Module\Master\ProjectCategoryView.aspx" />
+    <Content Include="Module\Master\ProjectView.aspx" />
+    <Content Include="Module\Master\TDSDeducteeType.aspx" />
+    <Content Include="Module\Master\TDSDutyTax.aspx" />
+    <Content Include="Module\Master\TDSPaymentNature.aspx" />
+    <Content Include="Module\Master\TDSPolicyView.aspx" />
+    <Content Include="Module\Master\TDSSectionView.aspx" />
+    <Content Include="Module\Master\VoucherView.aspx" />
+    <Content Include="Module\Office\BranchLocation.aspx" />
+    <Content Include="Module\Office\BranchLocationView.aspx" />
+    <Content Include="Module\Office\BranchOfficeAdd.aspx" />
+    <Content Include="Module\Office\BranchOfficeView.aspx" />
+    <Content Include="Module\Office\Branch_Location_Logged_History.aspx" />
+    <Content Include="Module\Office\Branch_Logged_History.aspx" />
+    <Content Include="Module\Office\BranchUserMapping.aspx" />
+    <Content Include="Module\Office\HeadOfficeListBranchCount.aspx" />
+    <Content Include="Module\Office\HeadOfficeListBranchOfficeDetailed.aspx" />
+    <Content Include="Module\Office\HeadOfficeListBranchOffice.aspx" />
+    <Content Include="Module\Office\DeleteVouchers.aspx" />
+    <Content Include="Module\Office\ExcuteDatabaseQuery.aspx" />
+    <Content Include="Module\Office\GenerateLicenseKey.aspx" />
+    <Content Include="Module\Office\HeadOfficeAdd.aspx" />
+    <Content Include="Module\Office\HeadOfficeGlobalSettings.aspx" />
+    <Content Include="Module\Office\HeadOfficeView.aspx" />
+    <Content Include="Module\Office\ImportBranches.aspx" />
+    <Content Include="Module\Office\ImportMasters.aspx" />
+    <Content Include="Module\Office\LCBranchEnableTrackRequests.aspx" />
+    <Content Include="Module\Office\ProjectLocationMapping.aspx" />
+    <Content Include="Module\Office\ProjectMapping.aspx" />
+    <Content Include="Module\Office\ProjectUserMapping.aspx" />
+    <Content Include="Module\Office\RefreshBalance.aspx" />
+    <Content Include="Module\Office\SendMessage.aspx" />
+    <Content Include="Module\Office\UploadBranchVouchers.aspx" />
+    <Content Include="Module\Office\ViewMessage.aspx" />
+    <Content Include="Module\Software\acmeerp_Backup.aspx" />
+    <Content Include="Module\Software\acmeerp_branch_reports.aspx" />
+    <Content Include="Module\Software\AcmeWinServiceStatus.aspx" />
+    <Content Include="Module\Software\ClearLogs.aspx" />
+    <Content Include="Module\Software\acmeerp_Backup2015.aspx" />
+    <Content Include="Module\Software\acmeerp_Backup2015old.aspx" />
+    <Content Include="Module\Software\acmeerp_Backup_MSACCESS.aspx" />
+    <Content Include="Module\Software\Voucher_Lock.aspx" />
+    <Content Include="Module\Software\DownloadKey.aspx" />
+    <Content Include="Module\Software\DownloadMasters.aspx" />
+    <Content Include="Module\Software\DownloadTemplates.aspx" />
+    <Content Include="Module\Software\EnduserDownload.aspx" />
+    <Content Include="Module\Software\BranchSync.aspx" />
+    <Content Include="Module\Software\Uploads\test.txt" />
+    <Content Include="Module\Software\upload_downloadadd.aspx" />
+    <Content Include="Module\Software\upload_downloadview.aspx" />
+    <Content Include="Module\TroubleTicket\TroubleTicketingView.aspx" />
+    <Content Include="Module\User\ChangePassword.aspx" />
+    <Content Include="Module\User\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="App_Themes\MainTheme\mainstyle.css" />
+    <Content Include="Account\portal\Default.aspx" />
+    <Content Include="Module\User\ForgotPassword.aspx" />
+    <Content Include="Module\User\RoleAdd.aspx" />
+    <Content Include="Module\User\RoleView.aspx" />
+    <Content Include="Module\User\UserAdd.aspx" />
+    <Content Include="Module\User\UserProfile.aspx" />
+    <Content Include="Module\User\UserRights.aspx" />
+    <Content Include="Module\User\UserView.aspx" />
+    <Content Include="PageNotFound.aspx" />
+    <Content Include="Report\ReportCriteriaPortal.aspx" />
+    <Content Include="Report\PortalReportCriteria.aspx" />
+    <Content Include="Report\ReportDownload.aspx" />
+    <Content Include="Report\ReportViewer.aspx" />
+    <Content Include="Report\VoucherDetailView.aspx" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.8.0.min.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\progress.js" />
+    <Content Include="Scripts\Validation.js" />
+    <Content Include="AjaxControlToolkit.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Service References\DataSynchronizeService\configuration91.svcinfo" />
+    <None Include="Service References\DataSynchronizeService\configuration.svcinfo" />
+    <None Include="Service References\DataSynchronizeService\DataSynchronizer.wsdl" />
+    <None Include="Service References\DataSynchronizeService\DataSynchronizer.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DataSynchronizeService\DataSynchronizer1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DataSynchronizeService\DataSynchronizer2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DataSynchronizeService\DataSynchronizer3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DataSynchronizeService\DataSynchronizer4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DataSynchronizeService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\DataSynchronizeService\DataSynchronizer.disco" />
+    <Content Include="WebControl\ucAccountBalance.ascx" />
+    <None Include="AppFile\AcMEERP_Asset_Masters_Template.xlsx" />
+    <None Include="AppFile\AcMEERP_MastersTemplate.xlsx" />
+    <None Include="AppFile\BranchOfficeTemplate.xlsx" />
+    <None Include="MasterPage\Menus and Activity\Activity_HeadOffice.xls" />
+    <None Include="MasterPage\Menus and Activity\Activity_Portal.xls" />
+    <None Include="Module\Manual\Branch_office\acme erp portal.log" />
+    <None Include="Module\Manual\Branch_office\RoboHHRE.lng" />
+    <None Include="Module\Manual\Head_office\acme erp portal.log" />
+    <None Include="Module\Manual\Head_office\RoboHHRE.lng" />
+    <None Include="Module\Software\Uploads\AcMEERPTemplate\Asset\Asset_Group.xlsx" />
+    <None Include="Module\Software\Uploads\AcMEERPTemplate\Asset\Asset_Location.xlsx" />
+    <None Include="Module\Software\Uploads\AcMEERPTemplate\Finance\Donor-Template.xlsx" />
+    <None Include="Module\Software\Uploads\AcMEERPTemplate\Stock\AcMe++ Events.xlsx" />
+    <None Include="Module\Software\Uploads\AcMEERPTemplate\Stock\AcMEERP_MastersTemplate.xlsx" />
+    <None Include="Module\Software\Uploads\AcMEERPTemplate\Stock\Stock.xlsx" />
+    <Content Include="packages.config" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <Content Include="WebControl\Filter.ascx" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <Content Include="Features.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebControl\DateControl.ascx" />
+    <Content Include="WebControl\GridViewControl.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AppHandler.ashx.cs">
+      <DependentUpon>AppHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Base\TemplateColumnCollection.cs" />
+    <Compile Include="Base\TemplateItem.cs" />
+    <Compile Include="Base\MasterBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\TaskEventArgs.cs" />
+    <Compile Include="Base\UIBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contactus.aspx.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contactus.aspx.designer.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataSyncService\DataSynchronizer.svc.cs">
+      <DependentUpon>DataSynchronizer.svc</DependentUpon>
+    </Compile>
+    <Compile Include="DataSyncService\IDataSynchronizer.cs" />
+    <Compile Include="DataSyncService\ServiceArgs.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HomeDashboard.aspx.cs">
+      <DependentUpon>HomeDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeDashboard.aspx.designer.cs">
+      <DependentUpon>HomeDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeLogin.aspx.cs">
+      <DependentUpon>HomeLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeLogin.aspx.designer.cs">
+      <DependentUpon>HomeLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MobileService\AbstractController.cs" />
+    <Compile Include="MobileService\BranchController.cs" />
+    <Compile Include="MobileService\BranchDataStatusController.cs" />
+    <Compile Include="MobileService\BranchDeafultersController.cs" />
+    <Compile Include="MobileService\CheckBalanceController.cs" />
+    <Compile Include="MobileService\EmailController.cs" />
+    <Compile Include="MobileService\HeadOfficeProfileController.cs" />
+    <Compile Include="MobileService\LedgerController.cs" />
+    <Compile Include="MobileService\LedgerSummaryController.cs" />
+    <Compile Include="MobileService\LoginController.cs" />
+    <Compile Include="MobileService\ProjectController.cs" />
+    <Compile Include="Module\Inventory\Asset\AssetClassView.aspx.cs">
+      <DependentUpon>AssetClassView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Inventory\Asset\AssetClassView.aspx.designer.cs">
+      <DependentUpon>AssetClassView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Inventory\Asset\AssetItemAdd.aspx.cs">
+      <DependentUpon>AssetItemAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Inventory\Asset\AssetItemAdd.aspx.designer.cs">
+      <DependentUpon>AssetItemAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Inventory\Asset\AssetItemView.aspx.cs">
+      <DependentUpon>AssetItemView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Inventory\Asset\AssetItemView.aspx.designer.cs">
+      <DependentUpon>AssetItemView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Inventory\Asset\AssetUnitofMeasureAdd.aspx.cs">
+      <DependentUpon>AssetUnitofMeasureAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Inventory\Asset\AssetUnitofMeasureAdd.aspx.designer.cs">
+      <DependentUpon>AssetUnitofMeasureAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Inventory\Asset\AssetUnitofMeasureView.aspx.cs">
+      <DependentUpon>AssetUnitofMeasureView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Inventory\Asset\AssetUnitofMeasureView.aspx.designer.cs">
+      <DependentUpon>AssetUnitofMeasureView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Inventory\Asset\ImportAssetMasters.aspx.cs">
+      <DependentUpon>ImportAssetMasters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Inventory\Asset\ImportAssetMasters.aspx.designer.cs">
+      <DependentUpon>ImportAssetMasters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\AccountingPeriodAdd.aspx.cs">
+      <DependentUpon>AccountingPeriodAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\AccountingPeriodAdd.aspx.designer.cs">
+      <DependentUpon>AccountingPeriodAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\AccountingPeriodView.aspx.cs">
+      <DependentUpon>AccountingPeriodView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\AccountingPeriodView.aspx.designer.cs">
+      <DependentUpon>AccountingPeriodView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\AmendmentsAdd.aspx.cs">
+      <DependentUpon>AmendmentsAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\AmendmentsAdd.aspx.designer.cs">
+      <DependentUpon>AmendmentsAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\AmendmentsView.aspx.cs">
+      <DependentUpon>AmendmentsView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\AmendmentsView.aspx.designer.cs">
+      <DependentUpon>AmendmentsView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\Budget.aspx.cs">
+      <DependentUpon>Budget.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\Budget.aspx.designer.cs">
+      <DependentUpon>Budget.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\BudgetMysore.aspx.cs">
+      <DependentUpon>BudgetMysore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\BudgetMysore.aspx.designer.cs">
+      <DependentUpon>BudgetMysore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\BudgetINM.aspx.cs">
+      <DependentUpon>BudgetINM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\BudgetINM.aspx.designer.cs">
+      <DependentUpon>BudgetINM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\BudgetView.aspx.cs">
+      <DependentUpon>BudgetView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\BudgetView.aspx.designer.cs">
+      <DependentUpon>BudgetView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\BudgetNewINM.aspx.cs">
+      <DependentUpon>BudgetNewINM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\BudgetNewINM.aspx.designer.cs">
+      <DependentUpon>BudgetNewINM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\StateAdd.aspx.cs">
+      <DependentUpon>StateAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\StateAdd.aspx.designer.cs">
+      <DependentUpon>StateAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\StateView.aspx.cs">
+      <DependentUpon>StateView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\StateView.aspx.designer.cs">
+      <DependentUpon>StateView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\GeneralateOPBalance.aspx.cs">
+      <DependentUpon>GeneralateOPBalance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\GeneralateOPBalance.aspx.designer.cs">
+      <DependentUpon>GeneralateOPBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\SDBGeneralateLedgerMapping.aspx.cs">
+      <DependentUpon>SDBGeneralateLedgerMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\SDBGeneralateLedgerMapping.aspx.designer.cs">
+      <DependentUpon>SDBGeneralateLedgerMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\FCPurposeAdd.aspx.cs">
+      <DependentUpon>FCPurposeAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\FCPurposeAdd.aspx.designer.cs">
+      <DependentUpon>FCPurposeAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\CountryAdd.aspx.cs">
+      <DependentUpon>CountryAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\CountryAdd.aspx.designer.cs">
+      <DependentUpon>CountryAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\CountryView.aspx.cs">
+      <DependentUpon>CountryView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\CountryView.aspx.designer.cs">
+      <DependentUpon>CountryView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\DonarAdd.aspx.cs">
+      <DependentUpon>DonarAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\DonarAdd.aspx.designer.cs">
+      <DependentUpon>DonarAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\DonarView.aspx.cs">
+      <DependentUpon>DonarView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\DonarView.aspx.designer.cs">
+      <DependentUpon>DonarView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\FCPurposeView.aspx.cs">
+      <DependentUpon>FCPurposeView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\FCPurposeView.aspx.designer.cs">
+      <DependentUpon>FCPurposeView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\FDRegisters.aspx.cs">
+      <DependentUpon>FDRegisters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\FDRegisters.aspx.designer.cs">
+      <DependentUpon>FDRegisters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\GeneralateLedger.aspx.cs">
+      <DependentUpon>GeneralateLedger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\GeneralateLedger.aspx.designer.cs">
+      <DependentUpon>GeneralateLedger.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\GeneralateLedgerMapping.aspx.cs">
+      <DependentUpon>GeneralateLedgerMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\GeneralateLedgerMapping.aspx.designer.cs">
+      <DependentUpon>GeneralateLedgerMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\GoverningMemberAdd.aspx.cs">
+      <DependentUpon>GoverningMemberAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\GoverningMemberAdd.aspx.designer.cs">
+      <DependentUpon>GoverningMemberAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\GoverningMemberMapping.aspx.cs">
+      <DependentUpon>GoverningMemberMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\GoverningMemberMapping.aspx.designer.cs">
+      <DependentUpon>GoverningMemberMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\GoverningMemberView.aspx.cs">
+      <DependentUpon>GoverningMemberView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\GoverningMemberView.aspx.designer.cs">
+      <DependentUpon>GoverningMemberView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\LedgerAdd.aspx.cs">
+      <DependentUpon>LedgerAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\LedgerAdd.aspx.designer.cs">
+      <DependentUpon>LedgerAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\LedgerGroup.aspx.cs">
+      <DependentUpon>LedgerGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\LedgerGroup.aspx.designer.cs">
+      <DependentUpon>LedgerGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\LedgerMapping.aspx.cs">
+      <DependentUpon>LedgerMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\LedgerMapping.aspx.designer.cs">
+      <DependentUpon>LedgerMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\LedgerView.aspx.cs">
+      <DependentUpon>LedgerView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\LedgerView.aspx.designer.cs">
+      <DependentUpon>LedgerView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\LegalEntityAdd.aspx.cs">
+      <DependentUpon>LegalEntityAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\LegalEntityAdd.aspx.designer.cs">
+      <DependentUpon>LegalEntityAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\LegalEntityView.aspx.cs">
+      <DependentUpon>LegalEntityView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\LegalEntityView.aspx.designer.cs">
+      <DependentUpon>LegalEntityView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\LockVoucherAdd.aspx.cs">
+      <DependentUpon>LockVoucherAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\LockVoucherAdd.aspx.designer.cs">
+      <DependentUpon>LockVoucherAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\LockVoucherView.aspx.cs">
+      <DependentUpon>LockVoucherView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\LockVoucherView.aspx.designer.cs">
+      <DependentUpon>LockVoucherView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\MapSubsidyLedgers.aspx.cs">
+      <DependentUpon>MapSubsidyLedgers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\MapSubsidyLedgers.aspx.designer.cs">
+      <DependentUpon>MapSubsidyLedgers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\OpeningBalanceView.aspx.cs">
+      <DependentUpon>OpeningBalanceView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\OpeningBalanceView.aspx.designer.cs">
+      <DependentUpon>OpeningBalanceView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\ProjectAdd.aspx.cs">
+      <DependentUpon>ProjectAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\ProjectAdd.aspx.designer.cs">
+      <DependentUpon>ProjectAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\ProjectCategoryAdd.aspx.cs">
+      <DependentUpon>ProjectCategoryAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\ProjectCategoryAdd.aspx.designer.cs">
+      <DependentUpon>ProjectCategoryAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\ProjectCategoryView.aspx.cs">
+      <DependentUpon>ProjectCategoryView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\ProjectCategoryView.aspx.designer.cs">
+      <DependentUpon>ProjectCategoryView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\ProjectView.aspx.cs">
+      <DependentUpon>ProjectView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\ProjectView.aspx.designer.cs">
+      <DependentUpon>ProjectView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\TDSDeducteeType.aspx.cs">
+      <DependentUpon>TDSDeducteeType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\TDSDeducteeType.aspx.designer.cs">
+      <DependentUpon>TDSDeducteeType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\TDSDutyTax.aspx.cs">
+      <DependentUpon>TDSDutyTax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\TDSDutyTax.aspx.designer.cs">
+      <DependentUpon>TDSDutyTax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\TDSPaymentNature.aspx.cs">
+      <DependentUpon>TDSPaymentNature.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\TDSPaymentNature.aspx.designer.cs">
+      <DependentUpon>TDSPaymentNature.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\TDSPolicyView.aspx.cs">
+      <DependentUpon>TDSPolicyView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\TDSPolicyView.aspx.designer.cs">
+      <DependentUpon>TDSPolicyView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\TDSSectionView.aspx.cs">
+      <DependentUpon>TDSSectionView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\TDSSectionView.aspx.designer.cs">
+      <DependentUpon>TDSSectionView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Master\VoucherView.aspx.cs">
+      <DependentUpon>VoucherView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Master\VoucherView.aspx.designer.cs">
+      <DependentUpon>VoucherView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Office\BranchLocation.aspx.cs">
+      <DependentUpon>BranchLocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Office\BranchLocation.aspx.designer.cs">
+      <DependentUpon>BranchLocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Office\BranchLocationView.aspx.cs">
+      <DependentUpon>BranchLocationView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Office\BranchLocationView.aspx.designer.cs">
+      <DependentUpon>BranchLocationView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Office\BranchOfficeAdd.aspx.cs">
+      <DependentUpon>BranchOfficeAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Office\BranchOfficeAdd.aspx.designer.cs">
+      <DependentUpon>BranchOfficeAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Office\BranchOfficeView.aspx.cs">
+      <DependentUpon>BranchOfficeView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Office\BranchOfficeView.aspx.designer.cs">
+      <DependentUpon>BranchOfficeView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Office\Branch_Location_Logged_History.aspx.cs">
+      <DependentUpon>Branch_Location_Logged_History.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Office\Branch_Location_Logged_History.aspx.designer.cs">
+      <DependentUpon>Branch_Location_Logged_History.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Office\Branch_Logged_History.aspx.cs">
+      <DependentUpon>Branch_Logged_History.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Office\Branch_Logged_History.aspx.designer.cs">
+      <DependentUpon>Branch_Logged_History.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Office\BranchUserMapping.aspx.cs">
+      <DependentUpon>BranchUserMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Office\BranchUserMapping.aspx.designer.cs">
+      <DependentUpon>BranchUserMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Office\HeadOfficeListBranchCount.aspx.cs">
+      <DependentUpon>HeadOfficeListBranchCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Office\HeadOfficeListBranchCount.aspx.designer.cs">
+      <DependentUpon>HeadOfficeListBranchCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Office\HeadOfficeListBranchOfficeDetailed.aspx.cs">
+      <DependentUpon>HeadOfficeListBranchOfficeDetailed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Office\HeadOfficeListBranchOfficeDetailed.aspx.designer.cs">
+      <DependentUpon>HeadOfficeListBranchOfficeDetailed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Office\HeadOfficeListBranchOffice.aspx.cs">
+      <DependentUpon>HeadOfficeListBranchOffice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Office\HeadOfficeListBranchOffice.aspx.designer.cs">
+      <DependentUpon>HeadOfficeListBranchOffice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Office\DeleteVouchers.aspx.cs">
+      <DependentUpon>DeleteVouchers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Office\DeleteVouchers.aspx.designer.cs">
+      <DependentUpon>DeleteVouchers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Office\ExcuteDatabaseQuery.aspx.cs">
+      <DependentUpon>ExcuteDatabaseQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Office\ExcuteDatabaseQuery.aspx.designer.cs">
+      <DependentUpon>ExcuteDatabaseQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Office\GenerateLicenseKey.aspx.cs">
+      <DependentUpon>GenerateLicenseKey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Office\GenerateLicenseKey.aspx.designer.cs">
+      <DependentUpon>GenerateLicenseKey.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Office\HeadOfficeAdd.aspx.cs">
+      <DependentUpon>HeadOfficeAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Office\HeadOfficeAdd.aspx.designer.cs">
+      <DependentUpon>HeadOfficeAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Office\HeadOfficeGlobalSettings.aspx.cs">
+      <DependentUpon>HeadOfficeGlobalSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Office\HeadOfficeGlobalSettings.aspx.designer.cs">
+      <DependentUpon>HeadOfficeGlobalSettings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Office\HeadOfficeView.aspx.cs">
+      <DependentUpon>HeadOfficeView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Office\HeadOfficeView.aspx.designer.cs">
+      <DependentUpon>HeadOfficeView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Office\ImportBranches.aspx.cs">
+      <DependentUpon>ImportBranches.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Office\ImportBranches.aspx.designer.cs">
+      <DependentUpon>ImportBranches.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Office\ImportMasters.aspx.cs">
+      <DependentUpon>ImportMasters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Office\ImportMasters.aspx.designer.cs">
+      <DependentUpon>ImportMasters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Office\LCBranchEnableTrackRequests.aspx.cs">
+      <DependentUpon>LCBranchEnableTrackRequests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Office\LCBranchEnableTrackRequests.aspx.designer.cs">
+      <DependentUpon>LCBranchEnableTrackRequests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Office\ProjectLocationMapping.aspx.cs">
+      <DependentUpon>ProjectLocationMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Office\ProjectLocationMapping.aspx.designer.cs">
+      <DependentUpon>ProjectLocationMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Office\ProjectMapping.aspx.cs">
+      <DependentUpon>ProjectMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Office\ProjectMapping.aspx.designer.cs">
+      <DependentUpon>ProjectMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Office\ProjectUserMapping.aspx.cs">
+      <DependentUpon>ProjectUserMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Office\ProjectUserMapping.aspx.designer.cs">
+      <DependentUpon>ProjectUserMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Office\RefreshBalance.aspx.cs">
+      <DependentUpon>RefreshBalance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Office\RefreshBalance.aspx.designer.cs">
+      <DependentUpon>RefreshBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Office\SendMessage.aspx.cs">
+      <DependentUpon>SendMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Office\SendMessage.aspx.designer.cs">
+      <DependentUpon>SendMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Office\UploadBranchVouchers.aspx.cs">
+      <DependentUpon>UploadBranchVouchers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Office\UploadBranchVouchers.aspx.designer.cs">
+      <DependentUpon>UploadBranchVouchers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Office\ViewMessage.aspx.cs">
+      <DependentUpon>ViewMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Office\ViewMessage.aspx.designer.cs">
+      <DependentUpon>ViewMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Software\acmeerp_Backup.aspx.cs">
+      <DependentUpon>acmeerp_Backup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Software\acmeerp_Backup.aspx.designer.cs">
+      <DependentUpon>acmeerp_Backup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Software\acmeerp_branch_reports.aspx.cs">
+      <DependentUpon>acmeerp_branch_reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Software\acmeerp_branch_reports.aspx.designer.cs">
+      <DependentUpon>acmeerp_branch_reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Software\AcmeWinServiceStatus.aspx.cs">
+      <DependentUpon>AcmeWinServiceStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Software\AcmeWinServiceStatus.aspx.designer.cs">
+      <DependentUpon>AcmeWinServiceStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Software\ClearLogs.aspx.cs">
+      <DependentUpon>ClearLogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Software\ClearLogs.aspx.designer.cs">
+      <DependentUpon>ClearLogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Software\acmeerp_Backup2015.aspx.cs">
+      <DependentUpon>acmeerp_Backup2015.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Software\acmeerp_Backup2015.aspx.designer.cs">
+      <DependentUpon>acmeerp_Backup2015.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Software\acmeerp_Backup2015old.aspx.cs">
+      <DependentUpon>acmeerp_Backup2015old.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Software\acmeerp_Backup2015old.aspx.designer.cs">
+      <DependentUpon>acmeerp_Backup2015old.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Software\acmeerp_Backup_MSACCESS.aspx.cs">
+      <DependentUpon>acmeerp_Backup_MSACCESS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Software\acmeerp_Backup_MSACCESS.aspx.designer.cs">
+      <DependentUpon>acmeerp_Backup_MSACCESS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Software\Voucher_Lock.aspx.cs">
+      <DependentUpon>Voucher_Lock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Software\Voucher_Lock.aspx.designer.cs">
+      <DependentUpon>Voucher_Lock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Software\DownloadKey.aspx.cs">
+      <DependentUpon>DownloadKey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Software\DownloadKey.aspx.designer.cs">
+      <DependentUpon>DownloadKey.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Software\DownloadMasters.aspx.cs">
+      <DependentUpon>DownloadMasters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Software\DownloadMasters.aspx.designer.cs">
+      <DependentUpon>DownloadMasters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Software\DownloadTemplates.aspx.cs">
+      <DependentUpon>DownloadTemplates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Software\DownloadTemplates.aspx.designer.cs">
+      <DependentUpon>DownloadTemplates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Software\EnduserDownload.aspx.cs">
+      <DependentUpon>EnduserDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Software\EnduserDownload.aspx.designer.cs">
+      <DependentUpon>EnduserDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Software\BranchSync.aspx.cs">
+      <DependentUpon>BranchSync.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Software\BranchSync.aspx.designer.cs">
+      <DependentUpon>BranchSync.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Software\upload_downloadadd.aspx.cs">
+      <DependentUpon>upload_downloadadd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Software\upload_downloadadd.aspx.designer.cs">
+      <DependentUpon>upload_downloadadd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Software\upload_downloadview.aspx.cs">
+      <DependentUpon>upload_downloadview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Software\upload_downloadview.aspx.designer.cs">
+      <DependentUpon>upload_downloadview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\TroubleTicket\TroubleTicketingView.aspx.cs">
+      <DependentUpon>TroubleTicketingView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\TroubleTicket\TroubleTicketingView.aspx.designer.cs">
+      <DependentUpon>TroubleTicketingView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\User\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\User\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\User\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\User\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\portal\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\portal\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\HomeLoginMaster.Master.cs">
+      <DependentUpon>HomeLoginMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\HomeLoginMaster.Master.designer.cs">
+      <DependentUpon>HomeLoginMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Module\User\ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\User\ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\User\RoleAdd.aspx.cs">
+      <DependentUpon>RoleAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\User\RoleAdd.aspx.designer.cs">
+      <DependentUpon>RoleAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\User\RoleView.aspx.cs">
+      <DependentUpon>RoleView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\User\RoleView.aspx.designer.cs">
+      <DependentUpon>RoleView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\User\UserAdd.aspx.cs">
+      <DependentUpon>UserAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\User\UserAdd.aspx.designer.cs">
+      <DependentUpon>UserAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\User\UserProfile.aspx.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\User\UserProfile.aspx.designer.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\User\UserRights.aspx.cs">
+      <DependentUpon>UserRights.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\User\UserRights.aspx.designer.cs">
+      <DependentUpon>UserRights.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\User\UserView.aspx.cs">
+      <DependentUpon>UserView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\User\UserView.aspx.designer.cs">
+      <DependentUpon>UserView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageNotFound.aspx.cs">
+      <DependentUpon>PageNotFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageNotFound.aspx.designer.cs">
+      <DependentUpon>PageNotFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MasterPage\HomeMaster.Master.cs">
+      <DependentUpon>HomeMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\HomeMaster.Master.designer.cs">
+      <DependentUpon>HomeMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportCriteriaPortal.aspx.cs">
+      <DependentUpon>ReportCriteriaPortal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\ReportCriteriaPortal.aspx.designer.cs">
+      <DependentUpon>ReportCriteriaPortal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\PortalReportCriteria.aspx.cs">
+      <DependentUpon>PortalReportCriteria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\PortalReportCriteria.aspx.designer.cs">
+      <DependentUpon>PortalReportCriteria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Features.aspx.cs">
+      <DependentUpon>Features.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Features.aspx.designer.cs">
+      <DependentUpon>Features.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportDownload.aspx.cs">
+      <DependentUpon>ReportDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\ReportDownload.aspx.designer.cs">
+      <DependentUpon>ReportDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportViewer.aspx.cs">
+      <DependentUpon>ReportViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\ReportViewer.aspx.designer.cs">
+      <DependentUpon>ReportViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\VoucherDetailView.aspx.cs">
+      <DependentUpon>VoucherDetailView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\VoucherDetailView.aspx.designer.cs">
+      <DependentUpon>VoucherDetailView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScriptCompressor.cs" />
+    <Compile Include="Service References\DataSynchronizeService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="WebControl\DateControl.ascx.cs">
+      <DependentUpon>DateControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControl\DateControl.ascx.designer.cs">
+      <DependentUpon>DateControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControl\Filter.ascx.cs">
+      <DependentUpon>Filter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControl\Filter.ascx.designer.cs">
+      <DependentUpon>Filter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControl\GridViewControl.ascx.cs">
+      <DependentUpon>GridViewControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControl\GridViewControl.ascx.designer.cs">
+      <DependentUpon>GridViewControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControl\ucAccountBalance.ascx.cs">
+      <DependentUpon>ucAccountBalance.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControl\ucAccountBalance.ascx.designer.cs">
+      <DependentUpon>ucAccountBalance.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AppFile\Licenses\" />
+    <Folder Include="AppFile\Masters\" />
+    <Folder Include="Module\Software\Uploads\AcMEERPBackup\sdbinm\" />
+    <Folder Include="Module\Software\Uploads\AcMEERPTemplate\Payroll\" />
+    <Folder Include="Module\Software\Uploads\AcMEERPTemplate\TDS\" />
+    <Folder Include="Module\Software\Uploads\AcMEERP_Vouchers\" />
+    <Folder Include="obj\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage\HomeMaster.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage\HomeLoginMaster.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SiteMap\home.sitemap" />
+    <Content Include="SiteMap\headofficemenu.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AppHandler.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SiteMap\siteadminmenu.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bosco.DAO.Schema\Bosco.DAO.Schema.csproj">
+      <Project>{259CF580-C69A-4146-A20F-04F138D94874}</Project>
+      <Name>Bosco.DAO.Schema</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bosco.DAO\Bosco.DAO.csproj">
+      <Project>{74C2B1A6-AFC1-46E0-B164-E89836C8027E}</Project>
+      <Name>Bosco.DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bosco.Model\Bosco.Model.csproj">
+      <Project>{19174D3E-0259-4212-9BD8-479D08665238}</Project>
+      <Name>Bosco.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bosco.Report\Bosco.Report.csproj">
+      <Project>{59D90D5D-2D28-444D-BD5D-60150D78F449}</Project>
+      <Name>Bosco.Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bosco.SQL\Bosco.SQL.csproj">
+      <Project>{97ECDD93-AA2B-4798-AF52-7FD5CFF96238}</Project>
+      <Name>Bosco.SQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bosco.Utility\Bosco.Utility.csproj">
+      <Project>{4E519AC2-6104-4A87-AFAE-B4DC586201EB}</Project>
+      <Name>Bosco.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SiteMap\footer.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\MainTheme\mainskin.skin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\portal\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\portal\App_LocalResources\Default.aspx.resx" />
+    <Content Include="MasterPage\App_LocalResources\HomeLoginMaster.Master.resx" />
+    <Content Include="MasterPage\App_LocalResources\HomeMaster.Master.resx" />
+    <Content Include="Module\Master\App_LocalResources\CountryAdd.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Module\Master\App_LocalResources\CountryView.aspx.resx" />
+    <Content Include="Module\Master\App_LocalResources\DonarAdd.aspx.resx" />
+    <Content Include="Module\Master\App_LocalResources\DonarView.aspx.resx" />
+    <Content Include="Module\Master\App_LocalResources\FCPurposeView.aspx.resx" />
+    <Content Include="Module\Master\App_LocalResources\LedgerAdd.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Module\Master\App_LocalResources\LedgerGroup.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Module\Master\App_LocalResources\LedgerView.aspx.resx" />
+    <Content Include="Module\Master\App_LocalResources\LegalEntityAdd.aspx.resx" />
+    <Content Include="Module\Master\App_LocalResources\LegalEntityView.aspx.resx" />
+    <Content Include="Module\Master\App_LocalResources\ProjectAdd.aspx.resx" />
+    <Content Include="Module\Master\App_LocalResources\ProjectCategoryAdd.aspx.resx" />
+    <Content Include="Module\Master\App_LocalResources\ProjectCategoryView.aspx.resx" />
+    <Content Include="Module\Master\App_LocalResources\ProjectView.aspx.resx" />
+    <Content Include="Module\Office\App_LocalResources\BranchOfficeAdd.aspx.resx" />
+    <Content Include="Module\Office\App_LocalResources\BranchOfficeView.aspx.resx" />
+    <Content Include="Module\Office\App_LocalResources\GenerateLicenseKey.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Module\Office\App_LocalResources\HeadOfficeAdd.aspx.resx" />
+    <Content Include="Module\Office\App_LocalResources\HeadOfficeView.aspx.resx" />
+    <Content Include="Module\Office\App_LocalResources\ProjectMapping.aspx.resx" />
+    <Content Include="Module\Software\App_LocalResources\EnduserDownload.aspx.resx" />
+    <Content Include="Module\Software\App_LocalResources\upload_downloadadd.aspx.resx" />
+    <Content Include="Module\Software\App_LocalResources\upload_downloadview.aspx.resx" />
+    <Content Include="Module\TroubleTicket\App_LocalResources\TroubleTicketingAdd.aspx.resx" />
+    <Content Include="Module\User\App_LocalResources\ChangePassword.aspx.resx" />
+    <Content Include="Module\User\App_LocalResources\ChangePasswordSuccess.aspx.resx" />
+    <Content Include="Module\User\App_LocalResources\ForgotPassword.aspx.resx" />
+    <Content Include="Module\User\App_LocalResources\RoleAdd.aspx.resx" />
+    <Content Include="Module\User\App_LocalResources\RoleView.aspx.resx" />
+    <Content Include="Module\User\App_LocalResources\UserAdd.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Module\User\App_LocalResources\UserProfile.aspx.resx" />
+    <Content Include="Module\User\App_LocalResources\UserRights.aspx.resx" />
+    <Content Include="Module\User\App_LocalResources\UserView.aspx.resx" />
+    <Content Include="App_LocalResources\about.aspx.resx" />
+    <Content Include="App_LocalResources\contactus.aspx.resx" />
+    <Content Include="App_LocalResources\Default.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ErrorPage.aspx.resx" />
+    <Content Include="App_LocalResources\services.aspx.resx" />
+    <Content Include="Account\App_LocalResources\Register.aspx.resx" />
+    <Content Include="Module\Master\App_LocalResources\VoucherView.aspx.resx" />
+    <Content Include="Report\App_LocalResources\PortalReportCriteria.aspx.resx" />
+    <Content Include="WebControl\App_LocalResources\DateControl.ascx.resx" />
+    <Content Include="WebControl\App_LocalResources\GridViewControl.ascx.resx" />
+    <Content Include="WebControl\App_LocalResources\ucMapProject.ascx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SiteMap\branchofficemenu.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Module\Office\App_LocalResources\UploadBranchVouchers.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Module\Master\App_LocalResources\AmendmentsAdd.aspx.resx" />
+    <Content Include="Module\Master\App_LocalResources\AmendmentsView.aspx.resx" />
+    <Content Include="Module\Software\App_LocalResources\ClearLogs.aspx.resx" />
+    <Content Include="Module\Master\App_LocalResources\AccountingPeriodView.aspx.resx" />
+    <Content Include="Module\Master\App_LocalResources\AccountingPeriodAdd.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\HomeLogin.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Module\Master\App_LocalResources\FDRegistesrView.aspx.resx" />
+    <Content Include="Module\Software\App_LocalResources\acmeerp_Backup.aspx.resx" />
+    <Content Include="Module\Master\App_LocalResources\TDSDutyTax.aspx.resx" />
+    <Content Include="Module\Office\App_LocalResources\ProjectUserMapping.aspx.resx" />
+    <Content Include="App_LocalResources\HomeDashboard.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <Content Include="Report\App_LocalResources\ReportViewerPortal.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\DataSynchronizeService\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>13569</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

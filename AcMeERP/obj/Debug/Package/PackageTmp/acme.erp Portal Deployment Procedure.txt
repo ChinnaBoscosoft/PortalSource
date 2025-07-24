@@ -1,0 +1,11 @@
+acme.erp Portal Deployment Procedure
+--------------------------------------
+1) Keep a backup of old web.config from this path C:\Inetpub\vhosts\acmeerp.org\httpdocs
+2) Keep a backup of uploads folder C:\Inetpub\vhosts\acmeerp.org\httpdocs\Module\Software\Uploads  and AppFile folder
+3) Place the build in C:\Inetpub\vhosts\acmeerp.org\httpdocs without web.config
+4) give everyone permisson for AppFlile and Software->Uploads folder
+5) Update latest version of acme.erp updater in the upload folder
+6) Convert the acme.erp updater to 32 bit and place this latestversion.exe and acmeerpupdater.exe in the software_>uploads folder
+7) Take head office db backup from the mysql workbench server import/export as sql
+8) install ACE Provider for Excel2013 for excel file upload and download works
+9) Whenever server is reset , set the Date and Time according to the Indian Standard

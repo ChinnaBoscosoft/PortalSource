@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="DevExpress.Data.v13.2" name="DevExpress.Data.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="xrsubAssets.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>0, 0</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="xrsubAssets.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>533, 23.0000038</value>
+  </data>
+  <data name="xrSubLiabilities.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>534, 0</value>
+  </data>
+  <data name="xrSubLiabilities.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>535.04, 23</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Detail.HeightF" type="System.Single, mscorlib">
+    <value>23.0000038</value>
+  </data>
+  <data name="Detail.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="xrtblHeaderCaption.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Gainsboro</value>
+  </data>
+  <data name="xrtblHeaderCaption.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>Black</value>
+  </data>
+  <data name="xrtblHeaderCaption.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>0, 0</value>
+  </data>
+  <data name="xrcolCapAsset.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xrcolCapAsset.Text" xml:space="preserve">
+    <value>Asset</value>
+  </data>
+  <data name="xrcolCapAsset.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrcolCapAsset.Weight" type="System.Double, mscorlib">
+    <value>1.175899705981351</value>
+  </data>
+  <data name="xrtblCapOpeningAsset.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xrtblCapOpeningAsset.Text" xml:space="preserve">
+    <value>2019</value>
+  </data>
+  <data name="xrtblCapOpeningAsset.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrtblCapOpeningAsset.Weight" type="System.Double, mscorlib">
+    <value>0.45860086626299973</value>
+  </data>
+  <data name="xrcolcapCurrentAsset.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xrcolcapCurrentAsset.Text" xml:space="preserve">
+    <value>2020</value>
+  </data>
+  <data name="xrcolcapCurrentAsset.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrcolcapCurrentAsset.Weight" type="System.Double, mscorlib">
+    <value>0.45860085176998033</value>
+  </data>
+  <data name="xrcolCapliabilities.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xrcolCapliabilities.Text" xml:space="preserve">
+    <value>Liabilities</value>
+  </data>
+  <data name="xrcolCapliabilities.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrcolCapliabilities.Weight" type="System.Double, mscorlib">
+    <value>1.1758996503822661</value>
+  </data>
+  <data name="xrtblOpeningLiability.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xrtblOpeningLiability.Text" xml:space="preserve">
+    <value>2019</value>
+  </data>
+  <data name="xrtblOpeningLiability.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrtblOpeningLiability.Weight" type="System.Double, mscorlib">
+    <value>0.45860087313120984</value>
+  </data>
+  <data name="xrcolCapCurrentLiability.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xrcolCapCurrentLiability.Text" xml:space="preserve">
+    <value>2020</value>
+  </data>
+  <data name="xrcolCapCurrentLiability.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrcolCapCurrentLiability.Weight" type="System.Double, mscorlib">
+    <value>0.45860080042130463</value>
+  </data>
+  <data name="xrTableRow1.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="xrtblHeaderCaption.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>1068, 32.7083321</value>
+  </data>
+  <data name="xrlblBalanceSheetTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="xrlblBalanceSheetTitle.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>545.375, 95.33334</value>
+  </data>
+  <data name="xrlblBalanceSheetTitle.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>512.625, 23</value>
+  </data>
+  <data name="xrlblBalanceSheetTitle.Text" xml:space="preserve">
+    <value>Balance Sheet Net Result</value>
+  </data>
+  <data name="xrlblBalanceSheetTitle.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrTable2.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>545.7081, 119.333328</value>
+  </data>
+  <data name="xrTableRow21.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>233, 233, 233</value>
+  </data>
+  <data name="xrTableCell46.Weight" type="System.Double, mscorlib">
+    <value>0.60486581277627027</value>
+  </data>
+  <data name="xrcellOPYearCaption.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="xrcellOPYearCaption.Text" xml:space="preserve">
+    <value>Opening</value>
+  </data>
+  <data name="xrcellOPYearCaption.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrcellOPYearCaption.Weight" type="System.Double, mscorlib">
+    <value>0.476610456934884</value>
+  </data>
+  <data name="xrcellCurrentYearCaption.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="xrcellCurrentYearCaption.Text" xml:space="preserve">
+    <value>Current</value>
+  </data>
+  <data name="xrcellCurrentYearCaption.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrcellCurrentYearCaption.Weight" type="System.Double, mscorlib">
+    <value>0.47661045693488413</value>
+  </data>
+  <data name="xrcellDiffYearCaption.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="xrcellDiffYearCaption.Text" xml:space="preserve">
+    <value>Difference</value>
+  </data>
+  <data name="xrcellDiffYearCaption.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrcellDiffYearCaption.Weight" type="System.Double, mscorlib">
+    <value>0.47661071479295963</value>
+  </data>
+  <data name="xrTableRow21.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="xrcellBalanceSheetGainLossTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xrcellBalanceSheetGainLossTitle.Text" xml:space="preserve">
+    <value>Balance Sheet Difference</value>
+  </data>
+  <data name="xrcellBalanceSheetGainLossTitle.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrcellBalanceSheetGainLossTitle.Weight" type="System.Double, mscorlib">
+    <value>0.60486581277627027</value>
+  </data>
+  <data name="xrcellTotalAsset.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.75pt</value>
+  </data>
+  <data name="xrcellTotalAsset.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrcellTotalAsset.Weight" type="System.Double, mscorlib">
+    <value>0.476610456934884</value>
+  </data>
+  <data name="xrcellTotalLiabilities.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.75pt</value>
+  </data>
+  <data name="xrcellTotalLiabilities.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrcellTotalLiabilities.Weight" type="System.Double, mscorlib">
+    <value>0.47661045693488413</value>
+  </data>
+  <data name="xrcellBalancesheetDifference.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.75pt</value>
+  </data>
+  <data name="xrcellBalancesheetDifference.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrcellBalancesheetDifference.Weight" type="System.Double, mscorlib">
+    <value>0.47661071479295963</value>
+  </data>
+  <data name="xrTableRow22.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="xrcellBalanceSheetOPDiffTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xrcellBalanceSheetOPDiffTitle.Text" xml:space="preserve">
+    <value>OP Diff (GN-RP &amp; RP)</value>
+  </data>
+  <data name="xrcellBalanceSheetOPDiffTitle.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrcellBalanceSheetOPDiffTitle.Weight" type="System.Double, mscorlib">
+    <value>0.60486581277627027</value>
+  </data>
+  <data name="xrcellBalanceSheetGNOP.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.75pt</value>
+  </data>
+  <data name="xrcellBalanceSheetGNOP.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrcellBalanceSheetGNOP.Weight" type="System.Double, mscorlib">
+    <value>0.476610456934884</value>
+  </data>
+  <data name="xrcellBalanceSheetRPOP.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.75pt</value>
+  </data>
+  <data name="xrcellBalanceSheetRPOP.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrcellBalanceSheetRPOP.Weight" type="System.Double, mscorlib">
+    <value>0.47661045693488413</value>
+  </data>
+  <data name="xrcellBalanceSheetOPDiff.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.75pt</value>
+  </data>
+  <data name="xrcellBalanceSheetOPDiff.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrcellBalanceSheetOPDiff.Weight" type="System.Double, mscorlib">
+    <value>0.47661071479295963</value>
+  </data>
+  <data name="xrTableRow23.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="xrcellBalansheetTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="xrcellBalansheetTitle.Text" xml:space="preserve">
+    <value>Balance Sheet Net Result</value>
+  </data>
+  <data name="xrcellBalansheetTitle.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>BottomRight</value>
+  </data>
+  <data name="xrcellBalansheetTitle.Weight" type="System.Double, mscorlib">
+    <value>1.5580870327551002</value>
+  </data>
+  <data name="xrcellBalansheetAmt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold, Underline</value>
+  </data>
+  <data name="xrcellBalansheetAmt.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>BottomRight</value>
+  </data>
+  <data name="xrcellBalansheetAmt.Weight" type="System.Double, mscorlib">
+    <value>0.47661040868389787</value>
+  </data>
+  <data name="xrTableRow24.Weight" type="System.Double, mscorlib">
+    <value>1.4</value>
+  </data>
+  <data name="xrTable2.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>512.291931, 110</value>
+  </data>
+  <data name="xrlblPLTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="xrlblPLTitle.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>0.499542564, 0</value>
+  </data>
+  <data name="xrlblPLTitle.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>539.500366, 23</value>
+  </data>
+  <data name="xrlblPLTitle.Text" xml:space="preserve">
+    <value>R&amp;P Difference and P&amp;L Net Result</value>
+  </data>
+  <data name="xrlblPLTitle.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrTblDifference.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>0, 24.3333282</value>
+  </data>
+  <data name="xrcellFDDifference.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xrcellFDDifference.Text" xml:space="preserve">
+    <value>FD Difference (R&amp;P)</value>
+  </data>
+  <data name="xrcellFDDifference.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrcellFDDifference.Weight" type="System.Double, mscorlib">
+    <value>0.75463321601686129</value>
+  </data>
+  <data name="xrcellFDDiffAmount.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.75pt</value>
+  </data>
+  <data name="xrSummary1.FormatString" xml:space="preserve">
+    <value>{0:n}</value>
+  </data>
+  <data name="xrcellFDDiffAmount.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrcellFDDiffAmount.Weight" type="System.Double, mscorlib">
+    <value>0.45675169490870932</value>
+  </data>
+  <data name="xrcellFDDiffAmount1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.75pt</value>
+  </data>
+  <data name="xrSummary2.FormatString" xml:space="preserve">
+    <value>{0:n}</value>
+  </data>
+  <data name="xrcellFDDiffAmount1.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrcellFDDiffAmount1.Weight" type="System.Double, mscorlib">
+    <value>0.45675170565599987</value>
+  </data>
+  <data name="xrcellFDDiffAmount2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.75pt</value>
+  </data>
+  <data name="xrcellFDDiffAmount2.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrcellFDDiffAmount2.Weight" type="System.Double, mscorlib">
+    <value>0.47661033231441452</value>
+  </data>
+  <data name="xrRowFDDifference.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="xrTableRow10.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>233, 233, 233</value>
+  </data>
+  <data name="xrTableCell4.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>233, 233, 233</value>
+  </data>
+  <data name="xrTableCell4.Weight" type="System.Double, mscorlib">
+    <value>0.75463321601686117</value>
+  </data>
+  <data name="xrTableCell5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell5.Text" xml:space="preserve">
+    <value>Direct Income</value>
+  </data>
+  <data name="xrTableCell5.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrTableCell5.Weight" type="System.Double, mscorlib">
+    <value>0.45675169490870926</value>
+  </data>
+  <data name="xrTableCell6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell6.Text" xml:space="preserve">
+    <value>Direct Expense</value>
+  </data>
+  <data name="xrTableCell6.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrTableCell6.Weight" type="System.Double, mscorlib">
+    <value>0.45675170565599987</value>
+  </data>
+  <data name="xrTableCell7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell7.Text" xml:space="preserve">
+    <value>Difference</value>
+  </data>
+  <data name="xrTableCell7.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrTableCell7.Weight" type="System.Double, mscorlib">
+    <value>0.47661033231441441</value>
+  </data>
+  <data name="xrTableRow10.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="xrcellDirectIncomeExpense.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xrcellDirectIncomeExpense.Text" xml:space="preserve">
+    <value>Direct Income &amp; Expense</value>
+  </data>
+  <data name="xrcellDirectIncomeExpense.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrcellDirectIncomeExpense.Weight" type="System.Double, mscorlib">
+    <value>0.75463321601686117</value>
+  </data>
+  <data name="xrcellDirectIncome.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.75pt</value>
+  </data>
+  <data name="xrcellDirectIncome.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrcellDirectIncome.Weight" type="System.Double, mscorlib">
+    <value>0.45675169490870926</value>
+  </data>
+  <data name="xrcellDirectExpense.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.75pt</value>
+  </data>
+  <data name="xrcellDirectExpense.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrcellDirectExpense.Weight" type="System.Double, mscorlib">
+    <value>0.45675170565599987</value>
+  </data>
+  <data name="xrcellPLDifference.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.75pt</value>
+  </data>
+  <data name="xrcellPLDifference.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrcellPLDifference.Weight" type="System.Double, mscorlib">
+    <value>0.47661033231441452</value>
+  </data>
+  <data name="xrPLRow.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="xrTableRow11.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>233, 233, 233</value>
+  </data>
+  <data name="xrTableCell8.Weight" type="System.Double, mscorlib">
+    <value>0.75463321601686117</value>
+  </data>
+  <data name="xrTableCell9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell9.Text" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="xrTableCell9.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrTableCell9.Weight" type="System.Double, mscorlib">
+    <value>0.45675169490870926</value>
+  </data>
+  <data name="xrTableCell10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell10.Text" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="xrTableCell10.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrTableCell10.Weight" type="System.Double, mscorlib">
+    <value>0.45675170565599987</value>
+  </data>
+  <data name="xrTableCell11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell11.Text" xml:space="preserve">
+    <value>Difference</value>
+  </data>
+  <data name="xrTableCell11.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrTableCell11.Weight" type="System.Double, mscorlib">
+    <value>0.47661033231441452</value>
+  </data>
+  <data name="xrTableRow11.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="xrcellInterAccount.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xrcellInterAccount.Text" xml:space="preserve">
+    <value>Inter Account</value>
+  </data>
+  <data name="xrcellInterAccount.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrcellInterAccount.Weight" type="System.Double, mscorlib">
+    <value>0.75463321601686117</value>
+  </data>
+  <data name="xrcellInterAccountReceipt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.75pt</value>
+  </data>
+  <data name="xrcellInterAccountReceipt.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrcellInterAccountReceipt.Weight" type="System.Double, mscorlib">
+    <value>0.45675169490870926</value>
+  </data>
+  <data name="xrcellInterAccountPayment.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.75pt</value>
+  </data>
+  <data name="xrcellInterAccountPayment.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrcellInterAccountPayment.Weight" type="System.Double, mscorlib">
+    <value>0.45675170565599987</value>
+  </data>
+  <data name="xrcellInterAccountDifferencfe.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.75pt</value>
+  </data>
+  <data name="xrcellInterAccountDifferencfe.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrcellInterAccountDifferencfe.Weight" type="System.Double, mscorlib">
+    <value>0.47661033231441452</value>
+  </data>
+  <data name="xrInterAccRow.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="xrTableCell1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell1.Text" xml:space="preserve">
+    <value>Province Contribution</value>
+  </data>
+  <data name="xrTableCell1.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrTableCell1.Weight" type="System.Double, mscorlib">
+    <value>0.75463321601686117</value>
+  </data>
+  <data name="xrcellProvinceConFromAmt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.75pt</value>
+  </data>
+  <data name="xrcellProvinceConFromAmt.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrcellProvinceConFromAmt.Weight" type="System.Double, mscorlib">
+    <value>0.45675169490870926</value>
+  </data>
+  <data name="xrcellProvinceConToAmt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.75pt</value>
+  </data>
+  <data name="xrcellProvinceConToAmt.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrcellProvinceConToAmt.Weight" type="System.Double, mscorlib">
+    <value>0.45675170565599987</value>
+  </data>
+  <data name="xrcellProvinceConDiffAmt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.75pt</value>
+  </data>
+  <data name="xrcellProvinceConDiffAmt.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrcellProvinceConDiffAmt.Weight" type="System.Double, mscorlib">
+    <value>0.47661033231441452</value>
+  </data>
+  <data name="xrTableRow4.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="xrTableCell2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell2.Text" xml:space="preserve">
+    <value>Diff in Inter A/c &amp; Contribution</value>
+  </data>
+  <data name="xrTableCell2.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrTableCell2.Weight" type="System.Double, mscorlib">
+    <value>0.75463321601686106</value>
+  </data>
+  <data name="xrcellContributionFrom.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.75pt</value>
+  </data>
+  <data name="xrcellContributionFrom.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrcellContributionFrom.Weight" type="System.Double, mscorlib">
+    <value>0.45675169490870926</value>
+  </data>
+  <data name="xrcellContributionTo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.75pt</value>
+  </data>
+  <data name="xrcellContributionTo.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrcellContributionTo.Weight" type="System.Double, mscorlib">
+    <value>0.45675170565599987</value>
+  </data>
+  <data name="xrcellContributionDifference.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.75pt</value>
+  </data>
+  <data name="xrcellContributionDifference.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrcellContributionDifference.Weight" type="System.Double, mscorlib">
+    <value>0.47661033231441452</value>
+  </data>
+  <data name="xrTableRow5.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="xrcellGainLossTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="xrcellGainLossTitle.Text" xml:space="preserve">
+    <value>P&amp;L Net Result</value>
+  </data>
+  <data name="xrcellGainLossTitle.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>BottomRight</value>
+  </data>
+  <data name="xrcellGainLossTitle.Weight" type="System.Double, mscorlib">
+    <value>1.6681364765196405</value>
+  </data>
+  <data name="xrcellGainLoss.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold, Underline</value>
+  </data>
+  <data name="xrcellGainLoss.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>BottomRight</value>
+  </data>
+  <data name="xrcellGainLoss.Weight" type="System.Double, mscorlib">
+    <value>0.47661047237634374</value>
+  </data>
+  <data name="xrTableRow6.Weight" type="System.Double, mscorlib">
+    <value>1.4</value>
+  </data>
+  <data name="xrTblDifference.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>540, 210</value>
+  </data>
+  <data name="ReportFooter.HeightF" type="System.Single, mscorlib">
+    <value>234.333328</value>
+  </data>
+  <data name="ReportFooter.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="reportSetting1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="grpHeaderGroup.HeightF" type="System.Single, mscorlib">
+    <value>32.7083321</value>
+  </data>
+  <data name="xrTable1.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>233, 233, 233</value>
+  </data>
+  <data name="xrTable1.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>Gainsboro</value>
+  </data>
+  <data name="xrTable1.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>535, 39.0433159</value>
+  </data>
+  <data name="xrTableCell3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell3.Text" xml:space="preserve">
+    <value>NET EQUITY</value>
+  </data>
+  <data name="xrTableCell3.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrTableCell3.Weight" type="System.Double, mscorlib">
+    <value>1.554629501835324</value>
+  </data>
+  <data name="xrtblGrandOpeningTotal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xrSummary3.FormatString" xml:space="preserve">
+    <value>{0:n}</value>
+  </data>
+  <data name="xrtblGrandOpeningTotal.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrtblGrandOpeningTotal.Weight" type="System.Double, mscorlib">
+    <value>0.60630552264365289</value>
+  </data>
+  <data name="xrtblGrandCurrentTotal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xrSummary4.FormatString" xml:space="preserve">
+    <value>{0:n}</value>
+  </data>
+  <data name="xrtblGrandCurrentTotal.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrtblGrandCurrentTotal.Weight" type="System.Double, mscorlib">
+    <value>0.60630558457569139</value>
+  </data>
+  <data name="xrTableRow3.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="xrTable1.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>534, 32.7100029</value>
+  </data>
+  <data name="xrtblGrandTotal.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>233, 233, 233</value>
+  </data>
+  <data name="xrtblGrandTotal.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>Gainsboro</value>
+  </data>
+  <data name="xrtblGrandTotal.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>0, 5</value>
+  </data>
+  <data name="xrtblFooterAsset.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xrtblFooterAsset.Text" xml:space="preserve">
+    <value>TOTAL ASSETS</value>
+  </data>
+  <data name="xrtblFooterAsset.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrtblFooterAsset.Weight" type="System.Double, mscorlib">
+    <value>1.1220796973837051</value>
+  </data>
+  <data name="xrtblAssetOpeningtatallAmt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xrSummary5.FormatString" xml:space="preserve">
+    <value>{0:n}</value>
+  </data>
+  <data name="xrtblAssetOpeningtatallAmt.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrtblAssetOpeningtatallAmt.Weight" type="System.Double, mscorlib">
+    <value>0.43761111466480324</value>
+  </data>
+  <data name="xrtblCurrentAssetValueAmt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xrSummary6.FormatString" xml:space="preserve">
+    <value>{0:n}</value>
+  </data>
+  <data name="xrtblCurrentAssetValueAmt.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrtblCurrentAssetValueAmt.Weight" type="System.Double, mscorlib">
+    <value>0.43761111466480324</value>
+  </data>
+  <data name="xrtblFooterLiability.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xrtblFooterLiability.Text" xml:space="preserve">
+    <value> TOTAL LIABILITIES</value>
+  </data>
+  <data name="xrtblFooterLiability.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrtblFooterLiability.Weight" type="System.Double, mscorlib">
+    <value>1.1220798031734303</value>
+  </data>
+  <data name="xrtblLiabilityOpeningTotalAmt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xrSummary7.FormatString" xml:space="preserve">
+    <value>{0:n}</value>
+  </data>
+  <data name="xrtblLiabilityOpeningTotalAmt.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrtblLiabilityOpeningTotalAmt.Weight" type="System.Double, mscorlib">
+    <value>0.43761109452511615</value>
+  </data>
+  <data name="xrtblCurrentLiabilityValueAmt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xrSummary8.FormatString" xml:space="preserve">
+    <value>{0:n}</value>
+  </data>
+  <data name="xrtblCurrentLiabilityValueAmt.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrtblCurrentLiabilityValueAmt.Weight" type="System.Double, mscorlib">
+    <value>0.43760926822343565</value>
+  </data>
+  <data name="xrTableRow2.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="xrtblGrandTotal.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>1067.99951, 32.71</value>
+  </data>
+  <data name="grpRptFooter.HeightF" type="System.Single, mscorlib">
+    <value>71.75332</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.Landscape" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.Margins" type="System.Drawing.Printing.Margins, System.Drawing">
+    <value>57, 39, 61, 0</value>
+  </data>
+  <data name="$this.PageHeight" type="System.Int32, mscorlib">
+    <value>827</value>
+  </data>
+  <data name="$this.PageWidth" type="System.Int32, mscorlib">
+    <value>1169</value>
+  </data>
+</root>

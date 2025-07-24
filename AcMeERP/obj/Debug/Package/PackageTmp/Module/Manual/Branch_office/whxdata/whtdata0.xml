@@ -1,0 +1,111 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<tocdata>
+<book name="Getting Started" >
+  <item name="Introduction" url="Getting_Started/Introduction.htm" />
+  <item name="Login" url="Getting_Started/Login.htm" />
+  <item name="Common Operations" url="Getting_Started/Common_Operations.htm" />
+</book>
+<book name="View Dashboard" >
+  <item name="View Projects" url="View_Dashboard/View_Projects.htm" />
+  <item name="View Data Status" url="View_Dashboard/View_Data_Status.htm" />
+</book>
+<book name="Manage Users" >
+  <item name="Add User" url="Manage_Users/Add_User.htm" />
+  <item name="Activate and Deactivate Users" url="Manage_Users/Activate_and_Deactivate_Users.htm" />
+  <item name="Add User Role" url="Manage_Users/Add_User_Role.htm" />
+  <item name="User Rights" url="Manage_Users/User_Rights.htm" />
+  <item name="Change Password" url="Manage_Users/Change_Password.htm" />
+</book>
+<book name="Manage Branch Office" >
+  <item name="Branch Office" url="Manage_Branch_Office/Branch_Office.htm" />
+</book>
+<book name="Manage Data" >
+  <book name="Masters" >
+    <item name="Introduction" url="Manage_Data/Masters/Introduction.htm" />
+    <item name="Accounting Period" url="Manage_Data/Masters/Accounting_Period.htm" />
+    <item name="Legal Entity" url="Manage_Data/Masters/Legal_Entity.htm" />
+    <item name="Ledger Group" url="Manage_Data/Masters/Ledger_Group.htm" />
+    <item name="Ledger" url="Manage_Data/Masters/Ledger.htm" />
+    <item name="Project_Category" url="Manage_Data/Masters/Project_Category.htm" />
+    <item name="Project" url="Manage_Data/Masters/Project.htm" />
+    <item name="View FC Purpose" url="Manage_Data/Masters/View_FC_Purpose.htm" />
+    <item name="Download Masters" url="Manage_Data/Masters/Download_Masters.htm" />
+  </book>
+  <book name="Vouchers" >
+    <item name="Introduction" url="Manage_Data/Vouchers/Introduction.htm" />
+    <item name="Upload Voucher" url="Manage_Data/Vouchers/Upload_Voucher.htm" />
+    <item name="View Vouchers" url="Manage_Data/Vouchers/View_Vouchers.htm" />
+    <item name="Add Ammendment" url="Manage_Data/Vouchers/Add_Amendment.htm" />
+    <item name="View Amendment Notes" url="Manage_Data/Vouchers/View_Amendment_Notes.htm" />
+  </book>
+</book>
+<book name="Manage Trouble Tickets" >
+  <item name="Post Trouble Ticket" url="Manage_Trouble_Tickets/Post_Trouble_Ticket.htm" />
+  <item name="Reply for a Trouble Ticket" url="Manage_Trouble_Tickets/Reply_for_a_Trouble_Ticket.htm" />
+  <item name="Edit Trouble Ticket" url="Manage_Trouble_Tickets/Edit_Trouble_Ticket.htm" />
+</book>
+<book name="Reports" >
+  <book name="Abstract" >
+    <item name="Customise Abstract Report" url="Reports/Abstract/Customise_Abstract_Reports.htm" />
+    <item name="Monthly-Receipt" url="Reports/Abstract/Monthly-Receipt.htm" />
+    <item name="Monthly-Payment" url="Reports/Abstract/Monthly-Payment.htm" />
+    <item name="Monthly-Recepts and Payment" url="Reports/Abstract/Monthly-Recepts_and_Payment.htm" />
+    <item name="Multi-Receipt" url="Reports/Abstract/Multi-Receipt.htm" />
+    <item name="Multi-Payment" url="Reports/Abstract/Multi-Payment.htm" />
+    <item name="Multi-Receipt and Payment" url="Reports/Abstract/Multi-Receipt_and_Payment.htm" />
+  </book>
+  <book name="Bank Activities" >
+    <item name="Customise Bank Activities Report" url="Reports/Bank_Activities/Customise_Bank_Activities_Reports.htm" />
+    <item name="Bank Balance Statement" url="Reports/Bank_Activities/Bank_Balance_Statement.htm" />
+    <item name="Fixed Deposit Statement" url="Reports/Bank_Activities/Fixed_Deposit_Statement.htm" />
+    <item name="Fixed Deposit Register" url="Reports/Bank_Activities/Fixed_Deposit_Register.htm" />
+  </book>
+  <book name="Books of Accounts" >
+    <item name="Customise Book of Accounts Reports" url="Reports/Books_of_Accounts/Customise_Book_of_Accounts_Reports.htm" />
+    <item name="Cash and Bank Book" url="Reports/Books_of_Accounts/Cash_and_Bank_Book.htm" />
+    <item name="Ledger" url="Reports/Books_of_Accounts/Ledger.htm" />
+    <item name="Cash Journal" url="Reports/Books_of_Accounts/Cash_Journal.htm" />
+    <item name="Bank Journal" url="Reports/Books_of_Accounts/Bank_Journal.htm" />
+    <item name="Cash Daily Balance" url="Reports/Books_of_Accounts/Cash_Daily_Balance.htm" />
+    <item name="Bank Daily Balance" url="Reports/Books_of_Accounts/Bank_Daily_Balance.htm" />
+  </book>
+  <book name="Final Accounts" >
+    <item name="Customise Final Accounts" url="Reports/Final_Accounts/Customise_Final_Accounts_.htm" />
+    <item name="Trial Balance" url="Reports/Final_Accounts/Trial_Balance.htm" />
+    <item name="Receipts and Payments" url="Reports/Final_Accounts/Receipts_and_Payments.htm" />
+    <item name="Income and Expenditure" url="Reports/Final_Accounts/Income_and_Expenditure.htm" />
+    <item name="Communitywise Income and Expense" url="Reports/Final_Accounts/Communitywise_Income_and_Expense.htm" />
+    <item name="Collective Ledger Report" url="Reports/Final_Accounts/Collective_Ledger_Report.htm" />
+    <item name="Balance Sheet" url="Reports/Final_Accounts/Balance_Sheet_.htm" />
+  </book>
+  <book name="Foreign Contribution" >
+    <item name="Customise Foreign Contribution" url="Reports/Foreign_Contribution/Customise_Foreign_Contribution.htm" />
+    <item name="FC Purpose" url="Reports/Foreign_Contribution/FC_Purpose.htm" />
+    <item name="FC Purpose Donor Institutional" url="Reports/Foreign_Contribution/FC_Purpose_Donor_Institutional.htm" />
+    <item name="FC Purpose Donor Individual" url="Reports/Foreign_Contribution/FC_Purpose_Donor_Individual.htm" />
+    <item name="FC Country" url="Reports/Foreign_Contribution/FC_Country.htm" />
+  </book>
+  <book name="Cost Centre" >
+    <item name="Customise Cost Centre" url="Reports/Cost_Centre/Customise_Cost_Centre.htm" />
+    <item name="Monthly-Receipt" url="Reports/Cost_Centre/Monthly-Receipt.htm" />
+    <item name="Monthly-Payment" url="Reports/Cost_Centre/Monthly-Payment.htm" />
+    <item name="Monthly-Receipt and Payment" url="Reports/Cost_Centre/Monthly-Receipt_and_Payment.htm" />
+    <item name="Multi-Receipt" url="Reports/Cost_Centre/Multi-Receipt.htm" />
+    <item name="Multi-Payment" url="Reports/Cost_Centre/Multi-Payment.htm" />
+    <item name="Multi-Receipt and Payment" url="Reports/Cost_Centre/Multi-Receipt_and_Payment.htm" />
+    <item name="Cash Journal" url="Reports/Cost_Centre/Cash_Journal.htm" />
+    <item name="Bank Journal" url="Reports/Cost_Centre/Bank_Journal_.htm" />
+    <item name="Cash and Bank Book" url="Reports/Cost_Centre/Cash_and_Bank_Book.htm" />
+    <item name="Receipt and Payments" url="Reports/Cost_Centre/Receipt_and_Payments.htm" />
+  </book>
+  <book name="Masters" >
+    <item name="Customise Masters" url="Reports/Masters/Customise_Masters.htm" />
+    <item name="Head Office Ledgers" url="Reports/Masters/Head_Office_Ledgers.htm" />
+  </book>
+</book>
+<book name="Manage Product" >
+  <item name="Download Product" url="Manage_Product/Download_Product.htm" />
+  <item name="Download Key" url="Manage_Product/Download_Key.htm" />
+</book>
+
+</tocdata>

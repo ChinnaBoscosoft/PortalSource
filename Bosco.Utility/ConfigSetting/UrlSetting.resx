@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BranchOfficeAdd" xml:space="preserve">
+    <value>module/office/branchofficeadd.aspx</value>
+    <comment>25</comment>
+  </data>
+  <data name="BranchOfficeView" xml:space="preserve">
+    <value>module/office/branchofficeview.aspx</value>
+    <comment>24</comment>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>module/user/changepassword.aspx</value>
+    <comment>28</comment>
+  </data>
+  <data name="CountryAdd" xml:space="preserve">
+    <value>module/master/countryadd.aspx</value>
+    <comment>17</comment>
+  </data>
+  <data name="CountryView" xml:space="preserve">
+    <value>module/master/countryview.aspx</value>
+    <comment>16</comment>
+  </data>
+  <data name="Default" xml:space="preserve">
+    <value>default.aspx</value>
+    <comment>2</comment>
+  </data>
+  <data name="DonorAdd" xml:space="preserve">
+    <value>module/master/donaradd.aspx</value>
+    <comment>22</comment>
+  </data>
+  <data name="DonorView" xml:space="preserve">
+    <value>module/master/donarview.aspx</value>
+    <comment>23</comment>
+  </data>
+  <data name="ErrorPage" xml:space="preserve">
+    <value>errorpage.aspx</value>
+    <comment>1</comment>
+  </data>
+  <data name="HeadOfficeAdd" xml:space="preserve">
+    <value>module/office/headofficeadd.aspx</value>
+    <comment>18</comment>
+  </data>
+  <data name="HeadofficeView" xml:space="preserve">
+    <value>module/office/headofficeview.aspx</value>
+    <comment>19</comment>
+  </data>
+  <data name="HomeLogin" xml:space="preserve">
+    <value>homelogin.aspx</value>
+    <comment>3</comment>
+  </data>
+  <data name="HOUserView" xml:space="preserve">
+    <value>module/user/houserview.aspx</value>
+    <comment>29</comment>
+  </data>
+  <data name="LedgerAdd" xml:space="preserve">
+    <value>module/master/ledgeradd.aspx</value>
+    <comment>20</comment>
+  </data>
+  <data name="LedgerView" xml:space="preserve">
+    <value>module/master/ledgerview.aspx</value>
+    <comment>21</comment>
+  </data>
+  <data name="LegalEntityAdd" xml:space="preserve">
+    <value>module/master/legalentityadd.aspx</value>
+    <comment>13</comment>
+  </data>
+  <data name="LegalEntityView" xml:space="preserve">
+    <value>module/master/legalentityview.aspx</value>
+    <comment>14</comment>
+  </data>
+  <data name="Portal" xml:space="preserve">
+    <value>account/portal/default.aspx</value>
+    <comment>101</comment>
+  </data>
+  <data name="ProjectAdd" xml:space="preserve">
+    <value>module/master/projectadd.aspx</value>
+    <comment>11</comment>
+  </data>
+  <data name="ProjectCategoryAdd" xml:space="preserve">
+    <value>module/master/projectcategoryadd.aspx</value>
+    <comment>9</comment>
+  </data>
+  <data name="ProjectCategoryView" xml:space="preserve">
+    <value>module/master/projectcategoryview.aspx</value>
+    <comment>10</comment>
+  </data>
+  <data name="ProjectView" xml:space="preserve">
+    <value>module/master/projectview.aspx</value>
+    <comment>12</comment>
+  </data>
+  <data name="RightsView" xml:space="preserve">
+    <value>module/user/userrights.aspx</value>
+    <comment>15</comment>
+  </data>
+  <data name="RoleAdd" xml:space="preserve">
+    <value>module/user/roleadd.aspx</value>
+    <comment>7</comment>
+  </data>
+  <data name="RoleView" xml:space="preserve">
+    <value>module/user/roleview.aspx</value>
+    <comment>6</comment>
+  </data>
+  <data name="SoftwareAdd" xml:space="preserve">
+    <value>module/software/upload_downloadadd.aspx</value>
+    <comment>27</comment>
+  </data>
+  <data name="SoftwareView" xml:space="preserve">
+    <value>module/software/upload_downloadview.aspx</value>
+    <comment>26</comment>
+  </data>
+  <data name="UserAdd" xml:space="preserve">
+    <value>module/user/useradd.aspx</value>
+    <comment>5</comment>
+  </data>
+  <data name="UserView" xml:space="preserve">
+    <value>module/user/userview.aspx</value>
+    <comment>4</comment>
+  </data>
+  <data name="HOUserAdd" xml:space="preserve">
+    <value>module/user/houseradd.aspx</value>
+    <comment>32</comment>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>ErrorPage.aspx</value>
+  </data>
+  <data name="EndUserDownload" xml:space="preserve">
+    <value>module/software/EnduserDownload.aspx</value>
+    <comment>35</comment>
+  </data>
+  <data name="TroubleTicketingView" xml:space="preserve">
+    <value>module/troubleticket/TroubleTicketingView.aspx</value>
+    <comment>36</comment>
+  </data>
+  <data name="MapProject" xml:space="preserve">
+    <value>module/office/ProjectMapping.aspx</value>
+    <comment>37</comment>
+  </data>
+  <data name="GenerateLicenseKey" xml:space="preserve">
+    <value>module/office/GenerateLicenseKey.aspx</value>
+    <comment>38</comment>
+  </data>
+  <data name="VoucherView" xml:space="preserve">
+    <value>module/master/VoucherView.aspx</value>
+    <comment>39</comment>
+  </data>
+  <data name="ReportViewer" xml:space="preserve">
+    <value>Report/PortalReportCriteria.aspx</value>
+    <comment>40</comment>
+  </data>
+  <data name="ChangePasswordSuccess" xml:space="preserve">
+    <value>module/user/ChangePasswordSuccess.aspx</value>
+    <comment>41</comment>
+  </data>
+  <data name="AmendmentView" xml:space="preserve">
+    <value>module/master/AmendmentsView.aspx</value>
+    <comment>42</comment>
+  </data>
+  <data name="AccountingPeriodAdd" xml:space="preserve">
+    <value>module/master/AccountingPeriodAdd.aspx</value>
+    <comment>43</comment>
+  </data>
+  <data name="AccountingPeriodView" xml:space="preserve">
+    <value>module/master/AccountingPeriodView.aspx</value>
+    <comment>44</comment>
+  </data>
+  <data name="GoverningMemberAdd" xml:space="preserve">
+    <value>module/master/GoverningMemberAdd.aspx</value>
+    <comment>45</comment>
+  </data>
+  <data name="GoverningMemberView" xml:space="preserve">
+    <value>module/master/GoverningMemberView.aspx</value>
+    <comment>46</comment>
+  </data>
+  <data name="BranchLocationAdd" xml:space="preserve">
+    <value>module/office/BranchLocation.aspx</value>
+    <comment>48</comment>
+  </data>
+  <data name="BranchLocationView" xml:space="preserve">
+    <value>module/office/BranchLocationView.aspx</value>
+    <comment>47</comment>
+  </data>
+  <data name="SendMessage" xml:space="preserve">
+    <value>module/office/SendMessage.aspx</value>
+    <comment>49</comment>
+  </data>
+  <data name="ViewMessage" xml:space="preserve">
+    <value>module/office/ViewMessage.aspx</value>
+    <comment>50</comment>
+  </data>
+  <data name="AssetItemAdd" xml:space="preserve">
+    <value>module/inventory/asset/AssetItemAdd.aspx</value>
+    <comment>52</comment>
+  </data>
+  <data name="AssetItemView" xml:space="preserve">
+    <value>module/inventory/asset/AssetItemView.aspx</value>
+    <comment>51</comment>
+  </data>
+  <data name="AssetUnitofMeasureAdd" xml:space="preserve">
+    <value>module/inventory/asset/AssetUnitofMeasureAdd.aspx</value>
+    <comment>54</comment>
+  </data>
+  <data name="AssetUnitofMeasureView" xml:space="preserve">
+    <value>module/inventory/asset/AssetUnitofMeasureView.aspx</value>
+    <comment>53</comment>
+  </data>
+  <data name="LockVoucherAdd" xml:space="preserve">
+    <value>module/master/LockVoucherAdd.aspx</value>
+    <comment>55</comment>
+  </data>
+  <data name="LockVoucherView" xml:space="preserve">
+    <value>module/master/LockVoucherView.aspx</value>
+    <comment>56</comment>
+  </data>
+  <data name="Budget" xml:space="preserve">
+    <value>module/master/Budget.aspx</value>
+  </data>
+  <data name="FCPurposeAdd" xml:space="preserve">
+    <value>module/master/FCPurposeAdd.aspx</value>
+    <comment>57</comment>
+  </data>
+  <data name="FCPurposeView" xml:space="preserve">
+    <value>module/master/FCPurposeView.aspx</value>
+    <comment>58</comment>
+  </data>
+  <data name="BudgetAdd" xml:space="preserve">
+    <value>module/master/BudgetINM.aspx</value>
+    <comment>59</comment>
+  </data>
+  <data name="BudgetView" xml:space="preserve">
+    <value>module/master/BudgetView.aspx</value>
+    <comment>60</comment>
+  </data>
+</root>

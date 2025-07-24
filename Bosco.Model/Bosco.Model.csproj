@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{19174D3E-0259-4212-9BD8-479D08665238}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bosco.Model</RootNamespace>
+    <AssemblyName>Bosco.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/Bosco.Model/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AcMEDSync, Version=6.12.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AcMeERP\dlls\AcMEDSync.dll</HintPath>
+    </Reference>
+    <Reference Include="Bosco.HOSQL">
+      <HintPath>..\AcMeERP\dlls\Bosco.HOSQL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Inventory\Asset\AssetClassSystem.cs" />
+    <Compile Include="Inventory\Asset\AssetItemSystem.cs" />
+    <Compile Include="Inventory\Asset\AssetUnitOfMeassureSystem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setting\GlobalSetting.cs" />
+    <Compile Include="Setting\ISetting.cs" />
+    <Compile Include="Setting\UISetting.cs" />
+    <Compile Include="SystemBase.cs" />
+    <Compile Include="Transaction\BreakUpSystem.cs" />
+    <Compile Include="Transaction\FDAccountSystem.cs" />
+    <Compile Include="Transaction\FDRenewalSystem.cs" />
+    <Compile Include="Transaction\InKindReceivedSystem.cs" />
+    <Compile Include="Transaction\InKindUtilisedSystem.cs" />
+    <Compile Include="Transaction\VoucherTransactionSystem.cs" />
+    <Compile Include="UIModel\Master\AccouingPeriodSystem.cs" />
+    <Compile Include="UIModel\Master\AmendmentSystem.cs" />
+    <Compile Include="UIModel\Master\BudgetSystem.cs" />
+    <Compile Include="UIModel\Master\CongregationLedgerMappingSystem.cs" />
+    <Compile Include="UIModel\Master\DeducteeTypeSystem.cs" />
+    <Compile Include="UIModel\Master\GeneralateOpeningBalance.cs" />
+    <Compile Include="UIModel\Master\GeneralateSystem.cs" />
+    <Compile Include="UIModel\Master\LedgerProfileSystem.cs" />
+    <Compile Include="UIModel\Master\LegalEntitySystem.cs" />
+    <Compile Include="UIModel\Master\LockVoucherSystem.cs" />
+    <Compile Include="UIModel\Master\MappingSystem.cs" />
+    <Compile Include="UIModel\Master\NumberSystem.cs" />
+    <Compile Include="UIModel\Master\TDSSystem.cs" />
+    <Compile Include="UIModel\MobileService\AESEncryptionDecryption.cs" />
+    <Compile Include="UIModel\MobileService\AndroidResult.cs" />
+    <Compile Include="UIModel\MobileService\MobileServiceSystem.cs" />
+    <Compile Include="UIModel\Office\BranchLocationSystem.cs" />
+    <Compile Include="UIModel\Office\BranchOfficeSystem.cs" />
+    <Compile Include="UIModel\Office\HeadOfficeSystem.cs" />
+    <Compile Include="UIModel\Office\LicenseSystem.cs" />
+    <Compile Include="UIModel\Software\ClearLogSystem.cs" />
+    <Compile Include="UIModel\Software\SoftwareSystem.cs" />
+    <Compile Include="UIModel\TroubleTicket\TroubleTicketingSystem.cs" />
+    <Compile Include="UIModel\UISettingSystem.cs" />
+    <Compile Include="UIModel\Master\AddressBookSystem.cs" />
+    <Compile Include="UIModel\Master\AuditInfoSystem.cs" />
+    <Compile Include="UIModel\Master\BankSystem.cs" />
+    <Compile Include="UIModel\Master\BankAccountSystem.cs" />
+    <Compile Include="UIModel\Master\AuditorSystem.cs" />
+    <Compile Include="UIModel\Master\LedgerSystem.cs" />
+    <Compile Include="UIModel\Master\CostCentreSystem.cs" />
+    <Compile Include="UIModel\Master\CountrySystem.cs" />
+    <Compile Include="UIModel\Master\DonorAuditorSystem.cs" />
+    <Compile Include="UIModel\Master\ExecutiveMemberSystem.cs" />
+    <Compile Include="UIModel\Master\InKindArticleSystem.cs" />
+    <Compile Include="UIModel\Master\LedgerGroupSystem.cs" />
+    <Compile Include="UIModel\Master\ProjectCatogorySystem.cs" />
+    <Compile Include="UIModel\Master\ProjectSystem.cs" />
+    <Compile Include="UIModel\Master\PurposeSystem.cs" />
+    <Compile Include="UIModel\Master\VoucherSystem.cs" />
+    <Compile Include="UIModel\SettingSystem.cs" />
+    <Compile Include="UIModel\UserManagement\ManageSecuritySystem.cs" />
+    <Compile Include="UIModel\UserManagement\MasterRightsSystem.cs" />
+    <Compile Include="UIModel\UserManagement\RightSystem.cs" />
+    <Compile Include="UIModel\UserManagement\UserRoleSystem.cs" />
+    <Compile Include="UIModel\UserSystem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bosco.DAO.Schema\Bosco.DAO.Schema.csproj">
+      <Project>{259CF580-C69A-4146-A20F-04F138D94874}</Project>
+      <Name>Bosco.DAO.Schema</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bosco.DAO\Bosco.DAO.csproj">
+      <Project>{74C2B1A6-AFC1-46E0-B164-E89836C8027E}</Project>
+      <Name>Bosco.DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bosco.Utility\Bosco.Utility.csproj">
+      <Project>{4E519AC2-6104-4A87-AFAE-B4DC586201EB}</Project>
+      <Name>Bosco.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

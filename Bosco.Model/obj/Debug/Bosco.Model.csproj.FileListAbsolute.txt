@@ -1,0 +1,15 @@
+D:\APP\PortalSource\Bosco.Model\bin\Debug\Bosco.Model.dll
+D:\APP\PortalSource\Bosco.Model\bin\Debug\Bosco.Model.pdb
+D:\APP\PortalSource\Bosco.Model\bin\Debug\AcMEDSync.dll
+D:\APP\PortalSource\Bosco.Model\bin\Debug\Bosco.DAO.dll
+D:\APP\PortalSource\Bosco.Model\bin\Debug\Bosco.DAO.Schema.dll
+D:\APP\PortalSource\Bosco.Model\bin\Debug\Bosco.HOSQL.dll
+D:\APP\PortalSource\Bosco.Model\bin\Debug\Bosco.Utility.dll
+D:\APP\PortalSource\Bosco.Model\bin\Debug\MySql.Data.dll
+D:\APP\PortalSource\Bosco.Model\bin\Debug\SimpleEncrypt.dll
+D:\APP\PortalSource\Bosco.Model\bin\Debug\Bosco.DAO.Schema.pdb
+D:\APP\PortalSource\Bosco.Model\bin\Debug\Bosco.DAO.pdb
+D:\APP\PortalSource\Bosco.Model\bin\Debug\Bosco.Utility.pdb
+D:\APP\PortalSource\Bosco.Model\obj\Debug\Bosco.Model.csprojResolveAssemblyReference.cache
+D:\APP\PortalSource\Bosco.Model\obj\Debug\Bosco.Model.dll
+D:\APP\PortalSource\Bosco.Model\obj\Debug\Bosco.Model.pdb

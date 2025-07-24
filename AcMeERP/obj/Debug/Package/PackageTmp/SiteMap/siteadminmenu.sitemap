@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/homelogin.aspx?p=t1" title="Home">
+    <siteMapNode  title="User" ModuleCode="User" ActivityCode="UserView" >
+      <siteMapNode url="~/module/user/userview.aspx" title="User" ModuleCode="User" ActivityCode="UserView"/>
+      <siteMapNode url="~/module/user/roleview.aspx" title="User Role" ModuleCode="User" ActivityCode="UserRoleView"/>
+      <siteMapNode url="~/module/user/userrights.aspx" title="User Rights" ModuleCode="User" ActivityCode="UserRights"/>
+      <siteMapNode url="~/module/user/changepassword.aspx" title="Change Password" ModuleCode="" ActivityCode="" />
+    </siteMapNode>
+
+    <siteMapNode  title="Office" ModuleCode="Office" ActivityCode="HeadOfficeView" >
+      <siteMapNode url="~/module/office/headofficeview.aspx" title="Head Office" ModuleCode="Office" ActivityCode="HeadOfficeView" />
+      <siteMapNode url="~/module/office/branchofficeview.aspx" title="Branch Office" ModuleCode="Office" ActivityCode="BranchOfficeView" />
+    </siteMapNode>
+
+    <siteMapNode title="Tools" ModuleCode="Tools" ActivityCode="SoftwareUpload"  >
+      <siteMapNode url="~/module/Software/upload_downloadview.aspx" title="Upload Product" ModuleCode="Tools" ActivityCode="SoftwareUpload" />
+      <siteMapNode url="~/module/Software/DownloadKey.aspx" title="Download Key" ModuleCode="Tools" ActivityCode="DownloadLicenseKey" />
+      <siteMapNode url="~/module/Software/DownloadTemplates.aspx" title="Acme.erp Template" ModuleCode="Tools" ActivityCode="DownloadTemplate" />
+      <siteMapNode url="~/module/office/UploadBranchVouchers.aspx" title="Upload Voucher (Off-line) and Status" ModuleCode="Tools" ActivityCode="UploadVoucherFile" />
+      <siteMapNode url="~/module/office/DeleteVouchers.aspx" title="Delete Voucher" ModuleCode="Tools" ActivityCode="DeleteVoucher" />
+      <siteMapNode url="~/module/office/ExcuteDatabaseQuery.aspx" title="Execute Query" ModuleCode="Tools" ActivityCode="ExcuteQuery" />
+      <siteMapNode url="~/module/Software/ClearLogs.aspx" title="Clear Log" ModuleCode="Tools" ActivityCode="ClearLogData"/>
+      <siteMapNode url="~/module/office/ImportBranches.aspx" title="Import Branches" ModuleCode="Tools" ActivityCode="ImportBranches" />
+      <siteMapNode url="~/module/Software/AcmeWinServiceStatus.aspx" title="Acme Service" ModuleCode="Tools" ActivityCode="AcmeService" ></siteMapNode>
+      <siteMapNode url="~/module/office/Branch_Logged_History.aspx" title="Branch Logged History" ModuleCode="Tools" ActivityCode="BranchLoggedHistory" />
+      <siteMapNode url="~/module/office/Branch_Location_Logged_History.aspx" title="Branch Location Logged History" ModuleCode="Tools" ActivityCode="BranchLocationLoggedHistory" />
+      <siteMapNode url="~/module/office/HeadOfficeListBranchOffice.aspx" title="HO wise Branch List" ModuleCode="Tools" ActivityCode="HOwiseBranchList" />
+      <siteMapNode url="~/module/office/HeadOfficeListBranchOfficeDetailed.aspx" title="HO wise Branch Details" ModuleCode="Tools" ActivityCode="BranchListInfo" />
+      <siteMapNode url="~/module/office/HeadOfficeListBranchCount.aspx" title="HO wise Branch Count" ModuleCode="Tools" ActivityCode="BranchListCount" />
+      <siteMapNode url="~/module/master/CountryView.aspx" title="Country" ModuleCode="Data" ActivityCode="CountryView" />
+      <siteMapNode url="~/module/master/StateView.aspx" title="State" ModuleCode="Data" ActivityCode="StateView" />
+    </siteMapNode>
+
+    <siteMapNode  title="Ticketing" ModuleCode="TroubleTicket" ActivityCode="TrackTicket" >
+      <siteMapNode url="~/module/TroubleTicket/TroubleTicketingView.aspx" title="Reply Ticket" ModuleCode="TroubleTicket" ActivityCode="TrackTicket" />
+    </siteMapNode>
+    <siteMapNode  title="Help" ModuleCode="Help" ActivityCode="Help">
+      <siteMapNode url="~/module/manual/Head_office/index.htm" title="Head Office Manual" ModuleCode="UserManual" ActivityCode="HOUserManual"  target="_blank"   />
+      <siteMapNode url="~/module/manual/branch_office/index.htm" title="Branch Office Manual" ModuleCode="UserManual" ActivityCode="BOUserManual"   target="_blank"  />
+    </siteMapNode>
+
+  </siteMapNode>
+</siteMap>

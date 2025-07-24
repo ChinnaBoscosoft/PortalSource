@@ -1,0 +1,320 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <LastAuthor>Bosco</LastAuthor>
+  <LastSaved>2013-10-01T07:29:40Z</LastSaved>
+  <Version>12.00</Version>
+ </DocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>10005</WindowHeight>
+  <WindowWidth>10005</WindowWidth>
+  <WindowTopX>120</WindowTopX>
+  <WindowTopY>135</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="9.7.2014">
+  <Table ss:ExpandedColumnCount="10" ss:ExpandedRowCount="19" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Column ss:Index="2" ss:Width="76.5"/>
+   <Column ss:Width="72"/>
+   <Column ss:Width="132"/>
+   <Column ss:Width="111"/>
+   <Column ss:Index="7" ss:AutoFitWidth="0" ss:Width="67.5"/>
+   <Column ss:Index="9" ss:Width="70.5"/>
+   <Row ss:AutoFitHeight="0"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">ACTIVITY_ID</Data></Cell>
+    <Cell><Data ss:Type="String">MODULE_CODE</Data></Cell>
+    <Cell><Data ss:Type="String">MODULE</Data></Cell>
+    <Cell><Data ss:Type="String">ACTIVITY_CODE</Data></Cell>
+    <Cell><Data ss:Type="String">ACTIVITY</Data></Cell>
+    <Cell><Data ss:Type="String">MODULE_ORDER</Data></Cell>
+    <Cell><Data ss:Type="String">ACTIVITY_ORDER</Data></Cell>
+    <Cell><Data ss:Type="String">TYPE</Data><Comment ss:Author="Bosco"><ss:Data
+       xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Face="Tahoma"
+         x:Family="Swiss" html:Size="9" html:Color="#000000">0-Page Level 1- Task Level</Font></B></ss:Data></Comment></Cell>
+    <Cell><Data ss:Type="String">ACCESSIBILITY</Data><Comment ss:Author="Bosco"><ss:Data
+       xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Face="Tahoma"
+         x:Family="Swiss" html:Size="9" html:Color="#000000">0-BOTH ,1-HEAD OFFICE,2-BRANCH OFFCE (Portal -0)</Font></B></ss:Data></Comment></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Office</Data></Cell>
+    <Cell><Data ss:Type="String">Office</Data></Cell>
+    <Cell><Data ss:Type="String">HeadOfficeView</Data></Cell>
+    <Cell><Data ss:Type="String">View Head Office</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell
+     ss:Formula="=CONCATENATE(&quot;insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values(&quot;,&quot;'&quot;,RC[-8],,&quot;','&quot;,RC[-7],&quot;','&quot;,RC[-6],&quot;','&quot;,RC[-5],&quot;',&quot;,RC[-4],&quot;,&quot;,RC[-3],&quot;,&quot;,RC[-2],&quot;,&quot;,RC[-1],&quot;);&quot;)"><Data
+      ss:Type="String">insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values('Office','Office','HeadOfficeView','View Head Office',1,1,0,0);</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Office</Data></Cell>
+    <Cell><Data ss:Type="String">Office</Data></Cell>
+    <Cell><Data ss:Type="String">BranchOfficeView</Data></Cell>
+    <Cell><Data ss:Type="String">View Branch Office</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell
+     ss:Formula="=CONCATENATE(&quot;insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values(&quot;,&quot;'&quot;,RC[-8],,&quot;','&quot;,RC[-7],&quot;','&quot;,RC[-6],&quot;','&quot;,RC[-5],&quot;',&quot;,RC[-4],&quot;,&quot;,RC[-3],&quot;,&quot;,RC[-2],&quot;,&quot;,RC[-1],&quot;);&quot;)"><Data
+      ss:Type="String">insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values('Office','Office','BranchOfficeView','View Branch Office',1,2,0,0);</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">Office</Data></Cell>
+    <Cell><Data ss:Type="String">Office</Data></Cell>
+    <Cell><Data ss:Type="String">CreateLicenseKey</Data></Cell>
+    <Cell><Data ss:Type="String">Create License Key</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell
+     ss:Formula="=CONCATENATE(&quot;insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values(&quot;,&quot;'&quot;,RC[-8],,&quot;','&quot;,RC[-7],&quot;','&quot;,RC[-6],&quot;','&quot;,RC[-5],&quot;',&quot;,RC[-4],&quot;,&quot;,RC[-3],&quot;,&quot;,RC[-2],&quot;,&quot;,RC[-1],&quot;);&quot;)"><Data
+      ss:Type="String">insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values('Office','Office','CreateLicenseKey','Create License Key',1,3,1,0);</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Tools</Data></Cell>
+    <Cell><Data ss:Type="String">Tools</Data></Cell>
+    <Cell><Data ss:Type="String">SoftwareUpload</Data></Cell>
+    <Cell><Data ss:Type="String">Upload Software </Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell
+     ss:Formula="=CONCATENATE(&quot;insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values(&quot;,&quot;'&quot;,RC[-8],,&quot;','&quot;,RC[-7],&quot;','&quot;,RC[-6],&quot;','&quot;,RC[-5],&quot;',&quot;,RC[-4],&quot;,&quot;,RC[-3],&quot;,&quot;,RC[-2],&quot;,&quot;,RC[-1],&quot;);&quot;)"><Data
+      ss:Type="String">insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values('Tools','Tools','SoftwareUpload','Upload Software ',2,1,1,0);</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">Tools</Data></Cell>
+    <Cell><Data ss:Type="String">Tools</Data></Cell>
+    <Cell><Data ss:Type="String">SoftwareModify</Data></Cell>
+    <Cell><Data ss:Type="String">Modify Software</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell
+     ss:Formula="=CONCATENATE(&quot;insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values(&quot;,&quot;'&quot;,RC[-8],,&quot;','&quot;,RC[-7],&quot;','&quot;,RC[-6],&quot;','&quot;,RC[-5],&quot;',&quot;,RC[-4],&quot;,&quot;,RC[-3],&quot;,&quot;,RC[-2],&quot;,&quot;,RC[-1],&quot;);&quot;)"><Data
+      ss:Type="String">insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values('Tools','Tools','SoftwareModify','Modify Software',2,2,1,0);</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">Tools</Data></Cell>
+    <Cell><Data ss:Type="String">Tools</Data></Cell>
+    <Cell><Data ss:Type="String">SoftwareDelete</Data></Cell>
+    <Cell><Data ss:Type="String">Delete Software</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell
+     ss:Formula="=CONCATENATE(&quot;insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values(&quot;,&quot;'&quot;,RC[-8],,&quot;','&quot;,RC[-7],&quot;','&quot;,RC[-6],&quot;','&quot;,RC[-5],&quot;',&quot;,RC[-4],&quot;,&quot;,RC[-3],&quot;,&quot;,RC[-2],&quot;,&quot;,RC[-1],&quot;);&quot;)"><Data
+      ss:Type="String">insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values('Tools','Tools','SoftwareDelete','Delete Software',2,3,1,0);</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">Tools</Data></Cell>
+    <Cell><Data ss:Type="String">Tools</Data></Cell>
+    <Cell><Data ss:Type="String">SoftwareDownload</Data></Cell>
+    <Cell><Data ss:Type="String">Download Software</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell
+     ss:Formula="=CONCATENATE(&quot;insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values(&quot;,&quot;'&quot;,RC[-8],,&quot;','&quot;,RC[-7],&quot;','&quot;,RC[-6],&quot;','&quot;,RC[-5],&quot;',&quot;,RC[-4],&quot;,&quot;,RC[-3],&quot;,&quot;,RC[-2],&quot;,&quot;,RC[-1],&quot;);&quot;)"><Data
+      ss:Type="String">insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values('Tools','Tools','SoftwareDownload','Download Software',2,4,1,0);</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">Tools</Data></Cell>
+    <Cell><Data ss:Type="String">Tools</Data></Cell>
+    <Cell><Data ss:Type="String">UploadVoucherFile</Data></Cell>
+    <Cell><Data ss:Type="String">Upload Voucher File</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell
+     ss:Formula="=CONCATENATE(&quot;insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values(&quot;,&quot;'&quot;,RC[-8],,&quot;','&quot;,RC[-7],&quot;','&quot;,RC[-6],&quot;','&quot;,RC[-5],&quot;',&quot;,RC[-4],&quot;,&quot;,RC[-3],&quot;,&quot;,RC[-2],&quot;,&quot;,RC[-1],&quot;);&quot;)"><Data
+      ss:Type="String">insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values('Tools','Tools','UploadVoucherFile','Upload Voucher File',2,5,0,0);</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="String">Tools</Data></Cell>
+    <Cell><Data ss:Type="String">Tools</Data></Cell>
+    <Cell><Data ss:Type="String">DownloadLicenseKey</Data></Cell>
+    <Cell><Data ss:Type="String">Download License Key</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell
+     ss:Formula="=CONCATENATE(&quot;insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values(&quot;,&quot;'&quot;,RC[-8],,&quot;','&quot;,RC[-7],&quot;','&quot;,RC[-6],&quot;','&quot;,RC[-5],&quot;',&quot;,RC[-4],&quot;,&quot;,RC[-3],&quot;,&quot;,RC[-2],&quot;,&quot;,RC[-1],&quot;);&quot;)"><Data
+      ss:Type="String">insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values('Tools','Tools','DownloadLicenseKey','Download License Key',2,6,0,0);</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Tools</Data></Cell>
+    <Cell><Data ss:Type="String">Tools</Data></Cell>
+    <Cell><Data ss:Type="String">DeleteVoucher</Data></Cell>
+    <Cell><Data ss:Type="String">Delete Voucher</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell
+     ss:Formula="=CONCATENATE(&quot;insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values(&quot;,&quot;'&quot;,RC[-8],,&quot;','&quot;,RC[-7],&quot;','&quot;,RC[-6],&quot;','&quot;,RC[-5],&quot;',&quot;,RC[-4],&quot;,&quot;,RC[-3],&quot;,&quot;,RC[-2],&quot;,&quot;,RC[-1],&quot;);&quot;)"><Data
+      ss:Type="String">insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values('Tools','Tools','DeleteVoucher','Delete Voucher',2,7,0,0);</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="String">Tools</Data></Cell>
+    <Cell><Data ss:Type="String">Tools</Data></Cell>
+    <Cell><Data ss:Type="String">ClearLogData</Data></Cell>
+    <Cell><Data ss:Type="String">Clear Datasync Log</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell
+     ss:Formula="=CONCATENATE(&quot;insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values(&quot;,&quot;'&quot;,RC[-8],,&quot;','&quot;,RC[-7],&quot;','&quot;,RC[-6],&quot;','&quot;,RC[-5],&quot;',&quot;,RC[-4],&quot;,&quot;,RC[-3],&quot;,&quot;,RC[-2],&quot;,&quot;,RC[-1],&quot;);&quot;)"><Data
+      ss:Type="String">insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values('Tools','Tools','ClearLogData','Clear Datasync Log',2,8,0,0);</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="String">TroubleTicket</Data></Cell>
+    <Cell><Data ss:Type="String">Trouble Ticket</Data></Cell>
+    <Cell><Data ss:Type="String">ViewTicket</Data></Cell>
+    <Cell><Data ss:Type="String">View Ticket</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell
+     ss:Formula="=CONCATENATE(&quot;insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values(&quot;,&quot;'&quot;,RC[-8],,&quot;','&quot;,RC[-7],&quot;','&quot;,RC[-6],&quot;','&quot;,RC[-5],&quot;',&quot;,RC[-4],&quot;,&quot;,RC[-3],&quot;,&quot;,RC[-2],&quot;,&quot;,RC[-1],&quot;);&quot;)"><Data
+      ss:Type="String">insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values('TroubleTicket','Trouble Ticket','ViewTicket','View Ticket',3,1,0,0);</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="String">TroubleTicket</Data></Cell>
+    <Cell><Data ss:Type="String">Trouble Ticket</Data></Cell>
+    <Cell><Data ss:Type="String">PostTicket</Data></Cell>
+    <Cell><Data ss:Type="String">Post Ticket</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell
+     ss:Formula="=CONCATENATE(&quot;insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values(&quot;,&quot;'&quot;,RC[-8],,&quot;','&quot;,RC[-7],&quot;','&quot;,RC[-6],&quot;','&quot;,RC[-5],&quot;',&quot;,RC[-4],&quot;,&quot;,RC[-3],&quot;,&quot;,RC[-2],&quot;,&quot;,RC[-1],&quot;);&quot;)"><Data
+      ss:Type="String">insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values('TroubleTicket','Trouble Ticket','PostTicket','Post Ticket',3,2,1,0);</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="String">TroubleTicket</Data></Cell>
+    <Cell><Data ss:Type="String">Trouble Ticket</Data></Cell>
+    <Cell><Data ss:Type="String">ChangeTicketStatus</Data></Cell>
+    <Cell><Data ss:Type="String">Change Ticket Status</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell
+     ss:Formula="=CONCATENATE(&quot;insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values(&quot;,&quot;'&quot;,RC[-8],,&quot;','&quot;,RC[-7],&quot;','&quot;,RC[-6],&quot;','&quot;,RC[-5],&quot;',&quot;,RC[-4],&quot;,&quot;,RC[-3],&quot;,&quot;,RC[-2],&quot;,&quot;,RC[-1],&quot;);&quot;)"><Data
+      ss:Type="String">insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values('TroubleTicket','Trouble Ticket','ChangeTicketStatus','Change Ticket Status',3,3,1,0);</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">TroubleTicket</Data></Cell>
+    <Cell><Data ss:Type="String">Trouble Ticket</Data></Cell>
+    <Cell><Data ss:Type="String">TicketEdit</Data></Cell>
+    <Cell><Data ss:Type="String">Modify Ticket</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell
+     ss:Formula="=CONCATENATE(&quot;insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values(&quot;,&quot;'&quot;,RC[-8],,&quot;','&quot;,RC[-7],&quot;','&quot;,RC[-6],&quot;','&quot;,RC[-5],&quot;',&quot;,RC[-4],&quot;,&quot;,RC[-3],&quot;,&quot;,RC[-2],&quot;,&quot;,RC[-1],&quot;);&quot;)"><Data
+      ss:Type="String">insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values('TroubleTicket','Trouble Ticket','TicketEdit','Modify Ticket',3,4,1,0);</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="String">TroubleTicket</Data></Cell>
+    <Cell><Data ss:Type="String">Trouble Ticket</Data></Cell>
+    <Cell><Data ss:Type="String">TicketDelete</Data></Cell>
+    <Cell><Data ss:Type="String">Delete Ticket</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell
+     ss:Formula="=CONCATENATE(&quot;insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values(&quot;,&quot;'&quot;,RC[-8],,&quot;','&quot;,RC[-7],&quot;','&quot;,RC[-6],&quot;','&quot;,RC[-5],&quot;',&quot;,RC[-4],&quot;,&quot;,RC[-3],&quot;,&quot;,RC[-2],&quot;,&quot;,RC[-1],&quot;);&quot;)"><Data
+      ss:Type="String">insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values('TroubleTicket','Trouble Ticket','TicketDelete','Delete Ticket',3,5,1,0);</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="String">Message</Data></Cell>
+    <Cell><Data ss:Type="String">Message</Data></Cell>
+    <Cell><Data ss:Type="String">SendMail</Data></Cell>
+    <Cell><Data ss:Type="String">Send Mail</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell
+     ss:Formula="=CONCATENATE(&quot;insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values(&quot;,&quot;'&quot;,RC[-8],,&quot;','&quot;,RC[-7],&quot;','&quot;,RC[-6],&quot;','&quot;,RC[-5],&quot;',&quot;,RC[-4],&quot;,&quot;,RC[-3],&quot;,&quot;,RC[-2],&quot;,&quot;,RC[-1],&quot;);&quot;)"><Data
+      ss:Type="String">insert into rights_activities(module_code,module,activity_code,activity,module_order,activity_order,type,accessibility) values('Message','Message','SendMail','Send Mail',4,2,0,0);</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <LeftColumnVisible>25</LeftColumnVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>10</ActiveRow>
+     <ActiveCol>33</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

@@ -1,0 +1,1427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnGoResource1.Image.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnGoResource1.Image.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnGoResource1.Image.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnGoResource1.Image.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnGoResource1.Text" xml:space="preserve">
+    <value>Go</value>
+  </data>
+  <data name="btnGoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnGoResource2.Image.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnGoResource2.Image.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnGoResource2.Image.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnGoResource2.Image.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnGoResource2.Text" xml:space="preserve">
+    <value>Go</value>
+  </data>
+  <data name="btnGoResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnProjectGoResource1.Image.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnProjectGoResource1.Image.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnProjectGoResource1.Image.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnProjectGoResource1.Image.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnProjectGoResource1.Text" xml:space="preserve">
+    <value>Go</value>
+  </data>
+  <data name="btnProjectGoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchesResource1.ButtonEditEllipsisImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchesResource1.ButtonEditEllipsisImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchesResource1.ButtonEditEllipsisImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchesResource1.ButtonEditEllipsisImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchesResource1.DisplayFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchesResource1.DropDownButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchesResource1.DropDownButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchesResource1.HelpText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchesResource1.ItemImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchesResource1.ItemImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchesResource1.ItemImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchesResource1.ItemImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchesResource1.LoadingPanelImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchesResource1.LoadingPanelImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchesResource1.LoadingPanelImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchesResource1.LoadingPanelImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchesResource1.LoadingPanelText" xml:space="preserve">
+    <value>Loading&amp;hellip;</value>
+  </data>
+  <data name="cmbBranchesResource1.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchesResource1.TextFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchesResource1.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="dteBalanceDateResource1.ButtonEditEllipsisImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteBalanceDateResource1.ButtonEditEllipsisImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteBalanceDateResource1.ButtonEditEllipsisImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteBalanceDateResource1.ButtonEditEllipsisImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteBalanceDateResource1.CalendarProperties.ClearButtonText" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="dteBalanceDateResource1.CalendarProperties.TodayButtonText" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="dteBalanceDateResource1.DisplayFormatString" xml:space="preserve">
+    <value>dd/MM/yyyy</value>
+  </data>
+  <data name="dteBalanceDateResource1.DropDownButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteBalanceDateResource1.DropDownButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteBalanceDateResource1.EditFormatString" xml:space="preserve">
+    <value>dd/MM/yyyy</value>
+  </data>
+  <data name="dteBalanceDateResource1.HelpText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteBalanceDateResource1.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteBalanceDateResource1.TimeSectionProperties.CancelButtonText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="dteBalanceDateResource1.TimeSectionProperties.OkButtonText" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="dteBalanceDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteBalanceDateResource1.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="dteBalanceDateResource2.ButtonEditEllipsisImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteBalanceDateResource2.ButtonEditEllipsisImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteBalanceDateResource2.ButtonEditEllipsisImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteBalanceDateResource2.ButtonEditEllipsisImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteBalanceDateResource2.CalendarProperties.ClearButtonText" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="dteBalanceDateResource2.CalendarProperties.TodayButtonText" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="dteBalanceDateResource2.DisplayFormatString" xml:space="preserve">
+    <value>dd/MM/yyyy</value>
+  </data>
+  <data name="dteBalanceDateResource2.DropDownButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteBalanceDateResource2.DropDownButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteBalanceDateResource2.EditFormatString" xml:space="preserve">
+    <value>dd/MM/yyyy</value>
+  </data>
+  <data name="dteBalanceDateResource2.HelpText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteBalanceDateResource2.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteBalanceDateResource2.TimeSectionProperties.CancelButtonText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="dteBalanceDateResource2.TimeSectionProperties.OkButtonText" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="dteBalanceDateResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteBalanceDateResource2.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="dteProjectBalDateResource1.ButtonEditEllipsisImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteProjectBalDateResource1.ButtonEditEllipsisImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteProjectBalDateResource1.ButtonEditEllipsisImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteProjectBalDateResource1.ButtonEditEllipsisImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteProjectBalDateResource1.CalendarProperties.ClearButtonText" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="dteProjectBalDateResource1.CalendarProperties.TodayButtonText" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="dteProjectBalDateResource1.DisplayFormatString" xml:space="preserve">
+    <value>dd/MM/yyyy</value>
+  </data>
+  <data name="dteProjectBalDateResource1.DropDownButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteProjectBalDateResource1.DropDownButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteProjectBalDateResource1.EditFormatString" xml:space="preserve">
+    <value>dd/MM/yyyy</value>
+  </data>
+  <data name="dteProjectBalDateResource1.HelpText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteProjectBalDateResource1.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteProjectBalDateResource1.TimeSectionProperties.CancelButtonText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="dteProjectBalDateResource1.TimeSectionProperties.OkButtonText" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="dteProjectBalDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dteProjectBalDateResource1.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="GridViewDataTextColumnResource1.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource1.PropertiesTextEdit.DisplayFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource1.PropertiesTextEdit.NullDisplayText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource1.PropertiesTextEdit.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource10.Caption" xml:space="preserve">
+    <value>Opening Balance</value>
+  </data>
+  <data name="GridViewDataTextColumnResource10.PropertiesTextEdit.DisplayFormatString" xml:space="preserve">
+    <value>{0:n2}</value>
+  </data>
+  <data name="GridViewDataTextColumnResource10.PropertiesTextEdit.NullDisplayText" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="GridViewDataTextColumnResource10.PropertiesTextEdit.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource10.PropertiesTextEdit.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="GridViewDataTextColumnResource10.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource11.Caption" xml:space="preserve">
+    <value>Receipt</value>
+  </data>
+  <data name="GridViewDataTextColumnResource11.PropertiesTextEdit.DisplayFormatString" xml:space="preserve">
+    <value>{0:n2}</value>
+  </data>
+  <data name="GridViewDataTextColumnResource11.PropertiesTextEdit.NullDisplayText" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="GridViewDataTextColumnResource11.PropertiesTextEdit.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource11.PropertiesTextEdit.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="GridViewDataTextColumnResource11.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource12.Caption" xml:space="preserve">
+    <value>Payment</value>
+  </data>
+  <data name="GridViewDataTextColumnResource12.PropertiesTextEdit.DisplayFormatString" xml:space="preserve">
+    <value>{0:n2}</value>
+  </data>
+  <data name="GridViewDataTextColumnResource12.PropertiesTextEdit.NullDisplayText" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="GridViewDataTextColumnResource12.PropertiesTextEdit.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource12.PropertiesTextEdit.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="GridViewDataTextColumnResource12.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource13.Caption" xml:space="preserve">
+    <value>Closing Balance</value>
+  </data>
+  <data name="GridViewDataTextColumnResource13.PropertiesTextEdit.DisplayFormatString" xml:space="preserve">
+    <value>{0:n2} </value>
+  </data>
+  <data name="GridViewDataTextColumnResource13.PropertiesTextEdit.NullDisplayText" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="GridViewDataTextColumnResource13.PropertiesTextEdit.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource13.PropertiesTextEdit.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="GridViewDataTextColumnResource13.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource14.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource14.PropertiesTextEdit.DisplayFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource14.PropertiesTextEdit.NullDisplayText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource14.PropertiesTextEdit.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource14.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource15.Caption" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="GridViewDataTextColumnResource15.PropertiesTextEdit.DisplayFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource15.PropertiesTextEdit.NullDisplayText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource15.PropertiesTextEdit.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource15.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource16.Caption" xml:space="preserve">
+    <value>Legal Entity</value>
+  </data>
+  <data name="GridViewDataTextColumnResource16.PropertiesTextEdit.DisplayFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource16.PropertiesTextEdit.NullDisplayText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource16.PropertiesTextEdit.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource16.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource17.Caption" xml:space="preserve">
+    <value>Opening Balance</value>
+  </data>
+  <data name="GridViewDataTextColumnResource17.PropertiesTextEdit.DisplayFormatString" xml:space="preserve">
+    <value>{0:n2}</value>
+  </data>
+  <data name="GridViewDataTextColumnResource17.PropertiesTextEdit.NullDisplayText" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="GridViewDataTextColumnResource17.PropertiesTextEdit.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource17.PropertiesTextEdit.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="GridViewDataTextColumnResource17.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource18.Caption" xml:space="preserve">
+    <value>Closing Balance</value>
+  </data>
+  <data name="GridViewDataTextColumnResource18.PropertiesTextEdit.DisplayFormatString" xml:space="preserve">
+    <value>{0:n2} </value>
+  </data>
+  <data name="GridViewDataTextColumnResource18.PropertiesTextEdit.NullDisplayText" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="GridViewDataTextColumnResource18.PropertiesTextEdit.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource18.PropertiesTextEdit.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="GridViewDataTextColumnResource18.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource19.Caption" xml:space="preserve">
+    <value>Receipt</value>
+  </data>
+  <data name="GridViewDataTextColumnResource19.PropertiesTextEdit.DisplayFormatString" xml:space="preserve">
+    <value>{0:n2}</value>
+  </data>
+  <data name="GridViewDataTextColumnResource19.PropertiesTextEdit.NullDisplayText" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="GridViewDataTextColumnResource19.PropertiesTextEdit.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource19.PropertiesTextEdit.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="GridViewDataTextColumnResource19.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource2.Caption" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="GridViewDataTextColumnResource2.PropertiesTextEdit.DisplayFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource2.PropertiesTextEdit.NullDisplayText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource2.PropertiesTextEdit.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource20.Caption" xml:space="preserve">
+    <value>Payment</value>
+  </data>
+  <data name="GridViewDataTextColumnResource20.PropertiesTextEdit.DisplayFormatString" xml:space="preserve">
+    <value>{0:n2}</value>
+  </data>
+  <data name="GridViewDataTextColumnResource20.PropertiesTextEdit.NullDisplayText" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="GridViewDataTextColumnResource20.PropertiesTextEdit.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource20.PropertiesTextEdit.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="GridViewDataTextColumnResource20.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource3.Caption" xml:space="preserve">
+    <value>Legal Entity</value>
+  </data>
+  <data name="GridViewDataTextColumnResource3.PropertiesTextEdit.DisplayFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource3.PropertiesTextEdit.NullDisplayText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource3.PropertiesTextEdit.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource4.Caption" xml:space="preserve">
+    <value>Opening Balance</value>
+  </data>
+  <data name="GridViewDataTextColumnResource4.PropertiesTextEdit.DisplayFormatString" xml:space="preserve">
+    <value>{0:n2}</value>
+  </data>
+  <data name="GridViewDataTextColumnResource4.PropertiesTextEdit.NullDisplayText" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="GridViewDataTextColumnResource4.PropertiesTextEdit.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource4.PropertiesTextEdit.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="GridViewDataTextColumnResource4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource5.Caption" xml:space="preserve">
+    <value>Closing Balance</value>
+  </data>
+  <data name="GridViewDataTextColumnResource5.PropertiesTextEdit.DisplayFormatString" xml:space="preserve">
+    <value>{0:n2} </value>
+  </data>
+  <data name="GridViewDataTextColumnResource5.PropertiesTextEdit.NullDisplayText" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="GridViewDataTextColumnResource5.PropertiesTextEdit.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource5.PropertiesTextEdit.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="GridViewDataTextColumnResource5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource6.Caption" xml:space="preserve">
+    <value>Receipt</value>
+  </data>
+  <data name="GridViewDataTextColumnResource6.PropertiesTextEdit.DisplayFormatString" xml:space="preserve">
+    <value>{0:n2}</value>
+  </data>
+  <data name="GridViewDataTextColumnResource6.PropertiesTextEdit.NullDisplayText" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="GridViewDataTextColumnResource6.PropertiesTextEdit.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource6.PropertiesTextEdit.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="GridViewDataTextColumnResource6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource7.Caption" xml:space="preserve">
+    <value>Payment</value>
+  </data>
+  <data name="GridViewDataTextColumnResource7.PropertiesTextEdit.DisplayFormatString" xml:space="preserve">
+    <value>{0:n2}</value>
+  </data>
+  <data name="GridViewDataTextColumnResource7.PropertiesTextEdit.NullDisplayText" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="GridViewDataTextColumnResource7.PropertiesTextEdit.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource7.PropertiesTextEdit.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="GridViewDataTextColumnResource7.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource8.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource8.PropertiesTextEdit.DisplayFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource8.PropertiesTextEdit.NullDisplayText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource8.PropertiesTextEdit.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource8.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource9.Caption" xml:space="preserve">
+    <value>Branch</value>
+  </data>
+  <data name="GridViewDataTextColumnResource9.PropertiesTextEdit.DisplayFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource9.PropertiesTextEdit.NullDisplayText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource9.PropertiesTextEdit.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource9.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.Settings.GroupFormat" xml:space="preserve">
+    <value>{0}: {1} {2}</value>
+  </data>
+  <data name="gvBranchDetailResource1.Settings.GroupSummaryTextSeparator" xml:space="preserve">
+    <value>, </value>
+  </data>
+  <data name="gvBranchDetailResource1.SettingsLoadingPanel.Text" xml:space="preserve">
+    <value>Loading&amp;hellip;</value>
+  </data>
+  <data name="gvBranchDetailResource1.SettingsPager.AllButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsPager.CurrentPageNumberFormat" xml:space="preserve">
+    <value>[{0}]</value>
+  </data>
+  <data name="gvBranchDetailResource1.SettingsPager.FirstPageButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsPager.LastPageButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsPager.NextPageButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsPager.PageNumberFormat" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="gvBranchDetailResource1.SettingsPager.PageSizeItemSettings.AllItemText" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="gvBranchDetailResource1.SettingsPager.PageSizeItemSettings.Caption" xml:space="preserve">
+    <value>Page size:</value>
+  </data>
+  <data name="gvBranchDetailResource1.SettingsPager.PageSizeItemSettings.DropDownImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsPager.PageSizeItemSettings.DropDownImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsPager.PageSizeItemSettings.DropDownImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsPager.PageSizeItemSettings.DropDownImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsPager.PageSizeItemSettings.Image.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsPager.PageSizeItemSettings.Image.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsPager.PageSizeItemSettings.Image.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsPager.PageSizeItemSettings.Image.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsPager.PrevPageButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsPager.Summary.AllPagesText" xml:space="preserve">
+    <value>Pages: {0} - {1} ({2} items)</value>
+  </data>
+  <data name="gvBranchDetailResource1.SettingsPager.Summary.Text" xml:space="preserve">
+    <value>Page {0} of {1} ({2} items)</value>
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.CommandApplyFilter" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.CommandBatchEditCancel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.CommandBatchEditUpdate" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.CommandCancel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.CommandClearFilter" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.CommandDelete" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.CommandEdit" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.CommandNew" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.CommandSelect" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.CommandUpdate" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.ConfirmDelete" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.ConfirmOnLosingBatchChanges" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.CustomizationWindowCaption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.EmptyDataRow" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.EmptyHeaders" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.FilterBarClear" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.FilterBarCreateFilter" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.FilterControlPopupCaption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.GroupContinuedOnNextPage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.GroupPanel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.HeaderFilterCancelButton" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.HeaderFilterOkButton" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.HeaderFilterSelectAll" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.HeaderFilterShowAll" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.HeaderFilterShowBlanks" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.HeaderFilterShowNonBlanks" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.PopupEditFormCaption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SettingsText.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.SummaryText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvBranchDetailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.Settings.GroupFormat" xml:space="preserve">
+    <value>{0}: {1} {2}</value>
+  </data>
+  <data name="gvProjectsResource1.Settings.GroupSummaryTextSeparator" xml:space="preserve">
+    <value>, </value>
+  </data>
+  <data name="gvProjectsResource1.SettingsLoadingPanel.Text" xml:space="preserve">
+    <value>Loading&amp;hellip;</value>
+  </data>
+  <data name="gvProjectsResource1.SettingsPager.AllButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsPager.CurrentPageNumberFormat" xml:space="preserve">
+    <value>[{0}]</value>
+  </data>
+  <data name="gvProjectsResource1.SettingsPager.FirstPageButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsPager.LastPageButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsPager.NextPageButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsPager.PageNumberFormat" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="gvProjectsResource1.SettingsPager.PageSizeItemSettings.AllItemText" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="gvProjectsResource1.SettingsPager.PageSizeItemSettings.Caption" xml:space="preserve">
+    <value>Page size:</value>
+  </data>
+  <data name="gvProjectsResource1.SettingsPager.PageSizeItemSettings.DropDownImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsPager.PageSizeItemSettings.DropDownImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsPager.PageSizeItemSettings.DropDownImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsPager.PageSizeItemSettings.DropDownImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsPager.PageSizeItemSettings.Image.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsPager.PageSizeItemSettings.Image.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsPager.PageSizeItemSettings.Image.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsPager.PageSizeItemSettings.Image.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsPager.PrevPageButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsPager.Summary.AllPagesText" xml:space="preserve">
+    <value>Pages: {0} - {1} ({2} items)</value>
+  </data>
+  <data name="gvProjectsResource1.SettingsPager.Summary.Text" xml:space="preserve">
+    <value>Page {0} of {1} ({2} items)</value>
+  </data>
+  <data name="gvProjectsResource1.SettingsText.CommandApplyFilter" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsText.CommandBatchEditCancel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsText.CommandBatchEditUpdate" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsText.CommandCancel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsText.CommandClearFilter" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsText.CommandDelete" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsText.CommandEdit" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsText.CommandNew" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsText.CommandSelect" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsText.CommandUpdate" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsText.ConfirmDelete" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsText.ConfirmOnLosingBatchChanges" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsText.CustomizationWindowCaption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsText.EmptyDataRow" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsText.EmptyHeaders" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsText.FilterBarClear" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsText.FilterBarCreateFilter" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsText.FilterControlPopupCaption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsText.GroupContinuedOnNextPage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsText.GroupPanel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsText.HeaderFilterCancelButton" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsText.HeaderFilterOkButton" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsText.HeaderFilterSelectAll" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsText.HeaderFilterShowAll" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsText.HeaderFilterShowBlanks" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsText.HeaderFilterShowNonBlanks" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsText.PopupEditFormCaption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SettingsText.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.SummaryText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.Settings.GroupFormat" xml:space="preserve">
+    <value>{0}: {1} {2}</value>
+  </data>
+  <data name="gvProjectsResource2.Settings.GroupSummaryTextSeparator" xml:space="preserve">
+    <value>, </value>
+  </data>
+  <data name="gvProjectsResource2.SettingsLoadingPanel.Text" xml:space="preserve">
+    <value>Loading&amp;hellip;</value>
+  </data>
+  <data name="gvProjectsResource2.SettingsPager.AllButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsPager.CurrentPageNumberFormat" xml:space="preserve">
+    <value>[{0}]</value>
+  </data>
+  <data name="gvProjectsResource2.SettingsPager.FirstPageButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsPager.LastPageButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsPager.NextPageButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsPager.PageNumberFormat" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="gvProjectsResource2.SettingsPager.PageSizeItemSettings.AllItemText" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="gvProjectsResource2.SettingsPager.PageSizeItemSettings.Caption" xml:space="preserve">
+    <value>Page size:</value>
+  </data>
+  <data name="gvProjectsResource2.SettingsPager.PageSizeItemSettings.DropDownImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsPager.PageSizeItemSettings.DropDownImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsPager.PageSizeItemSettings.DropDownImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsPager.PageSizeItemSettings.DropDownImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsPager.PageSizeItemSettings.Image.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsPager.PageSizeItemSettings.Image.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsPager.PageSizeItemSettings.Image.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsPager.PageSizeItemSettings.Image.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsPager.PrevPageButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsPager.Summary.AllPagesText" xml:space="preserve">
+    <value>Pages: {0} - {1} ({2} items)</value>
+  </data>
+  <data name="gvProjectsResource2.SettingsPager.Summary.Text" xml:space="preserve">
+    <value>Page {0} of {1} ({2} items)</value>
+  </data>
+  <data name="gvProjectsResource2.SettingsText.CommandApplyFilter" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsText.CommandBatchEditCancel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsText.CommandBatchEditUpdate" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsText.CommandCancel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsText.CommandClearFilter" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsText.CommandDelete" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsText.CommandEdit" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsText.CommandNew" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsText.CommandSelect" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsText.CommandUpdate" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsText.ConfirmDelete" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsText.ConfirmOnLosingBatchChanges" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsText.CustomizationWindowCaption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsText.EmptyDataRow" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsText.EmptyHeaders" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsText.FilterBarClear" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsText.FilterBarCreateFilter" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsText.FilterControlPopupCaption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsText.GroupContinuedOnNextPage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsText.GroupPanel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsText.HeaderFilterCancelButton" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsText.HeaderFilterOkButton" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsText.HeaderFilterSelectAll" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsText.HeaderFilterShowAll" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsText.HeaderFilterShowBlanks" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsText.HeaderFilterShowNonBlanks" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsText.PopupEditFormCaption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SettingsText.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.SummaryText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvProjectsResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="hlkProjectResource1.Text" xml:space="preserve">
+    <value>Quick View </value>
+  </data>
+  <data name="hlkProjectResource1.ToolTip" xml:space="preserve">
+    <value>Quick View</value>
+  </data>
+  <data name="ltrlACYearResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Branch Projects</value>
+  </data>
+  <data name="PageResource2.Title" xml:space="preserve">
+    <value>Home Dashboard</value>
+  </data>
+  <data name="PageResource3.Title" xml:space="preserve">
+    <value>Home Dashboard</value>
+  </data>
+  <data name="PivotGridFieldResource1.Caption" xml:space="preserve">
+    <value>Branch Office</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PivotGridFieldResource1.ColumnValueLineCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="PivotGridFieldResource1.DisplayFolder" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PivotGridFieldResource1.EmptyCellText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PivotGridFieldResource1.EmptyValueText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PivotGridFieldResource1.FieldName" xml:space="preserve">
+    <value>BRANCH_OFFICE_NAME</value>
+  </data>
+  <data name="PivotGridFieldResource1.GrandTotalText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PivotGridFieldResource1.MinWidth" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="PivotGridFieldResource1.RowValueLineCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="PivotGridFieldResource1.SortBySummaryInfo.FieldName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PivotGridFieldResource1.UnboundExpression" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="DevExpress.Data.v13.2" name="DevExpress.Data.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="PivotGridFieldResource1.UseNativeFormat" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v13.2">
+    <value>Default</value>
+  </data>
+  <data name="PivotGridFieldResource1.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="PivotGridFieldResource2.Caption" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="PivotGridFieldResource2.ColumnValueLineCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="PivotGridFieldResource2.DisplayFolder" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PivotGridFieldResource2.EmptyCellText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PivotGridFieldResource2.EmptyValueText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PivotGridFieldResource2.FieldName" xml:space="preserve">
+    <value>PROJECT</value>
+  </data>
+  <data name="PivotGridFieldResource2.GrandTotalText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PivotGridFieldResource2.MinWidth" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="PivotGridFieldResource2.RowValueLineCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="PivotGridFieldResource2.SortBySummaryInfo.FieldName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PivotGridFieldResource2.UnboundExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PivotGridFieldResource2.UseNativeFormat" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v13.2">
+    <value>Default</value>
+  </data>
+  <data name="PivotGridFieldResource2.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="PivotGridFieldResource3.Caption" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="PivotGridFieldResource3.ColumnValueLineCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="PivotGridFieldResource3.DisplayFolder" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PivotGridFieldResource3.EmptyCellText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PivotGridFieldResource3.EmptyValueText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PivotGridFieldResource3.FieldName" xml:space="preserve">
+    <value>MONTH_NAME</value>
+  </data>
+  <data name="PivotGridFieldResource3.GrandTotalText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PivotGridFieldResource3.MinWidth" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="PivotGridFieldResource3.RowValueLineCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="PivotGridFieldResource3.SortBySummaryInfo.FieldName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PivotGridFieldResource3.UnboundExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PivotGridFieldResource3.UseNativeFormat" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v13.2">
+    <value>Default</value>
+  </data>
+  <data name="PivotGridFieldResource3.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="PivotGridFieldResource4.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PivotGridFieldResource4.ColumnValueLineCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="PivotGridFieldResource4.DisplayFolder" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PivotGridFieldResource4.EmptyCellText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PivotGridFieldResource4.EmptyValueText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PivotGridFieldResource4.FieldName" xml:space="preserve">
+    <value>RESULT</value>
+  </data>
+  <data name="PivotGridFieldResource4.GrandTotalText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PivotGridFieldResource4.MinWidth" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="PivotGridFieldResource4.RowValueLineCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="PivotGridFieldResource4.SortBySummaryInfo.FieldName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PivotGridFieldResource4.UnboundExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PivotGridFieldResource4.UseNativeFormat" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v13.2">
+    <value>Default</value>
+  </data>
+  <data name="PivotGridFieldResource4.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="pvtDataSynStatusResource1.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pvtDataSynStatusResource1.OptionsDataField.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pvtDataSynStatusResource1.OptionsLoadingPanel.Text" xml:space="preserve">
+    <value>Loading&amp;hellip;</value>
+  </data>
+  <data name="pvtDataSynStatusResource1.OptionsPager.AllButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pvtDataSynStatusResource1.OptionsPager.CurrentPageNumberFormat" xml:space="preserve">
+    <value>[{0}]</value>
+  </data>
+  <data name="pvtDataSynStatusResource1.OptionsPager.FirstPageButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pvtDataSynStatusResource1.OptionsPager.LastPageButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pvtDataSynStatusResource1.OptionsPager.NextPageButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pvtDataSynStatusResource1.OptionsPager.PageNumberFormat" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="pvtDataSynStatusResource1.OptionsPager.PageSizeItemSettings.AllItemText" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="pvtDataSynStatusResource1.OptionsPager.PageSizeItemSettings.Caption" xml:space="preserve">
+    <value>Page size:</value>
+  </data>
+  <data name="pvtDataSynStatusResource1.OptionsPager.PrevPageButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pvtDataSynStatusResource1.OptionsPager.Summary.AllPagesText" xml:space="preserve">
+    <value>Pages: {0} - {1} ({2} items)</value>
+  </data>
+  <data name="pvtDataSynStatusResource1.OptionsPager.Summary.Text" xml:space="preserve">
+    <value>Page {0} of {1} ({2} items)</value>
+  </data>
+  <data name="pvtDataSynStatusResource1.SummaryText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tabBranchResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TabDashBoardResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tabProjectResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tabUploadResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>

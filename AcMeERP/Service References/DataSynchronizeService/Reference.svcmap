@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="03301099-2564-480c-b2b9-889692e5aa44" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://staging.acmeerp.org/DataSyncService/DataSynchronizer.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DataSynchronizer.xsd" MetadataType="Schema" ID="cb83ed2d-8e1b-44d3-a038-95a6b562ccc0" SourceId="1" SourceUrl="https://staging.acmeerp.org/DataSyncService/DataSynchronizer.svc?xsd=xsd1" />
+    <MetadataFile FileName="DataSynchronizer1.xsd" MetadataType="Schema" ID="608c86bd-1181-4355-8ba5-5e44bd348a7b" SourceId="1" SourceUrl="https://staging.acmeerp.org/DataSyncService/DataSynchronizer.svc?xsd=xsd0" />
+    <MetadataFile FileName="DataSynchronizer2.xsd" MetadataType="Schema" ID="a05eb00d-d168-4180-8c43-add7075572e5" SourceId="1" SourceUrl="https://staging.acmeerp.org/DataSyncService/DataSynchronizer.svc?xsd=xsd4" />
+    <MetadataFile FileName="DataSynchronizer.wsdl" MetadataType="Wsdl" ID="4ecc253a-c3e1-4d1c-8965-b26d75c3608a" SourceId="1" SourceUrl="https://staging.acmeerp.org/DataSyncService/DataSynchronizer.svc?wsdl" />
+    <MetadataFile FileName="DataSynchronizer.disco" MetadataType="Disco" ID="42df8a78-422f-439a-a269-8ac1d910d8c8" SourceId="1" SourceUrl="https://staging.acmeerp.org/DataSyncService/DataSynchronizer.svc?disco" />
+    <MetadataFile FileName="DataSynchronizer3.xsd" MetadataType="Schema" ID="6a51e95a-aef2-41e4-a1c0-3bfa8aa57fbe" SourceId="1" SourceUrl="https://staging.acmeerp.org/DataSyncService/DataSynchronizer.svc?xsd=xsd3" />
+    <MetadataFile FileName="DataSynchronizer4.xsd" MetadataType="Schema" ID="74952ebe-a09d-45e7-a3c8-10776d9ab72d" SourceId="1" SourceUrl="https://staging.acmeerp.org/DataSyncService/DataSynchronizer.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

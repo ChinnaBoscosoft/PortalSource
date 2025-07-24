@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DataSynchronizer" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://staging.acmeerp.org/DataSyncService/DataSynchronizer.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="https://staging.acmeerp.org/DataSyncService/DataSynchronizer.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" />
+      <xsd:import schemaLocation="https://staging.acmeerp.org/DataSyncService/DataSynchronizer.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://staging.acmeerp.org/DataSyncService/DataSynchronizer.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+      <xsd:import schemaLocation="https://staging.acmeerp.org/DataSyncService/DataSynchronizer.svc?xsd=xsd4" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDataSynchronizer_IsBranchExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsBranchExists" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_IsBranchExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsBranchExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_IsBranchExists_AcMeServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" name="detail" element="q1:AcMeServiceException" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetHeadOfficeMailAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHeadOfficeMailAddress" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetHeadOfficeMailAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHeadOfficeMailAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetBranchMailAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBranchMailAddress" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetBranchMailAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBranchMailAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetBranchDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBranchDetails" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetBranchDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBranchDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetBranchDetails_AcMeServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" name="detail" element="q2:AcMeServiceException" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetBranchDetailsByCredentials_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBranchDetailsByCredentials" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetBranchDetailsByCredentials_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBranchDetailsByCredentialsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetBranchDetailsByCredentials_AcMeServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" name="detail" element="q3:AcMeServiceException" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetVoucherAmendments_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVoucherAmendments" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetVoucherAmendments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVoucherAmendmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetVoucherAmendments_AcMeServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" name="detail" element="q4:AcMeServiceException" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetLicenseDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseDetails" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetLicenseDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetLicenseDetails_AcMeServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" name="detail" element="q5:AcMeServiceException" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetMasterDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMasterDetails" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetMasterDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMasterDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetMasterDetails_AcMeServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" name="detail" element="q6:AcMeServiceException" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetTDSMasterDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTDSMasterDetails" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetTDSMasterDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTDSMasterDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetTDSMasterDetails_AcMeServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" name="detail" element="q7:AcMeServiceException" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetMismatchedProjects_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMismatchedProjects" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetMismatchedProjects_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMismatchedProjectsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetMismatchedProjects_AcMeServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" name="detail" element="q8:AcMeServiceException" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetMismatchedLedgers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMismatchedLedgers" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetMismatchedLedgers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMismatchedLedgersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetMismatchedLedgers_AcMeServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" name="detail" element="q9:AcMeServiceException" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetExportDatatoPortalExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExportDatatoPortalExists" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetExportDatatoPortalExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExportDatatoPortalExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetExportDatatoPortalExists_AcMeServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" name="detail" element="q10:AcMeServiceException" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_UploadVoucher_InputMessage">
+    <wsdl:part name="parameters" element="tns:UploadVoucher" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_UploadVoucher_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UploadVoucherResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_UploadVoucher_AcMeServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q11="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" name="detail" element="q11:AcMeServiceException" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_UpdateDsyncStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDsyncStatus" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_UpdateDsyncStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDsyncStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_UpdateDsyncStatus_AcMeServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" name="detail" element="q12:AcMeServiceException" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetHeadOfficeMessages_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHeadOfficeMessages" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetHeadOfficeMessages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHeadOfficeMessagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetHeadOfficeMessages_AcMeServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q13="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" name="detail" element="q13:AcMeServiceException" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_PostTicket_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostTicket" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_PostTicket_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostTicketResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_PostTicket_AcMeServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" name="detail" element="q14:AcMeServiceException" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_IsLatestLicenseAvailable_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsLatestLicenseAvailable" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_IsLatestLicenseAvailable_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsLatestLicenseAvailableResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_IsLatestLicenseAvailable_AcMeServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" name="detail" element="q15:AcMeServiceException" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetAcmeERPProductVersion_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcmeERPProductVersion" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetAcmeERPProductVersion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcmeERPProductVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetAcmeERPProductVersion_AcMeServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q16="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" name="detail" element="q16:AcMeServiceException" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetCurrentServerDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentServerDate" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetCurrentServerDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentServerDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetCurrentServerDate_AcMeServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q17="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" name="detail" element="q17:AcMeServiceException" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetLockVoucher_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLockVoucher" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetLockVoucher_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLockVoucherResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetLockVoucher_AcMeServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" name="detail" element="q18:AcMeServiceException" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetLockVoucherGraceDays_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLockVoucherGraceDays" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetLockVoucherGraceDays_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLockVoucherGraceDaysResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetLockVoucherGraceDays_AcMeServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q19="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" name="detail" element="q19:AcMeServiceException" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetApprovedBudgetsDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovedBudgetsDetails" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetApprovedBudgetsDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovedBudgetsDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetApprovedBudgetsDetails_AcMeServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q20="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" name="detail" element="q20:AcMeServiceException" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_UploadBudgetsDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:UploadBudgetsDetails" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_UploadBudgetsDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UploadBudgetsDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_UploadBudgetsDetails_AcMeServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q21="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" name="detail" element="q21:AcMeServiceException" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_UpdateBranchLoggedHistory_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBranchLoggedHistory" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_UpdateBranchLoggedHistory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBranchLoggedHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_UpdateBranchLoggedHistory_AcMeServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q22="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" name="detail" element="q22:AcMeServiceException" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_UpdateSubLedgerVouchers_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSubLedgerVouchers" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_UpdateSubLedgerVouchers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSubLedgerVouchersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_UpdateSubLedgerVouchers_AcMeServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q23="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" name="detail" element="q23:AcMeServiceException" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_UpdateProjectClosedDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProjectClosedDate" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_UpdateProjectClosedDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProjectClosedDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_UpdateProjectClosedDate_AcMeServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" name="detail" element="q24:AcMeServiceException" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_RequestLocalCommunityKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:RequestLocalCommunityKey" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_RequestLocalCommunityKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RequestLocalCommunityKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_RequestLocalCommunityKey_AcMeServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q25="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" name="detail" element="q25:AcMeServiceException" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetLocalCommunityReceiptModuleRightStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocalCommunityReceiptModuleRightStatus" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetLocalCommunityReceiptModuleRightStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocalCommunityReceiptModuleRightStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_GetLocalCommunityReceiptModuleRightStatus_AcMeServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q26="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" name="detail" element="q26:AcMeServiceException" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_CheckVouchersInOtherProjectsOrDates_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckVouchersInOtherProjectsOrDates" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_CheckVouchersInOtherProjectsOrDates_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckVouchersInOtherProjectsOrDatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSynchronizer_CheckVouchersInOtherProjectsOrDates_AcMeServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q27="http://schemas.datacontract.org/2004/07/AcMeERP.DataSyncService" name="detail" element="q27:AcMeServiceException" />
+  </wsdl:message>
+  <wsdl:portType name="IDataSynchronizer">
+    <wsdl:operation name="IsBranchExists">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/IsBranchExists" message="tns:IDataSynchronizer_IsBranchExists_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/IsBranchExistsResponse" message="tns:IDataSynchronizer_IsBranchExists_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDataSynchronizer/IsBranchExistsAcMeServiceExceptionFault" name="AcMeServiceExceptionFault" message="tns:IDataSynchronizer_IsBranchExists_AcMeServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHeadOfficeMailAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/GetHeadOfficeMailAddress" message="tns:IDataSynchronizer_GetHeadOfficeMailAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/GetHeadOfficeMailAddressResponse" message="tns:IDataSynchronizer_GetHeadOfficeMailAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBranchMailAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/GetBranchMailAddress" message="tns:IDataSynchronizer_GetBranchMailAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/GetBranchMailAddressResponse" message="tns:IDataSynchronizer_GetBranchMailAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBranchDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/GetBranchDetails" message="tns:IDataSynchronizer_GetBranchDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/GetBranchDetailsResponse" message="tns:IDataSynchronizer_GetBranchDetails_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDataSynchronizer/GetBranchDetailsAcMeServiceExceptionFault" name="AcMeServiceExceptionFault" message="tns:IDataSynchronizer_GetBranchDetails_AcMeServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBranchDetailsByCredentials">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/GetBranchDetailsByCredentials" message="tns:IDataSynchronizer_GetBranchDetailsByCredentials_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/GetBranchDetailsByCredentialsResponse" message="tns:IDataSynchronizer_GetBranchDetailsByCredentials_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDataSynchronizer/GetBranchDetailsByCredentialsAcMeServiceExceptionFault" name="AcMeServiceExceptionFault" message="tns:IDataSynchronizer_GetBranchDetailsByCredentials_AcMeServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVoucherAmendments">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/GetVoucherAmendments" message="tns:IDataSynchronizer_GetVoucherAmendments_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/GetVoucherAmendmentsResponse" message="tns:IDataSynchronizer_GetVoucherAmendments_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDataSynchronizer/GetVoucherAmendmentsAcMeServiceExceptionFault" name="AcMeServiceExceptionFault" message="tns:IDataSynchronizer_GetVoucherAmendments_AcMeServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/GetLicenseDetails" message="tns:IDataSynchronizer_GetLicenseDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/GetLicenseDetailsResponse" message="tns:IDataSynchronizer_GetLicenseDetails_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDataSynchronizer/GetLicenseDetailsAcMeServiceExceptionFault" name="AcMeServiceExceptionFault" message="tns:IDataSynchronizer_GetLicenseDetails_AcMeServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/GetMasterDetails" message="tns:IDataSynchronizer_GetMasterDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/GetMasterDetailsResponse" message="tns:IDataSynchronizer_GetMasterDetails_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDataSynchronizer/GetMasterDetailsAcMeServiceExceptionFault" name="AcMeServiceExceptionFault" message="tns:IDataSynchronizer_GetMasterDetails_AcMeServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTDSMasterDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/GetTDSMasterDetails" message="tns:IDataSynchronizer_GetTDSMasterDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/GetTDSMasterDetailsResponse" message="tns:IDataSynchronizer_GetTDSMasterDetails_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDataSynchronizer/GetTDSMasterDetailsAcMeServiceExceptionFault" name="AcMeServiceExceptionFault" message="tns:IDataSynchronizer_GetTDSMasterDetails_AcMeServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMismatchedProjects">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/GetMismatchedProjects" message="tns:IDataSynchronizer_GetMismatchedProjects_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/GetMismatchedProjectsResponse" message="tns:IDataSynchronizer_GetMismatchedProjects_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDataSynchronizer/GetMismatchedProjectsAcMeServiceExceptionFault" name="AcMeServiceExceptionFault" message="tns:IDataSynchronizer_GetMismatchedProjects_AcMeServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMismatchedLedgers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/GetMismatchedLedgers" message="tns:IDataSynchronizer_GetMismatchedLedgers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/GetMismatchedLedgersResponse" message="tns:IDataSynchronizer_GetMismatchedLedgers_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDataSynchronizer/GetMismatchedLedgersAcMeServiceExceptionFault" name="AcMeServiceExceptionFault" message="tns:IDataSynchronizer_GetMismatchedLedgers_AcMeServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExportDatatoPortalExists">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/GetExportDatatoPortalExists" message="tns:IDataSynchronizer_GetExportDatatoPortalExists_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/GetExportDatatoPortalExistsResponse" message="tns:IDataSynchronizer_GetExportDatatoPortalExists_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDataSynchronizer/GetExportDatatoPortalExistsAcMeServiceExceptionFault" name="AcMeServiceExceptionFault" message="tns:IDataSynchronizer_GetExportDatatoPortalExists_AcMeServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadVoucher">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/UploadVoucher" message="tns:IDataSynchronizer_UploadVoucher_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/UploadVoucherResponse" message="tns:IDataSynchronizer_UploadVoucher_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDataSynchronizer/UploadVoucherAcMeServiceExceptionFault" name="AcMeServiceExceptionFault" message="tns:IDataSynchronizer_UploadVoucher_AcMeServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDsyncStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/UpdateDsyncStatus" message="tns:IDataSynchronizer_UpdateDsyncStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/UpdateDsyncStatusResponse" message="tns:IDataSynchronizer_UpdateDsyncStatus_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDataSynchronizer/UpdateDsyncStatusAcMeServiceExceptionFault" name="AcMeServiceExceptionFault" message="tns:IDataSynchronizer_UpdateDsyncStatus_AcMeServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHeadOfficeMessages">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/GetHeadOfficeMessages" message="tns:IDataSynchronizer_GetHeadOfficeMessages_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/GetHeadOfficeMessagesResponse" message="tns:IDataSynchronizer_GetHeadOfficeMessages_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDataSynchronizer/GetHeadOfficeMessagesAcMeServiceExceptionFault" name="AcMeServiceExceptionFault" message="tns:IDataSynchronizer_GetHeadOfficeMessages_AcMeServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostTicket">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/PostTicket" message="tns:IDataSynchronizer_PostTicket_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/PostTicketResponse" message="tns:IDataSynchronizer_PostTicket_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDataSynchronizer/PostTicketAcMeServiceExceptionFault" name="AcMeServiceExceptionFault" message="tns:IDataSynchronizer_PostTicket_AcMeServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsLatestLicenseAvailable">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/IsLatestLicenseAvailable" message="tns:IDataSynchronizer_IsLatestLicenseAvailable_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/IsLatestLicenseAvailableResponse" message="tns:IDataSynchronizer_IsLatestLicenseAvailable_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDataSynchronizer/IsLatestLicenseAvailableAcMeServiceExceptionFault" name="AcMeServiceExceptionFault" message="tns:IDataSynchronizer_IsLatestLicenseAvailable_AcMeServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcmeERPProductVersion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/GetAcmeERPProductVersion" message="tns:IDataSynchronizer_GetAcmeERPProductVersion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/GetAcmeERPProductVersionResponse" message="tns:IDataSynchronizer_GetAcmeERPProductVersion_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDataSynchronizer/GetAcmeERPProductVersionAcMeServiceExceptionFault" name="AcMeServiceExceptionFault" message="tns:IDataSynchronizer_GetAcmeERPProductVersion_AcMeServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentServerDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/GetCurrentServerDate" message="tns:IDataSynchronizer_GetCurrentServerDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/GetCurrentServerDateResponse" message="tns:IDataSynchronizer_GetCurrentServerDate_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDataSynchronizer/GetCurrentServerDateAcMeServiceExceptionFault" name="AcMeServiceExceptionFault" message="tns:IDataSynchronizer_GetCurrentServerDate_AcMeServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLockVoucher">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/GetLockVoucher" message="tns:IDataSynchronizer_GetLockVoucher_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/GetLockVoucherResponse" message="tns:IDataSynchronizer_GetLockVoucher_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDataSynchronizer/GetLockVoucherAcMeServiceExceptionFault" name="AcMeServiceExceptionFault" message="tns:IDataSynchronizer_GetLockVoucher_AcMeServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLockVoucherGraceDays">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/GetLockVoucherGraceDays" message="tns:IDataSynchronizer_GetLockVoucherGraceDays_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/GetLockVoucherGraceDaysResponse" message="tns:IDataSynchronizer_GetLockVoucherGraceDays_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDataSynchronizer/GetLockVoucherGraceDaysAcMeServiceExceptionFault" name="AcMeServiceExceptionFault" message="tns:IDataSynchronizer_GetLockVoucherGraceDays_AcMeServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovedBudgetsDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/GetApprovedBudgetsDetails" message="tns:IDataSynchronizer_GetApprovedBudgetsDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/GetApprovedBudgetsDetailsResponse" message="tns:IDataSynchronizer_GetApprovedBudgetsDetails_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDataSynchronizer/GetApprovedBudgetsDetailsAcMeServiceExceptionFault" name="AcMeServiceExceptionFault" message="tns:IDataSynchronizer_GetApprovedBudgetsDetails_AcMeServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadBudgetsDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/UploadBudgetsDetails" message="tns:IDataSynchronizer_UploadBudgetsDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/UploadBudgetsDetailsResponse" message="tns:IDataSynchronizer_UploadBudgetsDetails_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDataSynchronizer/UploadBudgetsDetailsAcMeServiceExceptionFault" name="AcMeServiceExceptionFault" message="tns:IDataSynchronizer_UploadBudgetsDetails_AcMeServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBranchLoggedHistory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/UpdateBranchLoggedHistory" message="tns:IDataSynchronizer_UpdateBranchLoggedHistory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/UpdateBranchLoggedHistoryResponse" message="tns:IDataSynchronizer_UpdateBranchLoggedHistory_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDataSynchronizer/UpdateBranchLoggedHistoryAcMeServiceExceptionFault" name="AcMeServiceExceptionFault" message="tns:IDataSynchronizer_UpdateBranchLoggedHistory_AcMeServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSubLedgerVouchers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/UpdateSubLedgerVouchers" message="tns:IDataSynchronizer_UpdateSubLedgerVouchers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/UpdateSubLedgerVouchersResponse" message="tns:IDataSynchronizer_UpdateSubLedgerVouchers_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDataSynchronizer/UpdateSubLedgerVouchersAcMeServiceExceptionFault" name="AcMeServiceExceptionFault" message="tns:IDataSynchronizer_UpdateSubLedgerVouchers_AcMeServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProjectClosedDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/UpdateProjectClosedDate" message="tns:IDataSynchronizer_UpdateProjectClosedDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/UpdateProjectClosedDateResponse" message="tns:IDataSynchronizer_UpdateProjectClosedDate_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDataSynchronizer/UpdateProjectClosedDateAcMeServiceExceptionFault" name="AcMeServiceExceptionFault" message="tns:IDataSynchronizer_UpdateProjectClosedDate_AcMeServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RequestLocalCommunityKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/RequestLocalCommunityKey" message="tns:IDataSynchronizer_RequestLocalCommunityKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/RequestLocalCommunityKeyResponse" message="tns:IDataSynchronizer_RequestLocalCommunityKey_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDataSynchronizer/RequestLocalCommunityKeyAcMeServiceExceptionFault" name="AcMeServiceExceptionFault" message="tns:IDataSynchronizer_RequestLocalCommunityKey_AcMeServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalCommunityReceiptModuleRightStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/GetLocalCommunityReceiptModuleRightStatus" message="tns:IDataSynchronizer_GetLocalCommunityReceiptModuleRightStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/GetLocalCommunityReceiptModuleRightStatusResponse" message="tns:IDataSynchronizer_GetLocalCommunityReceiptModuleRightStatus_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDataSynchronizer/GetLocalCommunityReceiptModuleRightStatusAcMeServiceExceptionFault" name="AcMeServiceExceptionFault" message="tns:IDataSynchronizer_GetLocalCommunityReceiptModuleRightStatus_AcMeServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckVouchersInOtherProjectsOrDates">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataSynchronizer/CheckVouchersInOtherProjectsOrDates" message="tns:IDataSynchronizer_CheckVouchersInOtherProjectsOrDates_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataSynchronizer/CheckVouchersInOtherProjectsOrDatesResponse" message="tns:IDataSynchronizer_CheckVouchersInOtherProjectsOrDates_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDataSynchronizer/CheckVouchersInOtherProjectsOrDatesAcMeServiceExceptionFault" name="AcMeServiceExceptionFault" message="tns:IDataSynchronizer_CheckVouchersInOtherProjectsOrDates_AcMeServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IDataSynchronizer" type="tns:IDataSynchronizer">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="IsBranchExists">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/IsBranchExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AcMeServiceExceptionFault">
+        <soap:fault use="literal" name="AcMeServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetHeadOfficeMailAddress">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/GetHeadOfficeMailAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBranchMailAddress">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/GetBranchMailAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBranchDetails">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/GetBranchDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AcMeServiceExceptionFault">
+        <soap:fault use="literal" name="AcMeServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetBranchDetailsByCredentials">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/GetBranchDetailsByCredentials" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AcMeServiceExceptionFault">
+        <soap:fault use="literal" name="AcMeServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetVoucherAmendments">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/GetVoucherAmendments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AcMeServiceExceptionFault">
+        <soap:fault use="literal" name="AcMeServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseDetails">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/GetLicenseDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AcMeServiceExceptionFault">
+        <soap:fault use="literal" name="AcMeServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterDetails">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/GetMasterDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AcMeServiceExceptionFault">
+        <soap:fault use="literal" name="AcMeServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetTDSMasterDetails">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/GetTDSMasterDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AcMeServiceExceptionFault">
+        <soap:fault use="literal" name="AcMeServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetMismatchedProjects">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/GetMismatchedProjects" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AcMeServiceExceptionFault">
+        <soap:fault use="literal" name="AcMeServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetMismatchedLedgers">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/GetMismatchedLedgers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AcMeServiceExceptionFault">
+        <soap:fault use="literal" name="AcMeServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetExportDatatoPortalExists">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/GetExportDatatoPortalExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AcMeServiceExceptionFault">
+        <soap:fault use="literal" name="AcMeServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UploadVoucher">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/UploadVoucher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AcMeServiceExceptionFault">
+        <soap:fault use="literal" name="AcMeServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDsyncStatus">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/UpdateDsyncStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AcMeServiceExceptionFault">
+        <soap:fault use="literal" name="AcMeServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetHeadOfficeMessages">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/GetHeadOfficeMessages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AcMeServiceExceptionFault">
+        <soap:fault use="literal" name="AcMeServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="PostTicket">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/PostTicket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AcMeServiceExceptionFault">
+        <soap:fault use="literal" name="AcMeServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="IsLatestLicenseAvailable">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/IsLatestLicenseAvailable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AcMeServiceExceptionFault">
+        <soap:fault use="literal" name="AcMeServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcmeERPProductVersion">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/GetAcmeERPProductVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AcMeServiceExceptionFault">
+        <soap:fault use="literal" name="AcMeServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentServerDate">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/GetCurrentServerDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AcMeServiceExceptionFault">
+        <soap:fault use="literal" name="AcMeServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLockVoucher">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/GetLockVoucher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AcMeServiceExceptionFault">
+        <soap:fault use="literal" name="AcMeServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLockVoucherGraceDays">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/GetLockVoucherGraceDays" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AcMeServiceExceptionFault">
+        <soap:fault use="literal" name="AcMeServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovedBudgetsDetails">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/GetApprovedBudgetsDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AcMeServiceExceptionFault">
+        <soap:fault use="literal" name="AcMeServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UploadBudgetsDetails">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/UploadBudgetsDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AcMeServiceExceptionFault">
+        <soap:fault use="literal" name="AcMeServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBranchLoggedHistory">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/UpdateBranchLoggedHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AcMeServiceExceptionFault">
+        <soap:fault use="literal" name="AcMeServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSubLedgerVouchers">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/UpdateSubLedgerVouchers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AcMeServiceExceptionFault">
+        <soap:fault use="literal" name="AcMeServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProjectClosedDate">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/UpdateProjectClosedDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AcMeServiceExceptionFault">
+        <soap:fault use="literal" name="AcMeServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="RequestLocalCommunityKey">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/RequestLocalCommunityKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AcMeServiceExceptionFault">
+        <soap:fault use="literal" name="AcMeServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalCommunityReceiptModuleRightStatus">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/GetLocalCommunityReceiptModuleRightStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AcMeServiceExceptionFault">
+        <soap:fault use="literal" name="AcMeServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CheckVouchersInOtherProjectsOrDates">
+      <soap:operation soapAction="http://tempuri.org/IDataSynchronizer/CheckVouchersInOtherProjectsOrDates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AcMeServiceExceptionFault">
+        <soap:fault use="literal" name="AcMeServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DataSynchronizer">
+    <wsdl:port name="BasicHttpBinding_IDataSynchronizer" binding="tns:BasicHttpBinding_IDataSynchronizer">
+      <soap:address location="http://staging.acmeerp.org/DataSyncService/DataSynchronizer.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

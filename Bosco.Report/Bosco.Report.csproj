@@ -1,0 +1,2124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{59D90D5D-2D28-444D-BD5D-60150D78F449}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bosco.Report</RootNamespace>
+    <AssemblyName>Bosco.Report</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/Bosco.Report/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AcMEDSync">
+      <HintPath>..\AcMeERP\dlls\AcMEDSync.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v13.2.Core, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v13.2.Core, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Snap.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Snap.v13.2.Core, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Snap.v13.2.Extensions, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v13.2.Core, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v13.2.UI, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v13.2.Extensions, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v13.2.UI, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v13.2.Wizard, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v13.2.Extensions, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\BalanceSystem1.cs" />
+    <Compile Include="Base\ReportHeaderBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Base\ReportHeaderBase.Designer.cs">
+      <DependentUpon>ReportHeaderBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ReportEntry.cs" />
+    <Compile Include="Base\ReportProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PrintRibbonControllerResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\AccountBalance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\AccountBalance.Designer.cs">
+      <DependentUpon>AccountBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BalanceSheetAsset.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BalanceSheetAsset.designer.cs">
+      <DependentUpon>BalanceSheetAsset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BalanceSheetAssets.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BalanceSheetAssets.designer.cs">
+      <DependentUpon>BalanceSheetAssets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BalanceSheetGroups.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BalanceSheetGroups.designer.cs">
+      <DependentUpon>BalanceSheetGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BalanceSheetLiabilities.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BalanceSheetLiabilities.designer.cs">
+      <DependentUpon>BalanceSheetLiabilities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BalanceSheet_Schedules.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BalanceSheet_Schedules.Designer.cs">
+      <DependentUpon>BalanceSheet_Schedules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BankBalanceStatement.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BankBalanceStatement.Designer.cs">
+      <DependentUpon>BankBalanceStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BankChequeCleared.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BankChequeCleared.Designer.cs">
+      <DependentUpon>BankChequeCleared.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BankChequeRealized.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BankChequeRealized.Designer.cs">
+      <DependentUpon>BankChequeRealized.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BankChequeUnCleared.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BankChequeUnCleared.Designer.cs">
+      <DependentUpon>BankChequeUnCleared.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BankChequeUnrealized.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BankChequeUnrealized.Designer.cs">
+      <DependentUpon>BankChequeUnrealized.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BankFlow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BankFlow.Designer.cs">
+      <DependentUpon>BankFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BankJournal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BankJournal.Designer.cs">
+      <DependentUpon>BankJournal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BankReconciliation.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BankReconciliation.Designer.cs">
+      <DependentUpon>BankReconciliation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BankStatement.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BankStatement.Designer.cs">
+      <DependentUpon>BankStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BranchBankList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BranchBankList.Designer.cs">
+      <DependentUpon>BranchBankList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BranchComparativeReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BranchComparativeReport.Designer.cs">
+      <DependentUpon>BranchComparativeReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BranchDataSyncStatus.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BranchDataSyncStatus.Designer.cs">
+      <DependentUpon>BranchDataSyncStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BranchExportVoucher.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BranchExportVoucher.Designer.cs">
+      <DependentUpon>BranchExportVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BranchIEYearWise.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BranchIEYearWise.designer.cs">
+      <DependentUpon>BranchIEYearWise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BranchInvestments.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BranchInvestments.designer.cs">
+      <DependentUpon>BranchInvestments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BranchLocationIEYearWise.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BranchLocationIEYearWise.designer.cs">
+      <DependentUpon>BranchLocationIEYearWise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BranchwiseBalance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BranchwiseBalance.Designer.cs">
+      <DependentUpon>BranchwiseBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BranchWiseLedgerReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BranchWiseLedgerReport.Designer.cs">
+      <DependentUpon>BranchWiseLedgerReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BudgetApprovalByMonth.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BudgetApprovalByMonth.designer.cs">
+      <DependentUpon>BudgetApprovalByMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BudgetByMonth.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BudgetByMonth.designer.cs">
+      <DependentUpon>BudgetByMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BudgetDetails.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BudgetDetails.Designer.cs">
+      <DependentUpon>BudgetDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BudgetLedger.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BudgetLedger.Designer.cs">
+      <DependentUpon>BudgetLedger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BudgetStatistics.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BudgetStatistics.designer.cs">
+      <DependentUpon>BudgetStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BudgetVariance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BudgetVariance.Designer.cs">
+      <DependentUpon>BudgetVariance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BudgetView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BudgetView.designer.cs">
+      <DependentUpon>BudgetView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\CashBankBook.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\CashBankBook.Designer.cs">
+      <DependentUpon>CashBankBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\AccountBalanceMulti.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\AccountBalanceMulti.Designer.cs">
+      <DependentUpon>AccountBalanceMulti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\CashBankPayments.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\CashBankPayments.Designer.cs">
+      <DependentUpon>CashBankPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\CashBankReceipts.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\CashBankReceipts.Designer.cs">
+      <DependentUpon>CashBankReceipts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\CashBankTransactions.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\CashBankTransactions.Designer.cs">
+      <DependentUpon>CashBankTransactions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\CashFlow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\CashFlow.Designer.cs">
+      <DependentUpon>CashFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\CashJournal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\CashJournal.Designer.cs">
+      <DependentUpon>CashJournal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\CategoryWiseInstitutionDetails.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\CategoryWiseInstitutionDetails.Designer.cs">
+      <DependentUpon>CategoryWiseInstitutionDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\CCMothlyReceipts.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\CCMothlyReceipts.Designer.cs">
+      <DependentUpon>CCMothlyReceipts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\CCMultiAbstractReceipts.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\CCMultiAbstractReceipts.Designer.cs">
+      <DependentUpon>CCMultiAbstractReceipts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\CCMultiAbstractPayments.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\CCMultiAbstractPayments.Designer.cs">
+      <DependentUpon>CCMultiAbstractPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\CCMultiAbstractReceiptsAndPayments.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\CCMultiAbstractReceiptsAndPayments.Designer.cs">
+      <DependentUpon>CCMultiAbstractReceiptsAndPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\CCReceiptsPayments.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\CCReceiptsPayments.Designer.cs">
+      <DependentUpon>CCReceiptsPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\AccountBalanceCode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\AccountBalanceCode.Designer.cs">
+      <DependentUpon>AccountBalanceCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BalanceSheetSAP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BalanceSheetSAP.Designer.cs">
+      <DependentUpon>BalanceSheetSAP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BalanceSheetLiabilitiesSAP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BalanceSheetLiabilitiesSAP.designer.cs">
+      <DependentUpon>BalanceSheetLiabilitiesSAP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BalanceSheetAssetsSAP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BalanceSheetAssetsSAP.designer.cs">
+      <DependentUpon>BalanceSheetAssetsSAP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BudgetLedgerINM.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BudgetLedgerINM.Designer.cs">
+      <DependentUpon>BudgetLedgerINM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BudgetViewINM.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BudgetViewINM.designer.cs">
+      <DependentUpon>BudgetViewINM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\HeadOfficeBranchOffice.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\HeadOfficeBranchOffice.Designer.cs">
+      <DependentUpon>HeadOfficeBranchOffice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\HeadOfficeProject.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\HeadOfficeProject.Designer.cs">
+      <DependentUpon>HeadOfficeProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\HOOfficeLedgersTransGreater10000.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\HOOfficeLedgersTransGreater10000.Designer.cs">
+      <DependentUpon>HOOfficeLedgersTransGreater10000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\FinalReceiptsPaymentsCode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\FinalReceiptsPaymentsCode.Designer.cs">
+      <DependentUpon>FinalReceiptsPaymentsCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\PaymentsCode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\PaymentsCode.Designer.cs">
+      <DependentUpon>PaymentsCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\ProfitandLossofHousesInterAcByBranch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\ProfitandLossofHousesInterAcByBranch.designer.cs">
+      <DependentUpon>ProfitandLossofHousesInterAcByBranch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\ReceiptsCode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\ReceiptsCode.Designer.cs">
+      <DependentUpon>ReceiptsCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\ProfitandLossofHousesBranches.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\ProfitandLossofHousesBranches.Designer.cs">
+      <DependentUpon>ProfitandLossofHousesBranches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateJournalVoucherReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateJournalVoucherReport.designer.cs">
+      <DependentUpon>GeneralateJournalVoucherReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateBalanceSheetDetail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateBalanceSheetDetail.Designer.cs">
+      <DependentUpon>GeneralateBalanceSheetDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateCommercial.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateCommercial.designer.cs">
+      <DependentUpon>GeneralateCommercial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\CostCentreSummary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\CostCentreSummary.Designer.cs">
+      <DependentUpon>CostCentreSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\FC6.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\FC6.Designer.cs">
+      <DependentUpon>FC6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\FC6Purpose.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\FC6Purpose.Designer.cs">
+      <DependentUpon>FC6Purpose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\FDRegister.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\FDRegister.Designer.cs">
+      <DependentUpon>FDRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\FinancialPositions.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\FinancialPositions.designer.cs">
+      <DependentUpon>FinancialPositions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\FixedDepositInDetails.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\FixedDepositInDetails.Designer.cs">
+      <DependentUpon>FixedDepositInDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\ForeignInstitutionDetails.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\ForeignInstitutionDetails.Designer.cs">
+      <DependentUpon>ForeignInstitutionDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateActivityIE.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateActivityIE.Designer.cs">
+      <DependentUpon>GeneralateActivityIE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateActivityIEFA.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateActivityIEFA.designer.cs">
+      <DependentUpon>GeneralateActivityIEFA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateBalanceSheet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateBalanceSheet.Designer.cs">
+      <DependentUpon>GeneralateBalanceSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateBalanceSheetAsset.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateBalanceSheetAsset.Designer.cs">
+      <DependentUpon>GeneralateBalanceSheetAsset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateBalanceSheetLiabilities.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateBalanceSheetLiabilities.Designer.cs">
+      <DependentUpon>GeneralateBalanceSheetLiabilities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateBalanceSheetLiabilities1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateBalanceSheetLiabilities1.designer.cs">
+      <DependentUpon>GeneralateBalanceSheetLiabilities1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateBalanceSheetLiability.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateBalanceSheetLiability.designer.cs">
+      <DependentUpon>GeneralateBalanceSheetLiability.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateFDCCSIAnnualReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateFDCCSIAnnualReports.designer.cs">
+      <DependentUpon>GeneralateFDCCSIAnnualReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateLedgerBalance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateLedgerBalance.designer.cs">
+      <DependentUpon>GeneralateLedgerBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateLedgerDetails.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateLedgerDetails.Designer.cs">
+      <DependentUpon>GeneralateLedgerDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateLoss.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateLoss.Designer.cs">
+      <DependentUpon>GeneralateLoss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\GeneralatePatrimonial.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\GeneralatePatrimonial.designer.cs">
+      <DependentUpon>GeneralatePatrimonial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateProfit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateProfit.Designer.cs">
+      <DependentUpon>GeneralateProfit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateProfitandLoss.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateProfitandLoss.Designer.cs">
+      <DependentUpon>GeneralateProfitandLoss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateReconciliazione.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\GeneralateReconciliazione.designer.cs">
+      <DependentUpon>GeneralateReconciliazione.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\HeadOfficeLedgers.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\HeadOfficeLedgers.Designer.cs">
+      <DependentUpon>HeadOfficeLedgers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\InstitutionDetails.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\InstitutionDetails.Designer.cs">
+      <DependentUpon>InstitutionDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\JournalTransactions.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\JournalTransactions.Designer.cs">
+      <DependentUpon>JournalTransactions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\MonthlyGNAbstractPayments.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\MonthlyGNAbstractPayments.designer.cs">
+      <DependentUpon>MonthlyGNAbstractPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\MonthlyGNAbstractReceipts.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\MonthlyGNAbstractReceipts.designer.cs">
+      <DependentUpon>MonthlyGNAbstractReceipts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\MonthlyGNAbstractReceiptsPayments.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\MonthlyGNAbstractReceiptsPayments.designer.cs">
+      <DependentUpon>MonthlyGNAbstractReceiptsPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\MonthWiseLedgerReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\MonthWiseLedgerReport.Designer.cs">
+      <DependentUpon>MonthWiseLedgerReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\MultiAbstractPayments.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\MultiAbstractPayments.Designer.cs">
+      <DependentUpon>MultiAbstractPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\CostCentreAbstractReceiptsAndPayments.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\CostCentreAbstractReceiptsAndPayments.Designer.cs">
+      <DependentUpon>CostCentreAbstractReceiptsAndPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\CostCentreMontlyAbstractPayments.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\CostCentreMontlyAbstractPayments.Designer.cs">
+      <DependentUpon>CostCentreMontlyAbstractPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\CostCentreMontlyAbstractReceipts.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\CostCentreMontlyAbstractReceipts.Designer.cs">
+      <DependentUpon>CostCentreMontlyAbstractReceipts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\CostCentreLedger.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\CostCentreLedger.Designer.cs">
+      <DependentUpon>CostCentreLedger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\CostCentreCashBankBook.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\CostCentreCashBankBook.Designer.cs">
+      <DependentUpon>CostCentreCashBankBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\CostCenterBankJournal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\CostCenterBankJournal.Designer.cs">
+      <DependentUpon>CostCenterBankJournal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\CostCenterCashJournal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\CostCenterCashJournal.Designer.cs">
+      <DependentUpon>CostCenterCashJournal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\ExecutiveMembers.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\ExecutiveMembers.Designer.cs">
+      <DependentUpon>ExecutiveMembers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\ExpenditureIncome.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\ExpenditureIncome.Designer.cs">
+      <DependentUpon>ExpenditureIncome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\ExpenditureIncomewithPreviousYear.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\ExpenditureIncomewithPreviousYear.Designer.cs">
+      <DependentUpon>ExpenditureIncomewithPreviousYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\FCCountry.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\FCCountry.Designer.cs">
+      <DependentUpon>FCCountry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\FCDonorIndividual.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\FCDonorIndividual.Designer.cs">
+      <DependentUpon>FCDonorIndividual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\FCDonorInstitutional.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\FCDonorInstitutional.Designer.cs">
+      <DependentUpon>FCDonorInstitutional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\FinalReceiptsPayments.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\FinalReceiptsPayments.Designer.cs">
+      <DependentUpon>FinalReceiptsPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\FixedDepositStatement.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\FixedDepositStatement.Designer.cs">
+      <DependentUpon>FixedDepositStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\JournalVoucher.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\JournalVoucher.Designer.cs">
+      <DependentUpon>JournalVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\DrillDownReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\DrillDownReport.Designer.cs">
+      <DependentUpon>DrillDownReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\Ledger.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\Ledger.Designer.cs">
+      <DependentUpon>Ledger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\MonthlyAbstractReceiptsPayments.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\MonthlyAbstractReceiptsPayments.Designer.cs">
+      <DependentUpon>MonthlyAbstractReceiptsPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\MonthlyAbstractPayments.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\MonthlyAbstractPayments.Designer.cs">
+      <DependentUpon>MonthlyAbstractPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\MonthlyAbstractReceipts.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\MonthlyAbstractReceipts.Designer.cs">
+      <DependentUpon>MonthlyAbstractReceipts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\MultiAbstractReceiptsAndPayments.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\MultiAbstractReceiptsAndPayments.Designer.cs">
+      <DependentUpon>MultiAbstractReceiptsAndPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\MultiAbstractReceipts.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\MultiAbstractReceipts.Designer.cs">
+      <DependentUpon>MultiAbstractReceipts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\OpBalance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\OpBalance.Designer.cs">
+      <DependentUpon>OpBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\FCPurpose.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\FCPurpose.Designer.cs">
+      <DependentUpon>FCPurpose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\Payments.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\Payments.Designer.cs">
+      <DependentUpon>Payments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\ProfitandLossofFoundations.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\ProfitandLossofFoundations.Designer.cs">
+      <DependentUpon>ProfitandLossofFoundations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\ProfitandLossofHouses.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\ProfitandLossofHouses.Designer.cs">
+      <DependentUpon>ProfitandLossofHouses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\ProfitandLossofHousesInterAc.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\ProfitandLossofHousesInterAc.designer.cs">
+      <DependentUpon>ProfitandLossofHousesInterAc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\ProfitAndLossofHousesInterAcDetail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\ProfitAndLossofHousesInterAcDetail.Designer.cs">
+      <DependentUpon>ProfitAndLossofHousesInterAcDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\Receipts.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\Receipts.Designer.cs">
+      <DependentUpon>Receipts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\ReceiptsPayments.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\ReceiptsPayments.Designer.cs">
+      <DependentUpon>ReceiptsPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\ReceiptsPaymentsWithPreviosYear.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\ReceiptsPaymentsWithPreviosYear.Designer.cs">
+      <DependentUpon>ReceiptsPaymentsWithPreviosYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\TestReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\TestReport.Designer.cs">
+      <DependentUpon>TestReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\TrialBalance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\TrialBalance.Designer.cs">
+      <DependentUpon>TrialBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportObject\BalanceSheet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportObject\BalanceSheet.Designer.cs">
+      <DependentUpon>BalanceSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportSetting.cs">
+      <DependentUpon>ReportSetting.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportSetting.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportSetting.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SQL\EnumReportSQLCommand.cs" />
+    <Compile Include="SQL\ReportSQL.cs" />
+    <Compile Include="Base\IReport.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Base\ReportBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Base\ReportBase.resx">
+      <DependentUpon>ReportBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ReportHeaderBase.en-US.resx">
+      <DependentUpon>ReportHeaderBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ReportHeaderBase.id-ID.resx">
+      <DependentUpon>ReportHeaderBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ReportHeaderBase.pt-PT.resx">
+      <DependentUpon>ReportHeaderBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ReportHeaderBase.resx">
+      <DependentUpon>ReportHeaderBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PrintRibbonControllerResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\AccountBalance.resx">
+      <DependentUpon>AccountBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\AccountBalanceMulti.en-US.resx">
+      <DependentUpon>AccountBalanceMulti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\AccountBalanceMulti.id-ID.resx">
+      <DependentUpon>AccountBalanceMulti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\AccountBalanceMulti.pt-PT.resx">
+      <DependentUpon>AccountBalanceMulti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheet.en-US.resx">
+      <DependentUpon>BalanceSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheet.id-ID.resx">
+      <DependentUpon>BalanceSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheet.pt-PT.resx">
+      <DependentUpon>BalanceSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheet.resx">
+      <DependentUpon>BalanceSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheetAsset.en-US.resx">
+      <DependentUpon>BalanceSheetAsset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheetAsset.id-ID.resx">
+      <DependentUpon>BalanceSheetAsset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheetAsset.pt-PT.resx">
+      <DependentUpon>BalanceSheetAsset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheetAsset.resx">
+      <DependentUpon>BalanceSheetAsset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheetAssets.en-US.resx">
+      <DependentUpon>BalanceSheetAssets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheetAssets.id-ID.resx">
+      <DependentUpon>BalanceSheetAssets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheetAssets.pt-PT.resx">
+      <DependentUpon>BalanceSheetAssets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheetAssets.resx">
+      <DependentUpon>BalanceSheetAssets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheetGroups.resx">
+      <DependentUpon>BalanceSheetGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheetLiabilities.en-US.resx">
+      <DependentUpon>BalanceSheetLiabilities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheetLiabilities.id-ID.resx">
+      <DependentUpon>BalanceSheetLiabilities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheetLiabilities.pt-PT.resx">
+      <DependentUpon>BalanceSheetLiabilities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheetLiabilities.resx">
+      <DependentUpon>BalanceSheetLiabilities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheet_Schedules.en-US.resx">
+      <DependentUpon>BalanceSheet_Schedules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheet_Schedules.id-ID.resx">
+      <DependentUpon>BalanceSheet_Schedules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheet_Schedules.pt-PT.resx">
+      <DependentUpon>BalanceSheet_Schedules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheet_Schedules.resx">
+      <DependentUpon>BalanceSheet_Schedules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankBalanceStatement.en-US.resx">
+      <DependentUpon>BankBalanceStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankBalanceStatement.fr-FR.resx">
+      <DependentUpon>BankBalanceStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankBalanceStatement.id-ID.resx">
+      <DependentUpon>BankBalanceStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankBalanceStatement.pt-PT.resx">
+      <DependentUpon>BankBalanceStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankBalanceStatement.resx">
+      <DependentUpon>BankBalanceStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankChequeCleared.en-US.resx">
+      <DependentUpon>BankChequeCleared.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankChequeCleared.id-ID.resx">
+      <DependentUpon>BankChequeCleared.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankChequeCleared.pt-PT.resx">
+      <DependentUpon>BankChequeCleared.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankChequeCleared.resx">
+      <DependentUpon>BankChequeCleared.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankChequeRealized.en-US.resx">
+      <DependentUpon>BankChequeRealized.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankChequeRealized.id-ID.resx">
+      <DependentUpon>BankChequeRealized.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankChequeRealized.pt-PT.resx">
+      <DependentUpon>BankChequeRealized.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankChequeRealized.resx">
+      <DependentUpon>BankChequeRealized.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankChequeUnCleared.en-US.resx">
+      <DependentUpon>BankChequeUnCleared.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankChequeUnCleared.id-ID.resx">
+      <DependentUpon>BankChequeUnCleared.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankChequeUnCleared.pt-PT.resx">
+      <DependentUpon>BankChequeUnCleared.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankChequeUnCleared.resx">
+      <DependentUpon>BankChequeUnCleared.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankChequeUnrealized.en-US.resx">
+      <DependentUpon>BankChequeUnrealized.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankChequeUnrealized.id-ID.resx">
+      <DependentUpon>BankChequeUnrealized.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankChequeUnrealized.pt-PT.resx">
+      <DependentUpon>BankChequeUnrealized.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankChequeUnrealized.resx">
+      <DependentUpon>BankChequeUnrealized.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankFlow.en-US.resx">
+      <DependentUpon>BankFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankFlow.fr-FR.resx">
+      <DependentUpon>BankFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankFlow.id-ID.resx">
+      <DependentUpon>BankFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankFlow.pt-PT.resx">
+      <DependentUpon>BankFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankFlow.resx">
+      <DependentUpon>BankFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankJournal.en-US.resx">
+      <DependentUpon>BankJournal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankJournal.id-ID.resx">
+      <DependentUpon>BankJournal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankJournal.pt-PT.resx">
+      <DependentUpon>BankJournal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankJournal.resx">
+      <DependentUpon>BankJournal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankReconciliation.en-US.resx">
+      <DependentUpon>BankReconciliation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankReconciliation.id-ID.resx">
+      <DependentUpon>BankReconciliation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankReconciliation.pt-PT.resx">
+      <DependentUpon>BankReconciliation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankReconciliation.resx">
+      <DependentUpon>BankReconciliation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BankStatement.resx">
+      <DependentUpon>BankStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BranchBankList.resx">
+      <DependentUpon>BranchBankList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BranchComparativeReport.resx">
+      <DependentUpon>BranchComparativeReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BranchDataSyncStatus.resx">
+      <DependentUpon>BranchDataSyncStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BranchExportVoucher.resx">
+      <DependentUpon>BranchExportVoucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BranchIEYearWise.en-US.resx">
+      <DependentUpon>BranchIEYearWise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BranchIEYearWise.resx">
+      <DependentUpon>BranchIEYearWise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BranchInvestments.en-US.resx">
+      <DependentUpon>BranchInvestments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BranchInvestments.resx">
+      <DependentUpon>BranchInvestments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BranchLocationIEYearWise.en-US.resx">
+      <DependentUpon>BranchLocationIEYearWise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BranchLocationIEYearWise.resx">
+      <DependentUpon>BranchLocationIEYearWise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BranchwiseBalance.resx">
+      <DependentUpon>BranchwiseBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BranchWiseLedgerReport.resx">
+      <DependentUpon>BranchWiseLedgerReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BudgetApprovalByMonth.en-US.resx">
+      <DependentUpon>BudgetApprovalByMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BudgetApprovalByMonth.resx">
+      <DependentUpon>BudgetApprovalByMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BudgetByMonth.en-US.resx">
+      <DependentUpon>BudgetByMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BudgetByMonth.fr-FR.resx">
+      <DependentUpon>BudgetByMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BudgetByMonth.resx">
+      <DependentUpon>BudgetByMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BudgetDetails.en-US.resx">
+      <DependentUpon>BudgetDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BudgetDetails.fr-FR.resx">
+      <DependentUpon>BudgetDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BudgetDetails.id-ID.resx">
+      <DependentUpon>BudgetDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BudgetDetails.pt-PT.resx">
+      <DependentUpon>BudgetDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BudgetDetails.resx">
+      <DependentUpon>BudgetDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BudgetLedger.resx">
+      <DependentUpon>BudgetLedger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BudgetStatistics.resx">
+      <DependentUpon>BudgetStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BudgetVariance.en-US.resx">
+      <DependentUpon>BudgetVariance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BudgetVariance.fr-FR.resx">
+      <DependentUpon>BudgetVariance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BudgetVariance.id-ID.resx">
+      <DependentUpon>BudgetVariance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BudgetVariance.pt-PT.resx">
+      <DependentUpon>BudgetVariance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BudgetVariance.resx">
+      <DependentUpon>BudgetVariance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BudgetView.resx">
+      <DependentUpon>BudgetView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CashBankBook.en-US.resx">
+      <DependentUpon>CashBankBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CashBankBook.id-ID.resx">
+      <DependentUpon>CashBankBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CashBankBook.pt-PT.resx">
+      <DependentUpon>CashBankBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CashBankBook.resx">
+      <DependentUpon>CashBankBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\AccountBalanceMulti.resx">
+      <DependentUpon>AccountBalanceMulti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CashBankPayments.en-US.resx">
+      <DependentUpon>CashBankPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CashBankPayments.id-ID.resx">
+      <DependentUpon>CashBankPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CashBankPayments.pt-PT.resx">
+      <DependentUpon>CashBankPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CashBankPayments.resx">
+      <DependentUpon>CashBankPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CashBankReceipts.en-US.resx">
+      <DependentUpon>CashBankReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CashBankReceipts.id-ID.resx">
+      <DependentUpon>CashBankReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CashBankReceipts.pt-PT.resx">
+      <DependentUpon>CashBankReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CashBankReceipts.resx">
+      <DependentUpon>CashBankReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CashBankTransactions.en-US.resx">
+      <DependentUpon>CashBankTransactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CashBankTransactions.id-ID.resx">
+      <DependentUpon>CashBankTransactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CashBankTransactions.pt-PT.resx">
+      <DependentUpon>CashBankTransactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CashBankTransactions.resx">
+      <DependentUpon>CashBankTransactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CashFlow.en-US.resx">
+      <DependentUpon>CashFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CashFlow.id-ID.resx">
+      <DependentUpon>CashFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CashFlow.pt-PT.resx">
+      <DependentUpon>CashFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CashFlow.resx">
+      <DependentUpon>CashFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CashJournal.en-US.resx">
+      <DependentUpon>CashJournal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CashJournal.id-ID.resx">
+      <DependentUpon>CashJournal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CashJournal.pt-PT.resx">
+      <DependentUpon>CashJournal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CashJournal.resx">
+      <DependentUpon>CashJournal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CategoryWiseInstitutionDetails.resx">
+      <DependentUpon>CategoryWiseInstitutionDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CCMothlyReceipts.en-US.resx">
+      <DependentUpon>CCMothlyReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CCMothlyReceipts.fr-FR.resx">
+      <DependentUpon>CCMothlyReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CCMothlyReceipts.id-ID.resx">
+      <DependentUpon>CCMothlyReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CCMothlyReceipts.pt-PT.resx">
+      <DependentUpon>CCMothlyReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CCMothlyReceipts.resx">
+      <DependentUpon>CCMothlyReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CCMultiAbstractPayments.en-US.resx">
+      <DependentUpon>CCMultiAbstractPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CCMultiAbstractPayments.fr-FR.resx">
+      <DependentUpon>CCMultiAbstractPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CCMultiAbstractPayments.id-ID.resx">
+      <DependentUpon>CCMultiAbstractPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CCMultiAbstractPayments.pt-PT.resx">
+      <DependentUpon>CCMultiAbstractPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CCMultiAbstractReceipts.en-US.resx">
+      <DependentUpon>CCMultiAbstractReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CCMultiAbstractReceipts.fr-FR.resx">
+      <DependentUpon>CCMultiAbstractReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CCMultiAbstractReceipts.id-ID.resx">
+      <DependentUpon>CCMultiAbstractReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CCMultiAbstractReceipts.pt-PT.resx">
+      <DependentUpon>CCMultiAbstractReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CCMultiAbstractReceipts.resx">
+      <DependentUpon>CCMultiAbstractReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CCMultiAbstractPayments.resx">
+      <DependentUpon>CCMultiAbstractPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CCMultiAbstractReceiptsAndPayments.en-US.resx">
+      <DependentUpon>CCMultiAbstractReceiptsAndPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CCMultiAbstractReceiptsAndPayments.id-ID.resx">
+      <DependentUpon>CCMultiAbstractReceiptsAndPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CCMultiAbstractReceiptsAndPayments.pt-PT.resx">
+      <DependentUpon>CCMultiAbstractReceiptsAndPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CCMultiAbstractReceiptsAndPayments.resx">
+      <DependentUpon>CCMultiAbstractReceiptsAndPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CCReceiptsPayments.en-US.resx">
+      <DependentUpon>CCReceiptsPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CCReceiptsPayments.id-ID.resx">
+      <DependentUpon>CCReceiptsPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CCReceiptsPayments.pt-PT.resx">
+      <DependentUpon>CCReceiptsPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CCReceiptsPayments.resx">
+      <DependentUpon>CCReceiptsPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\AccountBalanceCode.resx">
+      <DependentUpon>AccountBalanceCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheetSAP.en-US.resx">
+      <DependentUpon>BalanceSheetSAP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheetSAP.id-ID.resx">
+      <DependentUpon>BalanceSheetSAP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheetSAP.pt-PT.resx">
+      <DependentUpon>BalanceSheetSAP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheetSAP.resx">
+      <DependentUpon>BalanceSheetSAP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheetLiabilitiesSAP.en-US.resx">
+      <DependentUpon>BalanceSheetLiabilitiesSAP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheetLiabilitiesSAP.id-ID.resx">
+      <DependentUpon>BalanceSheetLiabilitiesSAP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheetLiabilitiesSAP.pt-PT.resx">
+      <DependentUpon>BalanceSheetLiabilitiesSAP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheetLiabilitiesSAP.resx">
+      <DependentUpon>BalanceSheetLiabilitiesSAP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheetAssetsSAP.en-US.resx">
+      <DependentUpon>BalanceSheetAssetsSAP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheetAssetsSAP.id-ID.resx">
+      <DependentUpon>BalanceSheetAssetsSAP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheetAssetsSAP.pt-PT.resx">
+      <DependentUpon>BalanceSheetAssetsSAP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BalanceSheetAssetsSAP.resx">
+      <DependentUpon>BalanceSheetAssetsSAP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BudgetLedgerINM.resx">
+      <DependentUpon>BudgetLedgerINM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\BudgetViewINM.resx">
+      <DependentUpon>BudgetViewINM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\HeadOfficeBranchOffice.resx">
+      <DependentUpon>HeadOfficeBranchOffice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\HeadOfficeProject.resx">
+      <DependentUpon>HeadOfficeProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\HOOfficeLedgersTransGreater10000.resx">
+      <DependentUpon>HOOfficeLedgersTransGreater10000.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FinalReceiptsPaymentsCode.en-US.resx">
+      <DependentUpon>FinalReceiptsPaymentsCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FinalReceiptsPaymentsCode.id-ID.resx">
+      <DependentUpon>FinalReceiptsPaymentsCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FinalReceiptsPaymentsCode.pt-PT.resx">
+      <DependentUpon>FinalReceiptsPaymentsCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FinalReceiptsPaymentsCode.resx">
+      <DependentUpon>FinalReceiptsPaymentsCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\PaymentsCode.en-US.resx">
+      <DependentUpon>PaymentsCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\PaymentsCode.fr-FR.resx">
+      <DependentUpon>PaymentsCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\PaymentsCode.resx">
+      <DependentUpon>PaymentsCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ProfitandLossofHousesInterAcByBranch.resx">
+      <DependentUpon>ProfitandLossofHousesInterAcByBranch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ReceiptsCode.en-US.resx">
+      <DependentUpon>ReceiptsCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ReceiptsCode.fr-FR.resx">
+      <DependentUpon>ReceiptsCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ReceiptsCode.pt-PT.resx">
+      <DependentUpon>ReceiptsCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ReceiptsCode.resx">
+      <DependentUpon>ReceiptsCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ProfitandLossofHousesBranches.resx">
+      <DependentUpon>ProfitandLossofHousesBranches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateJournalVoucherReport.resx">
+      <DependentUpon>GeneralateJournalVoucherReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateBalanceSheetDetail.en-US.resx">
+      <DependentUpon>GeneralateBalanceSheetDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateBalanceSheetDetail.resx">
+      <DependentUpon>GeneralateBalanceSheetDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateCommercial.resx">
+      <DependentUpon>GeneralateCommercial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCenterBankJournal.en-US.resx">
+      <DependentUpon>CostCenterBankJournal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCenterBankJournal.fr-FR.resx">
+      <DependentUpon>CostCenterBankJournal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\COstCenterBankJournal.id-ID.resx">
+      <DependentUpon>CostCenterBankJournal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCenterBankJournal.pt-PT.resx">
+      <DependentUpon>CostCenterBankJournal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCenterCashJournal.en-US.resx">
+      <DependentUpon>CostCenterCashJournal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCenterCashJournal.fr-FR.resx">
+      <DependentUpon>CostCenterCashJournal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCenterCashJournal.id-ID.resx">
+      <DependentUpon>CostCenterCashJournal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCenterCashJournal.pt-PT.resx">
+      <DependentUpon>CostCenterCashJournal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCentreAbstractReceiptsAndPayments.en-US.resx">
+      <DependentUpon>CostCentreAbstractReceiptsAndPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCentreAbstractReceiptsAndPayments.id-ID.resx">
+      <DependentUpon>CostCentreAbstractReceiptsAndPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCentreAbstractReceiptsAndPayments.pt-PT.resx">
+      <DependentUpon>CostCentreAbstractReceiptsAndPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCentreCashBankBook.en-US.resx">
+      <DependentUpon>CostCentreCashBankBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCentreCashBankBook.fr-FR.resx">
+      <DependentUpon>CostCentreCashBankBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCentreCashBankBook.id-ID.resx">
+      <DependentUpon>CostCentreCashBankBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCentreCashBankBook.pt-PT.resx">
+      <DependentUpon>CostCentreCashBankBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCentreLedger.en-US.resx">
+      <DependentUpon>CostCentreLedger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCentreLedger.id-ID.resx">
+      <DependentUpon>CostCentreLedger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCentreLedger.pt-PT.resx">
+      <DependentUpon>CostCentreLedger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCentreMontlyAbstractPayments.en-US.resx">
+      <DependentUpon>CostCentreMontlyAbstractPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCentreMontlyAbstractPayments.fr-FR.resx">
+      <DependentUpon>CostCentreMontlyAbstractPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCentreMontlyAbstractPayments.id-ID.resx">
+      <DependentUpon>CostCentreMontlyAbstractPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCentreMontlyAbstractPayments.pt-PT.resx">
+      <DependentUpon>CostCentreMontlyAbstractPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCentreMontlyAbstractReceipts.en-US.resx">
+      <DependentUpon>CostCentreMontlyAbstractReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCentreMontlyAbstractReceipts.id-ID.resx">
+      <DependentUpon>CostCentreMontlyAbstractReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCentreMontlyAbstractReceipts.pt-PT.resx">
+      <DependentUpon>CostCentreMontlyAbstractReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCentreSummary.resx">
+      <DependentUpon>CostCentreSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\DrillDownReport.en-US.resx">
+      <DependentUpon>DrillDownReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\DrillDownReport.id-ID.resx">
+      <DependentUpon>DrillDownReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\DrillDownReport.pt-PT.resx">
+      <DependentUpon>DrillDownReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ExecutiveMembers.en-US.resx">
+      <DependentUpon>ExecutiveMembers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ExecutiveMembers.id-ID.resx">
+      <DependentUpon>ExecutiveMembers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ExecutiveMembers.pt-PT.resx">
+      <DependentUpon>ExecutiveMembers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ExpenditureIncome.en-US.resx">
+      <DependentUpon>ExpenditureIncome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ExpenditureIncome.id-ID.resx">
+      <DependentUpon>ExpenditureIncome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ExpenditureIncome.pt-PT.resx">
+      <DependentUpon>ExpenditureIncome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ExpenditureIncomewithPreviousYear.en-US.resx">
+      <DependentUpon>ExpenditureIncomewithPreviousYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ExpenditureIncomewithPreviousYear.id-ID.resx">
+      <DependentUpon>ExpenditureIncomewithPreviousYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ExpenditureIncomewithPreviousYear.pt-PT.resx">
+      <DependentUpon>ExpenditureIncomewithPreviousYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FC6.en-US.resx">
+      <DependentUpon>FC6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FC6.id-ID.resx">
+      <DependentUpon>FC6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FC6.pt-PT.resx">
+      <DependentUpon>FC6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FC6.resx">
+      <DependentUpon>FC6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FC6Purpose.en-US.resx">
+      <DependentUpon>FC6Purpose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FC6Purpose.id-ID.resx">
+      <DependentUpon>FC6Purpose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FC6Purpose.pt-PT.resx">
+      <DependentUpon>FC6Purpose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FC6Purpose.resx">
+      <DependentUpon>FC6Purpose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FCCountry.en-US.resx">
+      <DependentUpon>FCCountry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FCCountry.id-ID.resx">
+      <DependentUpon>FCCountry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FCCountry.pt-PT.resx">
+      <DependentUpon>FCCountry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FCDonorIndividual.en-US.resx">
+      <DependentUpon>FCDonorIndividual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FCDonorIndividual.id-ID.resx">
+      <DependentUpon>FCDonorIndividual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FCDonorIndividual.pt-PT.resx">
+      <DependentUpon>FCDonorIndividual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FCDonorInstitutional.en-US.resx">
+      <DependentUpon>FCDonorInstitutional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FCDonorInstitutional.id-ID.resx">
+      <DependentUpon>FCDonorInstitutional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FCDonorInstitutional.pt-PT.resx">
+      <DependentUpon>FCDonorInstitutional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FCPurpose.en-US.resx">
+      <DependentUpon>FCPurpose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FCPurpose.fr-FR.resx">
+      <DependentUpon>FCPurpose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FCPurpose.id-ID.resx">
+      <DependentUpon>FCPurpose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FCPurpose.pt-PT.resx">
+      <DependentUpon>FCPurpose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FDRegister.en-US.resx">
+      <DependentUpon>FDRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FDRegister.fr-FR.resx">
+      <DependentUpon>FDRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FDRegister.id-ID.resx">
+      <DependentUpon>FDRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FDRegister.pt-PT.resx">
+      <DependentUpon>FDRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FDRegister.resx">
+      <DependentUpon>FDRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FinalReceiptsPayments.en-US.resx">
+      <DependentUpon>FinalReceiptsPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FinalReceiptsPayments.id-ID.resx">
+      <DependentUpon>FinalReceiptsPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FinalReceiptsPayments.pt-PT.resx">
+      <DependentUpon>FinalReceiptsPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FinancialPositions.resx">
+      <DependentUpon>FinancialPositions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FixedDepositInDetails.en-US.resx">
+      <DependentUpon>FixedDepositInDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FixedDepositInDetails.id-ID.resx">
+      <DependentUpon>FixedDepositInDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FixedDepositInDetails.pt-PT.resx">
+      <DependentUpon>FixedDepositInDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FixedDepositInDetails.resx">
+      <DependentUpon>FixedDepositInDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FixedDepositStatement.en-US.resx">
+      <DependentUpon>FixedDepositStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FixedDepositStatement.fr-FR.resx">
+      <DependentUpon>FixedDepositStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FixedDepositStatement.id-ID.resx">
+      <DependentUpon>FixedDepositStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FixedDepositStatement.pt-PT.resx">
+      <DependentUpon>FixedDepositStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ForeignInstitutionDetails.resx">
+      <DependentUpon>ForeignInstitutionDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateActivityIE.resx">
+      <DependentUpon>GeneralateActivityIE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateActivityIEFA.resx">
+      <DependentUpon>GeneralateActivityIEFA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateBalanceSheet.en-US.resx">
+      <DependentUpon>GeneralateBalanceSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateBalanceSheet.id-ID.resx">
+      <DependentUpon>GeneralateBalanceSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateBalanceSheet.pt-PT.resx">
+      <DependentUpon>GeneralateBalanceSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateBalanceSheet.resx">
+      <DependentUpon>GeneralateBalanceSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateBalanceSheetAsset.en-US.resx">
+      <DependentUpon>GeneralateBalanceSheetAsset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateBalanceSheetAsset.id-ID.resx">
+      <DependentUpon>GeneralateBalanceSheetAsset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateBalanceSheetAsset.pt-PT.resx">
+      <DependentUpon>GeneralateBalanceSheetAsset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateBalanceSheetAsset.resx">
+      <DependentUpon>GeneralateBalanceSheetAsset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateBalanceSheetAsset1.resx" />
+    <EmbeddedResource Include="ReportObject\GeneralateBalanceSheetLiabilities.resx">
+      <DependentUpon>GeneralateBalanceSheetLiabilities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateBalanceSheetLiabilities1.en-US.resx">
+      <DependentUpon>GeneralateBalanceSheetLiabilities1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateBalanceSheetLiabilities1.id-ID.resx">
+      <DependentUpon>GeneralateBalanceSheetLiabilities1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateBalanceSheetLiabilities1.pt-PT.resx">
+      <DependentUpon>GeneralateBalanceSheetLiabilities1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateBalanceSheetLiabilities1.resx">
+      <DependentUpon>GeneralateBalanceSheetLiabilities1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateBalanceSheetLiability.en-US.resx">
+      <DependentUpon>GeneralateBalanceSheetLiability.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateBalanceSheetLiability.id-ID.resx">
+      <DependentUpon>GeneralateBalanceSheetLiability.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateBalanceSheetLiability.pt-PT.resx">
+      <DependentUpon>GeneralateBalanceSheetLiability.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateBalanceSheetLiability.resx">
+      <DependentUpon>GeneralateBalanceSheetLiability.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateFDCCSIAnnualReports.resx">
+      <DependentUpon>GeneralateFDCCSIAnnualReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateLedgerBalance.resx">
+      <DependentUpon>GeneralateLedgerBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateLedgerDetails.en-US.resx">
+      <DependentUpon>GeneralateLedgerDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateLedgerDetails.id-ID.resx">
+      <DependentUpon>GeneralateLedgerDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateLedgerDetails.pt-PT.resx">
+      <DependentUpon>GeneralateLedgerDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateLedgerDetails.resx">
+      <DependentUpon>GeneralateLedgerDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateLoss.resx">
+      <DependentUpon>GeneralateLoss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralatePatrimonial.resx">
+      <DependentUpon>GeneralatePatrimonial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateProfit.resx">
+      <DependentUpon>GeneralateProfit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateProfitandLoss.resx">
+      <DependentUpon>GeneralateProfitandLoss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\GeneralateReconciliazione.resx">
+      <DependentUpon>GeneralateReconciliazione.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\HeadOfficeLedgers.resx">
+      <DependentUpon>HeadOfficeLedgers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\InstitutionDetails.resx">
+      <DependentUpon>InstitutionDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\JournalTransactions.en-US.resx">
+      <DependentUpon>JournalTransactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\JournalTransactions.id-ID.resx">
+      <DependentUpon>JournalTransactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\JournalTransactions.pt-PT.resx">
+      <DependentUpon>JournalTransactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\JournalTransactions.resx">
+      <DependentUpon>JournalTransactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\JournalVoucher.en-US.resx">
+      <DependentUpon>JournalVoucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\JournalVoucher.id-ID.resx">
+      <DependentUpon>JournalVoucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\JournalVoucher.pt-PT.resx">
+      <DependentUpon>JournalVoucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\Ledger.en-US.resx">
+      <DependentUpon>Ledger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\Ledger.id-ID.resx">
+      <DependentUpon>Ledger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\Ledger.pt-PT.resx">
+      <DependentUpon>Ledger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MonthlyAbstractPayments.en-US.resx">
+      <DependentUpon>MonthlyAbstractPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MonthlyAbstractPayments.fr-FR.resx">
+      <DependentUpon>MonthlyAbstractPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MonthlyAbstractPayments.id-ID.resx">
+      <DependentUpon>MonthlyAbstractPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MonthlyAbstractPayments.pt-PT.resx">
+      <DependentUpon>MonthlyAbstractPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MonthlyAbstractReceipts.en-US.resx">
+      <DependentUpon>MonthlyAbstractReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MonthlyAbstractReceipts.fr-FR.resx">
+      <DependentUpon>MonthlyAbstractReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MonthlyAbstractReceipts.id-ID.resx">
+      <DependentUpon>MonthlyAbstractReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MonthlyAbstractReceipts.pt-PT.resx">
+      <DependentUpon>MonthlyAbstractReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MonthlyAbstractReceiptsPayments.en-US.resx">
+      <DependentUpon>MonthlyAbstractReceiptsPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MonthlyAbstractReceiptsPayments.id-ID.resx">
+      <DependentUpon>MonthlyAbstractReceiptsPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MonthlyAbstractReceiptsPayments.pt-PT.resx">
+      <DependentUpon>MonthlyAbstractReceiptsPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MonthlyGNAbstractPayments.en-US.resx">
+      <DependentUpon>MonthlyGNAbstractPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MonthlyGNAbstractPayments.resx">
+      <DependentUpon>MonthlyGNAbstractPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MonthlyGNAbstractReceipts.resx">
+      <DependentUpon>MonthlyGNAbstractReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MonthlyGNAbstractReceiptsPayments.resx">
+      <DependentUpon>MonthlyGNAbstractReceiptsPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MonthWiseLedgerReport.resx">
+      <DependentUpon>MonthWiseLedgerReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MultiAbstractPayments.en-US.resx">
+      <DependentUpon>MultiAbstractPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MultiAbstractPayments.fr-FR.resx">
+      <DependentUpon>MultiAbstractPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MultiAbstractPayments.id-ID.resx">
+      <DependentUpon>MultiAbstractPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MultiAbstractPayments.pt-PT.resx">
+      <DependentUpon>MultiAbstractPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MultiAbstractPayments.resx">
+      <DependentUpon>MultiAbstractPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCentreAbstractReceiptsAndPayments.resx">
+      <DependentUpon>CostCentreAbstractReceiptsAndPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCentreMontlyAbstractPayments.resx">
+      <DependentUpon>CostCentreMontlyAbstractPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCentreMontlyAbstractReceipts.resx">
+      <DependentUpon>CostCentreMontlyAbstractReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCentreLedger.resx">
+      <DependentUpon>CostCentreLedger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCentreCashBankBook.resx">
+      <DependentUpon>CostCentreCashBankBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCenterBankJournal.resx">
+      <DependentUpon>CostCenterBankJournal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\CostCenterCashJournal.resx">
+      <DependentUpon>CostCenterCashJournal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ExecutiveMembers.resx">
+      <DependentUpon>ExecutiveMembers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ExpenditureIncome.resx">
+      <DependentUpon>ExpenditureIncome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ExpenditureIncomewithPreviousYear.resx">
+      <DependentUpon>ExpenditureIncomewithPreviousYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FCCountry.resx">
+      <DependentUpon>FCCountry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FCDonorIndividual.resx">
+      <DependentUpon>FCDonorIndividual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FCDonorInstitutional.resx">
+      <DependentUpon>FCDonorInstitutional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FinalReceiptsPayments.resx">
+      <DependentUpon>FinalReceiptsPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FixedDepositStatement.resx">
+      <DependentUpon>FixedDepositStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\JournalVoucher.resx">
+      <DependentUpon>JournalVoucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\DrillDownReport.resx">
+      <DependentUpon>DrillDownReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\Ledger.resx">
+      <DependentUpon>Ledger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MonthlyAbstractReceiptsPayments.resx">
+      <DependentUpon>MonthlyAbstractReceiptsPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MonthlyAbstractPayments.resx">
+      <DependentUpon>MonthlyAbstractPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MonthlyAbstractReceipts.resx">
+      <DependentUpon>MonthlyAbstractReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MultiAbstractReceipts.en-US.resx">
+      <DependentUpon>MultiAbstractReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MultiAbstractReceipts.fr-FR.resx">
+      <DependentUpon>MultiAbstractReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MultiAbstractReceipts.id-ID.resx">
+      <DependentUpon>MultiAbstractReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MultiAbstractReceipts.pt-PT.resx">
+      <DependentUpon>MultiAbstractReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MultiAbstractReceiptsAndPayments.en-US.resx">
+      <DependentUpon>MultiAbstractReceiptsAndPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MultiAbstractReceiptsAndPayments.id-ID.resx">
+      <DependentUpon>MultiAbstractReceiptsAndPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MultiAbstractReceiptsAndPayments.pt-PT.resx">
+      <DependentUpon>MultiAbstractReceiptsAndPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MultiAbstractReceiptsAndPayments.resx">
+      <DependentUpon>MultiAbstractReceiptsAndPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\MultiAbstractReceipts.resx">
+      <DependentUpon>MultiAbstractReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\OpBalance.resx">
+      <DependentUpon>OpBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\FCPurpose.resx">
+      <DependentUpon>FCPurpose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\Payments.en-US.resx">
+      <DependentUpon>Payments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\Payments.fr-FR.resx">
+      <DependentUpon>Payments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\Payments.resx">
+      <DependentUpon>Payments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ProfitandLossofFoundations.resx">
+      <DependentUpon>ProfitandLossofFoundations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ProfitandLossofHouses.resx">
+      <DependentUpon>ProfitandLossofHouses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ProfitandLossofHousesInterAc.resx">
+      <DependentUpon>ProfitandLossofHousesInterAc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ProfitAndLossofHousesInterAcDetail.en-US.resx">
+      <DependentUpon>ProfitAndLossofHousesInterAcDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ProfitAndLossofHousesInterAcDetail.resx">
+      <DependentUpon>ProfitAndLossofHousesInterAcDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\Receipts.en-US.resx">
+      <DependentUpon>Receipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\Receipts.fr-FR.resx">
+      <DependentUpon>Receipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\Receipts.pt-PT.resx">
+      <DependentUpon>Receipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\Receipts.resx">
+      <DependentUpon>Receipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ReceiptsPayments.en-US.resx">
+      <DependentUpon>ReceiptsPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ReceiptsPayments.id-ID.resx">
+      <DependentUpon>ReceiptsPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ReceiptsPayments.pt-PT.resx">
+      <DependentUpon>ReceiptsPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ReceiptsPayments.resx">
+      <DependentUpon>ReceiptsPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ReceiptsPaymentsWithPreviosYear.en-US.resx">
+      <DependentUpon>ReceiptsPaymentsWithPreviosYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ReceiptsPaymentsWithPreviosYear.id-ID.resx">
+      <DependentUpon>ReceiptsPaymentsWithPreviosYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ReceiptsPaymentsWithPreviosYear.pt-PT.resx">
+      <DependentUpon>ReceiptsPaymentsWithPreviosYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\ReceiptsPaymentsWithPreviosYear.resx">
+      <DependentUpon>ReceiptsPaymentsWithPreviosYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\TestReport.resx">
+      <DependentUpon>TestReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\TrialBalance.en-US.resx">
+      <DependentUpon>TrialBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\TrialBalance.id-ID.resx">
+      <DependentUpon>TrialBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\TrialBalance.pt-PT.resx">
+      <DependentUpon>TrialBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportObject\TrialBalance.resx">
+      <DependentUpon>TrialBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportSetting.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportSetting.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ReportSetting.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\bullet.jpg" />
+    <None Include="Resources\Decrease.png" />
+    <None Include="Resources\sync_reload_refresh_arrow-16.png" />
+    <None Include="ReportSetting.xsc">
+      <DependentUpon>ReportSetting.xsd</DependentUpon>
+    </None>
+    <None Include="ReportSetting.xss">
+      <DependentUpon>ReportSetting.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\CheckBoxChecked.jpg" />
+    <None Include="Resources\CheckBox.jpg" />
+    <None Include="Resources\DRAG1PG.ICO" />
+    <None Include="Resources\CustomizeIcon.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bosco.DAO.Schema\Bosco.DAO.Schema.csproj">
+      <Project>{259CF580-C69A-4146-A20F-04F138D94874}</Project>
+      <Name>Bosco.DAO.Schema</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bosco.DAO\Bosco.DAO.csproj">
+      <Project>{74C2B1A6-AFC1-46E0-B164-E89836C8027E}</Project>
+      <Name>Bosco.DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bosco.Model\Bosco.Model.csproj">
+      <Project>{19174D3E-0259-4212-9BD8-479D08665238}</Project>
+      <Name>Bosco.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bosco.Utility\Bosco.Utility.csproj">
+      <Project>{4E519AC2-6104-4A87-AFAE-B4DC586201EB}</Project>
+      <Name>Bosco.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="View\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

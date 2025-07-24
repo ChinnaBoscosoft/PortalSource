@@ -1,0 +1,1938 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ASPxCheckBox1Resource1.CheckedImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox1Resource1.CheckedImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox1Resource1.CheckedImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox1Resource1.GrayedImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox1Resource1.GrayedImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox1Resource1.GrayedImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox1Resource1.Text" xml:space="preserve">
+    <value>Receipt</value>
+  </data>
+  <data name="ASPxCheckBox1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox1Resource1.UncheckedImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox1Resource1.UncheckedImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox1Resource1.UncheckedImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox1Resource1.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="ASPxCheckBox1Resource2.CheckedImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox1Resource2.CheckedImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox1Resource2.CheckedImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox1Resource2.GrayedImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox1Resource2.GrayedImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox1Resource2.GrayedImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox1Resource2.Text" xml:space="preserve">
+    <value>Receipt</value>
+  </data>
+  <data name="ASPxCheckBox1Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox1Resource2.UncheckedImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox1Resource2.UncheckedImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox1Resource2.UncheckedImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox1Resource2.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="ASPxCheckBox2Resource1.CheckedImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox2Resource1.CheckedImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox2Resource1.CheckedImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox2Resource1.GrayedImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox2Resource1.GrayedImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox2Resource1.GrayedImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox2Resource1.Text" xml:space="preserve">
+    <value>Payment</value>
+  </data>
+  <data name="ASPxCheckBox2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox2Resource1.UncheckedImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox2Resource1.UncheckedImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox2Resource1.UncheckedImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox2Resource1.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="ASPxCheckBox2Resource2.CheckedImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox2Resource2.CheckedImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox2Resource2.CheckedImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox2Resource2.GrayedImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox2Resource2.GrayedImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox2Resource2.GrayedImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox2Resource2.Text" xml:space="preserve">
+    <value>Payment</value>
+  </data>
+  <data name="ASPxCheckBox2Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox2Resource2.UncheckedImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox2Resource2.UncheckedImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox2Resource2.UncheckedImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox2Resource2.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="ASPxCheckBox3Resource1.CheckedImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox3Resource1.CheckedImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox3Resource1.CheckedImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox3Resource1.GrayedImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox3Resource1.GrayedImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox3Resource1.GrayedImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox3Resource1.Text" xml:space="preserve">
+    <value>Contra</value>
+  </data>
+  <data name="ASPxCheckBox3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox3Resource1.UncheckedImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox3Resource1.UncheckedImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox3Resource1.UncheckedImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox3Resource1.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="ASPxCheckBox3Resource2.CheckedImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox3Resource2.CheckedImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox3Resource2.CheckedImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox3Resource2.GrayedImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox3Resource2.GrayedImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox3Resource2.GrayedImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox3Resource2.Text" xml:space="preserve">
+    <value>Contra</value>
+  </data>
+  <data name="ASPxCheckBox3Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox3Resource2.UncheckedImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox3Resource2.UncheckedImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox3Resource2.UncheckedImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxCheckBox3Resource2.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="ASPxDateEdit1Resource1.ButtonEditEllipsisImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit1Resource1.ButtonEditEllipsisImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit1Resource1.ButtonEditEllipsisImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit1Resource1.ButtonEditEllipsisImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit1Resource1.CalendarProperties.ClearButtonText" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="ASPxDateEdit1Resource1.CalendarProperties.TodayButtonText" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="ASPxDateEdit1Resource1.DisplayFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit1Resource1.DropDownButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit1Resource1.DropDownButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit1Resource1.EditFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit1Resource1.HelpText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit1Resource1.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit1Resource1.TimeSectionProperties.CancelButtonText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ASPxDateEdit1Resource1.TimeSectionProperties.OkButtonText" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ASPxDateEdit1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit1Resource1.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="ASPxDateEdit1Resource2.ButtonEditEllipsisImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit1Resource2.ButtonEditEllipsisImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit1Resource2.ButtonEditEllipsisImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit1Resource2.ButtonEditEllipsisImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit1Resource2.CalendarProperties.ClearButtonText" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="ASPxDateEdit1Resource2.CalendarProperties.TodayButtonText" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="ASPxDateEdit1Resource2.DisplayFormatString" xml:space="preserve">
+    <value>dd/MM/yyyy</value>
+  </data>
+  <data name="ASPxDateEdit1Resource2.DropDownButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit1Resource2.DropDownButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit1Resource2.EditFormatString" xml:space="preserve">
+    <value>dd/MM/yyyy</value>
+  </data>
+  <data name="ASPxDateEdit1Resource2.HelpText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit1Resource2.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit1Resource2.TimeSectionProperties.CancelButtonText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ASPxDateEdit1Resource2.TimeSectionProperties.OkButtonText" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ASPxDateEdit1Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit1Resource2.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="ASPxDateEdit2Resource1.ButtonEditEllipsisImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit2Resource1.ButtonEditEllipsisImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit2Resource1.ButtonEditEllipsisImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit2Resource1.ButtonEditEllipsisImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit2Resource1.CalendarProperties.ClearButtonText" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="ASPxDateEdit2Resource1.CalendarProperties.TodayButtonText" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="ASPxDateEdit2Resource1.DisplayFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit2Resource1.DropDownButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit2Resource1.DropDownButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit2Resource1.EditFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit2Resource1.HelpText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit2Resource1.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit2Resource1.TimeSectionProperties.CancelButtonText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ASPxDateEdit2Resource1.TimeSectionProperties.OkButtonText" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ASPxDateEdit2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit2Resource1.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="ASPxDateEdit2Resource2.ButtonEditEllipsisImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit2Resource2.ButtonEditEllipsisImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit2Resource2.ButtonEditEllipsisImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit2Resource2.ButtonEditEllipsisImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit2Resource2.CalendarProperties.ClearButtonText" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="ASPxDateEdit2Resource2.CalendarProperties.TodayButtonText" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="ASPxDateEdit2Resource2.DisplayFormatString" xml:space="preserve">
+    <value>dd/MM/yyyy</value>
+  </data>
+  <data name="ASPxDateEdit2Resource2.DropDownButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit2Resource2.DropDownButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit2Resource2.EditFormatString" xml:space="preserve">
+    <value>dd/MM/yyyy</value>
+  </data>
+  <data name="ASPxDateEdit2Resource2.HelpText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit2Resource2.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit2Resource2.TimeSectionProperties.CancelButtonText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ASPxDateEdit2Resource2.TimeSectionProperties.OkButtonText" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ASPxDateEdit2Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxDateEdit2Resource2.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="btnAmendmentResource1.Image.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnAmendmentResource1.Image.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnAmendmentResource1.Image.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnAmendmentResource1.Image.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnAmendmentResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnAmendmentResource1.ToolTip" xml:space="preserve">
+    <value>Click to make amendment</value>
+  </data>
+  <data name="btnCloseResource1.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="btnCloseResource1.ToolTip" xml:space="preserve">
+    <value>Click here to close</value>
+  </data>
+  <data name="btnLoadResource1.Image.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnLoadResource1.Image.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnLoadResource1.Image.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnLoadResource1.Image.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnLoadResource1.Text" xml:space="preserve">
+    <value>Go</value>
+  </data>
+  <data name="btnLoadResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BtnOkResource1.Image.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BtnOkResource1.Image.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BtnOkResource1.Image.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BtnOkResource1.Image.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BtnOkResource1.Text" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="BtnOkResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkJournalResource1.CheckedImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkJournalResource1.CheckedImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkJournalResource1.CheckedImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkJournalResource1.GrayedImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkJournalResource1.GrayedImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkJournalResource1.GrayedImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkJournalResource1.Text" xml:space="preserve">
+    <value>Journal</value>
+  </data>
+  <data name="chkJournalResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkJournalResource1.UncheckedImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkJournalResource1.UncheckedImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkJournalResource1.UncheckedImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkJournalResource1.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="cmbBranchResource1.ButtonEditEllipsisImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource1.ButtonEditEllipsisImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource1.ButtonEditEllipsisImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource1.ButtonEditEllipsisImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource1.DisplayFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource1.DropDownButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource1.DropDownButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource1.HelpText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource1.ItemImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource1.ItemImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource1.ItemImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource1.ItemImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource1.LoadingPanelImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource1.LoadingPanelImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource1.LoadingPanelImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource1.LoadingPanelImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource1.LoadingPanelText" xml:space="preserve">
+    <value>Loading&amp;hellip;</value>
+  </data>
+  <data name="cmbBranchResource1.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource1.TextFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource1.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="cmbBranchResource2.ButtonEditEllipsisImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource2.ButtonEditEllipsisImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource2.ButtonEditEllipsisImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource2.ButtonEditEllipsisImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource2.DisplayFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource2.DropDownButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource2.DropDownButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource2.HelpText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource2.ItemImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource2.ItemImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource2.ItemImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource2.ItemImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource2.LoadingPanelImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource2.LoadingPanelImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource2.LoadingPanelImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource2.LoadingPanelImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource2.LoadingPanelText" xml:space="preserve">
+    <value>Loading&amp;hellip;</value>
+  </data>
+  <data name="cmbBranchResource2.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource2.TextFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBranchResource2.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="cmbProjectResource1.ButtonEditEllipsisImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource1.ButtonEditEllipsisImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource1.ButtonEditEllipsisImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource1.ButtonEditEllipsisImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource1.DisplayFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource1.DropDownButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource1.DropDownButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource1.HelpText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource1.ItemImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource1.ItemImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource1.ItemImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource1.ItemImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource1.LoadingPanelImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource1.LoadingPanelImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource1.LoadingPanelImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource1.LoadingPanelImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource1.LoadingPanelText" xml:space="preserve">
+    <value>Loading&amp;hellip;</value>
+  </data>
+  <data name="cmbProjectResource1.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource1.TextFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource1.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="cmbProjectResource2.ButtonEditEllipsisImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource2.ButtonEditEllipsisImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource2.ButtonEditEllipsisImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource2.ButtonEditEllipsisImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource2.DisplayFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource2.DropDownButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource2.DropDownButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource2.HelpText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource2.ItemImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource2.ItemImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource2.ItemImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource2.ItemImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource2.LoadingPanelImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource2.LoadingPanelImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource2.LoadingPanelImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource2.LoadingPanelImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource2.LoadingPanelText" xml:space="preserve">
+    <value>Loading&amp;hellip;</value>
+  </data>
+  <data name="cmbProjectResource2.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource2.TextFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbProjectResource2.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="GridViewDataColumnResource1.Caption" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="GridViewDataColumnResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource10.Caption" xml:space="preserve">
+    <value>PROJECT</value>
+  </data>
+  <data name="GridViewDataColumnResource10.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource11.Caption" xml:space="preserve">
+    <value>Voucher Sub type</value>
+  </data>
+  <data name="GridViewDataColumnResource11.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource12.Caption" xml:space="preserve">
+    <value>Debit</value>
+  </data>
+  <data name="GridViewDataColumnResource12.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource13.Caption" xml:space="preserve">
+    <value>Credit</value>
+  </data>
+  <data name="GridViewDataColumnResource13.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource14.Caption" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="GridViewDataColumnResource14.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource15.Caption" xml:space="preserve">
+    <value>Debit</value>
+  </data>
+  <data name="GridViewDataColumnResource15.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource16.Caption" xml:space="preserve">
+    <value>Credit</value>
+  </data>
+  <data name="GridViewDataColumnResource16.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource17.Caption" xml:space="preserve">
+    <value>Account No</value>
+  </data>
+  <data name="GridViewDataColumnResource17.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource18.Caption" xml:space="preserve">
+    <value>Ref.No / Cheque No</value>
+  </data>
+  <data name="GridViewDataColumnResource18.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource19.Caption" xml:space="preserve">
+    <value>Materilized On</value>
+  </data>
+  <data name="GridViewDataColumnResource19.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource2.Caption" xml:space="preserve">
+    <value>V.No</value>
+  </data>
+  <data name="GridViewDataColumnResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource20.Caption" xml:space="preserve">
+    <value>VoucherId</value>
+  </data>
+  <data name="GridViewDataColumnResource20.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource21.Caption" xml:space="preserve">
+    <value>Ledger Id</value>
+  </data>
+  <data name="GridViewDataColumnResource21.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource22.Caption" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="GridViewDataColumnResource22.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource23.Caption" xml:space="preserve">
+    <value>Ledger Flag</value>
+  </data>
+  <data name="GridViewDataColumnResource23.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource24.Caption" xml:space="preserve">
+    <value>TransMode</value>
+  </data>
+  <data name="GridViewDataColumnResource24.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource25.Caption" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="GridViewDataColumnResource25.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource26.Caption" xml:space="preserve">
+    <value>V.No</value>
+  </data>
+  <data name="GridViewDataColumnResource26.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource27.Caption" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="GridViewDataColumnResource27.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource28.Caption" xml:space="preserve">
+    <value>Particulars</value>
+  </data>
+  <data name="GridViewDataColumnResource28.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource29.Caption" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="GridViewDataColumnResource29.PropertiesTextEdit.DisplayFormatString" xml:space="preserve">
+    <value>{0:n2}</value>
+  </data>
+  <data name="GridViewDataColumnResource29.PropertiesTextEdit.NullDisplayText" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="GridViewDataColumnResource29.PropertiesTextEdit.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource29.PropertiesTextEdit.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="GridViewDataColumnResource29.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource3.Caption" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="GridViewDataColumnResource3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource30.Caption" xml:space="preserve">
+    <value>Donor</value>
+  </data>
+  <data name="GridViewDataColumnResource30.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource31.Caption" xml:space="preserve">
+    <value>Voucher Id</value>
+  </data>
+  <data name="GridViewDataColumnResource31.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource32.Caption" xml:space="preserve">
+    <value>FD Account Id</value>
+  </data>
+  <data name="GridViewDataColumnResource32.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource33.Caption" xml:space="preserve">
+    <value>Voucher Id</value>
+  </data>
+  <data name="GridViewDataColumnResource33.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource34.Caption" xml:space="preserve">
+    <value>PROJECT</value>
+  </data>
+  <data name="GridViewDataColumnResource34.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource35.Caption" xml:space="preserve">
+    <value>Voucher Sub type</value>
+  </data>
+  <data name="GridViewDataColumnResource35.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource36.Caption" xml:space="preserve">
+    <value>Debit</value>
+  </data>
+  <data name="GridViewDataColumnResource36.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource37.Caption" xml:space="preserve">
+    <value>Credit</value>
+  </data>
+  <data name="GridViewDataColumnResource37.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource38.Caption" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="GridViewDataColumnResource38.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource39.Caption" xml:space="preserve">
+    <value>Debit</value>
+  </data>
+  <data name="GridViewDataColumnResource39.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource4.Caption" xml:space="preserve">
+    <value>Particulars</value>
+  </data>
+  <data name="GridViewDataColumnResource4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource40.Caption" xml:space="preserve">
+    <value>Credit</value>
+  </data>
+  <data name="GridViewDataColumnResource40.PropertiesTextEdit.DisplayFormatString" xml:space="preserve">
+    <value>{0:n2}</value>
+  </data>
+  <data name="GridViewDataColumnResource40.PropertiesTextEdit.NullDisplayText" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="GridViewDataColumnResource40.PropertiesTextEdit.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource40.PropertiesTextEdit.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="GridViewDataColumnResource40.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource41.Caption" xml:space="preserve">
+    <value>Account No</value>
+  </data>
+  <data name="GridViewDataColumnResource41.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource42.Caption" xml:space="preserve">
+    <value>Ref.No / Cheque No</value>
+  </data>
+  <data name="GridViewDataColumnResource42.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource43.Caption" xml:space="preserve">
+    <value>Materilaized On</value>
+  </data>
+  <data name="GridViewDataColumnResource43.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource44.Caption" xml:space="preserve">
+    <value>VoucherId</value>
+  </data>
+  <data name="GridViewDataColumnResource44.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource45.Caption" xml:space="preserve">
+    <value>Ledger Id</value>
+  </data>
+  <data name="GridViewDataColumnResource45.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource46.Caption" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="GridViewDataColumnResource46.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource47.Caption" xml:space="preserve">
+    <value>Ledger Flag</value>
+  </data>
+  <data name="GridViewDataColumnResource47.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource48.Caption" xml:space="preserve">
+    <value>TransMode</value>
+  </data>
+  <data name="GridViewDataColumnResource48.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource49.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource49.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource5.Caption" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="GridViewDataColumnResource5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource50.Caption" xml:space="preserve">
+    <value>Amendment</value>
+  </data>
+  <data name="GridViewDataColumnResource50.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource51.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource51.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource52.Caption" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="GridViewDataColumnResource52.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource53.Caption" xml:space="preserve">
+    <value>V.No</value>
+  </data>
+  <data name="GridViewDataColumnResource53.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource54.Caption" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="GridViewDataColumnResource54.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource55.Caption" xml:space="preserve">
+    <value>Particulars</value>
+  </data>
+  <data name="GridViewDataColumnResource55.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource56.Caption" xml:space="preserve">
+    <value>Donor</value>
+  </data>
+  <data name="GridViewDataColumnResource56.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource57.Caption" xml:space="preserve">
+    <value>Amendment</value>
+  </data>
+  <data name="GridViewDataColumnResource57.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource58.Caption" xml:space="preserve">
+    <value>Amendment</value>
+  </data>
+  <data name="GridViewDataColumnResource58.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource59.Caption" xml:space="preserve">
+    <value>Voucher Id</value>
+  </data>
+  <data name="GridViewDataColumnResource59.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource6.Caption" xml:space="preserve">
+    <value>Donor</value>
+  </data>
+  <data name="GridViewDataColumnResource6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource60.Caption" xml:space="preserve">
+    <value>FD Account Id</value>
+  </data>
+  <data name="GridViewDataColumnResource60.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource61.Caption" xml:space="preserve">
+    <value>Voucher Id</value>
+  </data>
+  <data name="GridViewDataColumnResource61.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource62.Caption" xml:space="preserve">
+    <value>PROJECT</value>
+  </data>
+  <data name="GridViewDataColumnResource62.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource63.Caption" xml:space="preserve">
+    <value>Voucher Sub type</value>
+  </data>
+  <data name="GridViewDataColumnResource63.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource64.Caption" xml:space="preserve">
+    <value>Debit</value>
+  </data>
+  <data name="GridViewDataColumnResource64.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource65.Caption" xml:space="preserve">
+    <value>Credit</value>
+  </data>
+  <data name="GridViewDataColumnResource65.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource7.Caption" xml:space="preserve">
+    <value>Voucher Id</value>
+  </data>
+  <data name="GridViewDataColumnResource7.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource8.Caption" xml:space="preserve">
+    <value>FD Account Id</value>
+  </data>
+  <data name="GridViewDataColumnResource8.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataColumnResource9.Caption" xml:space="preserve">
+    <value>Voucher Id</value>
+  </data>
+  <data name="GridViewDataColumnResource9.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource1.Caption" xml:space="preserve">
+    <value>Debit</value>
+  </data>
+  <data name="GridViewDataTextColumnResource1.PropertiesTextEdit.DisplayFormatString" xml:space="preserve">
+    <value>{0:n2}</value>
+  </data>
+  <data name="GridViewDataTextColumnResource1.PropertiesTextEdit.NullDisplayText" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="GridViewDataTextColumnResource1.PropertiesTextEdit.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource1.PropertiesTextEdit.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="GridViewDataTextColumnResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource2.Caption" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="GridViewDataTextColumnResource2.PropertiesTextEdit.DisplayFormatString" xml:space="preserve">
+    <value>{0:n2}</value>
+  </data>
+  <data name="GridViewDataTextColumnResource2.PropertiesTextEdit.NullDisplayText" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="GridViewDataTextColumnResource2.PropertiesTextEdit.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource2.PropertiesTextEdit.ValidationSettings.ErrorText" xml:space="preserve">
+    <value>Invalid value</value>
+  </data>
+  <data name="GridViewDataTextColumnResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource3.Caption" xml:space="preserve">
+    <value>BranchId</value>
+  </data>
+  <data name="GridViewDataTextColumnResource3.PropertiesTextEdit.DisplayFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource3.PropertiesTextEdit.NullDisplayText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource3.PropertiesTextEdit.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewDataTextColumnResource3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.Settings.GroupFormat" xml:space="preserve">
+    <value>{0}: {1} {2}</value>
+  </data>
+  <data name="gvMasterVoucherResource1.Settings.GroupSummaryTextSeparator" xml:space="preserve">
+    <value>, </value>
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsLoadingPanel.Text" xml:space="preserve">
+    <value>Loading&amp;hellip;</value>
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsPager.AllButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsPager.CurrentPageNumberFormat" xml:space="preserve">
+    <value>[{0}]</value>
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsPager.FirstPageButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsPager.LastPageButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsPager.NextPageButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsPager.PageNumberFormat" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsPager.PageSizeItemSettings.AllItemText" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsPager.PageSizeItemSettings.Caption" xml:space="preserve">
+    <value>Page size:</value>
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsPager.PageSizeItemSettings.DropDownImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsPager.PageSizeItemSettings.DropDownImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsPager.PageSizeItemSettings.DropDownImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsPager.PageSizeItemSettings.DropDownImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsPager.PageSizeItemSettings.Image.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsPager.PageSizeItemSettings.Image.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsPager.PageSizeItemSettings.Image.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsPager.PageSizeItemSettings.Image.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsPager.PrevPageButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsPager.Summary.AllPagesText" xml:space="preserve">
+    <value>Pages: {0} - {1} ({2} items)</value>
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsPager.Summary.Text" xml:space="preserve">
+    <value>Page {0} of {1} ({2} items)</value>
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.CommandApplyFilter" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.CommandBatchEditCancel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.CommandBatchEditUpdate" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.CommandCancel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.CommandClearFilter" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.CommandDelete" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.CommandEdit" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.CommandNew" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.CommandSelect" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.CommandUpdate" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.ConfirmDelete" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.ConfirmOnLosingBatchChanges" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.CustomizationWindowCaption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.EmptyDataRow" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.EmptyHeaders" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.FilterBarClear" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.FilterBarCreateFilter" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.FilterControlPopupCaption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.GroupContinuedOnNextPage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.GroupPanel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.HeaderFilterCancelButton" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.HeaderFilterOkButton" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.HeaderFilterSelectAll" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.HeaderFilterShowAll" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.HeaderFilterShowBlanks" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.HeaderFilterShowNonBlanks" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.PopupEditFormCaption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SettingsText.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.SummaryText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.Settings.GroupFormat" xml:space="preserve">
+    <value>{0}: {1} {2}</value>
+  </data>
+  <data name="gvMasterVoucherResource2.Settings.GroupSummaryTextSeparator" xml:space="preserve">
+    <value>, </value>
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsLoadingPanel.Text" xml:space="preserve">
+    <value>Loading&amp;hellip;</value>
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsPager.AllButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsPager.CurrentPageNumberFormat" xml:space="preserve">
+    <value>[{0}]</value>
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsPager.FirstPageButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsPager.LastPageButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsPager.NextPageButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsPager.PageNumberFormat" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsPager.PageSizeItemSettings.AllItemText" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsPager.PageSizeItemSettings.Caption" xml:space="preserve">
+    <value>Page size:</value>
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsPager.PageSizeItemSettings.DropDownImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsPager.PageSizeItemSettings.DropDownImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsPager.PageSizeItemSettings.DropDownImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsPager.PageSizeItemSettings.DropDownImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsPager.PageSizeItemSettings.Image.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsPager.PageSizeItemSettings.Image.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsPager.PageSizeItemSettings.Image.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsPager.PageSizeItemSettings.Image.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsPager.PrevPageButton.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsPager.Summary.AllPagesText" xml:space="preserve">
+    <value>Pages: {0} - {1} ({2} items)</value>
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsPager.Summary.Text" xml:space="preserve">
+    <value>Page {0} of {1} ({2} items)</value>
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.CommandApplyFilter" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.CommandBatchEditCancel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.CommandBatchEditUpdate" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.CommandCancel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.CommandClearFilter" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.CommandDelete" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.CommandEdit" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.CommandNew" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.CommandSelect" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.CommandUpdate" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.ConfirmDelete" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.ConfirmOnLosingBatchChanges" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.CustomizationWindowCaption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.EmptyDataRow" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.EmptyHeaders" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.FilterBarClear" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.FilterBarCreateFilter" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.FilterControlPopupCaption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.GroupContinuedOnNextPage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.GroupPanel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.HeaderFilterCancelButton" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.HeaderFilterOkButton" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.HeaderFilterSelectAll" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.HeaderFilterShowAll" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.HeaderFilterShowBlanks" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.HeaderFilterShowNonBlanks" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.PopupEditFormCaption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SettingsText.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.SummaryText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvMasterVoucherResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.Settings.GroupFormat" xml:space="preserve">
+    <value>{0}: {1} {2}</value>
+  </data>
+  <data name="gvVoucherTransResource1.Settings.GroupSummaryTextSeparator" xml:space="preserve">
+    <value>, </value>
+  </data>
+  <data name="gvVoucherTransResource1.SettingsLoadingPanel.Text" xml:space="preserve">
+    <value>Loading&amp;hellip;</value>
+  </data>
+  <data name="gvVoucherTransResource1.SettingsPager.CurrentPageNumberFormat" xml:space="preserve">
+    <value>[{0}]</value>
+  </data>
+  <data name="gvVoucherTransResource1.SettingsPager.PageNumberFormat" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.CommandApplyFilter" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.CommandBatchEditCancel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.CommandBatchEditUpdate" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.CommandCancel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.CommandClearFilter" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.CommandDelete" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.CommandEdit" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.CommandNew" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.CommandSelect" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.CommandUpdate" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.ConfirmDelete" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.ConfirmOnLosingBatchChanges" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.CustomizationWindowCaption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.EmptyDataRow" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.EmptyHeaders" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.FilterBarClear" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.FilterBarCreateFilter" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.FilterControlPopupCaption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.GroupContinuedOnNextPage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.GroupPanel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.HeaderFilterCancelButton" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.HeaderFilterOkButton" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.HeaderFilterSelectAll" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.HeaderFilterShowAll" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.HeaderFilterShowBlanks" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.HeaderFilterShowNonBlanks" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.PopupEditFormCaption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SettingsText.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.SummaryText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.Settings.GroupFormat" xml:space="preserve">
+    <value>{0}: {1} {2}</value>
+  </data>
+  <data name="gvVoucherTransResource2.Settings.GroupSummaryTextSeparator" xml:space="preserve">
+    <value>, </value>
+  </data>
+  <data name="gvVoucherTransResource2.SettingsLoadingPanel.Text" xml:space="preserve">
+    <value>Loading&amp;hellip;</value>
+  </data>
+  <data name="gvVoucherTransResource2.SettingsPager.CurrentPageNumberFormat" xml:space="preserve">
+    <value>[{0}]</value>
+  </data>
+  <data name="gvVoucherTransResource2.SettingsPager.PageNumberFormat" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.CommandApplyFilter" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.CommandBatchEditCancel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.CommandBatchEditUpdate" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.CommandCancel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.CommandClearFilter" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.CommandDelete" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.CommandEdit" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.CommandNew" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.CommandSelect" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.CommandUpdate" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.ConfirmDelete" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.ConfirmOnLosingBatchChanges" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.CustomizationWindowCaption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.EmptyDataRow" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.EmptyHeaders" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.FilterBarClear" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.FilterBarCreateFilter" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.FilterControlPopupCaption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.GroupContinuedOnNextPage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.GroupPanel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.HeaderFilterCancelButton" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.HeaderFilterOkButton" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.HeaderFilterSelectAll" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.HeaderFilterShowAll" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.HeaderFilterShowBlanks" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.HeaderFilterShowNonBlanks" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.PopupEditFormCaption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SettingsText.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.SummaryText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvVoucherTransResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="img2Resource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="img2Resource1.ToolTip" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Literal10Resource1.Text" xml:space="preserve">
+    <value>Voucher Type</value>
+  </data>
+  <data name="Literal13Resource1.Text" xml:space="preserve">
+    <value>Particulars</value>
+  </data>
+  <data name="Literal15Resource1.Text" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="Literal17Resource1.Text" xml:space="preserve">
+    <value>Description *</value>
+  </data>
+  <data name="Literal1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Literal2Resource1.Text" xml:space="preserve">
+    <value>Voucher Date</value>
+  </data>
+  <data name="Literal6Resource1.Text" xml:space="preserve">
+    <value>Voucher No</value>
+  </data>
+  <data name="ltAmountResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ltLedgerResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ltMessageResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource2.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource3.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlUpdateDBResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlUpdateDBResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDescriptionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDescriptionResource1.ToolTip" xml:space="preserve">
+    <value>Enter the Description here</value>
+  </data>
+  <data name="txtDescriptionResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDescriptionResource2.ToolTip" xml:space="preserve">
+    <value>Enter the Description here</value>
+  </data>
+</root>

@@ -1,0 +1,31 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<glossarydata>
+ <entry name="Accounting Period" value="Accounting Period is the time span  during which financial events took place and recorded in the organization. It is defined in the head office." />
+ <entry name="Activate User" value="Activate user is same as enabling user. The activated users can access the portal." />
+ <entry name="Administrator" value="A privileged user having permission to manage the Head office users or the branch office users." />
+ <entry name="Amendments" value="Corrections or statements  given in the head office for a specific voucher. They can be viewed by the branch office users and necessary corrections can be made." />
+ <entry name="Cost centre" value="A department, individual or a function that produce profit indirectly to the organisation." />
+ <entry name="Dashboard" value="Dash board provides at-a-glances view the status and balances of offices under it." />
+ <entry name="Deactivate User" value="Deactivate user is same as disbling user. The deactivated users will no longer be able to access the portal." />
+ <entry name="Division" value="Local and foreign division" />
+ <entry name="Drill down" value="To move from summary information in the report to detailed data by clicking on the information. All the reports in AcME ERP has drill down facility, Example : Click on a transaction in the report to view the voucher." />
+ <entry name="Final Accounts" value="Final accounts give a brief idea about the profitability and financial state of an organisation to its governing members and other interested parties." />
+ <entry name="Footer" value="Footer is one or more lines of text that appears at the bottom of every page of the report. It can include date, page number, etc." />
+ <entry name="Head Office" value="Head office have control over all the branch offices. The users of head office can generate reports of idividual house, consolidated and combined reports of multiple houses." />
+ <entry name="Interest" value="Amount paid for borrowing money or payment received for lending money." />
+ <entry name="Ledger" value="Ledgers are masters used to post transactions. A ledger records the classified and summarized financial information; and they hold the information that is required for totaling of revenues, calculating income and expenses, and preparing financial statements." />
+ <entry name="Ledger Type" value="Ledger type in AcME ERP is of two types general or inkind ledger." />
+ <entry name="Mapping" value="Mapping is the process of linking the projects to the branches and ledgers to project category. After mapping is done the masters are available to be dowloaded under tools menu in downlaod voucher." />
+ <entry name="Masters" value="Masters are data defined in the head office and used invariably in branches and sub-branches." />
+ <entry name="Portal" value="Portal is the web application where the head office users and branch office user can login to perform the activities set for each role." />
+ <entry name="Product" value="Product refers to AcME ERP, the desktop application for the branches." />
+ <entry name="Project Category" value="Each project is created under any one of the project category. The ledgers are mapped to the project categrory in the head office. The ledgers are mapped to the projects based on the project category selected.  These ledgers maped with the project can be downloaded from the portal." />
+ <entry name="Project Code" value="An unique code given to the projects." />
+ <entry name="Role" value="Roles are defined by the administrators in the head office and branch office. The administrators grants or denies the permission to access features for specific user roles." />
+ <entry name="Setup" value="A program that helps a user to install the AcME ERP software in the computer." />
+ <entry name="Trouble Ticket" value="A trouble ticket is user submitting a help request via an issue in the branch or head office and it contains elements detailing nature of the problem.  The trouble ticket is then forwarded to the appropriate Admins at each level and if it is not resolvable it is forwarded to the admin at higher level(to head office admin or portal admin)." />
+ <entry name="Url" value="URL is an acronym for Uniform Resource Locator and is a reference (an address) to a resource on the Internet." />
+ <entry name="Vouchers" value="Vouchers are evidence for transactions which record receipt, payment, contra and  journal transactions. They are entered in the branch office and uploaded to the head  office." />
+ <entry name="xml" value="The file format used for key file." />
+
+</glossarydata>

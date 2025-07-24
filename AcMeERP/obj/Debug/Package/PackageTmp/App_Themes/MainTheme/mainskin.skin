@@ -1,0 +1,99 @@
+<asp:image runat="server" Imageurl="images/logo.jpg" AlternateText="Sales System" ToolTip="Sales System" skinid="logo_img" />
+<asp:image runat="server" Imageurl="images/header.png" AlternateText="Sales System" ToolTip="Sales System" skinid="htitle_img" />
+<asp:image runat="server" Imageurl="images/menu-left.jpg" AlternateText="Sales System" ToolTip="Sales System" style="border:none; float:left;" skinid="mnuleft_img" />
+<asp:image runat="server" Imageurl="images/menu-right.jpg" AlternateText="" ToolTip="Sales System" style="border:none; float:right;" skinid="mnuright_img" />
+
+<asp:image runat="server" Imageurl="images/user.jpg"  AlternateText="User" ToolTip="User" skinid="user_img" />
+<asp:image runat="server" Imageurl="images/print.jpg" AlternateText="Print" ToolTip="Print" skinid="print_img" />
+<asp:image runat="server" Imageurl="images/close.jpg" AlternateText="Close" ToolTip="Close" skinid="close_img" />
+<asp:image runat="server" Imageurl="images/wait.gif" AlternateText="Please Wait..." ToolTip="Please Wait..." skinid="wait_img" />
+<asp:image runat="server" Imageurl="images/bullet.jpg" AlternateText="List" ToolTip="List" skinid="bullet_img" />
+
+<asp:imagebutton runat="server" Imageurl="images/uparrow.png" AlternateText="Up" ToolTip="Move Up" skinid="up_ib" />
+<asp:imagebutton runat="server" Imageurl="images/downarrow.png" AlternateText="Down" ToolTip="Move Down" skinid="down_ib"/>
+
+
+<asp:imagebutton runat="server" Imageurl="images/download.png" AlternateText="Download" ToolTip="Download" skinid="download_ib" />
+<asp:imagebutton runat="server" Imageurl="images/license.png" AlternateText="Buy License" ToolTip="Buy License" skinid="license_ib" />
+<asp:imagebutton runat="server" Imageurl="images/downloadkey.png" AlternateText="License Key" ToolTip="Download License Key" skinid="licensekey_ib" />
+<asp:imagebutton runat="server" Imageurl="images/datepicker.jpg" AlternateText="Date" ToolTip="Select Date" skinid="date_img" />
+<asp:imagebutton runat="server" Imageurl="images/user.jpg" AlternateText="User" ToolTip="User" skinid="user_ib"/>
+<asp:imagebutton runat="server" Imageurl="images/delete.gif" AlternateText="Delete" ToolTip="Delete" skinid="delete_ib"/>
+<asp:imagebutton runat="server" Imageurl="images/e-mail.png" AlternateText="Send Email" ToolTip="Email Office Admin Login Credentials " skinid="email_ib"/>
+<asp:imagebutton runat="server" Imageurl="images/resetpwd.png" AlternateText="Change Password" ToolTip="Change Password" skinid="resetpwd_ib"/>
+<asp:imagebutton runat="server" Imageurl="images/userac.jpg" AlternateText="Send User Account" ToolTip="Send User Account" skinid="userac_ib"/>
+<asp:imagebutton runat="server" Imageurl="images/apply.jpg" AlternateText="Apply" ToolTip="Apply" skinid="apply_ib"/>
+<asp:imagebutton runat="server" Imageurl="images/cancel.jpg" AlternateText="Cancel" ToolTip="Cancel" skinid="cancel_ib"/>
+<asp:imagebutton runat="server" Imageurl="images/ok.jpg" ToolTip="Search" skinid="ok_ib" />
+<asp:imagebutton runat="server" Imageurl="images/ok.jpg" ToolTip="Click here to view the details" skinid="ok_ib2"/>
+<asp:imagebutton runat="server" Imageurl="images/move.png" skinid="ok_ib3"/>
+<asp:imagebutton runat="server" Imageurl="images/refresh.jpg" ToolTip="Refresh" skinid="refresh_ib"/>
+<asp:imagebutton runat="server" Imageurl="images/view.gif" ToolTip="View" skinid="view_ib"/>
+<asp:imagebutton runat="server" Imageurl="images/excel.png" AlternateText="Excel" ToolTip="Export to Excel" skinid="excel_ib"/>
+<asp:imagebutton runat="server" Imageurl="images/word.jpg" AlternateText="Word" ToolTip="Export to Word" skinid="word_ib"/>
+<asp:imagebutton runat="server" Imageurl="images/pdf.jpg" AlternateText="PDF" ToolTip="Export to PDF" skinid="pdf_ib"/>
+<asp:imagebutton runat="server" Imageurl="images/print.jpg" AlternateText="Print View" ToolTip="Print View" skinid="print_ib"/>
+<asp:imagebutton Runat="server" ImageUrl="images/edit.jpg" ToolTip="Adjust Balance" SkinID="edit_ib" />
+<asp:imagebutton Runat="server" ImageUrl="images/close.png" ToolTip="Close" SkinID="close_ib" />
+<asp:imagebutton Runat="server" ImageUrl="images/show.jpg" ToolTip="Show" SkinID="show_ib" />
+<asp:imagebutton Runat="server" ImageUrl="images/next.jpg" ToolTip="Click here to move next details" SkinID="next_ib" />
+<asp:imagebutton Runat="server" ImageUrl="images/previous.jpg" ToolTip="Click here to move previous details" SkinID="previous_ib" />
+<asp:imagebutton Runat="server" ImageUrl="images/Activate.gif" ToolTip="Click here to activate" SkinID="activate_ib" />
+<asp:imagebutton Runat="server" ImageUrl="images/Deactivate.gif" ToolTip="Click here to deactivate" SkinID="deactivate_ib" />
+<asp:imagebutton Runat="server" ImageUrl="images/approve.png" ToolTip="Click here to approve" SkinID="approve_ib" />
+<asp:imagebutton runat="server" Imageurl="images/updatedb.png" AlternateText="Update DB" ToolTip="Update DB" skinid="updatedb_ib" />
+<asp:imagebutton runat="server" Imageurl="images/data.png" AlternateText="master" ToolTip="Master Key" skinid="data_ib" />
+<asp:imagebutton runat="server" Imageurl="images/captcha-refresh.png" AlternateText="Refresh" ToolTip="Reset Confirmation Code" skinid="refreshCode_ib" />
+<asp:imagebutton runat="server" Imageurl="images/cancel.png" AlternateText="Delete" ToolTip="Delete" skinid="cancelGroup_ib" />
+<asp:imagebutton runat="server" Imageurl="images/edit-16.png" AlternateText="Edit" ToolTip="Edit Group" skinid="edit16_ib" />
+<asp:imagebutton runat="server" Imageurl="images/edit_add.png" AlternateText="Add" ToolTip="Add Ledger Group" skinid="AddLedger_ib" />
+<asp:imagebutton runat="server" Imageurl="images/download.png"   skinid="download_bt" />
+ 
+
+<asp:HyperLink Runat="server" Font-Size="11px" Font-Bold="true"/>
+<asp:HyperLink Runat="server" Font-Bold="false" SkinID="linksmall_hlk" />
+<asp:HyperLink Runat="server" ImageUrl="images/view.jpg" ToolTip="View" SkinID="view_hlk" />
+<asp:HyperLink Runat="server" ImageUrl="images/Edit.png" ToolTip="Edit" SkinID="edit_hlk" />
+<asp:HyperLink Runat="server" ImageUrl="images/resend.png" ToolTip="Resend" SkinID="mailResend_hlk" />
+<asp:HyperLink Runat="server" ImageUrl="images/license.png" ToolTip="Buy License" SkinID="license_hlk" />
+<asp:HyperLink Runat="server" ImageUrl="images/printview.jpg" ToolTip="Print View" SkinID="printview_hlk" />
+<asp:HyperLink Runat="server" ImageUrl="images/print.jpg" ToolTip="Print View" SkinID="print_hlk" />
+<asp:HyperLink Runat="server" ImageUrl="images/send.jpg" ToolTip="Send" SkinID="send_hlk" />
+<asp:HyperLink Runat="server" ImageUrl="images/user.jpg" ToolTip="User Rights" SkinID="userright_hlk" />
+
+<asp:Menu runat="server" Orientation="Horizontal" SkipLinkText=""
+    DynamicVerticalOffset="0" DynamicHorizontalOffset="0" DynamicEnableDefaultPopOutImage="False" 
+    StaticDisplayLevels="2" StaticEnableDefaultPopOutImage="False" StaticSubMenuIndent="0px" SkinID="login_menu">
+    <StaticMenuStyle CssClass="menu" HorizontalPadding="0px" />    
+    <StaticMenuItemStyle CssClass="menu" HorizontalPadding="15px" />
+    <StaticHoverStyle CssClass="menuhover"  />
+    <DynamicMenuStyle CssClass="menudropshadow" />
+    <DynamicMenuItemStyle CssClass="menudrop" HorizontalPadding="10px" />
+    <DynamicHoverStyle CssClass="menudrophover" BackColor="#FF9900" ForeColor="Black" />
+</asp:Menu>
+
+<asp:GridView runat="server" Border="1px" BorderColor="#DDDDDD" GridLines="Horizontal" HeaderStyle-Font-Size="8" HeaderStyle-Font-Names="verdana" HorizontalAlign="Left"
+     Width="100%" AllowPaging="True" AllowSorting="True"  EmptyDataText="No data available">
+     <HeaderStyle BackColor="#396594" ForeColor="white" HorizontalAlign="left" VerticalAlign="Middle" />
+      <RowStyle Font-Names="verdana" HorizontalAlign="Left" Font-Size="8" />
+      <AlternatingRowStyle Font-Names="verdana" Font-Size="8" BackColor="#D8DDE8" HorizontalAlign="Left"/>
+    <PagerStyle BackColor="#2461BF" ForeColor="#000000" HorizontalAlign="Center"></PagerStyle>
+</asp:GridView> 
+
+<asp:GridView runat="server" ForeColor="#333333"   CellPadding="2" BorderColor="#DDDDDD" BorderWidth="2px" SkinID="Rpt_Criteria"
+    BorderStyle="Solid" Width="100%" AllowPaging="false" AllowSorting="True" Font-Size="11px"
+    Font-Names="arial,helvetica,tahoma,vardana,sans-serif" EmptyDataText="No data available">
+    <HeaderStyle BackColor="#396594" ForeColor="#ffffff" Font-Bold="True" Height="25px"></HeaderStyle>
+    <RowStyle VerticalAlign="Top"></RowStyle>
+    <AlternatingRowStyle BackColor="#D8DDE8" ForeColor="#000000"></AlternatingRowStyle>
+</asp:GridView> 
+
+<asp:GridView runat="server" SkinID="Rpt_Dashboard"  AllowPaging="false" AllowSorting="True"
+   Font-Names="Tahoma" 
+  Font-Size="9pt" CellPadding="4">
+  <HeaderStyle BackColor="#C1DBFA" />
+  <AlternatingRowStyle BackColor="#ECF4FE" />
+  <RowStyle />
+</asp:GridView>
+
+ 

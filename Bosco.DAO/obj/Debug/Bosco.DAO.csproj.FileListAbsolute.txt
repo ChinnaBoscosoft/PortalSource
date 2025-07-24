@@ -1,0 +1,9 @@
+D:\APP\PortalSource\Bosco.DAO\bin\Debug\Bosco.DAO.dll
+D:\APP\PortalSource\Bosco.DAO\bin\Debug\Bosco.DAO.pdb
+D:\APP\PortalSource\Bosco.DAO\bin\Debug\Bosco.Utility.dll
+D:\APP\PortalSource\Bosco.DAO\bin\Debug\MySql.Data.dll
+D:\APP\PortalSource\Bosco.DAO\bin\Debug\SimpleEncrypt.dll
+D:\APP\PortalSource\Bosco.DAO\bin\Debug\Bosco.Utility.pdb
+D:\APP\PortalSource\Bosco.DAO\obj\Debug\Bosco.DAO.csprojResolveAssemblyReference.cache
+D:\APP\PortalSource\Bosco.DAO\obj\Debug\Bosco.DAO.dll
+D:\APP\PortalSource\Bosco.DAO\obj\Debug\Bosco.DAO.pdb

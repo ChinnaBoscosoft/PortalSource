@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E519AC2-6104-4A87-AFAE-B4DC586201EB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bosco.Utility</RootNamespace>
+    <AssemblyName>Bosco.Utility</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>http://localhost/Bosco.Utility.Base/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SimpleEncrypt">
+      <HintPath>..\AcMeERP\dlls\SimpleEncrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArgumentCollection.cs" />
+    <Compile Include="CommonMemberSet\ClientScriptSetMember.cs" />
+    <Compile Include="ConfigSetting\SettingManager.cs" />
+    <Compile Include="ConfigSetting\TransProperty.cs" />
+    <Compile Include="ConfigSetting\UISettingProperty.cs" />
+    <Compile Include="ConfigSetting\SettingProperty.cs" />
+    <Compile Include="ConfigSetting\UrlSetting.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UrlSetting.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ConvertRuppessInWord.cs" />
+    <Compile Include="CommonMember.cs" />
+    <Compile Include="CommonMemberData.cs" />
+    <Compile Include="CommonMemberSet\ArraySetMember.cs" />
+    <Compile Include="CommonMemberSet\ComboSetMember.cs" />
+    <Compile Include="CommonMemberSet\FileSetMember.cs" />
+    <Compile Include="CommonMemberSet\ListSetMember.cs" />
+    <Compile Include="CommonMemberSet\StringSetMember.cs" />
+    <Compile Include="CommonMemberSet\DateSetMember.cs" />
+    <Compile Include="CommonMemberSet\NumberSetMember.cs" />
+    <Compile Include="CommonMethod.cs" />
+    <Compile Include="ConfigSetting\UserProperty.cs" />
+    <Compile Include="EnumCommand.cs" />
+    <Compile Include="CommonMemberSet\EnumSetMember.cs" />
+    <Compile Include="CommonMemberSet\EnumTypeSchema.Designer.cs">
+      <DependentUpon>EnumTypeSchema.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ErrorLog.cs" />
+    <Compile Include="ExceptionHandler.cs" />
+    <Compile Include="ExceptionLogger.cs" />
+    <Compile Include="ISettingManager.cs" />
+    <Compile Include="MessageCatalog.cs" />
+    <Compile Include="MessageRender.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResultArgs.cs" />
+    <Compile Include="XMLConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CommonMemberSet\EnumTypeSchema.xsc">
+      <DependentUpon>EnumTypeSchema.xsd</DependentUpon>
+    </None>
+    <None Include="CommonMemberSet\EnumTypeSchema.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EnumTypeSchema.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CommonMemberSet\EnumTypeSchema.xss">
+      <DependentUpon>EnumTypeSchema.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConfigSetting\UrlSetting.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UrlSetting.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

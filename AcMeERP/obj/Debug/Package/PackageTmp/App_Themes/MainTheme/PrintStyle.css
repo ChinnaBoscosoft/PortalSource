@@ -1,0 +1,56 @@
+﻿/* Print ----------------------------------------------------------*/
+@media print
+{
+	.nonprintable
+	{
+		clear:both;
+		display: none;		
+	}
+	.novisible
+	{
+		visibility: hidden;
+	}
+	
+	#content 
+	{
+		margin-left: 0px;
+		vertical-align:top;
+	}
+	
+	.printable
+	{
+		display:inline; /*:block;*/
+	}
+
+	tbody 
+	{  
+		display:table-row-group;  
+	}  
+	
+	thead 
+	{ 
+		display:table-header-group;
+	}
+
+	tfoot 
+	{ 
+		display:table-footer-group;
+    }
+	
+	tr
+	{
+		page-break-inside:avoid;
+	}
+	
+	.footer {page-break-before: always;}
+}
+/* Print ----------------------------------------------------------*/
+
+
+@media screen
+{
+	.nonprintableOnScreen
+	{
+	 display: none;		
+	}
+}

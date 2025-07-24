@@ -1,0 +1,8 @@
+D:\APP\PortalSource\Bosco.DAO.Schema\bin\Debug\Bosco.DAO.Schema.dll
+D:\APP\PortalSource\Bosco.DAO.Schema\bin\Debug\Bosco.DAO.Schema.pdb
+D:\APP\PortalSource\Bosco.DAO.Schema\bin\Debug\Bosco.Utility.dll
+D:\APP\PortalSource\Bosco.DAO.Schema\bin\Debug\SimpleEncrypt.dll
+D:\APP\PortalSource\Bosco.DAO.Schema\bin\Debug\Bosco.Utility.pdb
+D:\APP\PortalSource\Bosco.DAO.Schema\obj\Debug\Bosco.DAO.Schema.csprojResolveAssemblyReference.cache
+D:\APP\PortalSource\Bosco.DAO.Schema\obj\Debug\Bosco.DAO.Schema.dll
+D:\APP\PortalSource\Bosco.DAO.Schema\obj\Debug\Bosco.DAO.Schema.pdb

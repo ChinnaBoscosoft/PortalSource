@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{97ECDD93-AA2B-4798-AF52-7FD5CFF96238}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bosco.SQL</RootNamespace>
+    <AssemblyName>Bosco.SQL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/Bosco.SQL/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bosco.HOSQL">
+      <HintPath>..\AcMeERP\dlls\Bosco.HOSQL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Inventory\AssetSQL\AssetClassSQL.cs" />
+    <Compile Include="Inventory\AssetSQL\AssetItemSQL.cs" />
+    <Compile Include="Inventory\AssetSQL\AssetUnitOfMeasureSQL.cs" />
+    <Compile Include="MasterSQL\AmendmentSQL.cs" />
+    <Compile Include="MasterSQL\CongregationLedgerMappingSQL.cs" />
+    <Compile Include="MasterSQL\GeneralateOpeningBalanceSQL.cs" />
+    <Compile Include="MasterSQL\LockVoucherSQL.cs" />
+    <Compile Include="MasterSQL\DeducteeTypeSQL.cs" />
+    <Compile Include="MasterSQL\GeneralateSQL.cs" />
+    <Compile Include="MasterSQL\LedgerProfileSQL.cs" />
+    <Compile Include="MasterSQL\NatureofPaymentSQL.cs" />
+    <Compile Include="MasterSQL\TDSSQL.cs" />
+    <Compile Include="OfficeSQL\BranchLocationSQL.cs" />
+    <Compile Include="OfficeSQL\BranchOfficeSQL.cs" />
+    <Compile Include="OfficeSQL\HeadOfficeSQL.cs" />
+    <Compile Include="OfficeSQL\LicenseSQL.cs" />
+    <Compile Include="Software\SoftwareSQL.cs" />
+    <Compile Include="Transaction\BalanceSQL.cs" />
+    <Compile Include="MasterSQL\AccountingPeriodSQL.cs" />
+    <Compile Include="MasterSQL\BudgetSQL.cs" />
+    <Compile Include="MasterSQL\FixedDepositSQL.cs" />
+    <Compile Include="MasterSQL\LegalEntitySQL.cs" />
+    <Compile Include="MasterSQL\MappingSQL.cs" />
+    <Compile Include="Transaction\FDAccountSQL.cs" />
+    <Compile Include="Transaction\FDRenewalSQL.cs" />
+    <Compile Include="Transaction\InKindReceivedSQL.cs" />
+    <Compile Include="Transaction\InKindUtilisedSQL.cs" />
+    <Compile Include="Transaction\VoucherTransSQL.cs" />
+    <Compile Include="Transaction\CostCentreMasterSQL.cs" />
+    <Compile Include="Transaction\VoucherMasterSQL.cs" />
+    <Compile Include="MasterSQL\UISettingSQL.cs" />
+    <Compile Include="MasterSQL\AddressBookSQL.cs" />
+    <Compile Include="MasterSQL\AuditInfoSQL.cs" />
+    <Compile Include="MasterSQL\LedgerSQL.cs" />
+    <Compile Include="MasterSQL\CostCentreSQL.cs" />
+    <Compile Include="MasterSQL\BankSQL.cs" />
+    <Compile Include="MasterSQL\CountrySQL.cs" />
+    <Compile Include="MasterSQL\DonorAuditorSQL.cs" />
+    <Compile Include="MasterSQL\ExecutiveMemberSQL.cs" />
+    <Compile Include="MasterSQL\InKindArticleSQL.cs" />
+    <Compile Include="MasterSQL\LedgerGroupSQL.cs" />
+    <Compile Include="MasterSQL\ProjectCatogory.cs" />
+    <Compile Include="MasterSQL\ProjectSQL.cs" />
+    <Compile Include="MasterSQL\PurposeSQL.cs" />
+    <Compile Include="SettingSQL.cs" />
+    <Compile Include="MasterSQL\VoucherSQL.cs" />
+    <Compile Include="TroubleTicket\TroubleTicketSQL.cs" />
+    <Compile Include="UserManagement\ManageSecuritySQL.cs" />
+    <Compile Include="UserManagement\MasterRightsSQL.cs" />
+    <Compile Include="UserManagement\RightsSQL.cs" />
+    <Compile Include="UserManagement\UserRightsSQL.cs" />
+    <Compile Include="UserManagement\UserRoleSQL.cs" />
+    <Compile Include="UserManagement\UserSQL.cs" />
+    <Compile Include="SQLAssemblyTypeSetting.Designer.cs">
+      <DependentUpon>SQLAssemblyTypeSetting.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SQLAdapter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bosco.DAO.Schema\Bosco.DAO.Schema.csproj">
+      <Project>{259CF580-C69A-4146-A20F-04F138D94874}</Project>
+      <Name>Bosco.DAO.Schema</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bosco.DAO\Bosco.DAO.csproj">
+      <Project>{74C2B1A6-AFC1-46E0-B164-E89836C8027E}</Project>
+      <Name>Bosco.DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bosco.Utility\Bosco.Utility.csproj">
+      <Project>{4E519AC2-6104-4A87-AFAE-B4DC586201EB}</Project>
+      <Name>Bosco.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SQLAssemblyTypeSetting.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SQLAssemblyTypeSetting.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

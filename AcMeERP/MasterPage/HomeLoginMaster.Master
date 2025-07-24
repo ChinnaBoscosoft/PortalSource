@@ -1,0 +1,187 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomeLoginMaster.Master.cs"
+    Inherits="AcMeERP.MasterPage.HomeLoginMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server" id="head">
+    <asp:ContentPlaceHolder ID="cpHead" runat="server">
+    </asp:ContentPlaceHolder>
+    <title></title>
+    <link rel="Shortcut Icon" type="image/bmp" href="../App_Themes/MainTheme/images/favicon.ico" />
+    <script type="text/javascript">
+        var beforeload = new Date().getTime();
+        window.onload = gettimeload;
+        function gettimeload() {
+            var aftrload = new Date().getTime();
+            // Time calculating in seconds
+            time = (aftrload - beforeload) / 1000
+            document.getElementById("lblLoadTime").innerHTML = "Time Taken <b>" + roundToTwo(time) + "</b> secs";
+        }
+        function roundToTwo(num) {
+            return +(Math.round(num + "e+2") + "e-2");
+        }
+    </script>
+</head>
+<script type="text/javascript" language="javascript">
+
+    function showProgress() {
+        $find("<%=mpupValidate.BehaviorID%>").show();
+        //hideProgress();
+        return true;
+    }
+    function hideProgress() {
+        $find("<%=mpupValidate.BehaviorID%>").hide();
+    }
+
+    function ShowPasswordHelp(flag) {
+        divPwdHelp.style.display = flag ? "block" : "none";
+    }
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() != 0) {
+                $('#toTop').fadeIn();
+            } else {
+                $('#toTop').fadeOut();
+            }
+        });
+        $('#toTop').click(function () {
+            $('body,html').animate({ scrollTop: 0 }, 800);
+        });
+    });
+</script>
+<body>
+    <form runat="server">
+    <ajax:ToolkitScriptManager ID="scmMain" runat="server" AsyncPostBackTimeout="6000"
+        CombineScripts="true" ScriptMode="Release">
+        <ControlBundles>
+            <ajax:ControlBundle Name="ModalPopup" />
+        </ControlBundles>
+    </ajax:ToolkitScriptManager>
+    <div style="width: 95%; margin: 0px auto">
+        <div id="header">
+            <div id="logo" class="nonprintable">
+                <a title="Acme.erp" href="#">
+                    <img src='<%= Page.ResolveUrl("~/App_Themes/MainTheme/images/logo.png")%>' alt="Acme.erp" /></a>
+            </div>
+            <div id="logo_RightSide" style="float: right" class="nonprintable">
+                <a title="Boscosoft" href="http://www.boscosofttech.com" target="_blank">
+                    <img src='<%= Page.ResolveUrl("~/App_Themes/MainTheme/images/Boscosoft.png")%>' alt="Bosco Soft Technologies. Pvt. Ltd." /></a>
+            </div>
+            <div id="page" class="container">
+                <div class="row-fluid">
+                    <div>
+                    </div>
+                    <div class="div100">
+                        <div class="row-fluid">
+                            <div class="div100">
+                                <h3 class="title nonprintable" align="center">
+                                    <asp:Literal ID="ltHeader" runat="server" meta:resourcekey="ltHeaderResource1" Text="Head Office Portal"></asp:Literal>
+                                </h3>
+                            </div>
+                        </div>
+                        <div align="right" style="padding-bottom: 4px; margin-right: 25px;" class="nonprintable">
+                            <span></span><span style="font-size: 12px;"><strong style="color: Black">Welcome
+                                <asp:Label ID="lblUser" runat="server" meta:resourcekey="lblUserResource1"></asp:Label></strong>
+                                [<asp:HyperLink ID="hlMyAcct" NavigateUrl="~/Module/User/UserProfile.aspx" runat="server"
+                                    Text="My Account" Visible="False" CssClass="link" meta:resourcekey="hlMyAcctResource1"></asp:HyperLink>
+                                <span style="line-height: 12px">|&nbsp;</span>
+                                <asp:HyperLink ID="hlkLogout" NavigateUrl="~/account/portal" runat="server" Text="Logout"
+                                    CssClass="link" meta:resourcekey="hlkLogoutResource1"></asp:HyperLink>]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menubar nonprintable">
+            <asp:UpdatePanel ID="upMenu" runat="server">
+                <ContentTemplate>
+                    <asp:Menu ID="mnuTop" runat="server" DataSourceID="dsMenuTop" SkinID="login_menu"
+                        OnMenuItemDataBound="mnuTop_MenuItemDataBound" OnDataBound="mnuTop_DataBound"
+                        meta:resourcekey="mnuTopResource1">
+                    </asp:Menu>
+                </ContentTemplate>
+            </asp:UpdatePanel>
+        </div>
+        <div id="bodyConent">
+            <div class="content">
+                <div class="breadcrumb">
+                    <div>
+                        <asp:UpdatePanel ID="upTtl" runat="server">
+                            <ContentTemplate>
+                                <div class="titlebar">
+                                    <asp:Literal ID="ltTitle" runat="server" meta:resourcekey="ltTitleResource1"></asp:Literal>
+                                </div>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                    </div>
+                </div>
+                <div class="div100 nonprintable">
+                    <asp:UpdatePanel ID="upMsg" runat="server">
+                        <ContentTemplate>
+                            <div class="divrow messagebar" style="text-align: center;" id="divmsg" runat="server">
+                                <asp:Label ID="lblMsg" Text="" runat="server" onchange="javascript:return scrollTop();"></asp:Label>
+                            </div>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                </div>
+                <div class="section">
+                    <asp:ContentPlaceHolder ID="cpMain" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="nonprintable">
+            <div class="section">
+                <div style="float: left;">
+                    <p style="margin: 0px">
+                        
+                        <asp:Label ID="lblTimeFrom" runat="server" Visible="false" Text="Time From"></asp:Label>
+                    </p>
+                    <p style="margin: 0px">
+                        
+                        <asp:Label ID="lblTimeTo" runat="server" Visible="false" Text="Time To"></asp:Label></p>
+                </div>
+            </div>
+            <div class="section">
+                <p>
+                    <div style="float: left;">
+                        <label id="lblLoadTime" />
+                    </div>
+                </p>
+                <p>
+                    &copy;
+                    <%= DateTime.Now.Year.ToString() %>
+                    <a href="http://www.boscosofttech.com" class="footerLink" target="_blank"><b>Bosco Soft
+                        Technologies Pvt. Ltd.</b></a> All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Sitemap Datasource Start-->
+    <div>
+        <asp:SiteMapDataSource ID="dsMenuTop" runat="server" SiteMapProvider="HomeMenuProvider">
+        </asp:SiteMapDataSource>
+        <asp:SiteMapDataSource ID="dsMenuFooter" runat="server" EnableViewState="False" SiteMapProvider="FooterMenuProvider">
+        </asp:SiteMapDataSource>
+    </div>
+    <!-- Sitemap Datasource End -->
+    <!-- Loading panel -->
+    <asp:UpdatePanel ID="upProgress" runat="server">
+        <ContentTemplate>
+            <div style="width: 1020px; top: 0; left: 10;">
+                <asp:Button runat="server" ID="btnPopup" Style="display: none" meta:resourcekey="btnPopupResource1" />
+                <ajax:ModalPopupExtender runat="server" ID="mpupValidate" BehaviorID="programmaticModalPopupBehavior"
+                    TargetControlID="btnPopup" PopupControlID="pValidate" BackgroundCssClass="modalBackground"
+                    DynamicServicePath="" Enabled="True">
+                </ajax:ModalPopupExtender>
+                <asp:Panel ID="pValidate" runat="server" Style="display: none;" meta:resourcekey="pValidateResource1">
+                    <img id="imgProgress" runat="server" alt="Progress..." src="~/App_Themes/MainTheme/images/loading.gif" />
+                    &nbsp;</asp:Panel>
+            </div>
+        </ContentTemplate>
+    </asp:UpdatePanel>
+    <div id="toTop" title="Back to Top" class="hidden-phone">
+    </div>
+    </form>
+</body>
+</html>

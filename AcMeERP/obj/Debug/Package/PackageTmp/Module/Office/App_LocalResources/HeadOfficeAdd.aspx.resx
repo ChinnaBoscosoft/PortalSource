@@ -1,0 +1,585 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnNewResource1.Text" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="btnNewResource1.ToolTip" xml:space="preserve">
+    <value>Click here for new head office</value>
+  </data>
+  <data name="btnSaveHeadOfficeResource1.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="btnSaveHeadOfficeResource1.ToolTip" xml:space="preserve">
+    <value>Click here to save head office Details</value>
+  </data>
+  <data name="cmpRlResource1.ErrorMessage" xml:space="preserve">
+    <value>Head Office type is required</value>
+  </data>
+  <data name="cmpRlResource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="cmpRlResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmvCountryResource1.ErrorMessage" xml:space="preserve">
+    <value>Country is required</value>
+  </data>
+  <data name="cmvCountryResource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="cmvCountryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmvStateResource1.ErrorMessage" xml:space="preserve">
+    <value>State is required</value>
+  </data>
+  <data name="cmvStateResource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="cmvStateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlCountryResource1.ToolTip" xml:space="preserve">
+    <value>Select Country</value>
+  </data>
+  <data name="ddlStateResource1.ToolTip" xml:space="preserve">
+    <value>Select State</value>
+  </data>
+  <data name="ddlTypeResource1.ToolTip" xml:space="preserve">
+    <value>Select Head Office Type</value>
+  </data>
+  <data name="hlkCloseResource1.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="hlkCloseResource1.ToolTip" xml:space="preserve">
+    <value>Click here to close this page</value>
+  </data>
+  <data name="imgstatusResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgstatusResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblStatusResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblStatusResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Literal10Resource1.Text" xml:space="preserve">
+    <value>E-Mail</value>
+  </data>
+  <data name="Literal12Resource1.Text" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="Literal13Resource1.Text" xml:space="preserve">
+    <value>Host Name *</value>
+  </data>
+  <data name="Literal14Resource1.Text" xml:space="preserve">
+    <value>Database Name *</value>
+  </data>
+  <data name="Literal15Resource1.Text" xml:space="preserve">
+    <value>Postal/Zip Code *</value>
+  </data>
+  <data name="Literal16Resource1.Text" xml:space="preserve">
+    <value>Country *</value>
+  </data>
+  <data name="Literal17Resource1.Text" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="Literal18Resource1.Text" xml:space="preserve">
+    <value>Username *</value>
+  </data>
+  <data name="Literal19Resource1.Text" xml:space="preserve">
+    <value>Password *</value>
+  </data>
+  <data name="Literal1Resource1.Text" xml:space="preserve">
+    <value>Name *</value>
+  </data>
+  <data name="Literal20Resource1.Text" xml:space="preserve">
+    <value>Mobile No *</value>
+  </data>
+  <data name="Literal21Resource1.Text" xml:space="preserve">
+    <value>Phone No *</value>
+  </data>
+  <data name="Literal22Resource1.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Literal23Resource1.Text" xml:space="preserve">
+    <value>Mobile No</value>
+  </data>
+  <data name="Literal24Resource1.Text" xml:space="preserve">
+    <value>Phone No</value>
+  </data>
+  <data name="Literal2Resource1.Text" xml:space="preserve">
+    <value>Type *</value>
+  </data>
+  <data name="Literal3Resource1.Text" xml:space="preserve">
+    <value>Belongs to *</value>
+  </data>
+  <data name="Literal4Resource1.Text" xml:space="preserve">
+    <value>Code/Username *</value>
+  </data>
+  <data name="Literal5Resource1.Text" xml:space="preserve">
+    <value>Role/Position *</value>
+  </data>
+  <data name="Literal6Resource1.Text" xml:space="preserve">
+    <value>E-Mail *</value>
+  </data>
+  <data name="Literal7Resource1.Text" xml:space="preserve">
+    <value>Person Incharge *</value>
+  </data>
+  <data name="Literal9Resource1.Text" xml:space="preserve">
+    <value>State/Province *</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDatabaseResource1.GroupingText" xml:space="preserve">
+    <value>Database Info</value>
+  </data>
+  <data name="pnlDatabaseResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlHeadOfficeBasicInfoResource1.GroupingText" xml:space="preserve">
+    <value>Office Info</value>
+  </data>
+  <data name="pnlHeadOfficeBasicInfoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlSecContactResource1.GroupingText" xml:space="preserve">
+    <value>Secondary Contact</value>
+  </data>
+  <data name="pnlSecContactResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RegularExpressionValidator1Resource1.ErrorMessage" xml:space="preserve">
+    <value>Maximum 10 or 12 digits required.</value>
+  </data>
+  <data name="RegularExpressionValidator1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RegularExpressionValidator1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RegularExpressionValidator2Resource1.ErrorMessage" xml:space="preserve">
+    <value>Maximum 10 or 12 digits required.</value>
+  </data>
+  <data name="RegularExpressionValidator2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RegularExpressionValidator2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="reMailResource1.ErrorMessage" xml:space="preserve">
+    <value>Invalid Organization Email Id</value>
+  </data>
+  <data name="reMailResource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="reMailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="reSecMailResource1.ErrorMessage" xml:space="preserve">
+    <value>Invalid Email Id</value>
+  </data>
+  <data name="reSecMailResource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="reSecMailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfHeadOfficeCodeResource1.ErrorMessage" xml:space="preserve">
+    <value>Head Office Code is required</value>
+  </data>
+  <data name="rfHeadOfficeCodeResource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="rfHeadOfficeCodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvHeadOfficeCodeResource1.ErrorMessage" xml:space="preserve">
+    <value>Code or Username Maximum 6 characters required.</value>
+  </data>
+  <data name="rfvHeadOfficeCodeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvHeadOfficeCodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvHNameResource1.ErrorMessage" xml:space="preserve">
+    <value>Head Office Name is required</value>
+  </data>
+  <data name="rfvHNameResource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="rfvHNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPincodeResource1.ErrorMessage" xml:space="preserve">
+    <value>Postal/Zip Code is required</value>
+  </data>
+  <data name="rfvPincodeResource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="rfvPincodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPRmobilenoResource1.ErrorMessage" xml:space="preserve">
+    <value>Organization mobile no is required</value>
+  </data>
+  <data name="rfvPRmobilenoResource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="rfvPRmobilenoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvtxtBelongstoResource1.ErrorMessage" xml:space="preserve">
+    <value>Belongs to is required</value>
+  </data>
+  <data name="rfvtxtBelongstoResource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="rfvtxtBelongstoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvtxtPRPhoneNoResource1.ErrorMessage" xml:space="preserve">
+    <value>Organization phone no is required</value>
+  </data>
+  <data name="rfvtxtPRPhoneNoResource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="rfvtxtPRPhoneNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvfAuthorityMailIdResource1.ErrorMessage" xml:space="preserve">
+    <value>Organization Mail Id is required</value>
+  </data>
+  <data name="rvfAuthorityMailIdResource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="rvfAuthorityMailIdResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvfDBNameResource1.ErrorMessage" xml:space="preserve">
+    <value>Database Name is required</value>
+  </data>
+  <data name="rvfDBNameResource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="rvfDBNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvfDBPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>Password is required</value>
+  </data>
+  <data name="rvfDBPasswordResource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="rvfDBPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvfDBUserNameResource1.ErrorMessage" xml:space="preserve">
+    <value>Username is required</value>
+  </data>
+  <data name="rvfDBUserNameResource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="rvfDBUserNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvfDesignationResource1.ErrorMessage" xml:space="preserve">
+    <value>Role/Position is required</value>
+  </data>
+  <data name="rvfDesignationResource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="rvfDesignationResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvfHostNameResource1.ErrorMessage" xml:space="preserve">
+    <value>Host Name is required</value>
+  </data>
+  <data name="rvfHostNameResource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="rvfHostNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvftxtInchargeNameResource1.ErrorMessage" xml:space="preserve">
+    <value>Incharge Name is required</value>
+  </data>
+  <data name="rvftxtInchargeNameResource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="rvftxtInchargeNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvftxtOrgMobileNoResource1.ErrorMessage" xml:space="preserve">
+    <value>Maximum 10 digits required.</value>
+  </data>
+  <data name="rvftxtOrgMobileNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvftxtOrgMobileNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvftxtSRMobileNoResource1.ErrorMessage" xml:space="preserve">
+    <value>Maximum 10 digits required.</value>
+  </data>
+  <data name="rvftxtSRMobileNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvftxtSRMobileNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressResource1.ToolTip" xml:space="preserve">
+    <value>Enter Address</value>
+  </data>
+  <data name="txtBelongstoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtBelongstoResource1.ToolTip" xml:space="preserve">
+    <value>Enter the congregation name of Head office</value>
+  </data>
+  <data name="txtCityResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCityResource1.ToolTip" xml:space="preserve">
+    <value>Enter City</value>
+  </data>
+  <data name="txtCountryCodeResource1.Text" xml:space="preserve">
+    <value>91</value>
+  </data>
+  <data name="txtCountryCodeResource1.ToolTip" xml:space="preserve">
+    <value>Enter Country Code</value>
+  </data>
+  <data name="txtDBNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDBNameResource1.ToolTip" xml:space="preserve">
+    <value>Enter Database Name</value>
+  </data>
+  <data name="txtDBPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDBPasswordResource1.ToolTip" xml:space="preserve">
+    <value>Enter Password</value>
+  </data>
+  <data name="txtDBUserNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDBUserNameResource1.ToolTip" xml:space="preserve">
+    <value>Enter Username</value>
+  </data>
+  <data name="txtDesignationResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDesignationResource1.ToolTip" xml:space="preserve">
+    <value>Enter Designation</value>
+  </data>
+  <data name="txtHOfficeCodeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtHOfficeCodeResource1.ToolTip" xml:space="preserve">
+    <value>Enter Head Office Code</value>
+  </data>
+  <data name="txtHONameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtHONameResource1.ToolTip" xml:space="preserve">
+    <value>Enter Head Office Name</value>
+  </data>
+  <data name="txtHostNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtHostNameResource1.ToolTip" xml:space="preserve">
+    <value>Enter Host Name</value>
+  </data>
+  <data name="txtInchargeNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtInchargeNameResource1.ToolTip" xml:space="preserve">
+    <value>Enter Incharge Name</value>
+  </data>
+  <data name="txtMobileCountryCodeResource1.Text" xml:space="preserve">
+    <value>91</value>
+  </data>
+  <data name="txtMobileCountryCodeResource1.ToolTip" xml:space="preserve">
+    <value>Enter Country Code</value>
+  </data>
+  <data name="txtOrgMailIdResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOrgMailIdResource1.ToolTip" xml:space="preserve">
+    <value>Enter Organization Mail Id</value>
+  </data>
+  <data name="txtOrgMobileNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOrgMobileNoResource1.ToolTip" xml:space="preserve">
+    <value>Enter organization mobile no</value>
+  </data>
+  <data name="txtOrgPhoneNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOrgPhoneNoResource1.ToolTip" xml:space="preserve">
+    <value>Enter organization phone no</value>
+  </data>
+  <data name="txtPincodeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPincodeResource1.ToolTip" xml:space="preserve">
+    <value>Enter Postal/Zip Code</value>
+  </data>
+  <data name="txtSecMailIdResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSecMailIdResource1.ToolTip" xml:space="preserve">
+    <value>Enter Secondary Mail Id</value>
+  </data>
+  <data name="txtSRMobileNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSRMobileNoResource1.ToolTip" xml:space="preserve">
+    <value>Enter secondary mobile no</value>
+  </data>
+  <data name="txtSRNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSRNameResource1.ToolTip" xml:space="preserve">
+    <value>Enter Name of the secondary concat person</value>
+  </data>
+  <data name="txtSRPhoneNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSRPhoneNoResource1.ToolTip" xml:space="preserve">
+    <value>Enter secondary mobile no</value>
+  </data>
+  <data name="vsHeadOfficeResource1.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="vsHeadOfficeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>

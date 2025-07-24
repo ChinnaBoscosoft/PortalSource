@@ -1,0 +1,720 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Detail.HeightF" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <assembly alias="DevExpress.Data.v13.2" name="DevExpress.Data.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="Detail.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>TopLeft</value>
+  </data>
+  <data name="Detail.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TopMargin.HeightF" type="System.Single, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="TopMargin.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>TopLeft</value>
+  </data>
+  <data name="BottomMargin.HeightF" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="BottomMargin.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>TopLeft</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="xrlblBudget.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>WhiteSmoke</value>
+  </data>
+  <data name="xrlblBudget.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>Silver</value>
+  </data>
+  <data name="xrlblBudget.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 7pt, style=Bold</value>
+  </data>
+  <data name="xrlblBudget.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>64, 64, 64</value>
+  </data>
+  <data name="xrlblBudget.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>0, 168</value>
+  </data>
+  <data name="xrlblBudget.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>723.0006, 19.7083282</value>
+  </data>
+  <data name="xrlblBudget.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrlblCostCentreName.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>WhiteSmoke</value>
+  </data>
+  <data name="xrlblCostCentreName.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>Silver</value>
+  </data>
+  <data name="xrlblCostCentreName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 7pt, style=Bold</value>
+  </data>
+  <data name="xrlblCostCentreName.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>64, 64, 64</value>
+  </data>
+  <data name="xrlblCostCentreName.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>1.99998224, 148.291672</value>
+  </data>
+  <data name="xrlblCostCentreName.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>723.0006, 19.7083282</value>
+  </data>
+  <data name="xrlblCostCentreName.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrlblReportSubTitle.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>WhiteSmoke</value>
+  </data>
+  <data name="xrlblReportSubTitle.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>Silver</value>
+  </data>
+  <data name="xrlblReportSubTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 7pt, style=Bold</value>
+  </data>
+  <data name="xrlblReportSubTitle.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>64, 64, 64</value>
+  </data>
+  <data name="xrlblReportSubTitle.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>0.9996948, 128.583344</value>
+  </data>
+  <data name="xrlblReportSubTitle.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>721.000061, 19.7083282</value>
+  </data>
+  <data name="xrlblReportSubTitle.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrlblReportSubTitle.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="xrlblBranchName.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>WhiteSmoke</value>
+  </data>
+  <data name="xrlblBranchName.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>Silver</value>
+  </data>
+  <data name="xrlblBranchName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="xrlblBranchName.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>64, 64, 64</value>
+  </data>
+  <data name="xrlblBranchName.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>0.9996948, 108.875015</value>
+  </data>
+  <data name="xrlblBranchName.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>723.0006, 19.7083282</value>
+  </data>
+  <data name="xrlblBranchName.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrInstituteAddress.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10pt</value>
+  </data>
+  <data name="xrInstituteAddress.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>72.33337, 56.125</value>
+  </data>
+  <data name="xrInstituteAddress.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>652.6671, 25</value>
+  </data>
+  <data name="xrInstituteAddress.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrInstituteName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 13pt</value>
+  </data>
+  <data name="xrInstituteName.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>72.33359, 28.125</value>
+  </data>
+  <data name="xrInstituteName.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>652.6669, 28</value>
+  </data>
+  <data name="xrInstituteName.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrlblCostCenter.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>WhiteSmoke</value>
+  </data>
+  <data name="xrlblCostCenter.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>Silver</value>
+  </data>
+  <data name="xrlblCostCenter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10pt, style=Bold</value>
+  </data>
+  <data name="xrlblCostCenter.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>64, 64, 64</value>
+  </data>
+  <data name="xrlblCostCenter.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>72.33337, 9.916656</value>
+  </data>
+  <data name="xrlblCostCenter.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>642.6666, 2.08334064</value>
+  </data>
+  <data name="xrlblCostCenter.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrlblCostCenter.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="xrDateRange.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>WhiteSmoke</value>
+  </data>
+  <data name="xrDateRange.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="xrDateRange.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.25pt, style=Bold</value>
+  </data>
+  <data name="xrDateRange.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>64, 64, 64</value>
+  </data>
+  <data name="xrDateRange.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>72.33322, 91.58334</value>
+  </data>
+  <data name="xrDateRange.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>652.6666, 17.29167</value>
+  </data>
+  <data name="xrDateRange.Text" xml:space="preserve">
+    <value>Date From</value>
+  </data>
+  <data name="xrDateRange.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrDateRange.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="xrpicReportLogoLeft.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        /9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAkGBwgHBgkIBwgKCgkLDRYPDQwMDSAUFRAWICUsIigdHx8k
+        KDQwLCkxJysfOTUtMTw7OjNCLzA8OjdEQzo5Nyz/2wBDAQoKCg0MDBQMDBQ3GRQeKywsLCwrLCw3Nywr
+        Kzc3KywsKyssKywsNzcrLCsrKysrLCssKysrKysrLCwrKysrKyv/wAARCABMADoDASIAAhEBAxEB/8QA
+        HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
+        MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW
+        V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
+        x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF
+        BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
+        YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
+        hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq
+        8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3GvPfip8Qo/C1mdP0qVJNemC+VGYywiU/xnt2OB644xVj4v8A
+        i+Xwn4X3WEwj1K7fy7Ziu7bjlmweOB+pFfON5etqEE2oalcs+pyP5nmTbnafkDAI4UAZ6+gAoA128Wy6
+        zqX2nx3c3Gs28I+Syjn8pGb1GwBR9eD9axPE0Ojw6o40Cd5rFlV4y+7cmRyrblXJBzyOOlZODt3YOM4z
+        U1usMvm/aZzHsiJj+UtuYdF9qALU1xHZXMc+i3U8PAYFXKyRt7sMdD0Ir2X4WfFp5vtdt431ZB88YtZ2
+        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
+</value>
+  </data>
+  <data name="xrpicReportLogoLeft.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>1.99998224, 3.125</value>
+  </data>
+  <data name="xrpicReportLogoLeft.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>70.3334, 88.4583359</value>
+  </data>
+  <data name="xrlblReportTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 13pt</value>
+  </data>
+  <data name="xrlblReportTitle.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>72.33359, 81.12501</value>
+  </data>
+  <data name="xrlblReportTitle.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>652.6669, 10.4583282</value>
+  </data>
+  <data name="xrlblReportTitle.Text" xml:space="preserve">
+    <value>Report Title</value>
+  </data>
+  <data name="xrlblReportTitle.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrlblInstitute.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 16.75pt</value>
+  </data>
+  <data name="xrlblInstitute.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>Black</value>
+  </data>
+  <data name="xrlblInstitute.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>72.33337, 0</value>
+  </data>
+  <data name="xrlblInstitute.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>652.6666, 28.125</value>
+  </data>
+  <data name="xrlblInstitute.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrlblInstitute.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ReportHeader.HeightF" type="System.Single, mscorlib">
+    <value>187.708328</value>
+  </data>
+  <data name="xrlblAmtLakh.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="xrlblAmtLakh.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>Red</value>
+  </data>
+  <data name="xrlblAmtLakh.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>0.999697, 0</value>
+  </data>
+  <data name="xrlblAmtLakh.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>195.8334, 13.00001</value>
+  </data>
+  <data name="xrlblAmtLakh.Text" xml:space="preserve">
+    <value>The Amounts are shown in Lakhs</value>
+  </data>
+  <data name="xrlblAmtLakh.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="xrlblProjectName.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>136.4583, 23.0000172</value>
+  </data>
+  <data name="xrlblProjectName.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>393.75, 23</value>
+  </data>
+  <data name="xrlblProjectName.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>TopCenter</value>
+  </data>
+  <data name="xrlblReportDate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="xrlblReportDate.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>562.7081, 23.0000172</value>
+  </data>
+  <data name="xrlblReportDate.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>152.2919, 23</value>
+  </data>
+  <data name="xrlblReportDate.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrPageInfo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="xrPageInfo.Format" xml:space="preserve">
+    <value>Page {0} of {1}</value>
+  </data>
+  <data name="xrPageInfo.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>9.999998, 23.0000172</value>
+  </data>
+  <data name="xrPageInfo.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>99.50005, 23</value>
+  </data>
+  <data name="xrPageInfo.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrlnFooter.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="xrlnFooter.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>DarkGray</value>
+  </data>
+  <data name="xrlnFooter.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>0, 13.00001</value>
+  </data>
+  <data name="xrlnFooter.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>724.9998, 7.291667</value>
+  </data>
+  <data name="PageFooter.HeightF" type="System.Single, mscorlib">
+    <value>49.1715126</value>
+  </data>
+  <data name="xrlblBudgetname.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>WhiteSmoke</value>
+  </data>
+  <data name="xrlblBudgetname.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>Silver</value>
+  </data>
+  <data name="xrlblBudgetname.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 7pt, style=Bold</value>
+  </data>
+  <data name="xrlblBudgetname.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>64, 64, 64</value>
+  </data>
+  <data name="xrlblBudgetname.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>0, 169.104172</value>
+  </data>
+  <data name="xrlblBudgetname.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>723.0006, 19.7083282</value>
+  </data>
+  <data name="xrlblBudgetname.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrLabel2.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>WhiteSmoke</value>
+  </data>
+  <data name="xrLabel2.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>Silver</value>
+  </data>
+  <data name="xrLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10pt, style=Bold</value>
+  </data>
+  <data name="xrLabel2.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>64, 64, 64</value>
+  </data>
+  <data name="xrLabel2.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>72.33337, 10</value>
+  </data>
+  <data name="xrLabel2.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>642.6666, 2.08334064</value>
+  </data>
+  <data name="xrLabel2.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrLabel2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="xrblpgReportSubTitle.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>WhiteSmoke</value>
+  </data>
+  <data name="xrblpgReportSubTitle.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>Silver</value>
+  </data>
+  <data name="xrblpgReportSubTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 7pt, style=Bold</value>
+  </data>
+  <data name="xrblpgReportSubTitle.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>64, 64, 64</value>
+  </data>
+  <data name="xrblpgReportSubTitle.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>0.499542236, 129.687531</value>
+  </data>
+  <data name="xrblpgReportSubTitle.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>721.000061, 19.7083282</value>
+  </data>
+  <data name="xrblpgReportSubTitle.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrpgDateRange.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>WhiteSmoke</value>
+  </data>
+  <data name="xrpgDateRange.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="xrpgDateRange.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.25pt, style=Bold</value>
+  </data>
+  <data name="xrpgDateRange.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>64, 64, 64</value>
+  </data>
+  <data name="xrpgDateRange.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>71.83307, 92.68752</value>
+  </data>
+  <data name="xrpgDateRange.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>652.6666, 17.29167</value>
+  </data>
+  <data name="xrpgDateRange.Text" xml:space="preserve">
+    <value>Date From</value>
+  </data>
+  <data name="xrpgDateRange.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrpgDateRange.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="xrblpgCostCentreName.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>WhiteSmoke</value>
+  </data>
+  <data name="xrblpgCostCentreName.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>Silver</value>
+  </data>
+  <data name="xrblpgCostCentreName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 7pt, style=Bold</value>
+  </data>
+  <data name="xrblpgCostCentreName.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>64, 64, 64</value>
+  </data>
+  <data name="xrblpgCostCentreName.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>1.49982965, 149.395844</value>
+  </data>
+  <data name="xrblpgCostCentreName.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>723.0006, 19.7083282</value>
+  </data>
+  <data name="xrblpgCostCentreName.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrblphBranchName.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>WhiteSmoke</value>
+  </data>
+  <data name="xrblphBranchName.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>Silver</value>
+  </data>
+  <data name="xrblphBranchName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="xrblphBranchName.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>64, 64, 64</value>
+  </data>
+  <data name="xrblphBranchName.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>0.499542236, 109.979195</value>
+  </data>
+  <data name="xrblphBranchName.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>723.0006, 19.7083282</value>
+  </data>
+  <data name="xrblphBranchName.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrlblpgReportTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 13pt</value>
+  </data>
+  <data name="xrlblpgReportTitle.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>71.8334351, 82.22919</value>
+  </data>
+  <data name="xrlblpgReportTitle.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>652.6669, 10.4583282</value>
+  </data>
+  <data name="xrlblpgReportTitle.Text" xml:space="preserve">
+    <value>Report Title</value>
+  </data>
+  <data name="xrlblpgReportTitle.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrlphblInstitute.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 16.75pt</value>
+  </data>
+  <data name="xrlphblInstitute.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>Black</value>
+  </data>
+  <data name="xrlphblInstitute.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>71.83321, 1.10417938</value>
+  </data>
+  <data name="xrlphblInstitute.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>652.6666, 28.125</value>
+  </data>
+  <data name="xrlphblInstitute.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrlphblInstitute.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="xrpicphReportLogoLeft.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        /9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAkGBwgHBgkIBwgKCgkLDRYPDQwMDSAUFRAWICUsIigdHx8k
+        KDQwLCkxJysfOTUtMTw7OjNCLzA8OjdEQzo5Nyz/2wBDAQoKCg0MDBQMDBQ3GRQeKywsLCwrLCw3Nywr
+        Kzc3KywsKyssKywsNzcrLCsrKysrLCssKysrKysrLCwrKysrKyv/wAARCABMADoDASIAAhEBAxEB/8QA
+        HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
+        MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW
+        V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
+        x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF
+        BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
+        YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
+        hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq
+        8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3GvPfip8Qo/C1mdP0qVJNemC+VGYywiU/xnt2OB644xVj4v8A
+        i+Xwn4X3WEwj1K7fy7Ziu7bjlmweOB+pFfON5etqEE2oalcs+pyP5nmTbnafkDAI4UAZ6+gAoA128Wy6
+        zqX2nx3c3Gs28I+Syjn8pGb1GwBR9eD9axPE0Ojw6o40Cd5rFlV4y+7cmRyrblXJBzyOOlZODt3YOM4z
+        U1usMvm/aZzHsiJj+UtuYdF9qALU1xHZXMc+i3U8PAYFXKyRt7sMdD0Ir2X4WfFp5vtdt431ZB88YtZ2
+        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
+</value>
+  </data>
+  <data name="xrpicphReportLogoLeft.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>1.49982965, 4.22917938</value>
+  </data>
+  <data name="xrpicphReportLogoLeft.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>70.3334, 88.4583359</value>
+  </data>
+  <data name="xrIphnstituteAddress.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10pt</value>
+  </data>
+  <data name="xrIphnstituteAddress.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>71.83321, 57.229187</value>
+  </data>
+  <data name="xrIphnstituteAddress.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>652.6671, 25</value>
+  </data>
+  <data name="xrIphnstituteAddress.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrIphnstituteName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 13pt</value>
+  </data>
+  <data name="xrIphnstituteName.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v13.2">
+    <value>71.8334351, 29.22918</value>
+  </data>
+  <data name="xrIphnstituteName.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>652.6669, 28</value>
+  </data>
+  <data name="xrIphnstituteName.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v13.2">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="PageHeader.HeightF" type="System.Single, mscorlib">
+    <value>188.8125</value>
+  </data>
+  <data name="PageHeader.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.Margins" type="System.Drawing.Printing.Margins, System.Drawing">
+    <value>49, 53, 61, 0</value>
+  </data>
+  <data name="$this.PageHeight" type="System.Int32, mscorlib">
+    <value>1169</value>
+  </data>
+  <data name="$this.PageWidth" type="System.Int32, mscorlib">
+    <value>827</value>
+  </data>
+  <data name="$this.PaperKind" type="System.Drawing.Printing.PaperKind, System.Drawing">
+    <value>A4</value>
+  </data>
+</root>
